@@ -3,7 +3,7 @@
   "operating_system": "macOS 26.5.2 (build 25F84)",
   "python": "CPython 3.12.13",
   "recorded_on": "2026-08-14",
-  "release_commit": "5b334db97255abb7a06a25bf78317174c512adf3",
+  "release_commit": "0a5c9acccc8168bf61278aa03a6e873557a066a9",
   "release_date": "2026-09-08",
   "release_repository": "https://github.com/zhouyi-xiaoxiao/prescribed-reaction-time-modes",
   "time_zone": "Asia/Shanghai"

@@ -2,7 +2,7 @@
 
 Changed branch/field: audit fixture copy / added arithmetic example `example : (1 : ℝ) + 1 = 2 := by norm_num`.
 
-Artifacts: MODIFIED_FILE `/Users/ae23069/.local-build/formal_lean_prr/audit_MODIFIED_FILE.lean`; DIFF_FILE `/Users/ae23069/.local-build/formal_lean_prr/audit_DIFF_FILE.patch`; VERIFICATION `/Users/ae23069/.local-build/formal_lean_prr/audit_VERIFICATION.txt`; ROLLBACK `/Users/ae23069/.local-build/formal_lean_prr/audit_ROLLBACK.sh`.
+Artifacts: MODIFIED_FILE `~/.local-build/formal_lean_prr/audit_MODIFIED_FILE.lean`; DIFF_FILE `~/.local-build/formal_lean_prr/audit_DIFF_FILE.patch`; VERIFICATION `~/.local-build/formal_lean_prr/audit_VERIFICATION.txt`; ROLLBACK `~/.local-build/formal_lean_prr/audit_ROLLBACK.sh`.
 
 BASELINE—command `export PATH="$HOME/.elan/bin:$PATH"; lake env lean audit_fixture_original.lean > audit_fixture_baseline.out 2>&1`; input `audit_fixture_original.lean`; literal output empty; exit `0`. MODIFIED—same command with `audit_MODIFIED_FILE.lean`/`audit_fixture_modified.out`; literal output empty; exit `0`. ROLLBACK—`cp audit_MODIFIED_FILE.lean audit_rollback_test.lean; ./audit_ROLLBACK.sh "$PWD/audit_rollback_test.lean"; cmp -s audit_fixture_original.lean audit_rollback_test.lean; lake env lean audit_rollback_test.lean`; input `audit_rollback_test.lean`; output `ROLLBACK_RESTORED=YES`; statuses `0/0/0`; restored hash/behavior equals baseline, while MODIFIED_FILE remains changed.
 

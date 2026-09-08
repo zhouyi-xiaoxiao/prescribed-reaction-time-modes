@@ -2,7 +2,7 @@
 
 L1–L5, L7, L8, and the L9 re-anchoring are faithful. L6 remains incomplete, while `newton_kernel_root_bound` is still misdescribed as proving a “unique zero” rather than a unique fixed point. The SM sentence overclaims the coverage of the two independent encodings.
 
-Detailed evidence: `/Users/ae23069/.local-build/formal_lean_prr/audit2_report.txt`. All 26 protected files retained their original hashes.
+Detailed evidence: `~/.local-build/formal_lean_prr/audit2_report.txt`. All 26 protected files retained their original hashes.
 
 ```json
 {
