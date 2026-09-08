@@ -1,0 +1,2154 @@
+{
+  "cells": [
+    {
+      "budget": 0.125,
+      "eps": 0.05,
+      "event_fraction_in_window": 0.210255,
+      "file": "cell_m2_eps0.05_B0.125.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.210397,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.490000000000002
+      ],
+      "refined": false,
+      "runtime_seconds": 109.67928287499672,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.25,
+      "eps": 0.05,
+      "event_fraction_in_window": 0.376284,
+      "file": "cell_m2_eps0.05_B0.25.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.376488,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.490000000000002
+      ],
+      "refined": false,
+      "runtime_seconds": 105.37646441699326,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.5,
+      "eps": 0.05,
+      "event_fraction_in_window": 0.606514,
+      "file": "cell_m2_eps0.05_B0.5.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.606742,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.4700000000000015
+      ],
+      "refined": false,
+      "runtime_seconds": 90.5111255419979,
+      "walkers": 1000000
+    },
+    {
+      "budget": 1.0,
+      "eps": 0.05,
+      "event_fraction_in_window": 0.839509,
+      "file": "cell_m2_eps0.05_B1.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.839671,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.4300000000000015
+      ],
+      "refined": false,
+      "runtime_seconds": 69.350611707996,
+      "walkers": 1000000
+    },
+    {
+      "budget": 2.0,
+      "eps": 0.05,
+      "event_fraction_in_window": 0.969675,
+      "file": "cell_m2_eps0.05_B2.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.96972,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.3900000000000015
+      ],
+      "refined": false,
+      "runtime_seconds": 53.33738733299833,
+      "walkers": 1000000
+    },
+    {
+      "budget": 4.0,
+      "eps": 0.05,
+      "event_fraction_in_window": 0.997375,
+      "file": "cell_m2_eps0.05_B4.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.997385,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.330000000000002
+      ],
+      "refined": false,
+      "runtime_seconds": 40.78750770899933,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.125,
+      "eps": 0.075,
+      "event_fraction_in_window": 0.198666,
+      "file": "cell_m2_eps0.075_B0.125.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.202406,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.490000000000002
+      ],
+      "refined": false,
+      "runtime_seconds": 108.79178366699489,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.25,
+      "eps": 0.075,
+      "event_fraction_in_window": 0.354995,
+      "file": "cell_m2_eps0.075_B0.25.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.360598,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.4700000000000015
+      ],
+      "refined": false,
+      "runtime_seconds": 105.02465387499979,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.5,
+      "eps": 0.075,
+      "event_fraction_in_window": 0.57576,
+      "file": "cell_m2_eps0.075_B0.5.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.582276,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.450000000000002
+      ],
+      "refined": false,
+      "runtime_seconds": 88.8890000829997,
+      "walkers": 1000000
+    },
+    {
+      "budget": 1.0,
+      "eps": 0.075,
+      "event_fraction_in_window": 0.804687,
+      "file": "cell_m2_eps0.075_B1.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.809625,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.3900000000000015
+      ],
+      "refined": false,
+      "runtime_seconds": 70.5453146660002,
+      "walkers": 1000000
+    },
+    {
+      "budget": 2.0,
+      "eps": 0.075,
+      "event_fraction_in_window": 0.944497,
+      "file": "cell_m2_eps0.075_B2.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.94647,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.330000000000002
+      ],
+      "refined": false,
+      "runtime_seconds": 54.0769607090042,
+      "walkers": 1000000
+    },
+    {
+      "budget": 4.0,
+      "eps": 0.075,
+      "event_fraction_in_window": 0.987303,
+      "file": "cell_m2_eps0.075_B4.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.987939,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9700000000000004,
+        2.2700000000000014
+      ],
+      "refined": false,
+      "runtime_seconds": 41.160945833995356,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.125,
+      "eps": 0.125,
+      "event_fraction_in_window": 0.155486,
+      "file": "cell_m2_eps0.125_B0.125.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.170087,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.4300000000000015
+      ],
+      "refined": false,
+      "runtime_seconds": 107.26190312500694,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.25,
+      "eps": 0.125,
+      "event_fraction_in_window": 0.284017,
+      "file": "cell_m2_eps0.125_B0.25.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.307958,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.4700000000000015
+      ],
+      "refined": false,
+      "runtime_seconds": 102.79917045799812,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.5,
+      "eps": 0.125,
+      "event_fraction_in_window": 0.478208,
+      "file": "cell_m2_eps0.125_B0.5.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.510286,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.4300000000000015
+      ],
+      "refined": false,
+      "runtime_seconds": 89.42313266699784,
+      "walkers": 1000000
+    },
+    {
+      "budget": 1.0,
+      "eps": 0.125,
+      "event_fraction_in_window": 0.707631,
+      "file": "cell_m2_eps0.125_B1.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.738755,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.3500000000000014
+      ],
+      "refined": false,
+      "runtime_seconds": 74.4688537500042,
+      "walkers": 1000000
+    },
+    {
+      "budget": 2.0,
+      "eps": 0.125,
+      "event_fraction_in_window": 0.888456,
+      "file": "cell_m2_eps0.125_B2.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.906711,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.2700000000000014
+      ],
+      "refined": false,
+      "runtime_seconds": 56.64695945800486,
+      "walkers": 1000000
+    },
+    {
+      "budget": 4.0,
+      "eps": 0.125,
+      "event_fraction_in_window": 0.969492,
+      "file": "cell_m2_eps0.125_B4.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.976473,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9700000000000004,
+        2.1900000000000013
+      ],
+      "refined": false,
+      "runtime_seconds": 43.53213895900262,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.125,
+      "eps": 0.15,
+      "event_fraction_in_window": 0.136238,
+      "file": "cell_m2_eps0.15_B0.125.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.152888,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.410000000000002
+      ],
+      "refined": false,
+      "runtime_seconds": 105.70050958299544,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.25,
+      "eps": 0.15,
+      "event_fraction_in_window": 0.252367,
+      "file": "cell_m2_eps0.15_B0.25.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.280305,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.4700000000000015
+      ],
+      "refined": false,
+      "runtime_seconds": 102.00555775000248,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.5,
+      "eps": 0.15,
+      "event_fraction_in_window": 0.433157,
+      "file": "cell_m2_eps0.15_B0.5.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.472837,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.3900000000000015
+      ],
+      "refined": false,
+      "runtime_seconds": 88.1648476670016,
+      "walkers": 1000000
+    },
+    {
+      "budget": 1.0,
+      "eps": 0.15,
+      "event_fraction_in_window": 0.660657,
+      "file": "cell_m2_eps0.15_B1.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.702373,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.3500000000000014
+      ],
+      "refined": false,
+      "runtime_seconds": 75.66213654099556,
+      "walkers": 1000000
+    },
+    {
+      "budget": 2.0,
+      "eps": 0.15,
+      "event_fraction_in_window": 0.859355,
+      "file": "cell_m2_eps0.15_B2.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.887182,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9700000000000004,
+        2.2300000000000013
+      ],
+      "refined": false,
+      "runtime_seconds": 58.11135508299776,
+      "walkers": 1000000
+    },
+    {
+      "budget": 4.0,
+      "eps": 0.15,
+      "event_fraction_in_window": 0.960067,
+      "file": "cell_m2_eps0.15_B4.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.97134,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9500000000000004,
+        2.1500000000000012
+      ],
+      "refined": false,
+      "runtime_seconds": 44.7437496670027,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.125,
+      "eps": 0.175,
+      "event_fraction_in_window": 0.119875,
+      "file": "cell_m2_eps0.175_B0.125.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.137033,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.530000000000002
+      ],
+      "refined": false,
+      "runtime_seconds": 104.0197726250044,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.25,
+      "eps": 0.175,
+      "event_fraction_in_window": 0.223444,
+      "file": "cell_m2_eps0.175_B0.25.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.252365,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.490000000000002
+      ],
+      "refined": false,
+      "runtime_seconds": 101.9272324170015,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.5,
+      "eps": 0.175,
+      "event_fraction_in_window": 0.391325,
+      "file": "cell_m2_eps0.175_B0.5.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.43428,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.3900000000000015
+      ],
+      "refined": false,
+      "runtime_seconds": 88.18653274999815,
+      "walkers": 1000000
+    },
+    {
+      "budget": 1.0,
+      "eps": 0.175,
+      "event_fraction_in_window": 0.614361,
+      "file": "cell_m2_eps0.175_B1.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.663001,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.3100000000000014
+      ],
+      "refined": false,
+      "runtime_seconds": 76.47230545799539,
+      "walkers": 1000000
+    },
+    {
+      "budget": 2.0,
+      "eps": 0.175,
+      "event_fraction_in_window": 0.825647,
+      "file": "cell_m2_eps0.175_B2.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.861738,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9700000000000004,
+        2.2100000000000017
+      ],
+      "refined": false,
+      "runtime_seconds": 59.48611766600516,
+      "walkers": 1000000
+    },
+    {
+      "budget": 4.0,
+      "eps": 0.175,
+      "event_fraction_in_window": 0.946616,
+      "file": "cell_m2_eps0.175_B4.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.962856,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9500000000000004,
+        2.110000000000001
+      ],
+      "refined": false,
+      "runtime_seconds": 45.76632075000089,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.125,
+      "eps": 0.1,
+      "event_fraction_in_window": 0.176963,
+      "file": "cell_m2_eps0.1_B0.125.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.1869,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.4700000000000015
+      ],
+      "refined": false,
+      "runtime_seconds": 107.23539974999585,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.25,
+      "eps": 0.1,
+      "event_fraction_in_window": 0.319717,
+      "file": "cell_m2_eps0.1_B0.25.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.335373,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.450000000000002
+      ],
+      "refined": false,
+      "runtime_seconds": 103.52894983300212,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.5,
+      "eps": 0.1,
+      "event_fraction_in_window": 0.527392,
+      "file": "cell_m2_eps0.1_B0.5.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.547148,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.410000000000002
+      ],
+      "refined": false,
+      "runtime_seconds": 89.16383833299915,
+      "walkers": 1000000
+    },
+    {
+      "budget": 1.0,
+      "eps": 0.1,
+      "event_fraction_in_window": 0.755626,
+      "file": "cell_m2_eps0.1_B1.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.773053,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.370000000000002
+      ],
+      "refined": false,
+      "runtime_seconds": 71.95436150000023,
+      "walkers": 1000000
+    },
+    {
+      "budget": 2.0,
+      "eps": 0.1,
+      "event_fraction_in_window": 0.91623,
+      "file": "cell_m2_eps0.1_B2.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.924825,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.290000000000002
+      ],
+      "refined": false,
+      "runtime_seconds": 55.116283832998306,
+      "walkers": 1000000
+    },
+    {
+      "budget": 4.0,
+      "eps": 0.1,
+      "event_fraction_in_window": 0.977785,
+      "file": "cell_m2_eps0.1_B4.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.980969,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9700000000000004,
+        2.2100000000000017
+      ],
+      "refined": false,
+      "runtime_seconds": 42.09916345799866,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.125,
+      "eps": 0.25,
+      "event_fraction_in_window": 0.084219,
+      "file": "cell_m2_eps0.25_B0.125.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.097392,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.5500000000000016
+      ],
+      "refined": false,
+      "runtime_seconds": 102.18544633299462,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.25,
+      "eps": 0.25,
+      "event_fraction_in_window": 0.159935,
+      "file": "cell_m2_eps0.25_B0.25.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.184241,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.410000000000002
+      ],
+      "refined": false,
+      "runtime_seconds": 99.09921904200019,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.5,
+      "eps": 0.25,
+      "event_fraction_in_window": 0.291488,
+      "file": "cell_m2_eps0.25_B0.5.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.330437,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.3900000000000015
+      ],
+      "refined": false,
+      "runtime_seconds": 88.30224470800022,
+      "walkers": 1000000
+    },
+    {
+      "budget": 1.0,
+      "eps": 0.25,
+      "event_fraction_in_window": 0.486127,
+      "file": "cell_m2_eps0.25_B1.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.538935,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9700000000000004,
+        2.3100000000000014
+      ],
+      "refined": false,
+      "runtime_seconds": 77.60993166699336,
+      "walkers": 1000000
+    },
+    {
+      "budget": 2.0,
+      "eps": 0.25,
+      "event_fraction_in_window": 0.712685,
+      "file": "cell_m2_eps0.25_B2.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.763655,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9700000000000004,
+        2.1500000000000012
+      ],
+      "refined": false,
+      "runtime_seconds": 62.62248924999585,
+      "walkers": 1000000
+    },
+    {
+      "budget": 4.0,
+      "eps": 0.25,
+      "event_fraction_in_window": 0.887937,
+      "file": "cell_m2_eps0.25_B4.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.919253,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9500000000000004,
+        2.030000000000001
+      ],
+      "refined": false,
+      "runtime_seconds": 48.47561929099902,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.125,
+      "eps": 0.2,
+      "event_fraction_in_window": 0.106454,
+      "file": "cell_m2_eps0.2_B0.125.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.122355,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.5500000000000016
+      ],
+      "refined": false,
+      "runtime_seconds": 105.16868350000004,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.25,
+      "eps": 0.2,
+      "event_fraction_in_window": 0.200012,
+      "file": "cell_m2_eps0.2_B0.25.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.228147,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.4300000000000015
+      ],
+      "refined": false,
+      "runtime_seconds": 100.91122012500273,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.5,
+      "eps": 0.2,
+      "event_fraction_in_window": 0.352715,
+      "file": "cell_m2_eps0.2_B0.5.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.396043,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.4700000000000015
+      ],
+      "refined": false,
+      "runtime_seconds": 88.1218823340023,
+      "walkers": 1000000
+    },
+    {
+      "budget": 1.0,
+      "eps": 0.2,
+      "event_fraction_in_window": 0.567974,
+      "file": "cell_m2_eps0.2_B1.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.620484,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9900000000000004,
+        2.330000000000002
+      ],
+      "refined": false,
+      "runtime_seconds": 76.49243779099925,
+      "walkers": 1000000
+    },
+    {
+      "budget": 2.0,
+      "eps": 0.2,
+      "event_fraction_in_window": 0.788388,
+      "file": "cell_m2_eps0.2_B2.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.831636,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9700000000000004,
+        2.1900000000000013
+      ],
+      "refined": false,
+      "runtime_seconds": 60.60570016600104,
+      "walkers": 1000000
+    },
+    {
+      "budget": 4.0,
+      "eps": 0.2,
+      "event_fraction_in_window": 0.930172,
+      "file": "cell_m2_eps0.2_B4.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.951632,
+      "m": 2,
+      "mode_count": 2,
+      "passes": true,
+      "peak_times": [
+        0.9500000000000004,
+        2.0900000000000016
+      ],
+      "refined": false,
+      "runtime_seconds": 46.68381433399918,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.125,
+      "eps": 0.05,
+      "event_fraction_in_window": 0.216954,
+      "file": "cell_m3_eps0.05_B0.125.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.222788,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.8100000000000003,
+        1.590000000000001,
+        2.790000000000002
+      ],
+      "refined": false,
+      "runtime_seconds": 128.19366774999799,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.25,
+      "eps": 0.05,
+      "event_fraction_in_window": 0.386975,
+      "file": "cell_m3_eps0.05_B0.25.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.395431,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.590000000000001,
+        2.7700000000000022
+      ],
+      "refined": false,
+      "runtime_seconds": 116.63985829200101,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.5,
+      "eps": 0.05,
+      "event_fraction_in_window": 0.62091,
+      "file": "cell_m3_eps0.05_B0.5.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.630881,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.590000000000001,
+        2.7500000000000018
+      ],
+      "refined": false,
+      "runtime_seconds": 96.65693929100235,
+      "walkers": 1000000
+    },
+    {
+      "budget": 1.0,
+      "eps": 0.05,
+      "event_fraction_in_window": 0.852389,
+      "file": "cell_m3_eps0.05_B1.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.858876,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.590000000000001,
+        2.7100000000000017
+      ],
+      "refined": false,
+      "runtime_seconds": 76.96730941599526,
+      "walkers": 1000000
+    },
+    {
+      "budget": 2.0,
+      "eps": 0.05,
+      "event_fraction_in_window": 0.97433,
+      "file": "cell_m3_eps0.05_B2.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.97594,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.590000000000001,
+        2.650000000000002
+      ],
+      "refined": false,
+      "runtime_seconds": 57.129818957997486,
+      "walkers": 1000000
+    },
+    {
+      "budget": 4.0,
+      "eps": 0.05,
+      "event_fraction_in_window": 0.998139,
+      "file": "cell_m3_eps0.05_B4.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.998247,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.570000000000001,
+        2.5900000000000016
+      ],
+      "refined": false,
+      "runtime_seconds": 42.553333457995905,
+      "walkers": 1000000
+    },
+    {
+      "budget": 4.0,
+      "eps": 0.05,
+      "event_fraction_in_window": 0.998261,
+      "file": "cell_m3_eps0.05_B4_refined.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.9983676666666667,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.570000000000001,
+        2.5900000000000016
+      ],
+      "refined": true,
+      "runtime_seconds": 133.66495983299683,
+      "walkers": 3000000
+    },
+    {
+      "budget": 0.125,
+      "eps": 0.075,
+      "event_fraction_in_window": 0.192037,
+      "file": "cell_m3_eps0.075_B0.125.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.208477,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.8100000000000003,
+        1.590000000000001,
+        2.7500000000000018
+      ],
+      "refined": false,
+      "runtime_seconds": 127.74391170800664,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.25,
+      "eps": 0.075,
+      "event_fraction_in_window": 0.345203,
+      "file": "cell_m3_eps0.075_B0.25.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.370453,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.590000000000001,
+        2.7500000000000018
+      ],
+      "refined": false,
+      "runtime_seconds": 116.23149083300086,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.5,
+      "eps": 0.075,
+      "event_fraction_in_window": 0.566025,
+      "file": "cell_m3_eps0.075_B0.5.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.596826,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.590000000000001,
+        2.7100000000000017
+      ],
+      "refined": false,
+      "runtime_seconds": 97.21115329200256,
+      "walkers": 1000000
+    },
+    {
+      "budget": 1.0,
+      "eps": 0.075,
+      "event_fraction_in_window": 0.800602,
+      "file": "cell_m3_eps0.075_B1.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.824083,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.590000000000001,
+        2.6700000000000017
+      ],
+      "refined": false,
+      "runtime_seconds": 78.31096991700178,
+      "walkers": 1000000
+    },
+    {
+      "budget": 2.0,
+      "eps": 0.075,
+      "event_fraction_in_window": 0.946747,
+      "file": "cell_m3_eps0.075_B2.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.955201,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.570000000000001,
+        2.5900000000000016
+      ],
+      "refined": false,
+      "runtime_seconds": 58.23751050000283,
+      "walkers": 1000000
+    },
+    {
+      "budget": 2.0,
+      "eps": 0.075,
+      "event_fraction_in_window": 0.9473253333333334,
+      "file": "cell_m3_eps0.075_B2_refined.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.9559993333333333,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.570000000000001,
+        2.5900000000000016
+      ],
+      "refined": true,
+      "runtime_seconds": 185.04254154200316,
+      "walkers": 3000000
+    },
+    {
+      "budget": 4.0,
+      "eps": 0.075,
+      "event_fraction_in_window": 0.990526,
+      "file": "cell_m3_eps0.075_B4.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.992306,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.550000000000001
+      ],
+      "refined": false,
+      "runtime_seconds": 43.168274209005176,
+      "walkers": 1000000
+    },
+    {
+      "budget": 4.0,
+      "eps": 0.075,
+      "event_fraction_in_window": 0.990558,
+      "file": "cell_m3_eps0.075_B4_refined.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.992263,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.550000000000001
+      ],
+      "refined": true,
+      "runtime_seconds": 138.3687232500015,
+      "walkers": 3000000
+    },
+    {
+      "budget": 0.125,
+      "eps": 0.125,
+      "event_fraction_in_window": 0.141273,
+      "file": "cell_m3_eps0.125_B0.125.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.161387,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.610000000000001,
+        2.7100000000000017
+      ],
+      "refined": false,
+      "runtime_seconds": 121.09362404100102,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.25,
+      "eps": 0.125,
+      "event_fraction_in_window": 0.260495,
+      "file": "cell_m3_eps0.125_B0.25.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.293806,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.590000000000001,
+        2.7700000000000022
+      ],
+      "refined": false,
+      "runtime_seconds": 108.54738883399841,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.5,
+      "eps": 0.125,
+      "event_fraction_in_window": 0.447291,
+      "file": "cell_m3_eps0.125_B0.5.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.494562,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.590000000000001,
+        2.690000000000002
+      ],
+      "refined": false,
+      "runtime_seconds": 96.22895137500018,
+      "walkers": 1000000
+    },
+    {
+      "budget": 1.0,
+      "eps": 0.125,
+      "event_fraction_in_window": 0.680107,
+      "file": "cell_m3_eps0.125_B1.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.728509,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.570000000000001,
+        2.6300000000000017
+      ],
+      "refined": false,
+      "runtime_seconds": 80.41791404200194,
+      "walkers": 1000000
+    },
+    {
+      "budget": 2.0,
+      "eps": 0.125,
+      "event_fraction_in_window": 0.877776,
+      "file": "cell_m3_eps0.125_B2.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.907324,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.550000000000001,
+        2.5100000000000016
+      ],
+      "refined": false,
+      "runtime_seconds": 60.974799957999494,
+      "walkers": 1000000
+    },
+    {
+      "budget": 2.0,
+      "eps": 0.125,
+      "event_fraction_in_window": 0.8788543333333333,
+      "file": "cell_m3_eps0.125_B2_refined.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.9080776666666667,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.550000000000001,
+        2.490000000000002
+      ],
+      "refined": true,
+      "runtime_seconds": 195.01492841599975,
+      "walkers": 3000000
+    },
+    {
+      "budget": 4.0,
+      "eps": 0.125,
+      "event_fraction_in_window": 0.970899,
+      "file": "cell_m3_eps0.125_B4.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.980418,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.530000000000001
+      ],
+      "refined": false,
+      "runtime_seconds": 45.37805841700174,
+      "walkers": 1000000
+    },
+    {
+      "budget": 4.0,
+      "eps": 0.125,
+      "event_fraction_in_window": 0.9707763333333334,
+      "file": "cell_m3_eps0.125_B4_refined.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.9804946666666666,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.530000000000001
+      ],
+      "refined": true,
+      "runtime_seconds": 144.74922033299663,
+      "walkers": 3000000
+    },
+    {
+      "budget": 0.125,
+      "eps": 0.15,
+      "event_fraction_in_window": 0.123519,
+      "file": "cell_m3_eps0.15_B0.125.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.14211,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.570000000000001,
+        2.790000000000002
+      ],
+      "refined": false,
+      "runtime_seconds": 117.88877458299976,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.25,
+      "eps": 0.15,
+      "event_fraction_in_window": 0.229758,
+      "file": "cell_m3_eps0.15_B0.25.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.261337,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.590000000000001,
+        2.7700000000000022
+      ],
+      "refined": false,
+      "runtime_seconds": 106.87750841600064,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.5,
+      "eps": 0.15,
+      "event_fraction_in_window": 0.402853,
+      "file": "cell_m3_eps0.15_B0.5.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.449636,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.590000000000001,
+        2.7100000000000017
+      ],
+      "refined": false,
+      "runtime_seconds": 95.90107895799883,
+      "walkers": 1000000
+    },
+    {
+      "budget": 1.0,
+      "eps": 0.15,
+      "event_fraction_in_window": 0.630372,
+      "file": "cell_m3_eps0.15_B1.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.682842,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.590000000000001,
+        2.5500000000000016
+      ],
+      "refined": false,
+      "runtime_seconds": 81.16389483300009,
+      "walkers": 1000000
+    },
+    {
+      "budget": 1.0,
+      "eps": 0.15,
+      "event_fraction_in_window": 0.6309896666666667,
+      "file": "cell_m3_eps0.15_B1_refined.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.6834693333333334,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.570000000000001,
+        2.5500000000000016
+      ],
+      "refined": true,
+      "runtime_seconds": 242.64516699999513,
+      "walkers": 3000000
+    },
+    {
+      "budget": 2.0,
+      "eps": 0.15,
+      "event_fraction_in_window": 0.843741,
+      "file": "cell_m3_eps0.15_B2.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.880832,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.550000000000001
+      ],
+      "refined": false,
+      "runtime_seconds": 62.25394279099419,
+      "walkers": 1000000
+    },
+    {
+      "budget": 2.0,
+      "eps": 0.15,
+      "event_fraction_in_window": 0.843544,
+      "file": "cell_m3_eps0.15_B2_refined.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.880445,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.550000000000001
+      ],
+      "refined": true,
+      "runtime_seconds": 188.7031869170023,
+      "walkers": 3000000
+    },
+    {
+      "budget": 4.0,
+      "eps": 0.15,
+      "event_fraction_in_window": 0.958886,
+      "file": "cell_m3_eps0.15_B4.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.973261,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7700000000000002,
+        1.510000000000001
+      ],
+      "refined": false,
+      "runtime_seconds": 46.55965562500205,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.125,
+      "eps": 0.175,
+      "event_fraction_in_window": 0.109514,
+      "file": "cell_m3_eps0.175_B0.125.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.125696,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.590000000000001,
+        2.6300000000000017
+      ],
+      "refined": false,
+      "runtime_seconds": 115.53496279200044,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.125,
+      "eps": 0.175,
+      "event_fraction_in_window": 0.10963166666666667,
+      "file": "cell_m3_eps0.175_B0.125_refined.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.125982,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.610000000000001,
+        2.610000000000002
+      ],
+      "refined": true,
+      "runtime_seconds": 333.03953079200437,
+      "walkers": 3000000
+    },
+    {
+      "budget": 0.25,
+      "eps": 0.175,
+      "event_fraction_in_window": 0.205376,
+      "file": "cell_m3_eps0.175_B0.25.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.234037,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.8100000000000003,
+        1.610000000000001,
+        2.610000000000002
+      ],
+      "refined": false,
+      "runtime_seconds": 105.60490275000484,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.25,
+      "eps": 0.175,
+      "event_fraction_in_window": 0.205854,
+      "file": "cell_m3_eps0.175_B0.25_refined.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.234475,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.610000000000001,
+        2.610000000000002
+      ],
+      "refined": true,
+      "runtime_seconds": 317.644132625006,
+      "walkers": 3000000
+    },
+    {
+      "budget": 0.5,
+      "eps": 0.175,
+      "event_fraction_in_window": 0.365325,
+      "file": "cell_m3_eps0.175_B0.5.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.408997,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.610000000000001,
+        2.6700000000000017
+      ],
+      "refined": false,
+      "runtime_seconds": 95.47369462500501,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.5,
+      "eps": 0.175,
+      "event_fraction_in_window": 0.36396466666666666,
+      "file": "cell_m3_eps0.175_B0.5_refined.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.4080123333333333,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.610000000000001,
+        2.4700000000000015
+      ],
+      "refined": true,
+      "runtime_seconds": 285.00421341599576,
+      "walkers": 3000000
+    },
+    {
+      "budget": 1.0,
+      "eps": 0.175,
+      "event_fraction_in_window": 0.585828,
+      "file": "cell_m3_eps0.175_B1.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.63877,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.590000000000001
+      ],
+      "refined": false,
+      "runtime_seconds": 81.61872887500067,
+      "walkers": 1000000
+    },
+    {
+      "budget": 1.0,
+      "eps": 0.175,
+      "event_fraction_in_window": 0.585161,
+      "file": "cell_m3_eps0.175_B1_refined.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.638092,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.590000000000001
+      ],
+      "refined": true,
+      "runtime_seconds": 243.0209625829957,
+      "walkers": 3000000
+    },
+    {
+      "budget": 2.0,
+      "eps": 0.175,
+      "event_fraction_in_window": 0.80803,
+      "file": "cell_m3_eps0.175_B2.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.850136,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.550000000000001
+      ],
+      "refined": false,
+      "runtime_seconds": 63.378474125005596,
+      "walkers": 1000000
+    },
+    {
+      "budget": 4.0,
+      "eps": 0.175,
+      "event_fraction_in_window": 0.943866,
+      "file": "cell_m3_eps0.175_B4.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.962843,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7700000000000002,
+        1.510000000000001
+      ],
+      "refined": false,
+      "runtime_seconds": 47.5501234580006,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.125,
+      "eps": 0.1,
+      "event_fraction_in_window": 0.163513,
+      "file": "cell_m3_eps0.1_B0.125.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.183673,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.590000000000001,
+        2.830000000000002
+      ],
+      "refined": false,
+      "runtime_seconds": 125.07507770800294,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.25,
+      "eps": 0.1,
+      "event_fraction_in_window": 0.298389,
+      "file": "cell_m3_eps0.1_B0.25.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.330866,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.590000000000001,
+        2.7700000000000022
+      ],
+      "refined": false,
+      "runtime_seconds": 114.19061920799868,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.5,
+      "eps": 0.1,
+      "event_fraction_in_window": 0.500843,
+      "file": "cell_m3_eps0.1_B0.5.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.543328,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.590000000000001,
+        2.7100000000000017
+      ],
+      "refined": false,
+      "runtime_seconds": 96.36483708299784,
+      "walkers": 1000000
+    },
+    {
+      "budget": 1.0,
+      "eps": 0.1,
+      "event_fraction_in_window": 0.737613,
+      "file": "cell_m3_eps0.1_B1.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.776404,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.570000000000001,
+        2.6300000000000017
+      ],
+      "refined": false,
+      "runtime_seconds": 79.32749912500003,
+      "walkers": 1000000
+    },
+    {
+      "budget": 2.0,
+      "eps": 0.1,
+      "event_fraction_in_window": 0.912516,
+      "file": "cell_m3_eps0.1_B2.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.93161,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.570000000000001,
+        2.5500000000000016
+      ],
+      "refined": false,
+      "runtime_seconds": 59.45042612499674,
+      "walkers": 1000000
+    },
+    {
+      "budget": 2.0,
+      "eps": 0.1,
+      "event_fraction_in_window": 0.912239,
+      "file": "cell_m3_eps0.1_B2_refined.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.9315203333333333,
+      "m": 3,
+      "mode_count": 3,
+      "passes": true,
+      "peak_times": [
+        0.7900000000000003,
+        1.570000000000001,
+        2.5500000000000016
+      ],
+      "refined": true,
+      "runtime_seconds": 191.51294416600285,
+      "walkers": 3000000
+    },
+    {
+      "budget": 4.0,
+      "eps": 0.1,
+      "event_fraction_in_window": 0.980829,
+      "file": "cell_m3_eps0.1_B4.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.986291,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.530000000000001
+      ],
+      "refined": false,
+      "runtime_seconds": 44.084264416000224,
+      "walkers": 1000000
+    },
+    {
+      "budget": 4.0,
+      "eps": 0.1,
+      "event_fraction_in_window": 0.9809263333333333,
+      "file": "cell_m3_eps0.1_B4_refined.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.9863983333333334,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.530000000000001
+      ],
+      "refined": true,
+      "runtime_seconds": 141.25069500000245,
+      "walkers": 3000000
+    },
+    {
+      "budget": 0.125,
+      "eps": 0.25,
+      "event_fraction_in_window": 0.080585,
+      "file": "cell_m3_eps0.25_B0.125.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.092286,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.8100000000000003,
+        2.1900000000000013
+      ],
+      "refined": false,
+      "runtime_seconds": 109.17786416599847,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.25,
+      "eps": 0.25,
+      "event_fraction_in_window": 0.153019,
+      "file": "cell_m3_eps0.25_B0.25.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.174304,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.9900000000000013
+      ],
+      "refined": false,
+      "runtime_seconds": 104.81916175000515,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.5,
+      "eps": 0.25,
+      "event_fraction_in_window": 0.279332,
+      "file": "cell_m3_eps0.25_B0.5.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.314214,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.9100000000000013
+      ],
+      "refined": false,
+      "runtime_seconds": 93.27306670899998,
+      "walkers": 1000000
+    },
+    {
+      "budget": 1.0,
+      "eps": 0.25,
+      "event_fraction_in_window": 0.471728,
+      "file": "cell_m3_eps0.25_B1.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.520552,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.690000000000001
+      ],
+      "refined": false,
+      "runtime_seconds": 81.90500512500148,
+      "walkers": 1000000
+    },
+    {
+      "budget": 2.0,
+      "eps": 0.25,
+      "event_fraction_in_window": 0.699235,
+      "file": "cell_m3_eps0.25_B2.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.750175,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.650000000000001
+      ],
+      "refined": false,
+      "runtime_seconds": 66.48447387499618,
+      "walkers": 1000000
+    },
+    {
+      "budget": 4.0,
+      "eps": 0.25,
+      "event_fraction_in_window": 0.878788,
+      "file": "cell_m3_eps0.25_B4.json",
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.914826,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7700000000000002,
+        1.530000000000001
+      ],
+      "refined": false,
+      "runtime_seconds": 50.12327183299931,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.125,
+      "eps": 0.2,
+      "event_fraction_in_window": 0.098165,
+      "file": "cell_m3_eps0.2_B0.125.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.112689,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.610000000000001
+      ],
+      "refined": false,
+      "runtime_seconds": 113.06897500000196,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.125,
+      "eps": 0.2,
+      "event_fraction_in_window": 0.09825066666666667,
+      "file": "cell_m3_eps0.2_B0.125_refined.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.11268933333333334,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.630000000000001
+      ],
+      "refined": true,
+      "runtime_seconds": 321.6773181250028,
+      "walkers": 3000000
+    },
+    {
+      "budget": 0.25,
+      "eps": 0.2,
+      "event_fraction_in_window": 0.185672,
+      "file": "cell_m3_eps0.2_B0.25.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.211657,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.650000000000001
+      ],
+      "refined": false,
+      "runtime_seconds": 107.73788737500581,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.25,
+      "eps": 0.2,
+      "event_fraction_in_window": 0.18550233333333332,
+      "file": "cell_m3_eps0.2_B0.25_refined.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.21129033333333333,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.650000000000001
+      ],
+      "refined": true,
+      "runtime_seconds": 308.02796170900547,
+      "walkers": 3000000
+    },
+    {
+      "budget": 0.5,
+      "eps": 0.2,
+      "event_fraction_in_window": 0.332122,
+      "file": "cell_m3_eps0.2_B0.5.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.372859,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.630000000000001
+      ],
+      "refined": false,
+      "runtime_seconds": 94.74345250000624,
+      "walkers": 1000000
+    },
+    {
+      "budget": 0.5,
+      "eps": 0.2,
+      "event_fraction_in_window": 0.33211233333333334,
+      "file": "cell_m3_eps0.2_B0.5_refined.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.3728186666666667,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.650000000000001
+      ],
+      "refined": true,
+      "runtime_seconds": 275.16141341699404,
+      "walkers": 3000000
+    },
+    {
+      "budget": 1.0,
+      "eps": 0.2,
+      "event_fraction_in_window": 0.544327,
+      "file": "cell_m3_eps0.2_B1.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.596552,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.630000000000001
+      ],
+      "refined": false,
+      "runtime_seconds": 81.99109320900607,
+      "walkers": 1000000
+    },
+    {
+      "budget": 2.0,
+      "eps": 0.2,
+      "event_fraction_in_window": 0.772082,
+      "file": "cell_m3_eps0.2_B2.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.817958,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7900000000000003,
+        1.590000000000001
+      ],
+      "refined": false,
+      "runtime_seconds": 64.56873245799943,
+      "walkers": 1000000
+    },
+    {
+      "budget": 4.0,
+      "eps": 0.2,
+      "event_fraction_in_window": 0.924658,
+      "file": "cell_m3_eps0.2_B4.json",
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.949344,
+      "m": 3,
+      "mode_count": 2,
+      "passes": false,
+      "peak_times": [
+        0.7700000000000002,
+        1.530000000000001
+      ],
+      "refined": false,
+      "runtime_seconds": 48.59888708399376,
+      "walkers": 1000000
+    }
+  ],
+  "grid": {
+    "bandwidth": 0.04,
+    "budget": [
+      0.125,
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "dt": 0.001,
+    "eps": [
+      0.05,
+      0.075,
+      0.1,
+      0.125,
+      0.15,
+      0.175,
+      0.2,
+      0.25
+    ],
+    "grid_walkers": 1000000,
+    "m_weights": {
+      "2": [
+        0.5,
+        0.5
+      ],
+      "3": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    "refine_walkers": 3000000,
+    "seed": 20260813,
+    "tmax": 4.0,
+    "window": [
+      0.5,
+      3.5
+    ]
+  },
+  "stream": "w1_phase_diagram",
+  "theory_boundary": {
+    "2": {
+      "boundary_eps_interval": null,
+      "eps_losing_m_maxima": [],
+      "eps_retaining_m_maxima": [
+        0.05,
+        0.075,
+        0.1,
+        0.125,
+        0.15,
+        0.175,
+        0.2,
+        0.25
+      ],
+      "g_maxima_by_eps": {
+        "0.05": 2,
+        "0.075": 2,
+        "0.1": 2,
+        "0.125": 2,
+        "0.15": 2,
+        "0.175": 2,
+        "0.2": 2,
+        "0.25": 2
+      }
+    },
+    "3": {
+      "boundary_eps_interval": [
+        0.2,
+        0.25
+      ],
+      "eps_losing_m_maxima": [
+        0.25
+      ],
+      "eps_retaining_m_maxima": [
+        0.05,
+        0.075,
+        0.1,
+        0.125,
+        0.15,
+        0.175,
+        0.2
+      ],
+      "g_maxima_by_eps": {
+        "0.05": 3,
+        "0.075": 3,
+        "0.1": 3,
+        "0.125": 3,
+        "0.15": 3,
+        "0.175": 3,
+        "0.2": 3,
+        "0.25": 2
+      }
+    }
+  },
+  "verdict_rule": "cell verdict = classifier mode count (5 sigma + 5% rule) == m",
+  "wall_seconds": 0.07206350000342354
+}

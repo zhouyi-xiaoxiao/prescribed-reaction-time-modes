@@ -1,0 +1,74 @@
+% Input asset for encounter_multimodal_prr_v2.tex
+\begin{table}[!t]
+\caption{Finite-window design recipe implied by Theorem~1.  Each step
+cites the statement that licenses it; the recipe prescribes modality only
+inside the declared window $I$.
+\label{tab:design-recipe}}
+\begin{ruledtabular}
+\begin{tabular}{p{0.94\columnwidth}}
+\textbf{Given} finite $d\ge2$ and $m\ge1$, a window
+$I=[\tau,T]\subset(0,\infty)$, and target times
+$\tau<t_1<\cdots<t_m<T$:\\[3pt]
+\textbf{(1) Transport.}  Choose $(\gamma,z_0,\bar z)$ with
+$z_0\ne\bar z$ so that the midpoint mean
+$\mu(t)=\bar z+(z_0-\bar z)\e^{-\gamma t}$ traverses the design range
+monotonically with $x'(t)$ bounded away from zero on $I$
+[Eq.~\eqref{eq:exact-m-centres}].  On a compact window $x'>0$ holds
+automatically; the quantitative point is to keep
+$T\lesssim{}$a few $\gamma^{-1}$ so $x'(t_m)$ is not exponentially
+small (late peaks widen as $\sigma/x'(t_j)$); at the $m=3$ anchors these
+temporal widths are $0.07,0.15,0.50$ at $\varepsilon=0.1$ and
+$0.14,0.30,1.01$ at $\varepsilon=0.2$, the last exceeding the remaining
+window $T-t_3=0.7$, so choose $T-t_m$ larger than the last width to keep the
+final peak inside $I$.\\[3pt]
+\textbf{(2) Support.}  Place the slab centres at $c_j=x(t_j)$,
+i.e.\ physical centres $\mu(t_j)$
+[Eq.~\eqref{eq:exact-m-centres}].\\[3pt]
+\textbf{(3) Width.}  Choose $\varepsilon$ (and $\rho$) so that
+$\sigma$ of Eq.~\eqref{eq:exact-m-mixture} obeys
+$\min_j(c_{j+1}-c_j)\ge C\sigma$ with $C\approx2.3$.  For near-equal
+weights the crossover analysis
+[Eqs.~\eqref{eq:exact-m-crossover}--\eqref{eq:exact-m-valley}] then yields
+one valley per adjacent gap with nonadjacent components exponentially
+small; unbalanced weights shift the crossover by
+$\sigma^2\log(w_j/w_{j+1})/(c_{j+1}-c_j)$ and can remove the valley
+altogether (at $2.3\sigma$ a two-slab mixture is already unimodal for
+weights $0.56/0.44$), so reduce $\varepsilon$ further for a wide
+allocation family and rely on step (4).
+Theorem~1 guarantees only that some $\varepsilon<\varepsilon_0$ works;
+$C\approx2.3$ is a practical proxy for near-equal weights, slightly above the equal-weight
+two-Gaussian bimodality threshold $2\sigma$.\\[3pt]
+\textbf{(4) Verify the free clock.}  Evaluate
+$G_{\varepsilon,\bm w}(t)=a_\varepsilon(t)H_{\sigma,\bm w}(x(t))$
+[Eqs.~\eqref{eq:exact-m-factorization}--\eqref{eq:exact-m-mixture}]
+on $I$---a cheap one-dimensional computation; the contact factor
+$c_{d,\varepsilon}(t)$ follows from Gaussian and wrapped-Gaussian
+marginals---and confirm exactly $m$ nondegenerate maxima and $m-1$
+nondegenerate minima, with clear root separation, curvature signs, and
+endpoint slopes.\\[3pt]
+\textbf{(5) Budget.}  Theorem~1 guarantees the complete signature for
+$B<B_{\rm top}(\varepsilon;\mathcal W_{w_*})$, where $B_{\rm top}$ is the
+topology-retention threshold uniform over the declared allocation
+family; equivalently, $f_{B,\varepsilon,\bm w}/B$ inherits the complete
+stationary signature
+of $G_{\varepsilon,\bm w}$ [Theorem~1;
+Eqs.~\eqref{eq:mixed-jet},~\eqref{eq:exact-m-weak-budget}].  The
+theorem asserts that this threshold is positive.  For one fixed allocation,
+the Supplemental Material gives a sufficient expression
+$B_{\rm cert}(\varepsilon;\bm w,\{U_i\})
+\le B_{\rm top}(\varepsilon;\{\bm w\})$; its displayed decimal evaluations
+are high-precision floating-point values, not interval certificates.  At
+practical scales, use the operational classifier crossing
+$B_{\rm op}(\varepsilon;m,\bm w,\mathcal P)$ only as a separate numerical
+gate and re-verify $f$ directly at the chosen $B$
+(Sec.~\ref{sec:finite-scope}).\\[3pt]
+\textit{Caveat (quantifier order).}  The choices are sequential: the
+geometry and admissible scales may depend on $(d,m)$; one first fixes
+$\varepsilon<\varepsilon_0$ and only then
+$B<B_{\rm top}(\varepsilon;\mathcal W_{w_*})$.  Nothing
+is claimed about modality outside $I$, about an event-mass floor, or
+about uniformity of $\varepsilon_0$ or $B_{\rm top}$ in $d$ or $m$
+(Secs.~\ref{sec:finite-scope} and~\ref{sec:discussion}).\\
+\end{tabular}
+\end{ruledtabular}
+\end{table}

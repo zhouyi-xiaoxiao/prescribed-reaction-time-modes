@@ -1,0 +1,49 @@
+% Input asset for encounter_multimodal_prr_v2_supplement.tex
+
+\emph{Order-of-magnitude laboratory anchor.---}The construction is stated
+in dimensionless form, with particle diffusivity
+$D=\varepsilon^2D_0$.  Consequently, choosing
+$L_0=1~\mu\mathrm m$, $t_0=1~\mathrm s$, $D_0=1$, and
+$\varepsilon=0.1$ gives the physical diffusivity
+$D_{\rm phys}=0.01~\mu\mathrm m^2/\mathrm s$, rather than
+$1~\mu\mathrm m^2/\mathrm s$.  This slow-diffusion anchor is appropriate
+to a confined colloid or a particle in a viscous medium.  If instead one
+fixes $D_{\rm phys}=1~\mu\mathrm m^2/\mathrm s$ while retaining the same
+dimensionless parameters, then $t_0=0.01~\mathrm s$; all rates below are
+multiplied by $100$ and the window becomes $5$--$35~\mathrm{ms}$.
+Table~\ref{tab:units-mapping} records both conversions.  The dimensionless
+transverse period is $W=1$, matching the simulated process; replacing it
+by $W=2$ would define a different torus and would require a new numerical
+evaluation.  The decimal entries below are ordinary floating-point
+conversions, not interval-certified inequalities, and no experimental
+realization is claimed.
+
+\begin{table*}[!t]
+\caption{Physical-unit conversion of the simulated $d=2$, $m=3$ example,
+with equal weights $w_j=1/3$, $\varepsilon=0.1$, $\rho=1$, $D_0=1$,
+$W=1$, and $L_0=1~\mu\mathrm m$.  The main column uses $t_0=1~\mathrm s$;
+parentheses give the alternative $t_0=0.01~\mathrm s$ that realizes
+$D_{\rm phys}=1~\mu\mathrm m^2/\mathrm s$.  Values are indicative
+floating-point conversions, not a validated parameter set.
+\label{tab:units-mapping}}
+\setlength{\tabcolsep}{1.4pt}
+\begin{ruledtabular}
+\begin{tabular}{@{}llll@{}}
+Dimensionless quantity & Value used & Physical value & Interpretation\\
+\hline
+length unit $L_0$ & $1$ & $1~\mu\mathrm m$ & reference pattern scale\\
+time unit $t_0$ & $1$ & $1~\mathrm s$ ($0.01~\mathrm s$) & slow-diffusion (unit-diffusivity) anchor\\
+reference coefficient $D_0$ & $1$ & $1~\mu\mathrm m^2/\mathrm s$ ($100~\mu\mathrm m^2/\mathrm s$) & not the particle diffusivity\\
+particle diffusivity $D=\varepsilon^2D_0$ & $0.01$ & $0.01~\mu\mathrm m^2/\mathrm s$ ($1~\mu\mathrm m^2/\mathrm s$) & coefficient in the generator\\
+Ornstein--Uhlenbeck rate $\gamma$ & $1$ & $1~\mathrm s^{-1}$ ($100~\mathrm s^{-1}$) & rate scales as $t_0^{-1}$\\
+contact radius $a$ & $0.4$ & $0.4~\mu\mathrm m$ & satisfies $a<W/2$\\
+slab width $\varepsilon\rho$ & $0.1$ & $100~\mathrm{nm}$ & longitudinal Gaussian width\\
+transverse period $W$ & $1$ & $1~\mu\mathrm m$ & identical to the simulated torus\\
+window $[\tau,T]$ & $[0.5,3.5]$ & $0.5$--$3.5~\mathrm s$ ($5$--$35~\mathrm{ms}$) & rates and times rescale together\\
+matched-law contact factor & $c(\tau)\simeq0.986$, $c(T)\simeq0.770$ & dimensionless & floating-point evaluation\\
+budget $B$ & $1$ & $B_{\rm phys}=1~\mu\mathrm m^2/\mathrm s$ ($100~\mu\mathrm m^2/\mathrm s$) & $B_{\rm phys}=B L_0^d/t_0$\\
+one-slab peak rate at $B=1$ & $[3\sqrt{2\pi}\,\varepsilon\rho W]^{-1}\simeq1.33$ & $1.33~\mathrm s^{-1}$ ($133~\mathrm s^{-1}$) & $w_j=1/3$, $d=2$\\
+operational classifier crossing & $B_{\rm op}\simeq3.57$ & protocol-dependent & numerical gate only; no theorem claim\\
+\end{tabular}
+\end{ruledtabular}
+\end{table*}

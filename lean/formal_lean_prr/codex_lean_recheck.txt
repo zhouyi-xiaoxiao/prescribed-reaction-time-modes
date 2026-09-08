@@ -1,0 +1,21 @@
+`lake build` passed with `Build completed successfully (3607 jobs).` (exit 0). All 138 consolidated entries contain exactly `[propext, Classical.choice, Quot.sound]`; nine independent axiom/satisfiability checks passed. The \(\hat\kappa\) theorem genuinely reaches the displayed \((1-\lambda)^{-1}(1+t^2)^{(d+1)/4}\) shape, and the L5 types now explicitly assert `Set.Finite`.
+
+L1–L5, L7, L8, and the L9 re-anchoring are faithful. L6 remains incomplete, while `newton_kernel_root_bound` is still misdescribed as proving a “unique zero” rather than a unique fixed point. The SM sentence overclaims the coverage of the two independent encodings.
+
+Detailed evidence: `/Users/ae23069/.local-build/formal_lean_prr/audit2_report.txt`. All 26 protected files retained their original hashes.
+
+```json
+{
+  "dispositions": "issues",
+  "regressions": [
+    "L6 residual: the every-public-theorem anchoring rule is still violated by gaussN_nonneg and several ZeroBound public helpers",
+    "L9 wording overclaim: newton_kernel_root_bound proves a unique fixed point but its doc/header calls it a unique zero",
+    "ExpPolyZeros header is stale: it says distinct-only despite the delivered multiplicity theorem"
+  ],
+  "sm_sentence_verdict": "overclaims",
+  "overall": "needs-more-work"
+}
+```
+
+
+EXIT: 0

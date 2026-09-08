@@ -1,0 +1,105 @@
+`lake build` passed on Lean 4.32.0-rc1: literal result `Build completed successfully (3607 jobs).`, exit `0`. The declaration sweep found no executable `sorry`, `admit`, `axiom`, or `opaque`; 28/28 independently selected principal theorems had exactly `[propext, Classical.choice, Quot.sound]`. Concrete satisfiability witnesses compiled, exit `0`. All 24 original source/config/TEX hashes match `SOURCE_HASHES_pre_audit.txt`; no existing source was modified.
+
+Changed branch/field: audit fixture copy / added arithmetic example `example : (1 : ℝ) + 1 = 2 := by norm_num`.
+
+Artifacts: MODIFIED_FILE `/Users/ae23069/.local-build/formal_lean_prr/audit_MODIFIED_FILE.lean`; DIFF_FILE `/Users/ae23069/.local-build/formal_lean_prr/audit_DIFF_FILE.patch`; VERIFICATION `/Users/ae23069/.local-build/formal_lean_prr/audit_VERIFICATION.txt`; ROLLBACK `/Users/ae23069/.local-build/formal_lean_prr/audit_ROLLBACK.sh`.
+
+BASELINE—command `export PATH="$HOME/.elan/bin:$PATH"; lake env lean audit_fixture_original.lean > audit_fixture_baseline.out 2>&1`; input `audit_fixture_original.lean`; literal output empty; exit `0`. MODIFIED—same command with `audit_MODIFIED_FILE.lean`/`audit_fixture_modified.out`; literal output empty; exit `0`. ROLLBACK—`cp audit_MODIFIED_FILE.lean audit_rollback_test.lean; ./audit_ROLLBACK.sh "$PWD/audit_rollback_test.lean"; cmp -s audit_fixture_original.lean audit_rollback_test.lean; lake env lean audit_rollback_test.lean`; input `audit_rollback_test.lean`; output `ROLLBACK_RESTORED=YES`; statuses `0/0/0`; restored hash/behavior equals baseline, while MODIFIED_FILE remains changed.
+
+```json
+{
+  "soundness": "clean",
+  "axiom_footprint": "standard-only",
+  "findings": [
+    {
+      "id": "L1",
+      "severity": "major",
+      "module": "FormalPRR/B0ChainKernel.lean",
+      "theorem": "file-level SCOPE NOTE",
+      "claim": "Lines 19-25 claim that the module formalizes every self-contained real-arithmetic inequality or identity in the cited B0 lemma chain.",
+      "evidence": "The TEX chain at tex_anchors/b0_quantitative_bound.tex:294-400 and 411-555 additionally contains unformalized parallel and transverse real-part bounds, the legs(b) tangent/argument bound, the parallel penalty inequality, heterogeneous block-product assembly with the two Young factors, the weighted-mixture S_w bound, absorption(b), and the full exponential/Pi aggregation. The Lean file contains selected scalar, Gaussian-integral, normalization, margin, and tail kernels rather than every self-contained step.",
+      "fix": "Replace 'every' with 'selected scalar, Gaussian-integral, and measure-theoretic kernels' and enumerate the omissions, or formalize the missing real-arithmetic assembly."
+    },
+    {
+      "id": "L2",
+      "severity": "major",
+      "module": "FormalPRR/B0ChainKernel.lean",
+      "theorem": "kappa_block_pow",
+      "claim": "The docstring says the theorem represents the scalar-block product and that taking fourth roots recovers the exact hat-kappa display.",
+      "evidence": "Lines 208-218 prove only ((1/cos theta)^2)^n <= (1+t^2)^n for one repeated angle. The cited TEX at lines 394-400 assembles potentially heterogeneous block angles and exactly two (1-lambda)^(-1/2) Young factors, producing (1-lambda)^(-1)(1+t_theta^2)^((d+1)/4). Neither the heterogeneous product nor the lambda factor occurs in the theorem type.",
+      "fix": "Prove a Finset product theorem for per-block angles under individual tangent bounds, incorporate the two Young factors, and derive the exact displayed hat-kappa; otherwise scope-note this theorem as only one scalar ingredient."
+    },
+    {
+      "id": "L3",
+      "severity": "major",
+      "module": "FORMALIZATION_TARGETS.md",
+      "theorem": "A4/A5 target inventory",
+      "claim": "The package target document identifies the current PRR sources as the source of truth for every Lean theorem and assigns SeedConditioning and NewtonKernel to present-paper A4/A5.",
+      "evidence": "FORMALIZATION_TARGETS.md:3,20-28,40 conflicts with FormalPRR.lean:20-22 and the explicit module scope notes, which classify SeedConditioning, NewtonKernel, NewtonContraction, and SigmaBound as JCP companion kernels. The actual companion displays do exist at COMPANION_jcp_supplement.tex:1934-1943 and 1952-1983, and no in-scope module imports a companion module, but the package inventory still misclassifies their provenance.",
+      "fix": "Update FORMALIZATION_TARGETS.md so A4/A5 are explicitly JCP companion targets, identify B0ChainKernel as the present-submission arithmetic-chain deliverable, and synchronize the project-layout list with FormalPRR.lean."
+    },
+    {
+      "id": "L4",
+      "severity": "minor",
+      "module": "FormalPRR/B0ChainKernel.lean",
+      "theorem": "radius_penalty_closed_form",
+      "claim": "The docstring quotes the paper's conclusion that the expression is uniformly O(1) in epsilon.",
+      "evidence": "Lines 407-421 prove the pointwise algebraic identity only. The theorem has no uniform epsilon quantification or bound and does not encode the paper's R1 condition r0 <= tau/2 or a fixed lambda.",
+      "fix": "State explicitly that only the identity is machine-checked, or add a uniform bound under R1 and the fixed-parameter hypotheses used by the TEX."
+    },
+    {
+      "id": "L5",
+      "severity": "minor",
+      "module": "FormalPRR/ZeroBound.lean",
+      "theorem": "affine_times_exp_ncard_le; expPoly_zeros_ncard_le; expPoly_one/two/three_zeros_*",
+      "claim": "Several public theorem docstrings describe their standalone results as finiteness or an at-most-N zero count.",
+      "evidence": "The types at lines 105-106 and 290-307 expose only Set.ncard inequalities. Mathlib defines ncard of an infinite set as zero, so those types alone do not assert finiteness. The faithful AtMostZeros core and the separate expPoly_zeros_finite theorem repair the package-level mathematics, so this is a public-API/docstring defect rather than an unsound zero bound.",
+      "fix": "Return a conjunction of Set.Finite and the ncard bound, or make each docstring explicitly require combination with expPoly_zeros_finite or the AtMostZeros theorem."
+    },
+    {
+      "id": "L6",
+      "severity": "minor",
+      "module": "multiple in-scope modules",
+      "theorem": "public helper theorem inventory",
+      "claim": "FORMALIZATION_TARGETS.md requires every public theorem to carry a docstring naming its source display or lemma.",
+      "evidence": "CrossoverBounds.q_pos and q_nonneg have no docstrings; its spacing and Gaussian-domination helpers lack exact TEX labels; GaussianMixture public theorems generally rely on file-level T1-T4 prose; and multiple ExpPolyZeros/ZeroBound generic helpers have no individual source anchor. Principal paper-facing theorems were checked and their formulas are accurate, but the literal every-public-theorem provenance rule is unmet.",
+      "fix": "Add exact TEX labels to paper-facing declarations; mark generic proof machinery private or document it as an internal helper with no direct paper display."
+    },
+    {
+      "id": "L7",
+      "severity": "minor",
+      "module": "FormalPRR/BudgetThreshold.lean",
+      "theorem": "strictMono_Ec",
+      "claim": "Its docstring quotes the full Step 1 statement that Ec is continuous, strictly increasing, and zero at the origin.",
+      "evidence": "BudgetThreshold proves strictMono_Ec and Ec_zero but exports no Continuous Ec theorem. BZeroThreshold proves continuity for its generic Eexp without instantiating or identifying it with Ec. The exact Ec and Bcert constants and the two-sided inversion are otherwise correct.",
+      "fix": "Add continuous_E, continuous_Ec, and preferably continuous_Ewt, or scope-note that continuity is not instantiated in BudgetThreshold."
+    },
+    {
+      "id": "L8",
+      "severity": "minor",
+      "module": "FormalPRR/BZeroThreshold.lean",
+      "theorem": "explicit_is_threshold",
+      "claim": "The docstring says the closed form is the threshold produced by the IVT theorem threshold_wd.",
+      "evidence": "The theorem type at lines 142-146 states only root equality and positivity; it neither quantifies over an IVT-produced threshold witness nor invokes threshold_wd. The stronger uniqueness package is available in explicit_log_form, but the stated corollary does not itself establish the advertised identification.",
+      "fix": "Quantify over a threshold_wd witness and prove equality by strict-monotone uniqueness, or soften the docstring to root equality and positivity."
+    },
+    {
+      "id": "L9",
+      "severity": "minor",
+      "module": "FormalPRR/SeedConditioning.lean; FormalPRR/NewtonKernel.lean; FormalPRR/NewtonContraction.lean; FormalPRR/SigmaBound.lean",
+      "theorem": "companion provenance headers",
+      "claim": "Some headers cite present-ecosystem equation labels or use initial A4/A5 'paper full-proof' wording despite later companion scope notes.",
+      "evidence": "The labels eq:fold-slice, eq:contraction-derivative, eq:contraction-residual, and eq:root-displacement cited by SeedConditioning/NewtonKernel do not occur in the mirrored TEX files. NewtonContraction and SigmaBound initially say 'paper: full-proof' before later declaring companion status. The genuine JCP anchors are COMPANION_jcp_supplement.tex:1934-1943 and 1952-1983.",
+      "fix": "Remove the nonexistent present-paper labels and cite the exact companion JCP fold-transfer section throughout each header and theorem docstring."
+    }
+  ],
+  "scope_honesty": {
+    "strawman_found": true,
+    "details": "No vacuous central hypothesis family was found: audit_satisfiability.lean compiled concrete witnesses for the multiplicity and distinct-zero bounds, both mixture encodings, nonadjacent smallness, both threshold routes, B0 margins, WindowSignature, and seed conditioning. The multiplicity certificate via iterated-derivative vanishing is semantically adequate, the two mixture encodings and two threshold encodings are genuinely independent, BudgetThreshold's Ec/Ewt constants match the TEX, and WindowSignature explicitly disclaims the exact-m existence half. The strawman is localized to kappa_block_pow being materially weaker than its exact-display docstring and to the B0 file's false 'every self-contained step' scope claim. The Sigma proxy connection is correctly stated: SigmaBound concludes only |det J|/||J||F, while SeedConditioning separately proves sigmaMin*sigmaMax=|det| and sigmaMax<=||J||F."
+  },
+  "companion_split_ok": false,
+  "sm_sentence_verdict": "overclaims",
+  "overall": "needs-fixes"
+}
+```
+CODEX EXIT: 0

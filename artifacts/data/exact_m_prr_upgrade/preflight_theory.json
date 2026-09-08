@@ -1,0 +1,459 @@
+{
+  "w1_theory_grid": [
+    {
+      "eps": 0.05,
+      "g_has_m_window_maxima": true,
+      "m": 2,
+      "n_window_maxima": 2,
+      "sigma_x_space": 0.06123724356957945,
+      "valley_to_peak_ratios": [
+        2.451988695270535e-19
+      ]
+    },
+    {
+      "eps": 0.075,
+      "g_has_m_window_maxima": true,
+      "m": 2,
+      "n_window_maxima": 2,
+      "sigma_x_space": 0.09185586535436917,
+      "valley_to_peak_ratios": [
+        8.336678860637859e-09
+      ]
+    },
+    {
+      "eps": 0.1,
+      "g_has_m_window_maxima": true,
+      "m": 2,
+      "n_window_maxima": 2,
+      "sigma_x_space": 0.1224744871391589,
+      "valley_to_peak_ratios": [
+        4.058821261553945e-05
+      ]
+    },
+    {
+      "eps": 0.125,
+      "g_has_m_window_maxima": true,
+      "m": 2,
+      "n_window_maxima": 2,
+      "sigma_x_space": 0.15309310892394862,
+      "valley_to_peak_ratios": [
+        0.0020137161861148965
+      ]
+    },
+    {
+      "eps": 0.15,
+      "g_has_m_window_maxima": true,
+      "m": 2,
+      "n_window_maxima": 2,
+      "sigma_x_space": 0.18371173070873834,
+      "valley_to_peak_ratios": [
+        0.01651188841475084
+      ]
+    },
+    {
+      "eps": 0.175,
+      "g_has_m_window_maxima": true,
+      "m": 2,
+      "n_window_maxima": 2,
+      "sigma_x_space": 0.21433035249352805,
+      "valley_to_peak_ratios": [
+        0.05856188198013997
+      ]
+    },
+    {
+      "eps": 0.2,
+      "g_has_m_window_maxima": true,
+      "m": 2,
+      "n_window_maxima": 2,
+      "sigma_x_space": 0.2449489742783178,
+      "valley_to_peak_ratios": [
+        0.1336438269911444
+      ]
+    },
+    {
+      "eps": 0.25,
+      "g_has_m_window_maxima": true,
+      "m": 2,
+      "n_window_maxima": 2,
+      "sigma_x_space": 0.30618621784789724,
+      "valley_to_peak_ratios": [
+        0.3549748215502776
+      ]
+    },
+    {
+      "eps": 0.05,
+      "g_has_m_window_maxima": true,
+      "m": 3,
+      "n_window_maxima": 3,
+      "sigma_x_space": 0.06123724356957945,
+      "valley_to_peak_ratios": [
+        1.328892383787458e-14,
+        4.9730443145582946e-05
+      ]
+    },
+    {
+      "eps": 0.075,
+      "g_has_m_window_maxima": true,
+      "m": 3,
+      "n_window_maxima": 3,
+      "sigma_x_space": 0.09185586535436917,
+      "valley_to_peak_ratios": [
+        1.0253784559595103e-06,
+        0.018716901724187735
+      ]
+    },
+    {
+      "eps": 0.1,
+      "g_has_m_window_maxima": true,
+      "m": 3,
+      "n_window_maxima": 3,
+      "sigma_x_space": 0.1224744871391589,
+      "valley_to_peak_ratios": [
+        0.0006037706383395688,
+        0.14768640309573625
+      ]
+    },
+    {
+      "eps": 0.125,
+      "g_has_m_window_maxima": true,
+      "m": 3,
+      "n_window_maxima": 3,
+      "sigma_x_space": 0.15309310892394862,
+      "valley_to_peak_ratios": [
+        0.011480949801951627,
+        0.37687586360270625
+      ]
+    },
+    {
+      "eps": 0.15,
+      "g_has_m_window_maxima": true,
+      "m": 3,
+      "n_window_maxima": 3,
+      "sigma_x_space": 0.18371173070873834,
+      "valley_to_peak_ratios": [
+        0.05571457804641053,
+        0.6180904425499826
+      ]
+    },
+    {
+      "eps": 0.175,
+      "g_has_m_window_maxima": true,
+      "m": 3,
+      "n_window_maxima": 3,
+      "sigma_x_space": 0.21433035249352805,
+      "valley_to_peak_ratios": [
+        0.14036367087583163,
+        0.8172696993483829
+      ]
+    },
+    {
+      "eps": 0.2,
+      "g_has_m_window_maxima": true,
+      "m": 3,
+      "n_window_maxima": 3,
+      "sigma_x_space": 0.2449489742783178,
+      "valley_to_peak_ratios": [
+        0.2465827746816418,
+        0.9480158719354008
+      ]
+    },
+    {
+      "eps": 0.25,
+      "g_has_m_window_maxima": false,
+      "m": 3,
+      "n_window_maxima": 2,
+      "sigma_x_space": 0.30618621784789724,
+      "valley_to_peak_ratios": [
+        0.5182707769629751
+      ]
+    }
+  ],
+  "w2_m3_eps_retaining_3_maxima": [
+    0.05,
+    0.1,
+    0.15,
+    0.2
+  ],
+  "w4_candidates": {
+    "A_mu_2.8_to_0.4_step0.6": {
+      "budget": 1.0,
+      "contact_interior_check": {
+        "contact_a": 0.4,
+        "margin_eta": 0.33934693402873667,
+        "passed": true,
+        "sup_deterministic_relative_norm": 0.06065306597126335,
+        "window": [
+          0.5,
+          3.5
+        ]
+      },
+      "eps": 0.1,
+      "first_order_depleted": {
+        "last_peak_height_over_max": 0.49413385058911874,
+        "last_peak_prominence_over_max": 0.4354186643345495,
+        "n_window_maxima": 5,
+        "peak_heights": [
+          0.5827039263763429,
+          0.5250802650034339,
+          0.46114301145006503,
+          0.38704207930647,
+          0.2879337348937407
+        ],
+        "peak_times": [
+          1.0479799874921827,
+          1.2894183864915572,
+          1.6055284552845528,
+          2.0709818636647905,
+          2.947129455909944
+        ],
+        "valley_to_peak_ratios": [
+          0.10524131278133467,
+          0.10676324241829048,
+          0.10960274218642692,
+          0.1188244565406065
+        ]
+      },
+      "g": {
+        "last_peak_height_over_max": 0.8484171409058081,
+        "last_peak_prominence_over_max": 0.7615242412488801,
+        "n_window_maxima": 5,
+        "peak_heights": [
+          0.6012681008973805,
+          0.5828134154393062,
+          0.5618240736373727,
+          0.5379794849586388,
+          0.5101261630812205
+        ],
+        "peak_times": [
+          1.05046904315197,
+          1.2894183864915572,
+          1.6080175109443402,
+          2.0784490306441525,
+          2.9919324577861164
+        ],
+        "valley_to_peak_ratios": [
+          0.10128375598463013,
+          0.1015726992890288,
+          0.10184860855861966,
+          0.1024176616282849
+        ]
+      },
+      "mu_centres": [
+        2.8,
+        2.2,
+        1.6,
+        1.0,
+        0.4
+      ],
+      "target_times": [
+        1.0498221244986776,
+        1.2909841813155658,
+        1.6094379124341003,
+        2.0794415416798357,
+        2.995732273553991
+      ],
+      "total_exposure_Lambda": 0.837716870436438,
+      "z0": 8.0
+    },
+    "B_mu_2.4_to_0.4_step0.5": {
+      "budget": 1.0,
+      "contact_interior_check": {
+        "contact_a": 0.4,
+        "margin_eta": 0.33934693402873667,
+        "passed": true,
+        "sup_deterministic_relative_norm": 0.06065306597126335,
+        "window": [
+          0.5,
+          3.5
+        ]
+      },
+      "eps": 0.1,
+      "first_order_depleted": {
+        "last_peak_height_over_max": 0.48049841622110845,
+        "last_peak_prominence_over_max": 0.3383538711033309,
+        "n_window_maxima": 5,
+        "peak_heights": [
+          0.568781683336698,
+          0.5087046540159592,
+          0.44314504168206087,
+          0.3685846038888309,
+          0.2732986980188594
+        ],
+        "peak_times": [
+          1.2023014383989994,
+          1.4337836147592244,
+          1.7374484052532833,
+          2.1730331457160728,
+          2.947129455909944
+        ],
+        "valley_to_peak_ratios": [
+          0.2638503117353333,
+          0.2677510141523435,
+          0.2749873674781403,
+          0.29582729166034877
+        ]
+      },
+      "g": {
+        "last_peak_height_over_max": 0.8657337601925399,
+        "last_peak_prominence_over_max": 0.6450202889494532,
+        "n_window_maxima": 5,
+        "peak_heights": [
+          0.5893865506727173,
+          0.5729493111371896,
+          0.5544872111496437,
+          0.5339276875974214,
+          0.5102518347208025
+        ],
+        "peak_times": [
+          1.2047904940587868,
+          1.4362726704190119,
+          1.742426516572858,
+          2.182989368355222,
+          2.9919324577861164
+        ],
+        "valley_to_peak_ratios": [
+          0.25264698769906935,
+          0.25319483574406976,
+          0.2538525088186772,
+          0.25494381921065423
+        ]
+      },
+      "mu_centres": [
+        2.4,
+        1.9,
+        1.4,
+        0.9,
+        0.4
+      ],
+      "target_times": [
+        1.2039728043259361,
+        1.4375876555074412,
+        1.742969305058623,
+        2.184802057337662,
+        2.995732273553991
+      ],
+      "total_exposure_Lambda": 0.8903524723770843,
+      "z0": 8.0
+    },
+    "C_mu_3.0_to_0.6_step0.6": {
+      "budget": 1.0,
+      "contact_interior_check": {
+        "contact_a": 0.4,
+        "margin_eta": 0.33934693402873667,
+        "passed": true,
+        "sup_deterministic_relative_norm": 0.06065306597126335,
+        "window": [
+          0.5,
+          3.5
+        ]
+      },
+      "eps": 0.1,
+      "first_order_depleted": {
+        "last_peak_height_over_max": 0.5430714810139684,
+        "last_peak_prominence_over_max": 0.4811313201489395,
+        "n_window_maxima": 5,
+        "peak_heights": [
+          0.5888892713904291,
+          0.5343802709852907,
+          0.47395536588125015,
+          0.40530566917719396,
+          0.31980896876723713
+        ],
+        "peak_times": [
+          0.9807754846779237,
+          1.2023014383989994,
+          1.4885428392745466,
+          1.8917698561601002,
+          2.5663039399624767
+        ],
+        "valley_to_peak_ratios": [
+          0.10491227559315816,
+          0.10616430934551593,
+          0.1084106400233488,
+          0.11405526349750583
+        ]
+      },
+      "g": {
+        "last_peak_height_over_max": 0.8568319183442458,
+        "last_peak_prominence_over_max": 0.7692804406102081,
+        "n_window_maxima": 5,
+        "peak_heights": [
+          0.6069353548280962,
+          0.5892426088203229,
+          0.5691763735434883,
+          0.5462736819070494,
+          0.5200415843883032
+        ],
+        "peak_times": [
+          0.9807754846779237,
+          1.2047904940587868,
+          1.491031894934334,
+          1.8967479674796748,
+          2.5887054409005628
+        ],
+        "valley_to_peak_ratios": [
+          0.1012428560637019,
+          0.10145270124939641,
+          0.10176760409274788,
+          0.10218045786999093
+        ]
+      },
+      "mu_centres": [
+        3.0,
+        2.4,
+        1.8,
+        1.2,
+        0.6
+      ],
+      "target_times": [
+        0.9808292530117262,
+        1.2039728043259361,
+        1.491654876777717,
+        1.8971199848858813,
+        2.5902671654458267
+      ],
+      "total_exposure_Lambda": 0.6543529428808394,
+      "z0": 8.0
+    }
+  },
+  "w5_d3_estimate": {
+    "Lambda_total_d2": 1.683556137800777,
+    "Lambda_total_d3": 1.1986578971985578,
+    "budget": 1.0,
+    "contact_factor_ratio_d3_over_d2_at_t2.5": 0.6844906263432643,
+    "eps": 0.1,
+    "f1_d3": {
+      "last_peak_height_over_max": 0.4391225453305176,
+      "last_peak_prominence_over_max": 0.43909539786787966,
+      "n_window_maxima": 2,
+      "peak_heights": [
+        1.1707818118295277,
+        0.5141166892372573
+      ],
+      "peak_times": [
+        0.9882426516572859,
+        2.379624765478424
+      ],
+      "valley_to_peak_ratios": [
+        6.18220652221281e-05
+      ]
+    },
+    "first_order_kill_fraction_at_B1_d3": 0.6984012831092974,
+    "g_d3": {
+      "last_peak_height_over_max": 0.6765776042528795,
+      "last_peak_prominence_over_max": 0.6765459410724093,
+      "n_window_maxima": 2,
+      "peak_heights": [
+        1.3246013076414804,
+        0.8961955793143043
+      ],
+      "peak_times": [
+        0.9981988742964353,
+        2.4766979362101313
+      ],
+      "valley_to_peak_ratios": [
+        4.679903720005081e-05
+      ]
+    }
+  }
+}

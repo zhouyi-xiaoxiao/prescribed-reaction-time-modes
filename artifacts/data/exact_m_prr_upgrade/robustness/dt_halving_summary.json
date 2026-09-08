@@ -1,0 +1,163 @@
+{
+  "analysis": "dt-halving checks at reviewer-sensitive configurations",
+  "interpretation_note": "Interior controls and deliberately boundary-adjacent cases are reported separately; no global dt-stability claim is made.",
+  "mode_count_sensitive_cases": [
+    "m3_phase_boundary"
+  ],
+  "rows": [
+    {
+      "budget": 1.0,
+      "eps": 0.1,
+      "event_fraction_in_window_dt": 0.736914,
+      "event_fraction_in_window_dt_half": 0.737332,
+      "file": "m3_anchor.json",
+      "fraction_abs_z_above_2": 0.03333333333333333,
+      "kill_fraction_delta_dt_half_minus_dt": 0.0009080000000000199,
+      "kill_fraction_dt": 0.775462,
+      "kill_fraction_dt_half": 0.77637,
+      "m": 3,
+      "max_abs_peak_time_delta": 0.020000000000000018,
+      "max_abs_z": 3.2705857721235936,
+      "mean_abs_z": 0.9296732125836703,
+      "mode_count_dt": 3,
+      "mode_count_dt_half": 3,
+      "mode_counts_match": true,
+      "name": "m3_anchor",
+      "peak_time_deltas_dt_half_minus_dt": [
+        0.0,
+        0.020000000000000018,
+        -0.019999999999999574
+      ],
+      "peak_times_dt": [
+        0.7900000000000003,
+        1.570000000000001,
+        2.6300000000000017
+      ],
+      "peak_times_dt_half": [
+        0.7900000000000003,
+        1.590000000000001,
+        2.610000000000002
+      ],
+      "role": "interior_control",
+      "usable_comparison_bins": 30,
+      "walkers_per_run": 500000
+    },
+    {
+      "budget": 0.5,
+      "eps": 0.175,
+      "event_fraction_in_window_dt": 0.363964,
+      "event_fraction_in_window_dt_half": 0.364524,
+      "file": "m3_phase_boundary.json",
+      "fraction_abs_z_above_2": 0.1,
+      "kill_fraction_delta_dt_half_minus_dt": 0.0009859999999999869,
+      "kill_fraction_dt": 0.408044,
+      "kill_fraction_dt_half": 0.40903,
+      "m": 3,
+      "max_abs_peak_time_delta": null,
+      "max_abs_z": 2.6116066712845307,
+      "mean_abs_z": 0.883575390113277,
+      "mode_count_dt": 3,
+      "mode_count_dt_half": 2,
+      "mode_counts_match": false,
+      "name": "m3_phase_boundary",
+      "peak_time_deltas_dt_half_minus_dt": null,
+      "peak_times_dt": [
+        0.7900000000000003,
+        1.610000000000001,
+        2.5900000000000016
+      ],
+      "peak_times_dt_half": [
+        0.7900000000000003,
+        1.610000000000001
+      ],
+      "role": "phase_boundary",
+      "usable_comparison_bins": 30,
+      "walkers_per_run": 500000
+    },
+    {
+      "budget": 3.57,
+      "eps": 0.1,
+      "event_fraction_in_window_dt": 0.975188,
+      "event_fraction_in_window_dt_half": 0.975632,
+      "file": "m3_threshold.json",
+      "fraction_abs_z_above_2": 0.03333333333333333,
+      "kill_fraction_delta_dt_half_minus_dt": 0.000516000000000072,
+      "kill_fraction_dt": 0.981864,
+      "kill_fraction_dt_half": 0.98238,
+      "m": 3,
+      "max_abs_peak_time_delta": 0.0,
+      "max_abs_z": 2.5916202347731994,
+      "mean_abs_z": 0.7694288767239544,
+      "mode_count_dt": 2,
+      "mode_count_dt_half": 2,
+      "mode_counts_match": true,
+      "name": "m3_threshold",
+      "peak_time_deltas_dt_half_minus_dt": [
+        0.0,
+        0.0
+      ],
+      "peak_times_dt": [
+        0.7900000000000003,
+        1.550000000000001
+      ],
+      "peak_times_dt_half": [
+        0.7900000000000003,
+        1.550000000000001
+      ],
+      "role": "operational_threshold",
+      "usable_comparison_bins": 30,
+      "walkers_per_run": 500000
+    },
+    {
+      "budget": 1.0,
+      "eps": 0.1,
+      "event_fraction_in_window_dt": 0.526844,
+      "event_fraction_in_window_dt_half": 0.527196,
+      "file": "m5_anchor.json",
+      "fraction_abs_z_above_2": 0.0,
+      "kill_fraction_delta_dt_half_minus_dt": 1.799999999996249e-05,
+      "kill_fraction_dt": 0.551458,
+      "kill_fraction_dt_half": 0.551476,
+      "m": 5,
+      "max_abs_peak_time_delta": 0.019999999999999574,
+      "max_abs_z": 1.9390893232002704,
+      "mean_abs_z": 0.9267267287203436,
+      "mode_count_dt": 5,
+      "mode_count_dt_half": 5,
+      "mode_counts_match": true,
+      "name": "m5_anchor",
+      "peak_time_deltas_dt_half_minus_dt": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.019999999999999574
+      ],
+      "peak_times_dt": [
+        1.0500000000000005,
+        1.2900000000000007,
+        1.610000000000001,
+        2.070000000000001,
+        2.950000000000002
+      ],
+      "peak_times_dt_half": [
+        1.0500000000000005,
+        1.2900000000000007,
+        1.610000000000001,
+        2.070000000000001,
+        2.9300000000000024
+      ],
+      "role": "interior_control",
+      "usable_comparison_bins": 27,
+      "walkers_per_run": 500000
+    }
+  ],
+  "schema_version": 1,
+  "seed": 20260819,
+  "stable_mode_count_controls": [
+    "m3_anchor",
+    "m5_anchor"
+  ],
+  "walkers_per_run": 500000,
+  "wall_seconds": 0.11249229201348498
+}

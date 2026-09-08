@@ -1,0 +1,1266 @@
+{
+  "b_max": 8.0,
+  "bisect_iterations": 6,
+  "legacy_schema_note": "serialized b0 fields and B0_empirical filenames denote the protocol-defined operational threshold B_op only, not B_top or B_cert",
+  "covariance_aware_note": "PROVENANCE (2026-08-24 covariance-aware reclassification): the per-chain fields status/b0/b0_bracket were written under the superseded peak-only prominence convention. Under the covariance-aware statistic that the article uses as its formal definition (covariance_aware_reclassification.json, key w2_chains) the chain m=3, eps=0.2 has new_status=no_certified_crossing_at_1e6_walkers, so its stored status=bisected, b0=0.2816 and b0_bracket=[0.2726, 0.2909] are superseded; every other chain's verdict is unchanged. See remake_b0_figure_covariance.py for the published figure.",
+  "chains": [
+    {
+      "b0": 6.987069544796675,
+      "b0_bracket": [
+        6.949335341094825,
+        7.025008641493198
+      ],
+      "b0_relative_halfwidth": 0.005429901112802726,
+      "basin_edge_last_g_valley_time": 1.491031894934334,
+      "eps": 0.05,
+      "m": 2,
+      "probe_walkers": 1000000,
+      "probes": [
+        {
+          "budget": 8.0,
+          "file": "probe_m2_eps0.05_B8.json",
+          "mode_count": 1,
+          "peak_times": [
+            0.9700000000000004
+          ],
+          "runtime_seconds": 36.80424233300437,
+          "verdict": false
+        },
+        {
+          "budget": 5.656854249492381,
+          "file": "probe_m2_eps0.05_B5.65685.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.9900000000000004,
+            2.3100000000000014
+          ],
+          "runtime_seconds": 43.406075791994226,
+          "verdict": true
+        },
+        {
+          "budget": 6.727171322029717,
+          "file": "probe_m2_eps0.05_B6.72717.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.9700000000000004,
+            2.3100000000000014
+          ],
+          "runtime_seconds": 41.74599799999851,
+          "verdict": true
+        },
+        {
+          "budget": 7.33603234563737,
+          "file": "probe_m2_eps0.05_B7.33603.json",
+          "mode_count": 1,
+          "peak_times": [
+            0.9700000000000004
+          ],
+          "runtime_seconds": 39.404587458004244,
+          "verdict": false
+        },
+        {
+          "budget": 7.025008641493198,
+          "file": "probe_m2_eps0.05_B7.02501.json",
+          "mode_count": 1,
+          "peak_times": [
+            0.9700000000000004
+          ],
+          "runtime_seconds": 38.303491208993364,
+          "verdict": false
+        },
+        {
+          "budget": 6.874477192489912,
+          "file": "probe_m2_eps0.05_B6.87448.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.9700000000000004,
+            2.290000000000002
+          ],
+          "runtime_seconds": 37.283285582991084,
+          "verdict": true
+        },
+        {
+          "budget": 6.949335341094825,
+          "file": "probe_m2_eps0.05_B6.94934.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.9700000000000004,
+            2.290000000000002
+          ],
+          "runtime_seconds": 40.115163499998744,
+          "verdict": true
+        }
+      ],
+      "status": "bisected",
+      "theory_diagnostics": {
+        "centre_spacings_z": [
+          1.1431777701901742
+        ],
+        "centres_x": [
+          -1.4715177646857693,
+          -0.3283399944955952
+        ],
+        "g_has_m_window_maxima": true,
+        "g_window_max": 3.256520337008248,
+        "last_valley_time": 1.491031894934334,
+        "min_abs_curvature_at_stationary": 1.523441897377249e-14,
+        "n_window_maxima": 2,
+        "n_window_minima": 1,
+        "peaks": [
+          {
+            "cumulative_exposure_Lambda": 0.1667519930913279,
+            "g": 3.256520337008248,
+            "g_second_derivative": -1869.40274680233,
+            "time": 1.0006879299562226
+          },
+          {
+            "cumulative_exposure_Lambda": 0.9986729181816787,
+            "g": 3.214115479993232,
+            "g_second_derivative": -92.67035624171476,
+            "time": 2.499099437148218
+          }
+        ],
+        "sigma_x_space": 0.06123724356957945,
+        "total_exposure_Lambda_to_tmax": 1.8997809186769534,
+        "valley_depths": [
+          {
+            "adjacent_peak_g_min": 3.214115479993232,
+            "valley_g": 7.880974822237435e-19,
+            "valley_time": 1.491031894934334,
+            "valley_to_peak_ratio": 2.451988695270535e-19
+          }
+        ],
+        "valleys": [
+          {
+            "cumulative_exposure_Lambda": 0.3403344774826395,
+            "g": 7.880974822237435e-19,
+            "g_second_derivative": 1.523441897377249e-14,
+            "time": 1.491031894934334
+          }
+        ],
+        "window": [
+          0.5,
+          3.5
+        ]
+      },
+      "w1_bracket": {
+        "b_hi": null,
+        "b_lo": 4.0,
+        "w1_verdicts": {
+          "0.125": true,
+          "0.25": true,
+          "0.5": true,
+          "1.0": true,
+          "2.0": true,
+          "4.0": true
+        }
+      },
+      "wall_seconds": 278.3002654169977,
+      "weights": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "b0": 7.6194533672706966,
+      "b0_bracket": [
+        7.578303926347862,
+        7.660826245588589
+      ],
+      "b0_relative_halfwidth": 0.005429901112802726,
+      "basin_edge_last_g_valley_time": 1.491031894934334,
+      "eps": 0.1,
+      "m": 2,
+      "probe_walkers": 1000000,
+      "probes": [
+        {
+          "budget": 8.0,
+          "file": "probe_m2_eps0.1_B8.json",
+          "mode_count": 1,
+          "peak_times": [
+            0.9500000000000004
+          ],
+          "runtime_seconds": 37.95319404201291,
+          "verdict": false
+        },
+        {
+          "budget": 5.656854249492381,
+          "file": "probe_m2_eps0.1_B5.65685.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.9700000000000004,
+            2.1700000000000017
+          ],
+          "runtime_seconds": 44.933843249993515,
+          "verdict": true
+        },
+        {
+          "budget": 6.727171322029717,
+          "file": "probe_m2_eps0.1_B6.72717.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.9500000000000004,
+            2.1500000000000012
+          ],
+          "runtime_seconds": 42.83984208300535,
+          "verdict": true
+        },
+        {
+          "budget": 7.33603234563737,
+          "file": "probe_m2_eps0.1_B7.33603.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.9500000000000004,
+            2.1500000000000012
+          ],
+          "runtime_seconds": 40.416582083009416,
+          "verdict": true
+        },
+        {
+          "budget": 7.660826245588589,
+          "file": "probe_m2_eps0.1_B7.66083.json",
+          "mode_count": 1,
+          "peak_times": [
+            0.9500000000000004
+          ],
+          "runtime_seconds": 38.79000100000121,
+          "verdict": false
+        },
+        {
+          "budget": 7.4966705364412,
+          "file": "probe_m2_eps0.1_B7.49667.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.9500000000000004,
+            2.1500000000000012
+          ],
+          "runtime_seconds": 37.88536058401223,
+          "verdict": true
+        },
+        {
+          "budget": 7.578303926347862,
+          "file": "probe_m2_eps0.1_B7.5783.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.9500000000000004,
+            2.1500000000000012
+          ],
+          "runtime_seconds": 40.282730916005676,
+          "verdict": true
+        }
+      ],
+      "status": "bisected",
+      "theory_diagnostics": {
+        "centre_spacings_z": [
+          1.1431777701901742
+        ],
+        "centres_x": [
+          -1.4715177646857693,
+          -0.3283399944955952
+        ],
+        "g_has_m_window_maxima": true,
+        "g_window_max": 1.5134578229160678,
+        "last_valley_time": 1.491031894934334,
+        "min_abs_curvature_at_stationary": 0.05976947542895504,
+        "n_window_maxima": 2,
+        "n_window_minima": 1,
+        "peaks": [
+          {
+            "cumulative_exposure_Lambda": 0.14684318415763611,
+            "g": 1.5134578229160678,
+            "g_second_derivative": -219.43831482112762,
+            "time": 0.9981988742964353
+          },
+          {
+            "cumulative_exposure_Lambda": 0.7974600652642635,
+            "g": 1.3070207918368608,
+            "g_second_derivative": -9.575729218742667,
+            "time": 2.4916322701688554
+          }
+        ],
+        "sigma_x_space": 0.1224744871391589,
+        "total_exposure_Lambda_to_tmax": 1.6835561378007766,
+        "valley_depths": [
+          {
+            "adjacent_peak_g_min": 1.3070207918368608,
+            "valley_g": 5.304963779200524e-05,
+            "valley_time": 1.491031894934334,
+            "valley_to_peak_ratio": 4.058821261553945e-05
+          }
+        ],
+        "valleys": [
+          {
+            "cumulative_exposure_Lambda": 0.31755788619198716,
+            "g": 5.304963779200524e-05,
+            "g_second_derivative": 0.05976947542895504,
+            "time": 1.491031894934334
+          }
+        ],
+        "window": [
+          0.5,
+          3.5
+        ]
+      },
+      "w1_bracket": {
+        "b_hi": null,
+        "b_lo": 4.0,
+        "w1_verdicts": {
+          "0.125": true,
+          "0.25": true,
+          "0.5": true,
+          "1.0": true,
+          "2.0": true,
+          "4.0": true
+        }
+      },
+      "wall_seconds": 284.28618362500856,
+      "weights": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "b0": null,
+      "b0_lower_bound": 8.0,
+      "basin_edge_last_g_valley_time": 1.491031894934334,
+      "eps": 0.15,
+      "m": 2,
+      "probe_walkers": 1000000,
+      "probes": [
+        {
+          "budget": 8.0,
+          "file": "probe_m2_eps0.15_B8.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.9300000000000004,
+            2.0500000000000016
+          ],
+          "runtime_seconds": 40.34550675000355,
+          "verdict": true
+        }
+      ],
+      "status": "right_censored",
+      "theory_diagnostics": {
+        "centre_spacings_z": [
+          1.1431777701901742
+        ],
+        "centres_x": [
+          -1.4715177646857693,
+          -0.3283399944955952
+        ],
+        "g_has_m_window_maxima": true,
+        "g_window_max": 0.809608755263702,
+        "last_valley_time": 1.491031894934334,
+        "min_abs_curvature_at_stationary": 2.3281825324716996,
+        "n_window_maxima": 2,
+        "n_window_minima": 1,
+        "peaks": [
+          {
+            "cumulative_exposure_Lambda": 0.11463666952297043,
+            "g": 0.809608755263702,
+            "g_second_derivative": -52.31958440749856,
+            "time": 0.9957098186366479
+          },
+          {
+            "cumulative_exposure_Lambda": 0.6228436199046143,
+            "g": 0.7223337866603349,
+            "g_second_derivative": -2.3281825324716996,
+            "time": 2.494121325828643
+          }
+        ],
+        "sigma_x_space": 0.18371173070873834,
+        "total_exposure_Lambda_to_tmax": 1.3482408288002876,
+        "valley_depths": [
+          {
+            "adjacent_peak_g_min": 0.7223337866603349,
+            "valley_g": 0.011927094883539888,
+            "valley_time": 1.491031894934334,
+            "valley_to_peak_ratio": 0.01651188841475084
+          }
+        ],
+        "valleys": [
+          {
+            "cumulative_exposure_Lambda": 0.25686571499722505,
+            "g": 0.011927094883539888,
+            "g_second_derivative": 2.492468741814138,
+            "time": 1.491031894934334
+          }
+        ],
+        "window": [
+          0.5,
+          3.5
+        ]
+      },
+      "w1_bracket": {
+        "b_hi": null,
+        "b_lo": 4.0,
+        "w1_verdicts": {
+          "0.125": true,
+          "0.25": true,
+          "0.5": true,
+          "1.0": true,
+          "2.0": true,
+          "4.0": true
+        }
+      },
+      "wall_seconds": 40.85857829199813,
+      "weights": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "b0": null,
+      "b0_lower_bound": 8.0,
+      "basin_edge_last_g_valley_time": 1.4935209505941214,
+      "eps": 0.2,
+      "m": 2,
+      "probe_walkers": 1000000,
+      "probes": [
+        {
+          "budget": 8.0,
+          "file": "probe_m2_eps0.2_B8.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.9100000000000004,
+            1.9700000000000013
+          ],
+          "runtime_seconds": 41.61040504199627,
+          "verdict": true
+        }
+      ],
+      "status": "right_censored",
+      "theory_diagnostics": {
+        "centre_spacings_z": [
+          1.1431777701901742
+        ],
+        "centres_x": [
+          -1.4715177646857693,
+          -0.3283399944955952
+        ],
+        "g_has_m_window_maxima": true,
+        "g_window_max": 0.4927865565421419,
+        "last_valley_time": 1.4935209505941214,
+        "min_abs_curvature_at_stationary": 0.8367584130027219,
+        "n_window_maxima": 2,
+        "n_window_minima": 1,
+        "peaks": [
+          {
+            "cumulative_exposure_Lambda": 0.09140852700603073,
+            "g": 0.4927865565421419,
+            "g_second_derivative": -17.80024721731249,
+            "time": 0.9957098186366479
+          },
+          {
+            "cumulative_exposure_Lambda": 0.5025853662182722,
+            "g": 0.4636090759501517,
+            "g_second_derivative": -0.8367584130027219,
+            "time": 2.49661038148843
+          }
+        ],
+        "sigma_x_space": 0.2449489742783178,
+        "total_exposure_Lambda_to_tmax": 1.051846031903893,
+        "valley_depths": [
+          {
+            "adjacent_peak_g_min": 0.4636090759501517,
+            "valley_g": 0.06195849113780641,
+            "valley_time": 1.4935209505941214,
+            "valley_to_peak_ratio": 0.1336438269911444
+          }
+        ],
+        "valleys": [
+          {
+            "cumulative_exposure_Lambda": 0.21118454057978492,
+            "g": 0.06195849113780641,
+            "g_second_derivative": 3.7038045344042754,
+            "time": 1.4935209505941214
+          }
+        ],
+        "window": [
+          0.5,
+          3.5
+        ]
+      },
+      "w1_bracket": {
+        "b_hi": null,
+        "b_lo": 4.0,
+        "w1_verdicts": {
+          "0.125": true,
+          "0.25": true,
+          "0.5": true,
+          "1.0": true,
+          "2.0": true,
+          "4.0": true
+        }
+      },
+      "wall_seconds": 42.1308778750099,
+      "weights": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "b0": 4.154536407845515,
+      "b0_bracket": [
+        4.132099516084914,
+        4.177095129709655
+      ],
+      "b0_relative_halfwidth": 0.005429901112802726,
+      "basin_edge_last_g_valley_time": 2.0286679174484052,
+      "eps": 0.05,
+      "m": 3,
+      "probe_walkers": 1000000,
+      "probes": [
+        {
+          "budget": 8.0,
+          "file": "probe_m3_eps0.05_B8.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.7900000000000003,
+            1.550000000000001
+          ],
+          "runtime_seconds": 36.859770958006266,
+          "verdict": false
+        },
+        {
+          "budget": 5.656854249492381,
+          "file": "probe_m3_eps0.05_B5.65685.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.7900000000000003,
+            1.550000000000001
+          ],
+          "runtime_seconds": 44.51210779200483,
+          "verdict": false
+        },
+        {
+          "budget": 4.756828460010884,
+          "file": "probe_m3_eps0.05_B4.75683.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.7900000000000003,
+            1.570000000000001
+          ],
+          "runtime_seconds": 48.392528416996356,
+          "verdict": false
+        },
+        {
+          "budget": 4.362030930661031,
+          "file": "probe_m3_eps0.05_B4.36203.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.7900000000000003,
+            1.570000000000001
+          ],
+          "runtime_seconds": 47.191205042006914,
+          "verdict": false
+        },
+        {
+          "budget": 4.177095129709655,
+          "file": "probe_m3_eps0.05_B4.1771.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.7900000000000003,
+            1.570000000000001
+          ],
+          "runtime_seconds": 47.264384624999366,
+          "verdict": false
+        },
+        {
+          "budget": 4.0875885946164665,
+          "file": "probe_m3_eps0.05_B4.08759.json",
+          "mode_count": 3,
+          "peak_times": [
+            0.7900000000000003,
+            1.570000000000001,
+            2.5900000000000016
+          ],
+          "runtime_seconds": 49.09658220800338,
+          "verdict": true
+        },
+        {
+          "budget": 4.132099516084914,
+          "file": "probe_m3_eps0.05_B4.1321.json",
+          "mode_count": 3,
+          "peak_times": [
+            0.7900000000000003,
+            1.570000000000001,
+            2.5900000000000016
+          ],
+          "runtime_seconds": 46.97645074999309,
+          "verdict": true
+        }
+      ],
+      "status": "bisected",
+      "theory_diagnostics": {
+        "centre_spacings_z": [
+          0.9897297844902647,
+          0.5643458214777497
+        ],
+        "centres_x": [
+          -1.7973158564688863,
+          -0.8075860719786215,
+          -0.2432402505008719
+        ],
+        "g_has_m_window_maxima": true,
+        "g_window_max": 2.1707230174428354,
+        "last_valley_time": 2.0286679174484052,
+        "min_abs_curvature_at_stationary": 8.837178538481997e-10,
+        "n_window_maxima": 3,
+        "n_window_minima": 2,
+        "peaks": [
+          {
+            "cumulative_exposure_Lambda": 0.08830200860603825,
+            "g": 2.1707230174428354,
+            "g_second_derivative": -1863.739443601593,
+            "time": 0.7990744215134459
+          },
+          {
+            "cumulative_exposure_Lambda": 0.38147431889180966,
+            "g": 2.166950129187493,
+            "g_second_derivative": -375.85867205743176,
+            "time": 1.6005503439649782
+          },
+          {
+            "cumulative_exposure_Lambda": 1.1649879604209317,
+            "g": 2.1301807722847426,
+            "g_second_derivative": -33.84786333317543,
+            "time": 2.7977861163227016
+          }
+        ],
+        "sigma_x_space": 0.06123724356957945,
+        "total_exposure_Lambda_to_tmax": 2.033956524507761,
+        "valley_depths": [
+          {
+            "adjacent_peak_g_min": 2.166950129187493,
+            "valley_g": 2.879643522724508e-14,
+            "valley_time": 1.1226516572858036,
+            "valley_to_peak_ratio": 1.328892383787458e-14
+          },
+          {
+            "adjacent_peak_g_min": 2.1301807722847426,
+            "valley_g": 0.00010593483378592036,
+            "valley_time": 2.0286679174484052,
+            "valley_to_peak_ratio": 4.9730443145582946e-05
+          }
+        ],
+        "valleys": [
+          {
+            "cumulative_exposure_Lambda": 0.18567390300149217,
+            "g": 2.879643522724508e-14,
+            "g_second_derivative": 8.837178538481997e-10,
+            "time": 1.1226516572858036
+          },
+          {
+            "cumulative_exposure_Lambda": 0.5999316289158279,
+            "g": 0.00010593483378592036,
+            "g_second_derivative": 0.15871218029375733,
+            "time": 2.0286679174484052
+          }
+        ],
+        "window": [
+          0.5,
+          3.5
+        ]
+      },
+      "w1_bracket": {
+        "b_hi": null,
+        "b_lo": 4.0,
+        "w1_verdicts": {
+          "0.125": true,
+          "0.25": true,
+          "0.5": true,
+          "1.0": true,
+          "2.0": true,
+          "4.0": true
+        }
+      },
+      "wall_seconds": 321.4750299580046,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "b0": 3.57003322263787,
+      "b0_bracket": [
+        3.5507529850530424,
+        3.5894181500062143
+      ],
+      "b0_relative_halfwidth": 0.005429901112802726,
+      "basin_edge_last_g_valley_time": 2.0311569731081924,
+      "eps": 0.1,
+      "m": 3,
+      "probe_walkers": 1000000,
+      "probes": [
+        {
+          "budget": 2.8284271247461903,
+          "file": "probe_m3_eps0.1_B2.82843.json",
+          "mode_count": 3,
+          "peak_times": [
+            0.7900000000000003,
+            1.550000000000001,
+            2.490000000000002
+          ],
+          "runtime_seconds": 62.304087666998385,
+          "verdict": true
+        },
+        {
+          "budget": 3.3635856610148585,
+          "file": "probe_m3_eps0.1_B3.36359.json",
+          "mode_count": 3,
+          "peak_times": [
+            0.7900000000000003,
+            1.550000000000001,
+            2.4700000000000015
+          ],
+          "runtime_seconds": 57.34274929200183,
+          "verdict": true
+        },
+        {
+          "budget": 3.668016172818685,
+          "file": "probe_m3_eps0.1_B3.66802.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.7900000000000003,
+            1.530000000000001
+          ],
+          "runtime_seconds": 51.887886333002825,
+          "verdict": false
+        },
+        {
+          "budget": 3.512504320746599,
+          "file": "probe_m3_eps0.1_B3.5125.json",
+          "mode_count": 3,
+          "peak_times": [
+            0.7900000000000003,
+            1.550000000000001,
+            2.450000000000002
+          ],
+          "runtime_seconds": 53.55026120900584,
+          "verdict": true
+        },
+        {
+          "budget": 3.5894181500062143,
+          "file": "probe_m3_eps0.1_B3.58942.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.7900000000000003,
+            1.550000000000001
+          ],
+          "runtime_seconds": 52.19417233399872,
+          "verdict": false
+        },
+        {
+          "budget": 3.5507529850530424,
+          "file": "probe_m3_eps0.1_B3.55075.json",
+          "mode_count": 3,
+          "peak_times": [
+            0.7900000000000003,
+            1.550000000000001,
+            2.4700000000000015
+          ],
+          "runtime_seconds": 47.96608645899687,
+          "verdict": true
+        }
+      ],
+      "status": "bisected",
+      "theory_diagnostics": {
+        "centre_spacings_z": [
+          0.9897297844902647,
+          0.5643458214777497
+        ],
+        "centres_x": [
+          -1.7973158564688863,
+          -0.8075860719786215,
+          -0.2432402505008719
+        ],
+        "g_has_m_window_maxima": true,
+        "g_window_max": 1.0358960565226742,
+        "last_valley_time": 2.0311569731081924,
+        "min_abs_curvature_at_stationary": 0.9816213840120283,
+        "n_window_maxima": 3,
+        "n_window_minima": 2,
+        "peaks": [
+          {
+            "cumulative_exposure_Lambda": 0.08360407303990447,
+            "g": 1.0358960565226742,
+            "g_second_derivative": -223.47261424009795,
+            "time": 0.7990744215134459
+          },
+          {
+            "cumulative_exposure_Lambda": 0.33758896489126533,
+            "g": 0.937464648398611,
+            "g_second_derivative": -40.91115888271914,
+            "time": 1.5980612883051908
+          },
+          {
+            "cumulative_exposure_Lambda": 0.9399097893623336,
+            "g": 0.8577311318218929,
+            "g_second_derivative": -3.476039915358913,
+            "time": 2.7878298936835524
+          }
+        ],
+        "sigma_x_space": 0.1224744871391589,
+        "total_exposure_Lambda_to_tmax": 1.6431740935472676,
+        "valley_depths": [
+          {
+            "adjacent_peak_g_min": 0.937464648398611,
+            "valley_g": 0.0005660136291844088,
+            "valley_time": 1.1226516572858036,
+            "valley_to_peak_ratio": 0.0006037706383395688
+          },
+          {
+            "adjacent_peak_g_min": 0.8577311318218929,
+            "valley_g": 0.12667522568201015,
+            "valley_time": 2.0311569731081924,
+            "valley_to_peak_ratio": 0.14768640309573625
+          }
+        ],
+        "valleys": [
+          {
+            "cumulative_exposure_Lambda": 0.17758981598186258,
+            "g": 0.0005660136291844088,
+            "g_second_derivative": 0.9816213840120283,
+            "time": 1.1226516572858036
+          },
+          {
+            "cumulative_exposure_Lambda": 0.5409648504881241,
+            "g": 0.12667522568201015,
+            "g_second_derivative": 10.009825002098331,
+            "time": 2.0311569731081924
+          }
+        ],
+        "window": [
+          0.5,
+          3.5
+        ]
+      },
+      "w1_bracket": {
+        "b_hi": 4.0,
+        "b_lo": 2.0,
+        "w1_verdicts": {
+          "0.125": true,
+          "0.25": true,
+          "0.5": true,
+          "1.0": true,
+          "2.0": true,
+          "4.0": false
+        }
+      },
+      "wall_seconds": 326.0757915840077,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "b0": 1.550584877685,
+      "b0_bracket": [
+        1.542210825407941,
+        1.559004400237837
+      ],
+      "b0_relative_halfwidth": 0.005429901112802726,
+      "basin_edge_last_g_valley_time": 2.03364602876798,
+      "eps": 0.15,
+      "m": 3,
+      "probe_walkers": 1000000,
+      "probes": [
+        {
+          "budget": 1.4142135623730951,
+          "file": "probe_m3_eps0.15_B1.41421.json",
+          "mode_count": 3,
+          "peak_times": [
+            0.7900000000000003,
+            1.570000000000001,
+            2.530000000000002
+          ],
+          "runtime_seconds": 87.56906608300051,
+          "verdict": true
+        },
+        {
+          "budget": 1.6817928305074292,
+          "file": "probe_m3_eps0.15_B1.68179.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.7900000000000003,
+            1.570000000000001
+          ],
+          "runtime_seconds": 77.71342354199442,
+          "verdict": false
+        },
+        {
+          "budget": 1.542210825407941,
+          "file": "probe_m3_eps0.15_B1.54221.json",
+          "mode_count": 3,
+          "peak_times": [
+            0.7900000000000003,
+            1.570000000000001,
+            2.5100000000000016
+          ],
+          "runtime_seconds": 79.90164687499055,
+          "verdict": true
+        },
+        {
+          "budget": 1.6104903319492545,
+          "file": "probe_m3_eps0.15_B1.61049.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.7900000000000003,
+            1.570000000000001
+          ],
+          "runtime_seconds": 72.72646312500001,
+          "verdict": false
+        },
+        {
+          "budget": 1.5759808451078865,
+          "file": "probe_m3_eps0.15_B1.57598.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.7900000000000003,
+            1.570000000000001
+          ],
+          "runtime_seconds": 69.72877041700121,
+          "verdict": false
+        },
+        {
+          "budget": 1.559004400237837,
+          "file": "probe_m3_eps0.15_B1.559.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.7900000000000003,
+            1.570000000000001
+          ],
+          "runtime_seconds": 70.32315708299575,
+          "verdict": false
+        }
+      ],
+      "status": "bisected",
+      "theory_diagnostics": {
+        "centre_spacings_z": [
+          0.9897297844902647,
+          0.5643458214777497
+        ],
+        "centres_x": [
+          -1.7973158564688863,
+          -0.8075860719786215,
+          -0.2432402505008719
+        ],
+        "g_has_m_window_maxima": true,
+        "g_window_max": 0.5669739043986924,
+        "last_valley_time": 2.03364602876798,
+        "min_abs_curvature_at_stationary": 0.8094584028082119,
+        "n_window_maxima": 3,
+        "n_window_minima": 2,
+        "peaks": [
+          {
+            "cumulative_exposure_Lambda": 0.06696138899957506,
+            "g": 0.5669739043986924,
+            "g_second_derivative": -54.55812223482402,
+            "time": 0.7965853658536586
+          },
+          {
+            "cumulative_exposure_Lambda": 0.2717651837657309,
+            "g": 0.5027924134173193,
+            "g_second_derivative": -8.790384261524576,
+            "time": 1.6030393996247656
+          },
+          {
+            "cumulative_exposure_Lambda": 0.7396149965023686,
+            "g": 0.48441747328847273,
+            "g_second_derivative": -0.8094584028082119,
+            "time": 2.772895559724828
+          }
+        ],
+        "sigma_x_space": 0.18371173070873834,
+        "total_exposure_Lambda_to_tmax": 1.2342006534385856,
+        "valley_depths": [
+          {
+            "adjacent_peak_g_min": 0.5027924134173193,
+            "valley_g": 0.028012867158482342,
+            "valley_time": 1.1226516572858036,
+            "valley_to_peak_ratio": 0.05571457804641053
+          },
+          {
+            "adjacent_peak_g_min": 0.48441747328847273,
+            "valley_g": 0.2994138104438165,
+            "valley_time": 2.03364602876798,
+            "valley_to_peak_ratio": 0.6180904425499826
+          }
+        ],
+        "valleys": [
+          {
+            "cumulative_exposure_Lambda": 0.1464602186619632,
+            "g": 0.028012867158482342,
+            "g_second_derivative": 8.8011691931518,
+            "time": 1.1226516572858036
+          },
+          {
+            "cumulative_exposure_Lambda": 0.4401040093902205,
+            "g": 0.2994138104438165,
+            "g_second_derivative": 3.308166251099011,
+            "time": 2.03364602876798
+          }
+        ],
+        "window": [
+          0.5,
+          3.5
+        ]
+      },
+      "w1_bracket": {
+        "b_hi": 2.0,
+        "b_lo": 1.0,
+        "w1_verdicts": {
+          "0.125": true,
+          "0.25": true,
+          "0.5": true,
+          "1.0": true,
+          "2.0": false,
+          "4.0": false
+        }
+      },
+      "wall_seconds": 458.81621462499606,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "b0": 0.28163040465206046,
+      "b0_bracket": [
+        0.2726269331663144,
+        0.29093121469439437
+      ],
+      "b0_relative_halfwidth": 0.033024879021228415,
+      "basin_edge_last_g_valley_time": 2.038624140087555,
+      "eps": 0.2,
+      "m": 3,
+      "probe_walkers": 1000000,
+      "probes": [
+        {
+          "budget": 0.125,
+          "file": "probe_m3_eps0.2_B0.125.json",
+          "mode_count": 3,
+          "peak_times": [
+            0.7900000000000003,
+            1.630000000000001,
+            2.4300000000000015
+          ],
+          "runtime_seconds": 113.7265287499904,
+          "verdict": true
+        },
+        {
+          "budget": 8.0,
+          "file": "probe_m3_eps0.2_B8.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.7500000000000002,
+            1.4500000000000008
+          ],
+          "runtime_seconds": 37.47589662500832,
+          "verdict": false
+        },
+        {
+          "budget": 1.0,
+          "file": "probe_m3_eps0.2_B1.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.7900000000000003,
+            1.630000000000001
+          ],
+          "runtime_seconds": 83.45092383300653,
+          "verdict": false
+        },
+        {
+          "budget": 0.3535533905932738,
+          "file": "probe_m3_eps0.2_B0.353553.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.7900000000000003,
+            1.610000000000001
+          ],
+          "runtime_seconds": 101.41681637500005,
+          "verdict": false
+        },
+        {
+          "budget": 0.21022410381342865,
+          "file": "probe_m3_eps0.2_B0.210224.json",
+          "mode_count": 3,
+          "peak_times": [
+            0.7900000000000003,
+            1.630000000000001,
+            2.6300000000000017
+          ],
+          "runtime_seconds": 106.46252800000366,
+          "verdict": true
+        },
+        {
+          "budget": 0.2726269331663144,
+          "file": "probe_m3_eps0.2_B0.272627.json",
+          "mode_count": 3,
+          "peak_times": [
+            0.7900000000000003,
+            1.710000000000001,
+            2.5100000000000016
+          ],
+          "runtime_seconds": 103.78129229099432,
+          "verdict": true
+        },
+        {
+          "budget": 0.310464453018371,
+          "file": "probe_m3_eps0.2_B0.310464.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.7900000000000003,
+            1.650000000000001
+          ],
+          "runtime_seconds": 103.18266933399718,
+          "verdict": false
+        },
+        {
+          "budget": 0.29093121469439437,
+          "file": "probe_m3_eps0.2_B0.290931.json",
+          "mode_count": 2,
+          "peak_times": [
+            0.7900000000000003,
+            1.670000000000001
+          ],
+          "runtime_seconds": 104.28540691699891,
+          "verdict": false
+        }
+      ],
+      "status": "bisected",
+      "theory_diagnostics": {
+        "centre_spacings_z": [
+          0.9897297844902647,
+          0.5643458214777497
+        ],
+        "centres_x": [
+          -1.7973158564688863,
+          -0.8075860719786215,
+          -0.2432402505008719
+        ],
+        "g_has_m_window_maxima": true,
+        "g_window_max": 0.34254540326488914,
+        "last_valley_time": 2.038624140087555,
+        "min_abs_curvature_at_stationary": 0.2438015633195641,
+        "n_window_maxima": 3,
+        "n_window_minima": 2,
+        "peaks": [
+          {
+            "cumulative_exposure_Lambda": 0.05266663175566147,
+            "g": 0.34254540326488914,
+            "g_second_derivative": -18.453765462712497,
+            "time": 0.7940963101938712
+          },
+          {
+            "cumulative_exposure_Lambda": 0.2464563644038045,
+            "g": 0.3405426516944492,
+            "g_second_derivative": -1.4952541733291085,
+            "time": 1.6777110694183865
+          },
+          {
+            "cumulative_exposure_Lambda": 0.5361782607649334,
+            "g": 0.33698469133593606,
+            "g_second_derivative": -0.2438015633195641,
+            "time": 2.5588367729831143
+          }
+        ],
+        "sigma_x_space": 0.2449489742783178,
+        "total_exposure_Lambda_to_tmax": 0.9614865751558208,
+        "valley_depths": [
+          {
+            "adjacent_peak_g_min": 0.3405426516944492,
+            "valley_g": 0.08397195195226119,
+            "valley_time": 1.1226516572858036,
+            "valley_to_peak_ratio": 0.2465827746816418
+          },
+          {
+            "adjacent_peak_g_min": 0.33698469133593606,
+            "valley_g": 0.31946683598571934,
+            "valley_time": 2.038624140087555,
+            "valley_to_peak_ratio": 0.9480158719354008
+          }
+        ],
+        "valleys": [
+          {
+            "cumulative_exposure_Lambda": 0.11880561405741523,
+            "g": 0.08397195195226119,
+            "g_second_derivative": 7.337868217155638,
+            "time": 1.1226516572858036
+          },
+          {
+            "cumulative_exposure_Lambda": 0.36511287038460727,
+            "g": 0.31946683598571934,
+            "g_second_derivative": 0.4762206594787315,
+            "time": 2.038624140087555
+          }
+        ],
+        "window": [
+          0.5,
+          3.5
+        ]
+      },
+      "w1_bracket": {
+        "b_hi": null,
+        "b_lo": null,
+        "w1_verdicts": {
+          "0.125": false,
+          "0.25": false,
+          "0.5": false,
+          "1.0": false,
+          "2.0": false,
+          "4.0": false
+        }
+      },
+      "wall_seconds": 754.6455462919985,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    }
+  ],
+  "dt": 0.001,
+  "eps_set": [
+    0.05,
+    0.1,
+    0.15,
+    0.2
+  ],
+  "m_weights": {
+    "2": [
+      0.5,
+      0.5
+    ],
+    "3": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ]
+  },
+  "model_parameters": {
+    "contact_a": 0.4,
+    "d0": 1.0,
+    "dim": 2,
+    "ell0": 1.0,
+    "gamma": 1.0,
+    "r_par0": 0.1,
+    "r_perp0": 0.0,
+    "rho": 1.0,
+    "sigma_perp0": 0.3,
+    "torus_w": 1.0,
+    "u0": 0.3,
+    "z0": 4.0,
+    "z_bar": 0.0
+  },
+  "pass_rule": "significant maximum (5 sigma + 5% rule) at time > last semi-analytic G valley; bracket seeded from W1 grid verdicts at the same walker count",
+  "probe_walkers": 1000000,
+  "seed": 20260813,
+  "stream": "w2_b0_empirical",
+  "tmax": 4.0,
+  "wall_seconds": 1033.105035792003
+}

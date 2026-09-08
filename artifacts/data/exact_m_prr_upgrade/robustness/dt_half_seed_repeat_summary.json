@@ -1,0 +1,226 @@
+{
+  "analysis": "dt_half_seed_repeat: three independent-seed runs of the boundary-adjacent cell at dt = 5e-4, compared with the matched-N dt = 1e-3 seed repeats and the stored dt-halving pair",
+  "cell": {
+    "budget": 0.5,
+    "eps": 0.175,
+    "m": 3,
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ]
+  },
+  "classifier": {
+    "bandwidth": 0.04,
+    "definition": "reclassify_covariance_aware.classify_both (covariance-aware verdicts are the article's)",
+    "late_candidate_rule": "local maximum later than the last window valley of G with the largest covariance-aware z",
+    "prominence_relative_floor": 0.05,
+    "prominence_sigma_factor": 5.0
+  },
+  "coarse_matched_n_late_relative_prominence_range": [
+    0.06317985000566104,
+    0.0655582622950208
+  ],
+  "coarse_matched_n_late_z_range": [
+    9.025580678291012,
+    9.434257781101978
+  ],
+  "coarse_matched_n_three_mode_retention": [
+    3,
+    3
+  ],
+  "coarse_reference_runs": [
+    {
+      "counted_times_covariance_aware": [
+        0.7900000000000003,
+        1.610000000000001,
+        2.5500000000000016
+      ],
+      "dt": 0.001,
+      "late_candidate_time": 2.5500000000000016,
+      "late_mode_retained": true,
+      "late_passes_relative_floor": true,
+      "late_passes_sigma_gate": true,
+      "late_relative_prominence": 0.06317985000566104,
+      "late_z_covariance_aware": 9.025580678291012,
+      "mode_count_covariance_aware": 3,
+      "mode_count_peak_only": 3,
+      "seed": 20260814,
+      "source": "seed_repeats/m3_boundary_pass_seed20260814.json",
+      "walkers": 1000000
+    },
+    {
+      "counted_times_covariance_aware": [
+        0.7900000000000003,
+        1.610000000000001,
+        2.6300000000000017
+      ],
+      "dt": 0.001,
+      "late_candidate_time": 2.6300000000000017,
+      "late_mode_retained": true,
+      "late_passes_relative_floor": true,
+      "late_passes_sigma_gate": true,
+      "late_relative_prominence": 0.06535569862363744,
+      "late_z_covariance_aware": 9.253694129174624,
+      "mode_count_covariance_aware": 3,
+      "mode_count_peak_only": 3,
+      "seed": 20260815,
+      "source": "seed_repeats/m3_boundary_pass_seed20260815.json",
+      "walkers": 1000000
+    },
+    {
+      "counted_times_covariance_aware": [
+        0.7900000000000003,
+        1.590000000000001,
+        2.650000000000002
+      ],
+      "dt": 0.001,
+      "late_candidate_time": 2.650000000000002,
+      "late_mode_retained": true,
+      "late_passes_relative_floor": true,
+      "late_passes_sigma_gate": true,
+      "late_relative_prominence": 0.0655582622950208,
+      "late_z_covariance_aware": 9.434257781101978,
+      "mode_count_covariance_aware": 3,
+      "mode_count_peak_only": 3,
+      "seed": 20260816,
+      "source": "seed_repeats/m3_boundary_pass_seed20260816.json",
+      "walkers": 1000000
+    },
+    {
+      "counted_times_covariance_aware": [
+        0.7900000000000003,
+        1.610000000000001,
+        2.5900000000000016
+      ],
+      "dt": 0.001,
+      "late_candidate_time": 2.5900000000000016,
+      "late_mode_retained": true,
+      "late_passes_relative_floor": true,
+      "late_passes_sigma_gate": true,
+      "late_relative_prominence": 0.07324402998995258,
+      "late_z_covariance_aware": 7.4858339614145,
+      "mode_count_covariance_aware": 3,
+      "mode_count_peak_only": 3,
+      "seed": 20260819,
+      "source": "dt_halving/m3_phase_boundary.json#dt",
+      "walkers": 500000
+    },
+    {
+      "counted_times_covariance_aware": [
+        0.7900000000000003,
+        1.610000000000001
+      ],
+      "dt": 0.0005,
+      "late_candidate_time": 2.490000000000002,
+      "late_mode_retained": false,
+      "late_passes_relative_floor": false,
+      "late_passes_sigma_gate": false,
+      "late_relative_prominence": 0.04227112255634782,
+      "late_z_covariance_aware": 4.239040641012808,
+      "mode_count_covariance_aware": 2,
+      "mode_count_peak_only": 2,
+      "seed": 20260819,
+      "source": "dt_halving/m3_phase_boundary.json#dt_half",
+      "walkers": 500000
+    }
+  ],
+  "dt_half_kill_fraction_range": [
+    0.408244,
+    0.40921
+  ],
+  "dt_half_late_relative_prominence_range": [
+    0.06856135957236731,
+    0.08570290618611086
+  ],
+  "dt_half_late_time_range": [
+    2.5100000000000016,
+    2.6300000000000017
+  ],
+  "dt_half_late_z_range": [
+    9.816889726697633,
+    12.2939861089983
+  ],
+  "dt_half_runs": [
+    {
+      "counted_times_covariance_aware": [
+        0.7900000000000003,
+        1.590000000000001,
+        2.6300000000000017
+      ],
+      "dt": 0.0005,
+      "event_fraction_in_window": 0.364372,
+      "kill_fraction": 0.408244,
+      "late_candidate_time": 2.6300000000000017,
+      "late_mode_retained": true,
+      "late_passes_relative_floor": true,
+      "late_passes_sigma_gate": true,
+      "late_relative_prominence": 0.0695854069489495,
+      "late_z_covariance_aware": 10.056277419022647,
+      "mode_count_covariance_aware": 3,
+      "mode_count_peak_only": 3,
+      "runtime_seconds": 196.429423667003,
+      "seed": 20260814,
+      "source": "dt_half_seed_repeats/m3_phase_boundary_dthalf_seed20260814.json",
+      "walkers": 1000000
+    },
+    {
+      "counted_times_covariance_aware": [
+        0.7900000000000003,
+        1.610000000000001,
+        2.5100000000000016
+      ],
+      "dt": 0.0005,
+      "event_fraction_in_window": 0.365191,
+      "kill_fraction": 0.40921,
+      "late_candidate_time": 2.5100000000000016,
+      "late_mode_retained": true,
+      "late_passes_relative_floor": true,
+      "late_passes_sigma_gate": true,
+      "late_relative_prominence": 0.08570290618611086,
+      "late_z_covariance_aware": 12.2939861089983,
+      "mode_count_covariance_aware": 3,
+      "mode_count_peak_only": 3,
+      "runtime_seconds": 196.5796469170018,
+      "seed": 20260815,
+      "source": "dt_half_seed_repeats/m3_phase_boundary_dthalf_seed20260815.json",
+      "walkers": 1000000
+    },
+    {
+      "counted_times_covariance_aware": [
+        0.7900000000000003,
+        1.610000000000001,
+        2.530000000000002
+      ],
+      "dt": 0.0005,
+      "event_fraction_in_window": 0.365357,
+      "kill_fraction": 0.409161,
+      "late_candidate_time": 2.530000000000002,
+      "late_mode_retained": true,
+      "late_passes_relative_floor": true,
+      "late_passes_sigma_gate": true,
+      "late_relative_prominence": 0.06856135957236731,
+      "late_z_covariance_aware": 9.816889726697633,
+      "mode_count_covariance_aware": 3,
+      "mode_count_peak_only": 3,
+      "runtime_seconds": 196.58725320800295,
+      "seed": 20260816,
+      "source": "dt_half_seed_repeats/m3_phase_boundary_dthalf_seed20260816.json",
+      "walkers": 1000000
+    }
+  ],
+  "dt_half_seeds": [
+    20260814,
+    20260815,
+    20260816
+  ],
+  "dt_half_three_mode_retention": [
+    3,
+    3
+  ],
+  "dt_half_walkers": 1000000,
+  "interpretation_note": "These additional independent-stream runs characterize sampling variability at the finer step, but three seeds do not exclude a systematic time-step contribution near this classifier boundary.  The streams at the two resolutions are not paired common random numbers.  This is not a convergence test and does not establish a theorem threshold.",
+  "late_basin_edge_time": 2.034,
+  "schema_version": 1,
+  "wall_seconds": 197.15292254099768
+}

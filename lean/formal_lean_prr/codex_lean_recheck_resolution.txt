@@ -1,0 +1,56 @@
+Resolution of the second-round Codex audit (codex_lean_recheck.txt, 2026-08-25 04:22)
+=====================================================================================
+
+Released source hashes (SHA-256, first 16 hex): B0ChainKernel 5ffaed91d4863c9a,
+ExpPolyZeros 7d99dc72cfe1cfd8, NewtonKernel aa190dcf6220ba27, ZeroBound
+f29cd9d8b637363b. These are exactly the four FormalPRR/*.lean files whose
+hashes differ from SOURCE_HASHES_pre_recheck.txt; every other Lean source,
+FormalPRR.lean, lakefile.toml, lean-toolchain and lake-manifest.json are
+unchanged (checked 2026-09-03 by shasum -a 256 against that file).
+
+Per-finding disposition
+-----------------------
+- L6 residual (every-public-theorem anchoring rule): gaussN_nonneg
+  (B0ChainKernel.lean:364), rolle_interleave (ZeroBound.lean:125-129),
+  atMost_succ_of_deriv (ZeroBound.lean:150-154), AtMostZeros.setFinite
+  (ZeroBound.lean:174-176) and AtMostZeros.ncard_le (ZeroBound.lean:184-186)
+  now carry the docstring label
+  "Internal helper ...; no direct paper display". Resolved.
+- L9 wording overclaim (newton_kernel_root_bound): the docstring of
+  newton_kernel_root_bound (NewtonKernel.lean:189-195) now states "a unique
+  fixed point of the simplified-Newton map"; a case-insensitive search of
+  NewtonKernel.lean finds no remaining "unique zero" wording. The file header
+  keeps its COMPANION KERNEL / SCOPE NOTE (not a display of the present
+  paper). Resolved.
+- ExpPolyZeros header stale: the header (lines 12-15) now states that the file
+  delivers BOTH the distinct-zeros bound and the count with multiplicity
+  (expPoly_zeros_with_multiplicity_le, section "Target B2"), and the in-file
+  SCOPE NOTE at line 250 is marked "(resolved)". Resolved.
+- SM sentence (sm_sentence_verdict "overclaims"): the Supplemental Material
+  now reads "developed through two independent encoding efforts, with
+  duplicate independent encodings for the distinct-zero, mixture-identity,
+  crossover-point, and threshold subkernels", as recommended. Resolved.
+
+Axiom reports
+-------------
+consolidated_axioms.txt (138 lines, written 2026-08-25 04:27, i.e. after the
+last source change at 04:26) lists 138 distinct declarations, every one with
+"depends on axioms: [propext, Classical.choice, Quot.sound]"; it covers all 7
+#print axioms targets of AxiomsReportAlpha.lean and all 97 distinct targets of
+AxiomsReportBeta.lean (98 directives, one repeated). On 2026-09-03 the package was rebuilt from scratch on the released sources
+(lake exe cache get; lake build: 'Build completed successfully (3607 jobs)',
+exit 0; see BUILD_RECEIPT.txt). The two per-file extracts
+axioms_report_alpha.txt (7 entries) and axioms_report_beta.txt (97 distinct
+entries) were regenerated from that build with `lake env lean
+FormalPRR/AxiomsReportAlpha.lean` / `FormalPRR/AxiomsReportBeta.lean` and now
+match the released sources. In addition, audit_all_138_20260903.lean
+re-prints the axioms of every one of the 138 declarations named in
+consolidated_axioms.txt; its output (audit_all_138_20260903_output.txt,
+normalised in consolidated_axioms_rebuild_20260903.txt) is identical to
+consolidated_axioms.txt: 138 entries, each exactly
+[propext, Classical.choice, Quot.sound], zero sorryAx. consolidated_axioms.txt
+therefore remains the authoritative axiom record for the released hashes,
+now backed by a rebuild receipt.
+
+Static checks on the released sources (2026-09-03): no `sorry`, `admit`, or
+`axiom` declaration outside comments in FormalPRR/*.lean.

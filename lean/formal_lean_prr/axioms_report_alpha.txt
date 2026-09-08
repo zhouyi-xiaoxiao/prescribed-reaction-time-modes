@@ -1,0 +1,7 @@
+'FormalPRR.Mixture.deriv_log_H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalPRR.Mixture.deriv2_log_H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalPRR.ExpPoly.expPoly_distinct_zeros_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalPRR.ExpPoly.expPoly_zeroSet_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalPRR.ExpPoly.expPoly_zeros_with_multiplicity_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalPRR.Window.mixture_deriv_zeros_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FormalPRR.Window.mixture_deriv_zeroSet_finite' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,674 @@
+{
+  "analysis": "independent deterministic-seed repeats",
+  "classifier": {
+    "bandwidth": 0.04,
+    "bin_width": 0.02,
+    "prominence_relative_floor": 0.05,
+    "prominence_sigma_factor": 5.0
+  },
+  "configs": [
+    {
+      "all_repeats_match_expected": true,
+      "budget": 1.0,
+      "common_index_peak_time_ranges": [
+        [
+          0.7900000000000003,
+          0.7900000000000003
+        ],
+        [
+          1.570000000000001,
+          1.590000000000001
+        ],
+        [
+          2.6300000000000017,
+          2.650000000000002
+        ]
+      ],
+      "eps": 0.1,
+      "event_fraction_in_window_range": [
+        0.737492,
+        0.73779
+      ],
+      "expected_mode_count": 3,
+      "expected_mode_count_successes": 3,
+      "interpretation": "principal m=3 finite-parameter anchor",
+      "kill_fraction_range": [
+        0.776153,
+        0.776589
+      ],
+      "m": 3,
+      "maximum_common_peak_span": 0.020000000000000462,
+      "mode_count_consistent": true,
+      "mode_counts": [
+        3,
+        3,
+        3
+      ],
+      "name": "m3_anchor",
+      "repeats": 3,
+      "rows": [
+        {
+          "budget": 1.0,
+          "eps": 0.1,
+          "event_fraction_in_window": 0.737492,
+          "expected_mode_count": 3,
+          "expected_mode_count_observed": true,
+          "file": "m3_anchor_seed20260814.json",
+          "kill_fraction": 0.776326,
+          "m": 3,
+          "mode_count": 3,
+          "name": "m3_anchor",
+          "peak_times": [
+            0.7900000000000003,
+            1.570000000000001,
+            2.6300000000000017
+          ],
+          "runtime_seconds": 80.49113450000004,
+          "seed": 20260814,
+          "target_mode_count_present": true,
+          "walkers": 1000000
+        },
+        {
+          "budget": 1.0,
+          "eps": 0.1,
+          "event_fraction_in_window": 0.737529,
+          "expected_mode_count": 3,
+          "expected_mode_count_observed": true,
+          "file": "m3_anchor_seed20260815.json",
+          "kill_fraction": 0.776153,
+          "m": 3,
+          "mode_count": 3,
+          "name": "m3_anchor",
+          "peak_times": [
+            0.7900000000000003,
+            1.590000000000001,
+            2.6300000000000017
+          ],
+          "runtime_seconds": 80.49310491699725,
+          "seed": 20260815,
+          "target_mode_count_present": true,
+          "walkers": 1000000
+        },
+        {
+          "budget": 1.0,
+          "eps": 0.1,
+          "event_fraction_in_window": 0.73779,
+          "expected_mode_count": 3,
+          "expected_mode_count_observed": true,
+          "file": "m3_anchor_seed20260816.json",
+          "kill_fraction": 0.776589,
+          "m": 3,
+          "mode_count": 3,
+          "name": "m3_anchor",
+          "peak_times": [
+            0.7900000000000003,
+            1.590000000000001,
+            2.650000000000002
+          ],
+          "runtime_seconds": 80.441679208001,
+          "seed": 20260816,
+          "target_mode_count_present": true,
+          "walkers": 1000000
+        }
+      ],
+      "wilson_95_ci": [
+        0.43849391955098227,
+        1.0
+      ]
+    },
+    {
+      "all_repeats_match_expected": true,
+      "budget": 3.5,
+      "common_index_peak_time_ranges": [
+        [
+          0.7900000000000003,
+          0.7900000000000003
+        ],
+        [
+          1.550000000000001,
+          1.550000000000001
+        ],
+        [
+          2.4700000000000015,
+          2.4700000000000015
+        ]
+      ],
+      "eps": 0.1,
+      "event_fraction_in_window_range": [
+        0.973701,
+        0.974059
+      ],
+      "expected_mode_count": 3,
+      "expected_mode_count_successes": 3,
+      "interpretation": "below the baseline operational B_op estimate 3.57",
+      "kill_fraction_range": [
+        0.980694,
+        0.981178
+      ],
+      "m": 3,
+      "maximum_common_peak_span": 0.0,
+      "mode_count_consistent": true,
+      "mode_counts": [
+        3,
+        3,
+        3
+      ],
+      "name": "m3_threshold_low",
+      "repeats": 3,
+      "rows": [
+        {
+          "budget": 3.5,
+          "eps": 0.1,
+          "event_fraction_in_window": 0.973905,
+          "expected_mode_count": 3,
+          "expected_mode_count_observed": true,
+          "file": "m3_threshold_low_seed20260814.json",
+          "kill_fraction": 0.980902,
+          "m": 3,
+          "mode_count": 3,
+          "name": "m3_threshold_low",
+          "peak_times": [
+            0.7900000000000003,
+            1.550000000000001,
+            2.4700000000000015
+          ],
+          "runtime_seconds": 50.15039724999224,
+          "seed": 20260814,
+          "target_mode_count_present": true,
+          "walkers": 1000000
+        },
+        {
+          "budget": 3.5,
+          "eps": 0.1,
+          "event_fraction_in_window": 0.974059,
+          "expected_mode_count": 3,
+          "expected_mode_count_observed": true,
+          "file": "m3_threshold_low_seed20260815.json",
+          "kill_fraction": 0.981178,
+          "m": 3,
+          "mode_count": 3,
+          "name": "m3_threshold_low",
+          "peak_times": [
+            0.7900000000000003,
+            1.550000000000001,
+            2.4700000000000015
+          ],
+          "runtime_seconds": 50.079199667001376,
+          "seed": 20260815,
+          "target_mode_count_present": true,
+          "walkers": 1000000
+        },
+        {
+          "budget": 3.5,
+          "eps": 0.1,
+          "event_fraction_in_window": 0.973701,
+          "expected_mode_count": 3,
+          "expected_mode_count_observed": true,
+          "file": "m3_threshold_low_seed20260816.json",
+          "kill_fraction": 0.980694,
+          "m": 3,
+          "mode_count": 3,
+          "name": "m3_threshold_low",
+          "peak_times": [
+            0.7900000000000003,
+            1.550000000000001,
+            2.4700000000000015
+          ],
+          "runtime_seconds": 50.125346165994415,
+          "seed": 20260816,
+          "target_mode_count_present": true,
+          "walkers": 1000000
+        }
+      ],
+      "wilson_95_ci": [
+        0.43849391955098227,
+        1.0
+      ]
+    },
+    {
+      "all_repeats_match_expected": true,
+      "budget": 3.64,
+      "common_index_peak_time_ranges": [
+        [
+          0.7900000000000003,
+          0.7900000000000003
+        ],
+        [
+          1.550000000000001,
+          1.550000000000001
+        ]
+      ],
+      "eps": 0.1,
+      "event_fraction_in_window_range": [
+        0.97587,
+        0.976156
+      ],
+      "expected_mode_count": 2,
+      "expected_mode_count_successes": 3,
+      "interpretation": "above the baseline operational B_op estimate 3.57",
+      "kill_fraction_range": [
+        0.982581,
+        0.982689
+      ],
+      "m": 3,
+      "maximum_common_peak_span": 0.0,
+      "mode_count_consistent": true,
+      "mode_counts": [
+        2,
+        2,
+        2
+      ],
+      "name": "m3_threshold_high",
+      "repeats": 3,
+      "rows": [
+        {
+          "budget": 3.64,
+          "eps": 0.1,
+          "event_fraction_in_window": 0.976126,
+          "expected_mode_count": 2,
+          "expected_mode_count_observed": true,
+          "file": "m3_threshold_high_seed20260814.json",
+          "kill_fraction": 0.982689,
+          "m": 3,
+          "mode_count": 2,
+          "name": "m3_threshold_high",
+          "peak_times": [
+            0.7900000000000003,
+            1.550000000000001
+          ],
+          "runtime_seconds": 48.22391608299222,
+          "seed": 20260814,
+          "target_mode_count_present": false,
+          "walkers": 1000000
+        },
+        {
+          "budget": 3.64,
+          "eps": 0.1,
+          "event_fraction_in_window": 0.97587,
+          "expected_mode_count": 2,
+          "expected_mode_count_observed": true,
+          "file": "m3_threshold_high_seed20260815.json",
+          "kill_fraction": 0.982581,
+          "m": 3,
+          "mode_count": 2,
+          "name": "m3_threshold_high",
+          "peak_times": [
+            0.7900000000000003,
+            1.550000000000001
+          ],
+          "runtime_seconds": 48.25075341699994,
+          "seed": 20260815,
+          "target_mode_count_present": false,
+          "walkers": 1000000
+        },
+        {
+          "budget": 3.64,
+          "eps": 0.1,
+          "event_fraction_in_window": 0.976156,
+          "expected_mode_count": 2,
+          "expected_mode_count_observed": true,
+          "file": "m3_threshold_high_seed20260816.json",
+          "kill_fraction": 0.982587,
+          "m": 3,
+          "mode_count": 2,
+          "name": "m3_threshold_high",
+          "peak_times": [
+            0.7900000000000003,
+            1.550000000000001
+          ],
+          "runtime_seconds": 48.23962966600084,
+          "seed": 20260816,
+          "target_mode_count_present": false,
+          "walkers": 1000000
+        }
+      ],
+      "wilson_95_ci": [
+        0.43849391955098227,
+        1.0
+      ]
+    },
+    {
+      "all_repeats_match_expected": true,
+      "budget": 0.5,
+      "common_index_peak_time_ranges": [
+        [
+          0.7900000000000003,
+          0.7900000000000003
+        ],
+        [
+          1.590000000000001,
+          1.610000000000001
+        ],
+        [
+          2.5500000000000016,
+          2.650000000000002
+        ]
+      ],
+      "eps": 0.175,
+      "event_fraction_in_window_range": [
+        0.364595,
+        0.36486
+      ],
+      "expected_mode_count": 3,
+      "expected_mode_count_successes": 3,
+      "interpretation": "passing side of a phase-diagram boundary",
+      "kill_fraction_range": [
+        0.40859,
+        0.408817
+      ],
+      "m": 3,
+      "maximum_common_peak_span": 0.10000000000000053,
+      "mode_count_consistent": true,
+      "mode_counts": [
+        3,
+        3,
+        3
+      ],
+      "name": "m3_boundary_pass",
+      "repeats": 3,
+      "rows": [
+        {
+          "budget": 0.5,
+          "eps": 0.175,
+          "event_fraction_in_window": 0.364595,
+          "expected_mode_count": 3,
+          "expected_mode_count_observed": true,
+          "file": "m3_boundary_pass_seed20260814.json",
+          "kill_fraction": 0.40859,
+          "m": 3,
+          "mode_count": 3,
+          "name": "m3_boundary_pass",
+          "peak_times": [
+            0.7900000000000003,
+            1.610000000000001,
+            2.5500000000000016
+          ],
+          "runtime_seconds": 98.62912070901075,
+          "seed": 20260814,
+          "target_mode_count_present": true,
+          "walkers": 1000000
+        },
+        {
+          "budget": 0.5,
+          "eps": 0.175,
+          "event_fraction_in_window": 0.364727,
+          "expected_mode_count": 3,
+          "expected_mode_count_observed": true,
+          "file": "m3_boundary_pass_seed20260815.json",
+          "kill_fraction": 0.408636,
+          "m": 3,
+          "mode_count": 3,
+          "name": "m3_boundary_pass",
+          "peak_times": [
+            0.7900000000000003,
+            1.610000000000001,
+            2.6300000000000017
+          ],
+          "runtime_seconds": 98.6353638330038,
+          "seed": 20260815,
+          "target_mode_count_present": true,
+          "walkers": 1000000
+        },
+        {
+          "budget": 0.5,
+          "eps": 0.175,
+          "event_fraction_in_window": 0.36486,
+          "expected_mode_count": 3,
+          "expected_mode_count_observed": true,
+          "file": "m3_boundary_pass_seed20260816.json",
+          "kill_fraction": 0.408817,
+          "m": 3,
+          "mode_count": 3,
+          "name": "m3_boundary_pass",
+          "peak_times": [
+            0.7900000000000003,
+            1.590000000000001,
+            2.650000000000002
+          ],
+          "runtime_seconds": 98.59230274999572,
+          "seed": 20260816,
+          "target_mode_count_present": true,
+          "walkers": 1000000
+        }
+      ],
+      "wilson_95_ci": [
+        0.43849391955098227,
+        1.0
+      ]
+    },
+    {
+      "all_repeats_match_expected": true,
+      "budget": 1.0,
+      "common_index_peak_time_ranges": [
+        [
+          0.7900000000000003,
+          0.7900000000000003
+        ],
+        [
+          1.590000000000001,
+          1.590000000000001
+        ]
+      ],
+      "eps": 0.175,
+      "event_fraction_in_window_range": [
+        0.585466,
+        0.585991
+      ],
+      "expected_mode_count": 2,
+      "expected_mode_count_successes": 3,
+      "interpretation": "failing side of a phase-diagram boundary",
+      "kill_fraction_range": [
+        0.638291,
+        0.638861
+      ],
+      "m": 3,
+      "maximum_common_peak_span": 0.0,
+      "mode_count_consistent": true,
+      "mode_counts": [
+        2,
+        2,
+        2
+      ],
+      "name": "m3_boundary_fail",
+      "repeats": 3,
+      "rows": [
+        {
+          "budget": 1.0,
+          "eps": 0.175,
+          "event_fraction_in_window": 0.585991,
+          "expected_mode_count": 2,
+          "expected_mode_count_observed": true,
+          "file": "m3_boundary_fail_seed20260814.json",
+          "kill_fraction": 0.638816,
+          "m": 3,
+          "mode_count": 2,
+          "name": "m3_boundary_fail",
+          "peak_times": [
+            0.7900000000000003,
+            1.590000000000001
+          ],
+          "runtime_seconds": 85.5170570420014,
+          "seed": 20260814,
+          "target_mode_count_present": false,
+          "walkers": 1000000
+        },
+        {
+          "budget": 1.0,
+          "eps": 0.175,
+          "event_fraction_in_window": 0.585466,
+          "expected_mode_count": 2,
+          "expected_mode_count_observed": true,
+          "file": "m3_boundary_fail_seed20260815.json",
+          "kill_fraction": 0.638861,
+          "m": 3,
+          "mode_count": 2,
+          "name": "m3_boundary_fail",
+          "peak_times": [
+            0.7900000000000003,
+            1.590000000000001
+          ],
+          "runtime_seconds": 85.54691775000538,
+          "seed": 20260815,
+          "target_mode_count_present": false,
+          "walkers": 1000000
+        },
+        {
+          "budget": 1.0,
+          "eps": 0.175,
+          "event_fraction_in_window": 0.585666,
+          "expected_mode_count": 2,
+          "expected_mode_count_observed": true,
+          "file": "m3_boundary_fail_seed20260816.json",
+          "kill_fraction": 0.638291,
+          "m": 3,
+          "mode_count": 2,
+          "name": "m3_boundary_fail",
+          "peak_times": [
+            0.7900000000000003,
+            1.590000000000001
+          ],
+          "runtime_seconds": 85.5577268749912,
+          "seed": 20260816,
+          "target_mode_count_present": false,
+          "walkers": 1000000
+        }
+      ],
+      "wilson_95_ci": [
+        0.43849391955098227,
+        1.0
+      ]
+    },
+    {
+      "all_repeats_match_expected": true,
+      "budget": 1.0,
+      "common_index_peak_time_ranges": [
+        [
+          1.0500000000000005,
+          1.0500000000000005
+        ],
+        [
+          1.2900000000000007,
+          1.2900000000000007
+        ],
+        [
+          1.610000000000001,
+          1.610000000000001
+        ],
+        [
+          2.070000000000001,
+          2.070000000000001
+        ],
+        [
+          2.9300000000000024,
+          2.950000000000002
+        ]
+      ],
+      "eps": 0.1,
+      "event_fraction_in_window_range": [
+        0.527394,
+        0.528295
+      ],
+      "expected_mode_count": 5,
+      "expected_mode_count_successes": 3,
+      "interpretation": "five-mode stretched-geometry anchor",
+      "kill_fraction_range": [
+        0.55158,
+        0.552851
+      ],
+      "m": 5,
+      "maximum_common_peak_span": 0.019999999999999574,
+      "mode_count_consistent": true,
+      "mode_counts": [
+        5,
+        5,
+        5
+      ],
+      "name": "m5_anchor",
+      "repeats": 3,
+      "rows": [
+        {
+          "budget": 1.0,
+          "eps": 0.1,
+          "event_fraction_in_window": 0.527394,
+          "expected_mode_count": 5,
+          "expected_mode_count_observed": true,
+          "file": "m5_anchor_seed20260814.json",
+          "kill_fraction": 0.55158,
+          "m": 5,
+          "mode_count": 5,
+          "name": "m5_anchor",
+          "peak_times": [
+            1.0500000000000005,
+            1.2900000000000007,
+            1.610000000000001,
+            2.070000000000001,
+            2.950000000000002
+          ],
+          "runtime_seconds": 116.48412154200196,
+          "seed": 20260814,
+          "target_mode_count_present": true,
+          "walkers": 1000000
+        },
+        {
+          "budget": 1.0,
+          "eps": 0.1,
+          "event_fraction_in_window": 0.52764,
+          "expected_mode_count": 5,
+          "expected_mode_count_observed": true,
+          "file": "m5_anchor_seed20260815.json",
+          "kill_fraction": 0.552295,
+          "m": 5,
+          "mode_count": 5,
+          "name": "m5_anchor",
+          "peak_times": [
+            1.0500000000000005,
+            1.2900000000000007,
+            1.610000000000001,
+            2.070000000000001,
+            2.9300000000000024
+          ],
+          "runtime_seconds": 116.52699808299076,
+          "seed": 20260815,
+          "target_mode_count_present": true,
+          "walkers": 1000000
+        },
+        {
+          "budget": 1.0,
+          "eps": 0.1,
+          "event_fraction_in_window": 0.528295,
+          "expected_mode_count": 5,
+          "expected_mode_count_observed": true,
+          "file": "m5_anchor_seed20260816.json",
+          "kill_fraction": 0.552851,
+          "m": 5,
+          "mode_count": 5,
+          "name": "m5_anchor",
+          "peak_times": [
+            1.0500000000000005,
+            1.2900000000000007,
+            1.610000000000001,
+            2.070000000000001,
+            2.950000000000002
+          ],
+          "runtime_seconds": 116.42384475001018,
+          "seed": 20260816,
+          "target_mode_count_present": true,
+          "walkers": 1000000
+        }
+      ],
+      "wilson_95_ci": [
+        0.43849391955098227,
+        1.0
+      ]
+    }
+  ],
+  "dt": 0.001,
+  "schema_version": 1,
+  "seeds": [
+    20260814,
+    20260815,
+    20260816
+  ],
+  "walkers_per_repeat": 1000000,
+  "wall_seconds": 0.10315770799934398
+}

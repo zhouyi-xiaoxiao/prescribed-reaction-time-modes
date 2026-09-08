@@ -1,0 +1,22 @@
+{
+  "access_right": "open",
+  "creators": [
+    {
+      "affiliation": "University of Bristol",
+      "name": "Zhouyi, Xiaoxiao"
+    }
+  ],
+  "description": "Code, stored Monte Carlo histogram sufficient statistics, robustness checks, and figures accompanying the article. Raw walker trajectories and unbinned reaction times are not retained; full deterministic simulation scripts and seed metadata are included.",
+  "keywords": [
+    "Doi model",
+    "reaction time",
+    "stochastic simulation",
+    "modality",
+    "reproducibility"
+  ],
+  "license": "cc-by-4.0",
+  "notes": "The Zenodo record license applies to the data, figures, and documentation. Source code is separately licensed under MIT in LICENSE-CODE.",
+  "title": "Reproduction package for Prescribing finite-window reaction-time modes with a static fixed-budget Doi reactivity field",
+  "upload_type": "software",
+  "version": "1.0.0"
+}

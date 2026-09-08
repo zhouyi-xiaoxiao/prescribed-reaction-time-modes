@@ -1,0 +1,1510 @@
+{
+  "anchor": {
+    "budget": 1.0,
+    "eps": 0.1,
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ]
+  },
+  "classifier_theory_agreement": 0.92,
+  "dirichlet_concentration": null,
+  "eta": 0.3,
+  "g_theory_successes": 32,
+  "kind": "centre",
+  "m": 3,
+  "median_window_events": 139532.0,
+  "min_adjacent_spacing_s": 0.5643458214777497,
+  "mode_count_histogram": {
+    "1": 2,
+    "2": 20,
+    "3": 28
+  },
+  "replica_rows": [
+    {
+      "centres_z": [
+        1.5205170660935903,
+        1.018405593839865,
+        -0.3020507022045004
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": false,
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.387725,
+      "kill_probability_max": 0.0013289282514933989,
+      "kills_in_window": 77291,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 2,
+      "peak_times": [
+        0.9700000000000004,
+        1.3500000000000008
+      ],
+      "replica": 0,
+      "runtime_seconds": 20.89246558400191,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.917757055823867,
+        0.8442719906742161,
+        0.22952231645894533
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.77738,
+      "kill_probability_max": 0.0013289238072730007,
+      "kills_in_window": 146342,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.7300000000000002,
+        1.530000000000001,
+        2.650000000000002
+      ],
+      "replica": 1,
+      "runtime_seconds": 18.693951708002714,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.6667643327928778,
+        0.7968037741263266,
+        0.28031715056902845
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.765285,
+      "kill_probability_max": 0.0013289259401052865,
+      "kills_in_window": 147925,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.8700000000000003,
+        1.590000000000001,
+        2.5100000000000016
+      ],
+      "replica": 2,
+      "runtime_seconds": 18.434905458001595,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.7752315241569827,
+        0.5097177871411889,
+        0.41627113258069814
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": false,
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.73016,
+      "kill_probability_max": 0.002381750989528695,
+      "kills_in_window": 145408,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 2,
+      "peak_times": [
+        0.8100000000000003,
+        2.0500000000000016
+      ],
+      "replica": 3,
+      "runtime_seconds": 18.185994291998213,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.2981067620893938,
+        0.9337505964878348,
+        0.28654384248809883
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.7597,
+      "kill_probability_max": 0.0013306788323249393,
+      "kills_in_window": 147050,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        1.1300000000000006,
+        1.4300000000000008,
+        2.5100000000000016
+      ],
+      "replica": 4,
+      "runtime_seconds": 18.14982912499545,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.8125984617049533,
+        0.7047683400058821,
+        0.4605653609957311
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": false,
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.6835,
+      "kill_probability_max": 0.0014104128728322544,
+      "kills_in_window": 136430,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 2,
+      "peak_times": [
+        0.7900000000000003,
+        1.750000000000001
+      ],
+      "replica": 5,
+      "runtime_seconds": 17.8933045829981,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.6666600849572741,
+        1.1804632401893966,
+        0.21426018176528755
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.76534,
+      "kill_probability_max": 0.0013289335750451944,
+      "kills_in_window": 141952,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.8700000000000003,
+        1.2100000000000006,
+        2.7700000000000022
+      ],
+      "replica": 6,
+      "runtime_seconds": 18.612159625001368,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.56704646544195,
+        0.8451984784632731,
+        0.1865812039611105
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.78727,
+      "kill_probability_max": 0.001328923799527686,
+      "kills_in_window": 144660,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.9300000000000004,
+        1.530000000000001,
+        2.8500000000000023
+      ],
+      "replica": 7,
+      "runtime_seconds": 18.467709125005058,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.515764355299099,
+        0.7508993456777111,
+        0.33167341386031113
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.745945,
+      "kill_probability_max": 0.0013291267652296753,
+      "kills_in_window": 146633,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.9700000000000004,
+        1.650000000000001,
+        2.370000000000002
+      ],
+      "replica": 8,
+      "runtime_seconds": 17.676056333002634,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.953532843402632,
+        0.7946578096088328,
+        0.31862200212123715
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.74004,
+      "kill_probability_max": 0.0013289397392522156,
+      "kills_in_window": 144685,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.7100000000000002,
+        1.590000000000001,
+        2.4300000000000015
+      ],
+      "replica": 9,
+      "runtime_seconds": 17.830876042004093,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        2.177244301849112,
+        0.6822735659911718,
+        0.08039752753198315
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": false,
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.747125,
+      "kill_probability_max": 0.0013289238170852032,
+      "kills_in_window": 127633,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 2,
+      "peak_times": [
+        0.6100000000000001,
+        1.750000000000001
+      ],
+      "replica": 10,
+      "runtime_seconds": 19.33098220800457,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        2.2132363226587235,
+        1.1081080694675223,
+        0.45054605830017613
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.638,
+      "kill_probability_max": 0.0013289237995576175,
+      "kills_in_window": 126126,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.5900000000000001,
+        1.2700000000000007,
+        2.1300000000000017
+      ],
+      "replica": 11,
+      "runtime_seconds": 17.98740583399922,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.5641658522168194,
+        0.9426192972428429,
+        0.16977834665458333
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.781705,
+      "kill_probability_max": 0.0013289238044404315,
+      "kills_in_window": 141911,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.9300000000000004,
+        1.4300000000000008,
+        3.0100000000000025
+      ],
+      "replica": 12,
+      "runtime_seconds": 18.5584026669967,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.6563969191556132,
+        0.5538195630859359,
+        0.29799007507031955
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": false,
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.7826,
+      "kill_probability_max": 0.001387376727793416,
+      "kills_in_window": 152798,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 2,
+      "peak_times": [
+        0.8700000000000003,
+        1.9900000000000013
+      ],
+      "replica": 13,
+      "runtime_seconds": 17.71201312499761,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.70311412609487,
+        0.9448687995142908,
+        0.11742731678503415
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.76014,
+      "kill_probability_max": 0.0013289237990160164,
+      "kills_in_window": 131895,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.8500000000000003,
+        1.4300000000000008,
+        3.110000000000002
+      ],
+      "replica": 14,
+      "runtime_seconds": 19.01082529099949,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        2.030491787843653,
+        0.989091099977308,
+        -0.11114625084653645
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": false,
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.445135,
+      "kill_probability_max": 0.0013289237990155793,
+      "kills_in_window": 78525,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 2,
+      "peak_times": [
+        0.6700000000000002,
+        1.3900000000000008
+      ],
+      "replica": 15,
+      "runtime_seconds": 20.942978208004206,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.4189820438333105,
+        0.741416117545554,
+        0.31565680806604607
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.76025,
+      "kill_probability_max": 0.0013290777628267069,
+      "kills_in_window": 148780,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        1.0300000000000005,
+        1.670000000000001,
+        2.450000000000002
+      ],
+      "replica": 16,
+      "runtime_seconds": 17.575194834003923,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.8857200818404234,
+        0.7625798271938149,
+        -0.18423587416936688
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": false,
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.441345,
+      "kill_probability_max": 0.0013289237990155795,
+      "kills_in_window": 84835,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 2,
+      "peak_times": [
+        0.7500000000000002,
+        1.630000000000001
+      ],
+      "replica": 17,
+      "runtime_seconds": 20.64294091699412,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.8152389908624131,
+        0.9883427958729526,
+        0.6027091568970669
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.601575,
+      "kill_probability_max": 0.0013297105893550162,
+      "kills_in_window": 120307,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.7900000000000003,
+        1.3900000000000008,
+        1.8500000000000012
+      ],
+      "replica": 18,
+      "runtime_seconds": 17.747723874999792,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.8317496379936204,
+        0.5788658423713504,
+        0.2196032080937886
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.80572,
+      "kill_probability_max": 0.0013310371678547837,
+      "kills_in_window": 152680,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 2,
+      "peak_times": [
+        0.7700000000000002,
+        1.9100000000000013
+      ],
+      "replica": 19,
+      "runtime_seconds": 18.24789645800047,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.6428097511039161,
+        0.7673354648737752,
+        -0.10972605493760512
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": false,
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.503035,
+      "kill_probability_max": 0.0013289237990155793,
+      "kills_in_window": 90989,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 2,
+      "peak_times": [
+        0.8900000000000003,
+        1.630000000000001
+      ],
+      "replica": 20,
+      "runtime_seconds": 20.75440354100283,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.8768868853747647,
+        0.9576084721864677,
+        0.10702695024970993
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": false,
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.747565,
+      "kill_probability_max": 0.0013289237990155797,
+      "kills_in_window": 128419,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 2,
+      "peak_times": [
+        0.7500000000000002,
+        1.4100000000000008
+      ],
+      "replica": 21,
+      "runtime_seconds": 19.490451707999455,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.97632871050941,
+        1.002708748393859,
+        0.2569321825640992
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.753045,
+      "kill_probability_max": 0.001328923799016691,
+      "kills_in_window": 143229,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.7100000000000002,
+        1.3700000000000008,
+        2.5900000000000016
+      ],
+      "replica": 22,
+      "runtime_seconds": 18.549908291002794,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.5587963182289637,
+        0.7027627402875888,
+        0.15764995957241645
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.797425,
+      "kill_probability_max": 0.0013289242675353767,
+      "kills_in_window": 145200,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.9300000000000004,
+        1.710000000000001,
+        2.9700000000000024
+      ],
+      "replica": 23,
+      "runtime_seconds": 18.7895107919976,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.5917310667384783,
+        0.9944223790117326,
+        0.2118392722832571
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.77744,
+      "kill_probability_max": 0.0013289238227776354,
+      "kills_in_window": 144677,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.9100000000000004,
+        1.3900000000000008,
+        2.7500000000000018
+      ],
+      "replica": 24,
+      "runtime_seconds": 18.405887749999238,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.758949843189685,
+        0.8676268250289136,
+        0.3637351001622293
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.71346,
+      "kill_probability_max": 0.0013289278701041187,
+      "kills_in_window": 140937,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.8100000000000003,
+        1.510000000000001,
+        2.3100000000000014
+      ],
+      "replica": 25,
+      "runtime_seconds": 18.659589167000377,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.7104255231643244,
+        0.8616381813513366,
+        0.19908777610354494
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.782555,
+      "kill_probability_max": 0.0013289237994055514,
+      "kills_in_window": 144873,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.8500000000000003,
+        1.530000000000001,
+        2.8100000000000023
+      ],
+      "replica": 26,
+      "runtime_seconds": 19.460750541999005,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.7546174553795286,
+        0.9289028501853247,
+        -0.012529546710412343
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": false,
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.60525,
+      "kill_probability_max": 0.0013289237990155816,
+      "kills_in_window": 99358,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 2,
+      "peak_times": [
+        0.8300000000000003,
+        1.4500000000000008
+      ],
+      "replica": 27,
+      "runtime_seconds": 21.92023400000471,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.8574518110055174,
+        0.9932092085991746,
+        0.13556772929130514
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.763255,
+      "kill_probability_max": 0.0013289237990155797,
+      "kills_in_window": 133668,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.7700000000000002,
+        1.3700000000000008,
+        3.0900000000000025
+      ],
+      "replica": 28,
+      "runtime_seconds": 20.534521166999184,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.724728392012354,
+        1.0628175220362654,
+        0.12224132506809297
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.75493,
+      "kill_probability_max": 0.0013289237994224214,
+      "kills_in_window": 130585,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.8300000000000003,
+        1.3100000000000007,
+        3.030000000000002
+      ],
+      "replica": 29,
+      "runtime_seconds": 20.652017000000342,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        2.1610585801342346,
+        0.7625317112284559,
+        0.621524434500278
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": false,
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.61165,
+      "kill_probability_max": 0.002072190602022851,
+      "kills_in_window": 121893,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 2,
+      "peak_times": [
+        0.6100000000000001,
+        1.690000000000001
+      ],
+      "replica": 30,
+      "runtime_seconds": 18.436271708000277,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        2.343523686316987,
+        0.6406736086210814,
+        0.36740755187384905
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.724385,
+      "kill_probability_max": 0.001364057191684621,
+      "kills_in_window": 137040,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 1,
+      "peak_times": [
+        1.8300000000000012
+      ],
+      "replica": 31,
+      "runtime_seconds": 18.587248208998062,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.4759701312292883,
+        0.8050784436554022,
+        0.4290256387753805
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.69315,
+      "kill_probability_max": 0.0013300589101431408,
+      "kills_in_window": 138127,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.9900000000000004,
+        1.590000000000001,
+        2.1700000000000017
+      ],
+      "replica": 32,
+      "runtime_seconds": 17.96669995800039,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.6261339894428546,
+        0.7203615822059796,
+        0.5436768278672477
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": false,
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.654165,
+      "kill_probability_max": 0.0017986972414444887,
+      "kills_in_window": 130791,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 2,
+      "peak_times": [
+        0.8900000000000003,
+        1.750000000000001
+      ],
+      "replica": 33,
+      "runtime_seconds": 17.800744416003,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.5751932482621644,
+        0.8261787940647192,
+        0.2945684171488029
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.75853,
+      "kill_probability_max": 0.0013289247682455097,
+      "kills_in_window": 147330,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.9300000000000004,
+        1.550000000000001,
+        2.490000000000002
+      ],
+      "replica": 34,
+      "runtime_seconds": 18.196254082999076,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.8188871985191042,
+        0.7376834026885093,
+        0.2572068527349837
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.77683,
+      "kill_probability_max": 0.0013289366888800409,
+      "kills_in_window": 148696,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.7900000000000003,
+        1.670000000000001,
+        2.610000000000002
+      ],
+      "replica": 35,
+      "runtime_seconds": 18.391038292000303,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        2.0051811179744683,
+        0.8366429189300618,
+        0.3282876859945407
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.73181,
+      "kill_probability_max": 0.0013289270468696023,
+      "kills_in_window": 143356,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.6900000000000002,
+        1.550000000000001,
+        2.3900000000000015
+      ],
+      "replica": 36,
+      "runtime_seconds": 18.3183352499982,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        2.086200830765008,
+        0.872593450658571,
+        0.04521644593187235
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": false,
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.687575,
+      "kill_probability_max": 0.0013289237990155812,
+      "kills_in_window": 113500,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 2,
+      "peak_times": [
+        0.6500000000000001,
+        1.510000000000001
+      ],
+      "replica": 37,
+      "runtime_seconds": 20.49518558300042,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.9162408632047299,
+        0.7325978832416199,
+        0.26228620307766076
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.774175,
+      "kill_probability_max": 0.001328944698724823,
+      "kills_in_window": 148577,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.7300000000000002,
+        1.670000000000001,
+        2.610000000000002
+      ],
+      "replica": 38,
+      "runtime_seconds": 18.45642095799849,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        2.0033768884993917,
+        0.9472441831741008,
+        -0.2852903862498953
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": false,
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.377565,
+      "kill_probability_max": 0.0013289237990155795,
+      "kills_in_window": 75087,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 2,
+      "peak_times": [
+        0.6900000000000002,
+        1.4300000000000008
+      ],
+      "replica": 39,
+      "runtime_seconds": 21.23194483399857,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.6047431136001873,
+        1.2598281954669839,
+        0.08892007279893319
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": false,
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.722725,
+      "kill_probability_max": 0.0013324457039310623,
+      "kills_in_window": 120935,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 1,
+      "peak_times": [
+        0.9100000000000004
+      ],
+      "replica": 40,
+      "runtime_seconds": 19.951602999994066,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.890475051984582,
+        0.7616612730031348,
+        0.4971853010823067
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.65818,
+      "kill_probability_max": 0.0013744197721484428,
+      "kills_in_window": 131535,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 2,
+      "peak_times": [
+        0.7500000000000002,
+        1.670000000000001
+      ],
+      "replica": 41,
+      "runtime_seconds": 18.13989179199416,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.4346571548544427,
+        1.1121403544240551,
+        0.43123815385986575
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.669635,
+      "kill_probability_max": 0.0013364652542831824,
+      "kills_in_window": 133415,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 2,
+      "peak_times": [
+        1.0300000000000005,
+        2.1700000000000017
+      ],
+      "replica": 42,
+      "runtime_seconds": 18.415960042002553,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.8836764370098247,
+        0.8305070364052782,
+        0.167421683248941
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.781225,
+      "kill_probability_max": 0.001328923799391966,
+      "kills_in_window": 141650,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.7500000000000002,
+        1.550000000000001,
+        2.8500000000000023
+      ],
+      "replica": 43,
+      "runtime_seconds": 19.372643707996758,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.6740564972443686,
+        0.8348667953335284,
+        0.6402727590482069
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": false,
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.612275,
+      "kill_probability_max": 0.00165535868578936,
+      "kills_in_window": 122455,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 2,
+      "peak_times": [
+        0.8700000000000003,
+        1.610000000000001
+      ],
+      "replica": 44,
+      "runtime_seconds": 18.319474541996897,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.9651104326131525,
+        0.7400387980350814,
+        0.08271758163236287
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": false,
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.74493,
+      "kill_probability_max": 0.0013289237995662664,
+      "kills_in_window": 127462,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 2,
+      "peak_times": [
+        0.7100000000000002,
+        1.670000000000001
+      ],
+      "replica": 45,
+      "runtime_seconds": 20.168536290999327,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.8570637591166368,
+        0.7917839758746995,
+        0.31650741234966023
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.743935,
+      "kill_probability_max": 0.0013289403255127177,
+      "kills_in_window": 145439,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.7700000000000002,
+        1.610000000000001,
+        2.4300000000000015
+      ],
+      "replica": 46,
+      "runtime_seconds": 18.549112999993667,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.9645905737469171,
+        0.8464361151691969,
+        0.2765271343044269
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.756635,
+      "kill_probability_max": 0.0013289239166003374,
+      "kills_in_window": 145674,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.7100000000000002,
+        1.530000000000001,
+        2.490000000000002
+      ],
+      "replica": 47,
+      "runtime_seconds": 18.61908116700215,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.6276658753520492,
+        0.7890161624096915,
+        0.01568806688760163
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": false,
+      "g_n_window_maxima": 2,
+      "kill_fraction": 0.666575,
+      "kill_probability_max": 0.0013289237990157174,
+      "kills_in_window": 111063,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 2,
+      "peak_times": [
+        0.8900000000000003,
+        1.610000000000001
+      ],
+      "replica": 48,
+      "runtime_seconds": 20.42185529100243,
+      "success": false,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    },
+    {
+      "centres_z": [
+        1.6213254473583518,
+        0.7151701871421156,
+        0.3401890596782692
+      ],
+      "eta": 0.3,
+      "eta_index": 4,
+      "g_has_m_window_maxima": true,
+      "g_n_window_maxima": 3,
+      "kill_fraction": 0.74317,
+      "kill_probability_max": 0.0013301057757963003,
+      "kills_in_window": 146327,
+      "kind": "centre",
+      "m": 3,
+      "mode_count": 3,
+      "peak_times": [
+        0.8900000000000003,
+        1.710000000000001,
+        2.330000000000002
+      ],
+      "replica": 49,
+      "runtime_seconds": 18.217325334000634,
+      "success": true,
+      "weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ]
+    }
+  ],
+  "replica_walkers": 200000,
+  "replicas": 50,
+  "successes": 28,
+  "survival_probability": 0.56,
+  "wilson_95_ci": [
+    0.4230578680014353,
+    0.6883801278976466
+  ]
+}

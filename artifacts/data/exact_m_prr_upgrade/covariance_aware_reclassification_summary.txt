@@ -1,0 +1,64 @@
+Covariance-aware prominence reclassification (Codex C1 fix)
+records=201 local_maxima=606 files=197 flips=3
+
+FLIPS (old verdict != new verdict):
+  artifacts/data/exact_m_prr_upgrade/w2_b0_empirical/probe_m3_eps0.2_B0.125.json /results/classifier t=2.43 z_old=5.831 z_new=4.213 rel=0.075 True -> False
+  artifacts/data/exact_m_prr_upgrade/w2_b0_empirical/probe_m3_eps0.2_B0.210224.json /results/classifier t=2.63 z_old=6.143 z_new=4.431 rel=0.061 True -> False
+  artifacts/data/exact_m_prr_upgrade/w2_b0_empirical/probe_m3_eps0.2_B0.272627.json /results/classifier t=2.51 z_old=6.140 z_new=4.417 rel=0.053 True -> False
+
+direction: max(z_new/z_old)=2.893427 min=0.647211 conservative_everywhere=False
+W1 final-map changes: 0; m=2 final mode counts [2]
+
+W2 crossings (old vs covariance-aware):
+  m=2 eps=0.05: OLD 6.9871 [6.949335341094825, 7.025008641493198] | NEW 6.9871 [6.949335341094825, 7.025008641493198]
+  m=2 eps=0.1: OLD 7.6195 [7.578303926347862, 7.660826245588589] | NEW 7.6195 [7.578303926347862, 7.660826245588589]
+  m=2 eps=0.15: OLD status=right_censored lb=8.0 | NEW status=right_censored lb=8.0
+  m=2 eps=0.2: OLD status=right_censored lb=8.0 | NEW status=right_censored lb=8.0
+  m=3 eps=0.05: OLD 4.1545 [4.132099516084914, 4.177095129709655] | NEW 4.1545 [4.132099516084914, 4.177095129709655]
+  m=3 eps=0.1: OLD 3.5700 [3.5507529850530424, 3.5894181500062143] | NEW 3.5700 [3.5507529850530424, 3.5894181500062143]
+  m=3 eps=0.15: OLD 1.5506 [1.542210825407941, 1.559004400237837] | NEW 1.5506 [1.542210825407941, 1.559004400237837]
+  m=3 eps=0.2: OLD 0.2816 [0.2726269331663144, 0.29093121469439437] | NEW status=no_certified_crossing_at_1e6_walkers lb=None
+
+sensitivity (new rule): W1 sensitive 4/96 [(3, 0.05, 4.0), (3, 0.075, 4.0), (3, 0.1, 4.0), (3, 0.175, 0.5)]; W2 sensitive 28/43; anchors stable [True, True, True, True]
+  transition m=2 eps=0.05: midpoint_range=[6.168843301631764, 7.178836300012429] no_pass=0 right_censored=3
+  transition m=2 eps=0.1: midpoint_range=[6.168843301631764, 7.828576496701601] no_pass=0 right_censored=3
+  transition m=2 eps=0.15: midpoint_range=None no_pass=0 right_censored=9
+  transition m=2 eps=0.2: midpoint_range=None no_pass=0 right_censored=9
+  transition m=3 eps=0.05: midpoint_range=[4.154536407845515, 5.187358218604039] no_pass=4 right_censored=0
+  transition m=3 eps=0.1: midpoint_range=[3.084421650815882, 3.6285043510007973] no_pass=0 right_censored=3
+  transition m=3 eps=0.15: midpoint_range=[1.550584877685, 1.550584877685] no_pass=3 right_censored=3
+  transition m=3 eps=0.2: midpoint_range=None no_pass=9 right_censored=0
+
+headline z updates:
+  m=2 production weakest counted peak: 104.1 -> 71.8
+  m5 counted z: old [275.518126721197, 344.50654909049774, 390.72741465943784, 411.0023902438692, 470.8647576824123] new [214.86567171437636, 329.7375662105752, 361.08450362024956, 384.5194926214067, 454.48541535194056]
+  d3 counted z: old [831.1563805562246, 495.0155374850289] new [831.135978719404, 453.0402672429627]
+  B=0.25 partial recovery: t=2.49 z 6.698 -> 4.773 rel=0.027
+
+production table (modes old->new, min counted z old->new):
+  m2_eps0.1_B0.5_w50-50.json: 2->2 minZ 468.0->416.6
+  m2_eps0.1_B0.5_w70-30.json: 2->2 minZ 355.1->309.3
+  m2_eps0.1_B1_w50-50.json: 2->2 minZ 588.0->544.9
+  m2_eps0.1_B1_w50-50_dt5e-4.json: 2->2 minZ 588.9->545.9
+  m2_eps0.1_B1_w70-30.json: 2->2 minZ 442.4->397.6
+  m2_eps0.1_B2_w50-50.json: 2->2 minZ 641.0->617.6
+  m2_eps0.1_B2_w70-30.json: 2->2 minZ 478.7->448.1
+  m2_eps0.2_B0.5_w50-50.json: 2->2 minZ 153.8->108.8
+  m2_eps0.2_B0.5_w70-30.json: 2->2 minZ 104.1->71.8
+  m2_eps0.2_B1_w50-50.json: 2->2 minZ 238.5->177.1
+  m2_eps0.2_B1_w70-30.json: 2->2 minZ 158.1->112.8
+  m2_eps0.2_B2_w50-50.json: 2->2 minZ 352.1->283.9
+  m2_eps0.2_B2_w70-30.json: 2->2 minZ 229.5->173.3
+  m3_eps0.1_B1_w33-33-33.json: 3->3 minZ 322.4->255.3
+  m3_eps0.1_B1_w50-30-20.json: 3->3 minZ 222.3->167.3
+  m3_eps0.2_B0.25_w33-33-33.json: 2->2 minZ 68.1->45.3
+  m3_eps0.2_B1_w33-33-33.json: 2->2 minZ 225.9->167.0
+  m3_eps0.2_B1_w50-30-20.json: 2->2 minZ 238.2->183.3
+
+W3 jitter (no stored counts -> deterministic bit-for-bit resimulation, see
+w3_jitter/covariance_aware_recheck.json): all 700 replicas reproduce their
+stored peak-only verdicts exactly; ZERO replica verdicts flip under the
+covariance-aware rule, so every survival fraction, Wilson CI, and
+classifier/theory agreement value quoted in the manuscript is unchanged
+(>=96% plateau to eta=0.15; 46%/40% at eta=0.4; 50/50 weight-jitter both
+designs; agreement 86-100%).

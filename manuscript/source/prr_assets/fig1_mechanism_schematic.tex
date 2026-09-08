@@ -1,0 +1,118 @@
+% Input asset for encounter_multimodal_prr_v2.tex
+\begin{tikzpicture}[>={Stealth[length=2.0mm]}, line cap=round, line join=round]
+  % ---------------- tunables ----------------
+  \pgfmathsetmacro\xu{1.40}    % cm per time unit
+  \pgfmathsetmacro\zu{1.70}    % cm per Z unit
+  \pgfmathsetmacro\zbar{1.6}   % OU target \bar z (z_0 = 0, gamma = 1)
+  \pgfmathsetmacro\tmax{3.95}  % drawn time range
+  \pgfmathsetmacro\tA{0.75}    % target times t_1 < t_2 < t_3
+  \pgfmathsetmacro\tB{1.4}
+  \pgfmathsetmacro\tC{2.4}
+  \pgfmathsetmacro\ttau{0.4}   % window [tau, T]
+  \pgfmathsetmacro\tT{3.4}
+  \pgfmathsetmacro\cA{\zbar*(1-exp(-\tA))}   % slab centres c_j = mu(t_j)
+  \pgfmathsetmacro\cB{\zbar*(1-exp(-\tB))}
+  \pgfmathsetmacro\cC{\zbar*(1-exp(-\tC))}
+  \pgfmathsetmacro\sdz{0.042}  % slab s.d. (~ eps*rho) in Z units (exaggerated)
+  \pgfmathsetmacro\bshift{-3.45} % panel (b) baseline
+  \pgfmathsetmacro\fu{1.55}    % cm per unit of f/B
+  \pgfmathsetmacro\sA{0.09}\pgfmathsetmacro\sB{0.14}\pgfmathsetmacro\sC{0.30}
+  \pgfmathsetmacro\hA{1.00}\pgfmathsetmacro\hB{0.95}\pgfmathsetmacro\hC{0.82}
+  \pgfmathsetmacro\ix{\xu*\tmax+1.20}        % inset x offset
+  % ---------------- styles ----------------
+  \tikzset{
+    slabband/.style={fill=blue!8},
+    slabprof/.style={fill=blue!28, draw=blue!55!black, line width=0.5pt},
+    mucurve/.style={line width=0.9pt},
+    samplepath/.style={gray!55, line width=0.4pt},
+    fcurve/.style={red!60!black, line width=0.9pt},
+    guide/.style={dashed, gray!75, line width=0.5pt},
+    axis/.style={line width=0.6pt},
+    lbl/.style={font=\scriptsize},
+    Lbl/.style={font=\footnotesize},
+  }
+  % ================= panel (a): geometry =================
+  % slab bands across the (t,Z) plane (the slabs are static in space)
+  \foreach \zc in {\cA,\cB,\cC}{
+    \fill[slabband] (0,{\zu*(\zc-2*\sdz)}) rectangle ({\xu*\tmax},{\zu*(\zc+2*\sdz)});
+  }
+  % dashed guides from the crossings (t_j, c_j) down to the peaks in (b)
+  \draw[guide] ({\xu*\tA},{\zu*\cA}) -- ({\xu*\tA},{\bshift+\fu*(\hA+0.02)+0.07});
+  \draw[guide] ({\xu*\tB},{\zu*\cB}) -- ({\xu*\tB},{\bshift+\fu*(\hB+0.02)+0.07});
+  \draw[guide] ({\xu*\tC},{\zu*\cC}) -- ({\xu*\tC},{\bshift+\fu*(\hC+0.02)+0.07});
+  % slab profiles w_j phi_j on the Z axis
+  \foreach \zc in {\cA,\cB,\cC}{
+    \filldraw[slabprof]
+      plot[domain=\zc-2.8*\sdz:\zc+2.8*\sdz, samples=50]
+        ({0.52*exp(-(\x-\zc)^2/(2*\sdz*\sdz))},{\zu*\x}) -- cycle;
+  }
+  % OU sample path (light) and mean mu(t) (thick, arrow = drift direction)
+  \draw[samplepath]
+    plot[domain=0:3.86, samples=420]
+      ({\xu*\x},{\zu*(\zbar*(1-exp(-\x)) + 0.026*sin(520*\x) + 0.015*sin(1210*\x+70))});
+  \draw[mucurve,->]
+    plot[domain=0:\tmax, samples=220] ({\xu*\x},{\zu*\zbar*(1-exp(-\x))});
+  % asymptote \bar z
+  \draw[dashed, gray!80] (0,{\zu*\zbar}) -- ({\xu*\tmax},{\zu*\zbar})
+    node[lbl, right, black] {$\bar z$};
+  % crossing markers
+  \foreach \tj/\zc in {\tA/\cA, \tB/\cB, \tC/\cC}{
+    \fill ({\xu*\tj},{\zu*\zc}) circle (1.4pt);
+  }
+  % axes
+  \draw[axis,->] (0,0) -- (0,{\zu*\zbar+0.50}) node[Lbl, above] {$Z$};
+  \draw[axis] (0,0) -- ({\xu*\tmax+0.15},0);
+  % labels
+  \node[lbl, left] at (0,{\zu*\cA}) {$z_1$};
+  \node[lbl, left] at (0,{\zu*\cB}) {$z_2$};
+  \node[lbl, left] at (0,{\zu*\cC}) {$z_3$};
+  \node[lbl, left] at (0,-0.02) {$z_0$};
+  \node[lbl] at ({\xu*1.28},{\zu*1.00}) {$\mu(t)$};
+  \node[lbl, align=left, anchor=west] at ({\xu*2.30},{\zu*0.40})
+    {slabs $w_j\phi_{j,\varepsilon}(Z)$, width $\varepsilon\rho$\\
+     budget $\int\kappa_{\bm w}\,\mathrm{d}c=B$ fixed};
+  \draw[gray!75, line width=0.4pt] ({\xu*2.27},{\zu*0.47}) -- ({\xu*1.78},{\zu*\cA-0.01});
+  % panel tag
+  \node[Lbl] at (-0.55,{\zu*\zbar+0.50}) {(a)};
+  % ================= inset: contact geometry =================
+  \begin{scope}
+    % contact tube |R|_mi < a
+    \fill ({\ix+0.44},2.28) circle (1.5pt);
+    \fill ({\ix+0.76},2.50) circle (1.5pt);
+    \draw[line width=0.5pt] ({\ix+0.44},2.28) -- ({\ix+0.76},2.50)
+      node[lbl, midway, above left=-2pt] {$R$};
+    \draw[dashed, line width=0.5pt] ({\ix+0.44},2.28) circle (0.5);
+    \draw[->, line width=0.4pt] ({\ix+0.44},2.28) -- ++(205:0.5)
+      node[lbl, midway, below right=-3pt] {$a$};
+    \node[lbl] at ({\ix+0.55},1.55) {$|R|_{\mathrm{mi}}<a$};
+    % transverse torus
+    \draw[line width=0.5pt] ({\ix+0.55},0.85) ellipse (0.62 and 0.30);
+    \draw[line width=0.5pt] ({\ix+0.27},0.90) .. controls ({\ix+0.43},0.72) and ({\ix+0.67},0.72) .. ({\ix+0.83},0.90);
+    \draw[line width=0.5pt] ({\ix+0.32},0.85) .. controls ({\ix+0.46},0.97) and ({\ix+0.64},0.97) .. ({\ix+0.78},0.85);
+    \node[lbl, align=center] at ({\ix+0.55},0.28) {$\mathbb T_W^{d-1}$};
+  \end{scope}
+  % ================= panel (b): exposure-clock consequence =================
+  \draw[fcurve]
+    plot[domain=0:\tmax, samples=320]
+      ({\xu*\x},{\bshift+\fu*(0.02
+        + \hA*exp(-(\x-\tA)^2/(2*\sA*\sA))
+        + \hB*exp(-(\x-\tB)^2/(2*\sB*\sB))
+        + \hC*exp(-(\x-\tC)^2/(2*\sC*\sC)))});
+  \draw[axis,->] (0,\bshift) -- ({\xu*\tmax+0.15},\bshift) node[Lbl, right] {$t$};
+  \draw[axis,->] (0,\bshift) -- (0,{\bshift+\fu*1.18});
+  \node[Lbl, rotate=90] at (-0.35,{\bshift+\fu*0.60}) {$f_{B,\bm w}(t)/B$};
+  % window ticks tau, T
+  \draw[axis] ({\xu*\ttau},\bshift) -- ({\xu*\ttau},{\bshift-0.09})
+    node[lbl, below] {$\tau$};
+  \draw[axis] ({\xu*\tT},\bshift) -- ({\xu*\tT},{\bshift-0.09})
+    node[lbl, below] {$T$};
+  % target-time ticks
+  \foreach \tj/\lab in {\tA/{t_1}, \tB/{t_2}, \tC/{t_3}}{
+    \draw[axis] ({\xu*\tj},\bshift) -- ({\xu*\tj},{\bshift-0.09})
+      node[lbl, below] {$\lab$};
+  }
+  \node[lbl, gray!60!black, anchor=west] at ({\xu*2.92},{\bshift+\fu*0.97})
+    {$\to\,G_{\varepsilon,\bm w}(t)$ as $B\downarrow0$};
+  % panel tag
+  \node[Lbl] at (-0.55,{\bshift+\fu*1.18}) {(b)};
+\end{tikzpicture}
