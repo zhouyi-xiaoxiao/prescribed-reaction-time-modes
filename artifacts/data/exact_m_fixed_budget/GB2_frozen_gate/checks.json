@@ -1,0 +1,318 @@
+{
+ "script": "code/fb_gb2_frozen_gate_checks.py",
+ "checked_text": "manuscript/cnsns_submission/sm/th/GB2_frozen_gate_count.tex (labels gb2:fg-*)",
+ "python": "3.14.6",
+ "mpmath": "1.4.1",
+ "numpy": "2.5.3",
+ "platform": "macOS-26.7-arm64-arm-64bit-Mach-O",
+ "mp_dps": 40,
+ "part1_algebra": {
+  "n_random_sets": 300,
+  "n_Lp_cases": 40,
+  "max_errors": {
+   "bridge_ode": "7.05e-41",
+   "bridge_disc": "2.94e-39",
+   "bridge_form": "1.84e-40",
+   "score_identity": "9.75e-39",
+   "beta_forms": "1.84e-40",
+   "logH_prime": "1.47e-40",
+   "E_T": "9.74e-39",
+   "E_K2": "1.54e-37",
+   "score_formula": "1.16e-38",
+   "Lp_identity": "7.46e-40"
+  },
+  "max_error_overall": "1.54e-37",
+  "violations": {
+   "disc_bound": 0,
+   "lambda_h": 0,
+   "lambda_t": 0
+  }
+ },
+ "part1_seconds": 19.7,
+ "part2_free_interval": {
+  "anchors": "gamma = D0 = rho = 1, Q = 4, tau = 0.5, T = 3.5; s0^2: stat 0.5, point 0, hot 2",
+  "time_grid_points": 61,
+  "u_grid_points": 201,
+  "min_ratio_maxdist_over_rg": {
+   "m2_stat": 11443.56183138267,
+   "m2_point": 13882.476358816735,
+   "m2_hot": 6750.518807512667,
+   "m3_stat": 12549.879122416929,
+   "m3_point": 15975.622083815379,
+   "m3_hot": 5957.946963368603
+  },
+  "min_over_anchors": 5957.946963368603
+ },
+ "part2_seconds": 18.1,
+ "part3_tangent_d2_quadrature": {
+  "setting": "d = 2, a = 0.4, gamma = D0 = 1, u0^2 = sigma0^2 = 0.09; dev = |P(chi_t = 1) - 1/2|",
+  "rows": {
+   "t=0.5": {
+    "eps=0.1": {
+     "dev": "0.046209",
+     "dev_over_sqrt_eps": "0.14613",
+     "dev_over_eps": "0.46209"
+    },
+    "eps=0.05": {
+     "dev": "0.022544",
+     "dev_over_sqrt_eps": "0.10082",
+     "dev_over_eps": "0.45087"
+    },
+    "eps=0.025": {
+     "dev": "0.011208",
+     "dev_over_sqrt_eps": "0.070888",
+     "dev_over_eps": "0.44834"
+    },
+    "eps=0.0125": {
+     "dev": "0.0055965",
+     "dev_over_sqrt_eps": "0.050056",
+     "dev_over_eps": "0.44772"
+    }
+   },
+   "t=2.5": {
+    "eps=0.1": {
+     "dev": "0.042992",
+     "dev_over_sqrt_eps": "0.13595",
+     "dev_over_eps": "0.42992"
+    },
+    "eps=0.05": {
+     "dev": "0.015924",
+     "dev_over_sqrt_eps": "0.071214",
+     "dev_over_eps": "0.31848"
+    },
+    "eps=0.025": {
+     "dev": "0.0078376",
+     "dev_over_sqrt_eps": "0.049569",
+     "dev_over_eps": "0.3135"
+    },
+    "eps=0.0125": {
+     "dev": "0.0039043",
+     "dev_over_sqrt_eps": "0.034921",
+     "dev_over_eps": "0.31234"
+    }
+   },
+   "t=3.5": {
+    "eps=0.1": {
+     "dev": "0.050648",
+     "dev_over_sqrt_eps": "0.16016",
+     "dev_over_eps": "0.50648"
+    },
+    "eps=0.05": {
+     "dev": "0.013581",
+     "dev_over_sqrt_eps": "0.060736",
+     "dev_over_eps": "0.27162"
+    },
+    "eps=0.025": {
+     "dev": "0.0066716",
+     "dev_over_sqrt_eps": "0.042195",
+     "dev_over_eps": "0.26686"
+    },
+    "eps=0.0125": {
+     "dev": "0.0033227",
+     "dev_over_sqrt_eps": "0.029719",
+     "dev_over_eps": "0.26581"
+    }
+   }
+  },
+  "dev_over_eps_range": [
+   0.2658,
+   0.5065
+  ]
+ },
+ "part3_seconds": 1.9,
+ "part4_nonaxis_e1_and_orthant": {
+  "min_image_nonaxis_e1": {
+   "tested": 8000,
+   "violations": 0,
+   "min(mi-|lift|)": 0.0,
+   "note": "gap = |minimum image| - |lift| over the 3^(d-1) neighbouring images; 0 = the lift is the minimum image"
+  },
+  "tangent_UP_d3": {
+   "setting": "d = 3 (torus dimension 2), W = 1, gamma = D0 = 1, u0^2 = 0.09, Sigma_perp0 = 0.09 I; N = 4e6 per direction",
+   "cases": {
+    "a=0.4,t=0.5,eps=0.01": {
+     "axis": {
+      "P": 0.4885,
+      "dev_over_eps": 1.15
+     },
+     "diag": {
+      "P": 0.48815,
+      "dev_over_eps": 1.185
+     },
+     "mc_se": 0.00025,
+     "z_axis_minus_diag": 0.99,
+     "P(G^c) bound": 1.6301961010644219e-10
+    },
+    "a=0.4,t=0.5,eps=0.005": {
+     "axis": {
+      "P": 0.49357,
+      "dev_over_eps": 1.286
+     },
+     "diag": {
+      "P": 0.49433,
+      "dev_over_eps": 1.133
+     },
+     "mc_se": 0.00025,
+     "z_axis_minus_diag": 2.15,
+     "P(G^c) bound": 1.1035180124174182e-41
+    },
+    "a=0.4,t=0.5,eps=0.0025": {
+     "axis": {
+      "P": 0.49708,
+      "dev_over_eps": 1.166
+     },
+     "diag": {
+      "P": 0.49735,
+      "dev_over_eps": 1.058
+     },
+     "mc_se": 0.00025,
+     "z_axis_minus_diag": 0.76,
+     "P(G^c) bound": 2.317062410293239e-166
+    },
+    "a=0.4,t=2.5,eps=0.01": {
+     "axis": {
+      "P": 0.48087,
+      "dev_over_eps": 1.913
+     },
+     "diag": {
+      "P": 0.48121,
+      "dev_over_eps": 1.879
+     },
+     "mc_se": 0.00025,
+     "z_axis_minus_diag": 0.96,
+     "P(G^c) bound": 0.028181007343640683
+    },
+    "a=0.4,t=2.5,eps=0.005": {
+     "axis": {
+      "P": 0.49034,
+      "dev_over_eps": 1.933
+     },
+     "diag": {
+      "P": 0.49051,
+      "dev_over_eps": 1.898
+     },
+     "mc_se": 0.00025,
+     "z_axis_minus_diag": 0.48,
+     "P(G^c) bound": 9.854760599453872e-09
+    },
+    "a=0.4,t=2.5,eps=0.0025": {
+     "axis": {
+      "P": 0.49574,
+      "dev_over_eps": 1.702
+     },
+     "diag": {
+      "P": 0.4956,
+      "dev_over_eps": 1.761
+     },
+     "mc_se": 0.00025,
+     "z_axis_minus_diag": 0.4,
+     "P(G^c) bound": 1.4736839035734302e-34
+    },
+    "a=0.25,t=0.5,eps=0.02": {
+     "axis": {
+      "P": 0.46255,
+      "dev_over_eps": 1.873
+     },
+     "diag": {
+      "P": 0.46258,
+      "dev_over_eps": 1.871
+     },
+     "mc_se": 0.00025,
+     "z_axis_minus_diag": 0.08,
+     "P(G^c) bound": 2.3332754989249515e-16
+    },
+    "a=0.25,t=0.5,eps=0.01": {
+     "axis": {
+      "P": 0.48091,
+      "dev_over_eps": 1.909
+     },
+     "diag": {
+      "P": 0.48126,
+      "dev_over_eps": 1.874
+     },
+     "mc_se": 0.00025,
+     "z_axis_minus_diag": 0.99,
+     "P(G^c) bound": 4.631099464555065e-65
+    },
+    "a=0.25,t=0.5,eps=0.005": {
+     "axis": {
+      "P": 0.49102,
+      "dev_over_eps": 1.796
+     },
+     "diag": {
+      "P": 0.49074,
+      "dev_over_eps": 1.853
+     },
+     "mc_se": 0.00025,
+     "z_axis_minus_diag": 0.79,
+     "P(G^c) bound": 7.187145891626507e-260
+    },
+    "a=0.25,t=2.5,eps=0.02": {
+     "axis": {
+      "P": 0.43869,
+      "dev_over_eps": 3.065
+     },
+     "diag": {
+      "P": 0.43911,
+      "dev_over_eps": 3.045
+     },
+     "mc_se": 0.00025,
+     "z_axis_minus_diag": 1.19,
+     "P(G^c) bound": 0.0017353948592958304
+    },
+    "a=0.25,t=2.5,eps=0.01": {
+     "axis": {
+      "P": 0.46976,
+      "dev_over_eps": 3.024
+     },
+     "diag": {
+      "P": 0.46981,
+      "dev_over_eps": 3.019
+     },
+     "mc_se": 0.00025,
+     "z_axis_minus_diag": 0.14,
+     "P(G^c) bound": 1.4171416183459763e-13
+    },
+    "a=0.25,t=2.5,eps=0.005": {
+     "axis": {
+      "P": 0.4845,
+      "dev_over_eps": 3.1
+     },
+     "diag": {
+      "P": 0.48502,
+      "dev_over_eps": 2.997
+     },
+     "mc_se": 0.00025,
+     "z_axis_minus_diag": 1.47,
+     "P(G^c) bound": 6.301922181201341e-54
+    }
+   },
+   "max_z_axis_minus_diag_where_P(G^c)_bound<1e-6": 2.15
+  },
+  "orthant": {
+   "varrho_12": 0.63667,
+   "P(chi1!=chi2)": 0.28031,
+   "P(chi1=0,chi2=1)": 0.14016
+  }
+ },
+ "part4_seconds": 3.3,
+ "part5_atom_example": {
+  "setting": "d = 2, a = 0.4, gamma = D0 = 1, u0^2 = sigma0^2 = 0.09, tau = 0.5; noise-free separation reaches the contact sphere exactly at tau",
+  "rows": {
+   "eps=0.02": {
+    "P(chi_tau=1)": "0.481724",
+    "dev_over_eps": "0.9138"
+   },
+   "eps=0.01": {
+    "P(chi_tau=1)": "0.490853",
+    "dev_over_eps": "0.9147"
+   },
+   "eps=0.005": {
+    "P(chi_tau=1)": "0.495425",
+    "dev_over_eps": "0.915"
+   }
+  }
+ },
+ "part5_seconds": 0.3,
+ "total_seconds": 43.4
+}

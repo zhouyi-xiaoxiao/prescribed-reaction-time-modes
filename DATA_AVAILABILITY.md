@@ -130,6 +130,37 @@ Closing campaign (2026-09):
   `mc_*.json`), the unimodality quadratures (`n14_unimodality.json`) and the
   fixer checks (`n14_fix_checks.json`).
 
+General-transport counterexamples (new in release v1.1.1):
+
+- `GX_counterexamples/checks.json`: checks of the counterexamples of the
+  Supplementary Material (section on counterexamples, plug flow and a
+  sufficient criterion), written by `fb_gx_counterexample_checks.py`:
+  covariance identities of the variance-driven example (`part1_*`); 60-digit
+  interval enclosures (`mpmath.iv`, rational inputs, exported with outward
+  rounding) of its arrival actions and their derivatives (`part2_*`,
+  `part3_*`, including the rounded-down action-gap bound); the spiral
+  constants, crossing and endpoint checks (`part4_spiral`; the values marked
+  as root finding are 60-digit floating-point values, not enclosures); the
+  closed-form free envelopes counted on 400001-point grids (`part5_free_envelopes`;
+  numerical grid counts); and the seeded finite-noise illustration of the
+  killed density with its validation against forward Monte Carlo
+  (`part5_killed_illustration`; an illustration, not a proof).  The `sources`
+  field records the SHA-256 of two development sources that are not archived.
+
+Frozen-gate exact count under a contact floor (new in release v1.1.1):
+
+- `GB2_frozen_gate/checks.json`: checks of the Supplementary Material section
+  "Random frozen gates: the exact count under a uniform contact floor",
+  written by `fb_gb2_frozen_gate_checks.py`: 40-digit algebra at 300 random
+  parameter sets and the Gaussian L^r identity (`part1_algebra`); the
+  free-interval margin at the anchors (`part2_free_interval`); the contact
+  probability of the boundary-tangent gate by exact quadrature
+  (`part3_tangent_d2_quadrature`); the minimum-image check for non-axis
+  transverse directions, a Monte Carlo comparison of an axis and a diagonal
+  direction and the orthant switching probability
+  (`part4_nonaxis_e1_and_orthant`); and an illustration of an entry-time atom
+  (`part5_atom_example`).  Consistency checks, not part of a proof.
+
 Large-scale checks on Isambard 3 (2026-09; stream tags 95--98; each summary
 names its driver in `driver` and the node, interpreter, NumPy version and
 Slurm job in `env`):

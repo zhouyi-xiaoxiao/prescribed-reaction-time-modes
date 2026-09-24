@@ -1,6 +1,6 @@
 # Provenance
 
-The released archive is tag `v1.1.0` of
+The released archive is tag `v1.1.1` of
 https://github.com/zhouyi-xiaoxiao/prescribed-reaction-time-modes.  The
 source commit it was built from is recorded by the builder as
 `release_commit` in `environment/reference_platform.json` (together with
@@ -73,6 +73,27 @@ interpreter when this release was prepared).
   chunk layout, grid step), and no stored tag-90 or tag-91 entropy vector
   occurs in two different drivers' records (checked when this release was
   prepared); each record stores its own entropy, which is authoritative.
+- **General-transport counterexamples (new in v1.1.1).**
+  `GX_counterexamples/checks.json` was written on 2026-09-24 by
+  `fb_gx_counterexample_checks.py` on the same workstation with CPython
+  3.14.6, mpmath 1.4.1 and NumPy 2.5.3 (a separate environment used for the
+  mpmath checks).  Parts 1--4 (covariance identities, 60-digit
+  outward-rounded interval enclosures with rational inputs, spiral
+  constants) and the free-envelope grid counts draw no random numbers; the
+  finite-noise illustration of part 5 uses `SeedSequence([20260924, 61,
+  tag])` in one process (seed and stream tag distinct from those above).
+  Before this release the record was regenerated so that every exported
+  enclosure is rounded outward (the earlier, unreleased run printed
+  round-to-nearest endpoints); apart from these strings, the rounded-down
+  action-gap bound, a note and the run times, the regeneration reproduced the
+  earlier run exactly, including the seeded illustration.
+- **Frozen-gate checks (new in v1.1.1).**  `GB2_frozen_gate/checks.json` was
+  written on 2026-09-24 by `fb_gb2_frozen_gate_checks.py` on the same
+  workstation with CPython 3.14.6, mpmath 1.4.1 and NumPy 2.5.3.  Part 1 uses
+  Python's `random.seed(20260924)` and parts 4a--4b NumPy's
+  `default_rng(20260924)` in one process; the other parts draw no random
+  numbers.  The script merges two development checks of the same day; its
+  run reproduced their outputs exactly.
 - **Manuscripts.**  The compiled article, Supplementary Material and
   graphical abstract are not archived (no public preprint; the article will be
   linked from `README.md` on publication).  The builder reads the compiled
@@ -150,7 +171,8 @@ archived copies of the rewritten records and of the rewritten scripts
 (`exact_m_prr_w6_width_diagnostic.py`, `exact_m_fb_th6_tilted_bridge_checks.py`,
 `fb_derived_numbers.py`, `fb_n14_universality.py`, `fb_n14_general_mc.py`,
 `fb_n14_unimodality.py`, `fb_n14_fix_checks.py`, `fb_p5_step6_tail.py`,
-`fb_th8_interval_certificate.py`, `fb_th8b_fold_normal_form.py` and
+`fb_th8_interval_certificate.py`, `fb_th8b_fold_normal_form.py`,
+`fb_gx_counterexample_checks.py` and
 `notes/gap_diagnosis_20260923/theory_checks/contact_escape_check.py`) differ
 from the committed sources by these path prefixes (and the docstring wording
 above) only, while every other archived file is byte-identical to its source

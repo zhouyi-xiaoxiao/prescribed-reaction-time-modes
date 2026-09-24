@@ -1,6 +1,6 @@
 # Results map
 
-This file maps the results of the article (release `v1.1.0`) to the records
+This file maps the results of the article (release `v1.1.1`) to the records
 and scripts of this archive, and then reproduces the reading guide to the
 robustness records of release `v1.0.0`.  It quotes no new numbers: the values
 are in the records and in the article, whose LaTeX sources cite the JSON key
@@ -8,7 +8,7 @@ path of every quoted number.  Paths are relative to
 `artifacts/data/exact_m_fixed_budget/` unless they start with another
 top-level directory.
 
-## Fixed-budget campaign (release v1.1.0)
+## Fixed-budget campaign (releases v1.1.0 and v1.1.1)
 
 | result in the article | records | script(s) in `code/` |
 |:---|:---|:---|
@@ -31,6 +31,8 @@ top-level directory.
 | Preparation (Cor. 1) | `N4/n4_preparation.json`, `fk_ensembles/n4_*.json`, `TH10/preparation_predictions.json` | `fb_n4_preparation.py`, `fb_preparation_predictions.py` |
 | Small-budget count for every preparation (Cor. 1; interval certificates and census) | `C1_preparation_count/` (`c1_interval_certificates.json`, `c1_floatG_census.json`, `c1_fk_small_budget.json`) | `fb_c1_preparation_count.py` |
 | Universality of the mass law and of one peak per stripe (Sec. 3.9 and Sec. 4.8; universality figure) | `N14_universality/` (`n14_universality.json`, `n14_general_mc.json`, `mc_*.json`, `n14_unimodality.json`, `n14_fix_checks.json`) | `fb_n14_universality.py`, `fb_n14_general_mc.py`, `fb_n14_unimodality.py`, `fb_n14_fix_checks.py` |
+| Exact count beyond the harmonic trap: spiral and variance-driven counterexamples (interval enclosures of the arrival actions, spiral constants and endpoint check), free-envelope grid counts and a finite-noise illustration (Sec. 3.9; Supplementary Material, section on counterexamples, plug flow and a sufficient criterion; new in `v1.1.1`) | `GX_counterexamples/checks.json` | `fb_gx_counterexample_checks.py` |
+| Frozen gates: exact count under a uniform contact floor (Prop. 5(e); 40-digit bridge, slope and score identities, free-interval margin, boundary-tangent contact probability, minimum-image and orthant checks; Supplementary Material, section on random frozen gates; new in `v1.1.1`) | `GB2_frozen_gate/checks.json` | `fb_gb2_frozen_gate_checks.py` |
 | Visibility thresholds (visibility figure) | `N6/`, `fk_ensembles/n6_*.json`, `exact_m_prr_upgrade/robustness/w2_seed_repeat_summary.json` | `fb_n6_visibility_thresholds.py`, `exact_m_prr_w2_seed_repeat.py` |
 | Time-step ladder | `N5/` | `fb_n5_dt_ladder.py` |
 | Sufficient budget `B_cert` (Supplementary remark; proof in release `v1.0.0`) | `TH11/bcert_nominal_windows.json` | `fb_bcert_window_check.py`, `b0_dyson_numerics.py`, `b0_dyson_chaincheck.py`; Lean modules `BudgetThreshold`, `BZeroThreshold`, `B0ChainKernel` |

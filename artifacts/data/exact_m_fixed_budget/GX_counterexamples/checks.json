@@ -1,0 +1,1046 @@
+{
+ "script": "code/fb_gx_counterexample_checks.py",
+ "sources": {
+  "W": {
+   "path": "notes/gap_diagnosis_20260923/webpro_A_general_exact_count.md",
+   "sha256": "07405e2a9bdd6b8919a6557444d009417d911fbbda9ec46b90b5a25669135380"
+  },
+  "CX": {
+   "path": "manuscript/cnsns_submission/theory/GX_A_general_exact_count.tex",
+   "sha256": "3499108d14e6393f4c416d404b06d485692c2d8c18ea3fc5ef35af39d1e6524c"
+  }
+ },
+ "precision": {
+  "mp.dps": 60,
+  "iv.dps": 60
+ },
+ "seeds": "SeedSequence([20260924, 61, tag])",
+ "workers": 1,
+ "part1_CE1_covariance": {
+  "closed_form_eps2_units": {
+   "C11": "1e-6[1+(1-e^{-t})^2] + 1e-4 t + t - 2(1-e^{-t}) + (1-e^{-2t})/2",
+   "C12": "1e-6 e^{-t}(1-e^{-t}) + (1-e^{-t})^2/2",
+   "C22": "1e-6 e^{-2t} + (1-e^{-2t})/2",
+   "mean": "(t, 0)",
+   "Sprime": "2e-6 (1-e^{-t}) e^{-t} + 1e-4 + (1-e^{-t})^2  (= 2 C12 + 1e-4)"
+  },
+  "values": [
+   {
+    "t": "0.005",
+    "C11": "1.54153565596372e-6",
+    "C12": "1.24426445471569e-5",
+    "C22": "0.00497607317524972"
+   },
+   {
+    "t": "0.01",
+    "C11": "2.33094396426446e-6",
+    "C12": "4.95127553700399e-5",
+    "C22": "0.00990164354529566"
+   },
+   {
+    "t": "0.05",
+    "C11": "4.61423620172661e-5",
+    "C12": "0.00118933090927224",
+    "C22": "0.0475821958194382"
+   },
+   {
+    "t": "0.2",
+    "C11": "0.00232251599668395",
+    "C12": "0.0164294183505448",
+    "C22": "0.164840647302226"
+   },
+   {
+    "t": "1.0",
+    "C11": "0.168192640300979",
+    "C12": "0.199788432991022",
+    "C22": "0.432332493716977"
+   },
+   {
+    "t": "2.0",
+    "C11": "0.761714494673931",
+    "C12": "0.373822653227399",
+    "C22": "0.490842198871272"
+   },
+   {
+    "t": "4.0",
+    "C11": "2.5368655101677",
+    "C12": "0.481852110405393",
+    "C22": "0.499832269021511"
+   },
+   {
+    "t": "8.0",
+    "C11": "6.5014728683174",
+    "C12": "0.499664593975035",
+    "C22": "0.499999943732525"
+   },
+   {
+    "t": "11.0",
+    "C11": "9.5011354032287",
+    "C12": "0.499983298455385",
+    "C22": "0.499999999860527"
+   }
+  ],
+  "max_lyapunov_ode_residual": "1.5558e-61",
+  "max_vanloan_expm_minus_closed_form": "9.9837e-58",
+  "max_web_C11_minus_closed_form": "3.8894e-62",
+  "max_Sprime_formula_minus_numdiff": "1.5558e-61",
+  "agree_web_C11": true,
+  "mean_check": "m(t)=(t,0): A m + a = (1,0) = m'(t); deterministic path crosses x=c once, at t=c, speed 1",
+  "budget_integral_eps0.3": "1.0",
+  "note_exact_free_density": "E g(Z_t) = (eps rho)^{-1}(2 pi)^{-1} det(I+P M)^{-1/2} exp(-(t-c)^2/(2 eps^2 S_eps)), P = eps^2 Sigma(t), M = diag(1/(eps rho)^2, 1), S_eps = S - eps^2 C12^2/(1+eps^2 C22); hence -eps^2 log E g = J + O(eps^2 log(1/eps)) with J=(t-c)^2/(2S) the leading action used by W"
+ },
+ "part2_CE1_Jprime_intervals": {
+  "rows": [
+   {
+    "t": "1/200",
+    "claimed_open_interval": [
+     "-50",
+     "-49"
+    ],
+    "Jprime_enclosure": [
+     "-49.3923362309271",
+     "-49.3923362309270"
+    ],
+    "Jprime_enclosure_width": "1.34e-55",
+    "Jprime_numdiff": "-49.3923362309271",
+    "J_enclosure": [
+     "0.123102333633",
+     "0.123102333634"
+    ],
+    "S_enclosure": [
+     "0.000101541535655",
+     "0.000101541535656"
+    ],
+    "Sprime_enclosure": [
+     "0.000124885289094",
+     "0.000124885289095"
+    ],
+    "inside_claimed": true,
+    "implied_sign_f_prime": "+"
+   },
+   {
+    "t": "1/20",
+    "claimed_open_interval": [
+     "180",
+     "182"
+    ],
+    "Jprime_enclosure": [
+     "180.861465652179",
+     "180.861465652180"
+    ],
+    "Jprime_enclosure_width": "8.88e-55",
+    "Jprime_numdiff": "180.861465652179",
+    "J_enclosure": [
+     "5.47411434273",
+     "5.47411434274"
+    ],
+    "S_enclosure": [
+     "0.000146142362017",
+     "0.000146142362018"
+    ],
+    "Sprime_enclosure": [
+     "0.00247866181854",
+     "0.00247866181855"
+    ],
+    "inside_claimed": true,
+    "implied_sign_f_prime": "-"
+   },
+   {
+    "t": "1/5",
+    "claimed_open_interval": [
+     "-24",
+     "-22"
+    ],
+    "Jprime_enclosure": [
+     "-22.9406222563675",
+     "-22.9406222563674"
+    ],
+    "Jprime_enclosure_width": "3.19e-56",
+    "Jprime_numdiff": "-22.9406222563674",
+    "J_enclosure": [
+     "7.45093119083",
+     "7.45093119084"
+    ],
+    "S_enclosure": [
+     "0.00242251599668",
+     "0.00242251599669"
+    ],
+    "Sprime_enclosure": [
+     "0.0329588367010",
+     "0.0329588367011"
+    ],
+    "inside_claimed": true,
+    "implied_sign_f_prime": "+"
+   },
+   {
+    "t": "8",
+    "claimed_open_interval": [
+     "47/100",
+     "12/25"
+    ],
+    "Jprime_enclosure": [
+     "0.474225793193039",
+     "0.474225793193040"
+    ],
+    "Jprime_enclosure_width": "2.18e-60",
+    "Jprime_numdiff": "0.47422579319304",
+    "J_enclosure": [
+     "4.90958890202",
+     "4.90958890203"
+    ],
+    "S_enclosure": [
+     "6.50157286831",
+     "6.50157286832"
+    ],
+    "Sprime_enclosure": [
+     "0.999429187950",
+     "0.999429187951"
+    ],
+    "inside_claimed": true,
+    "implied_sign_f_prime": "-"
+   }
+  ],
+  "all_inside_claimed": true,
+  "J_local_max_after_crossing": {
+   "t": "0.1025922208",
+   "J": "9.637576782"
+  },
+  "J_secondary_min": {
+   "t": "1.859989478",
+   "J": "2.594705855"
+  },
+  "J_at_8": "4.909588902",
+  "sign_changes_of_Jprime_on_grid_[1/200,8]_20001pts": 3,
+  "note_sign_changes": "expected 3: at the crossing t=c (J=0), at the J-maximum, at the secondary J-minimum",
+  "mechanism_identity_ok": true,
+  "logic": "J'(1/200)<0, J'(1/20)>0, J'(1/5)<0, J'(8)>0 give, through W's relative estimate |eps^2 f'/f + J'| <= C sqrt(eps), f'(1/200)>0>f'(1/20) and f'(1/5)>0>f'(8): at least two interior maxima. The relative estimate itself is NOT re-proved here."
+ },
+ "part3_CE2_J1_intervals": {
+  "rows": [
+   {
+    "t": "1/5",
+    "claimed_open_interval_J1": [
+     "149/20",
+     "373/50"
+    ],
+    "J1_enclosure": [
+     "7.45093119083",
+     "7.45093119084"
+    ],
+    "J2_enclosure": [
+     "19822.3665254",
+     "19822.3665255"
+    ],
+    "J1_inside_claimed": true,
+    "stripe1_dominates": true
+   },
+   {
+    "t": "2",
+    "claimed_open_interval_J1": [
+     "259/100",
+     "261/100"
+    ],
+    "J1_enclosure": [
+     "2.59912355808",
+     "2.59912355809"
+    ],
+    "J2_enclosure": [
+     "42.0049765707",
+     "42.0049765708"
+    ],
+    "J1_inside_claimed": true,
+    "stripe1_dominates": true
+   },
+   {
+    "t": "4",
+    "claimed_open_interval_J1": [
+     "313/100",
+     "157/50"
+    ],
+    "J1_enclosure": [
+     "3.13762641553",
+     "3.13762641554"
+    ],
+    "J2_enclosure": [
+     "7.09509054335",
+     "7.09509054336"
+    ],
+    "J1_inside_claimed": true,
+    "stripe1_dominates": true
+   }
+  ],
+  "all_inside_claimed": true,
+  "action_gap_lower_bound": "0.53850285",
+  "gap_positive": true,
+  "note": "min over stripes of the action at t=0.2 and t=4 minus J1(2) (upper bound); a positive gap plus the survival sandwich B e^{-D/eps} H <= f <= B H gives an interior maximum of f in (0.2,4) for small eps (three-time comparison), in addition to the two crossing maxima"
+ },
+ "part1to3_seconds": 1.4,
+ "part4_spiral": {
+  "mean_ode_residual": "3.1115e-61",
+  "mean_initial": [
+   "-1.0",
+   "0.0"
+  ],
+  "A_plus_AT_plus_2over5_I_is_zero": true,
+  "tau": "0.92524523131060406583",
+  "tau_bracket_certified": true,
+  "mux_prime_positive_on_[0,1.5708]_certified": true,
+  "mux_prime_segments": 6434,
+  "mux(pi/6)_enclosure": [
+   "-0.559844893718",
+   "-0.559844893717"
+  ],
+  "d_enclosure": [
+   "0.559844893717",
+   "0.559844893718"
+  ],
+  "mux(pi/6)=-d_consistent": true,
+  "mux(pi/2)_enclosure": [
+   "0.999999999999",
+   "1.00000000001"
+  ],
+  "tau_in_(pi/6,pi/2)": true,
+  "mux_positive_on_[1.5707,4.7125]_certified": true,
+  "mux_positive_segments": 12870,
+  "tail_bound_1-2e^{-3pi/10}": [
+   "0.220677725249",
+   "0.220677725250"
+  ],
+  "no_zero_for_t>=3pi/2_certified": true,
+  "mux_prime_at_tau": "1.52765444011",
+  "unique_transversal_crossing_on_[0,inf)": true,
+  "h=mux(2pi)_enclosure": [
+   "0.430780913327",
+   "0.430780913328"
+  ],
+  "h_formula_enclosure": [
+   "0.430780913327",
+   "0.430780913328"
+  ],
+  "muy(2pi)_enclosure": [
+   "-2.2422e-61",
+   "1.3001e-61"
+  ],
+  "argmin_mux_on_[3pi/2,5pi/2]": "6.08578974733",
+  "min_mux_on_[3pi/2,5pi/2]": "0.419358136122",
+  "mux_prime_at_argmin": "-1.0364e-61",
+  "mux(3pi/2), mux(5pi/2)": [
+   [
+    "0.9999999999",
+    "1.000000001"
+   ],
+   [
+    "0.9999999999",
+    "1.000000001"
+   ]
+  ],
+  "J(pi/6)=a0": [
+   "0.0783565762555",
+   "0.0783565762556"
+  ],
+  "a0": [
+   "0.0783565762555",
+   "0.0783565762556"
+  ],
+  "J(pi/2)": [
+   "0.249999999999",
+   "0.250000000001"
+  ],
+  "J(3pi/2), J(5pi/2)": [
+   [
+    "0.249999999999",
+    "0.250000000001"
+   ],
+   [
+    "0.249999999999",
+    "0.250000000001"
+   ]
+  ],
+  "J(2pi)=h^2/4": [
+   "0.0463930488219",
+   "0.0463930488220"
+  ],
+  "Delta=(1-h^2)/4": [
+   "0.203606951178",
+   "0.203606951179"
+  ],
+  "muy(tau)": "-1.32765444011",
+  "|muy(tau)|<=2": true,
+  "comparisons_ok": true,
+  "free_density_formula_quadrature": [
+   {
+    "eps": "0.3",
+    "t": "1",
+    "rel_err": "1.5558e-61"
+   },
+   {
+    "eps": "0.5",
+    "t": "6.283185307179586",
+    "rel_err": "0.0"
+   }
+  ],
+  "L_check_(1/2pi)*(5pi/2)": [
+   "1.24999999999",
+   "1.25000000001"
+  ],
+  "eps0_for_Bmax=1": 0.008706286250614297,
+  "eps0_threshold_implications_ok": true,
+  "J'(3pi/2)_enclosure": [
+   "-0.389661137375347",
+   "-0.389661137375346"
+  ],
+  "-e^{-3pi/10}": [
+   "-0.389661137375347",
+   "-0.389661137375346"
+  ],
+  "J'(3pi/2)=-e^{-3pi/10}": true,
+  "generator_identity_max_rel_residual": "2.6679e-61",
+  "P(z0)+J'_max_abs": "1.1668e-61",
+  "hessP_norm": "1.47703296143",
+  "hessP_norm<3/2": true,
+  "tilted_mgf_sup": "1.63299316186",
+  "tilted_mgf_sup<2": true,
+  "endpoint_constants_Bmax=1_T=3pi/2": {
+   "L": "0.75",
+   "C_r": "5.7725887",
+   "C_*": "79.592057",
+   "eps_*": "5.99204e-6"
+  },
+  "all_ok": true
+ },
+ "part4_seconds": 1.8,
+ "part5_free_envelopes": {
+  "CE1_free_envelope_window_[1/200,8]": {
+   "1.0": {
+    "maxima_t": [
+     0.00986,
+     1.06226
+    ],
+    "minima_t": [
+     0.11649
+    ],
+    "logEg_at_maxima": [
+     2.751,
+     -4.5231
+    ],
+    "endpoint_slopes_sign": [
+     1,
+     -1
+    ]
+   },
+   "0.5": {
+    "maxima_t": [
+     0.00998,
+     1.66228
+    ],
+    "minima_t": [
+     0.10564
+    ],
+    "logEg_at_maxima": [
+     3.4477,
+     -11.7768
+    ],
+    "endpoint_slopes_sign": [
+     1,
+     -1
+    ]
+   },
+   "0.3": {
+    "maxima_t": [
+     0.01,
+     1.7902
+    ],
+    "minima_t": [
+     0.10366
+    ],
+    "logEg_at_maxima": [
+     3.9593,
+     -29.7426
+    ],
+    "endpoint_slopes_sign": [
+     1,
+     -1
+    ]
+   },
+   "0.1": {
+    "maxima_t": [
+     0.01,
+     1.85232
+    ],
+    "minima_t": [
+     0.10272
+    ],
+    "logEg_at_maxima": [
+     5.0583,
+     -259.2962
+    ],
+    "endpoint_slopes_sign": [
+     1,
+     -1
+    ]
+   },
+   "0.05": {
+    "maxima_t": [
+     0.01,
+     1.85808
+    ],
+    "minima_t": [
+     0.10262
+    ],
+    "logEg_at_maxima": [
+     5.7515,
+     -1037.0159
+    ],
+    "endpoint_slopes_sign": [
+     1,
+     -1
+    ]
+   }
+  },
+  "CE1_free_part_eps2_dlogEg_vs_minusJprime": {
+   "0.005": {
+    "minus_Jprime": 49.392336,
+    "eps=0.3": 49.332981,
+    "eps=0.1": 49.386137,
+    "eps=0.03": 49.391782
+   },
+   "0.05": {
+    "minus_Jprime": -180.861466,
+    "eps=0.3": -182.072991,
+    "eps=0.1": -180.996118,
+    "eps=0.03": -180.873585
+   },
+   "0.2": {
+    "minus_Jprime": 22.940622,
+    "eps=0.3": 22.226045,
+    "eps=0.1": 22.861131,
+    "eps=0.03": 22.933467
+   },
+   "8.0": {
+    "minus_Jprime": -0.474226,
+    "eps=0.3": -0.480249,
+    "eps=0.1": -0.47489,
+    "eps=0.03": -0.474286
+   }
+  },
+  "CE2_free_envelope_window_[0.005,11]_w=(1/2,1/2)": {
+   "0.3": {
+    "maxima_t": [
+     0.01,
+     1.7902,
+     9.95512
+    ],
+    "minima_t": [
+     0.10365,
+     4.9505
+    ]
+   },
+   "0.1": {
+    "maxima_t": [
+     0.01,
+     1.85232,
+     9.995
+    ],
+    "minima_t": [
+     0.10272,
+     4.9989
+    ]
+   }
+  },
+  "spiral_free_envelope_window_[pi/6,5pi/2]": {
+   "0.1": {
+    "maxima_t": [
+     0.91682,
+     6.09112
+    ],
+    "minima_t": [
+     2.94211
+    ]
+   },
+   "0.05": {
+    "maxima_t": [
+     0.92316,
+     6.08716
+    ],
+    "minima_t": [
+     2.94367
+    ]
+   }
+  },
+  "note": "B -> 0 limit of f/B (budget-normalised density); exact closed forms on 400001-point grids. These are free envelopes, not the killed density. The counts are sign changes of differences of adjacent grid samples (numerical grid counts), not certified continuous counts of the critical points."
+ },
+ "part5_killed_illustration": {
+  "validation_eps1_B1_dt1e-3": [
+   {
+    "t": 0.012,
+    "f_tilted_bridge": 12.969255096315335,
+    "se_tb": 0.0006158087039445488,
+    "f_forward_mc": 12.969472057929686,
+    "se_fw": 0.0012201926109424,
+    "forward_paths_contributing": 200000,
+    "z_score": -0.1587391180709172,
+    "alpha": 0.8472888853812085
+   },
+   {
+    "t": 0.3,
+    "f_tilted_bridge": 0.001351323520563764,
+    "se_tb": 2.5334363902840083e-06,
+    "f_forward_mc": 0.001483619358597357,
+    "se_fw": 0.00013414035482256937,
+    "forward_paths_contributing": 304,
+    "z_score": -0.9860735023767745,
+    "alpha": 0.5161691254218836
+   },
+   {
+    "t": 2.0,
+    "f_tilted_bridge": 0.0029207502200780115,
+    "se_tb": 1.1359385521136803e-05,
+    "f_forward_mc": 0.0028621323544818604,
+    "se_fw": 0.00022356111493400111,
+    "forward_paths_contributing": 455,
+    "z_score": 0.2618628153007328,
+    "alpha": 0.35478300385093897
+   }
+  ],
+  "validation_ok_|z|<3": true,
+  "validation_seconds": 16.4,
+  "killed_density_eps0.3_B1": {
+   "dt": 0.0002,
+   "paths_per_time": 1500,
+   "rows": [
+    {
+     "t": 0.005,
+     "log_f": 2.5756,
+     "log_Eg_exact": 2.5956,
+     "alpha": 0.98021,
+     "se_log_alpha": 0.00012,
+     "omega_min_max": [
+      0.96234,
+      0.9918
+     ]
+    },
+    {
+     "t": 0.006,
+     "log_f": 3.0503,
+     "log_Eg_exact": 3.0884,
+     "alpha": 0.96254,
+     "se_log_alpha": 0.0002,
+     "omega_min_max": [
+      0.93304,
+      0.98305
+     ]
+    },
+    {
+     "t": 0.007,
+     "log_f": 3.4053,
+     "log_Eg_exact": 3.4709,
+     "alpha": 0.9365,
+     "se_log_alpha": 0.0003,
+     "omega_min_max": [
+      0.89648,
+      0.96375
+     ]
+    },
+    {
+     "t": 0.008,
+     "log_f": 3.641,
+     "log_Eg_exact": 3.7432,
+     "alpha": 0.90287,
+     "se_log_alpha": 0.0004,
+     "omega_min_max": [
+      0.85208,
+      0.94573
+     ]
+    },
+    {
+     "t": 0.009,
+     "log_f": 3.7579,
+     "log_Eg_exact": 3.9059,
+     "alpha": 0.86249,
+     "se_log_alpha": 0.00047,
+     "omega_min_max": [
+      0.80909,
+      0.91273
+     ]
+    },
+    {
+     "t": 0.0096,
+     "log_f": 3.7726,
+     "log_Eg_exact": 3.951,
+     "alpha": 0.83662,
+     "se_log_alpha": 0.00051,
+     "omega_min_max": [
+      0.79052,
+      0.89488
+     ]
+    },
+    {
+     "t": 0.01,
+     "log_f": 3.7603,
+     "log_Eg_exact": 3.9593,
+     "alpha": 0.81956,
+     "se_log_alpha": 0.0005,
+     "omega_min_max": [
+      0.77596,
+      0.87124
+     ]
+    },
+    {
+     "t": 0.0104,
+     "log_f": 3.731,
+     "log_Eg_exact": 3.9502,
+     "alpha": 0.80313,
+     "se_log_alpha": 0.00052,
+     "omega_min_max": [
+      0.75959,
+      0.85834
+     ]
+    },
+    {
+     "t": 0.011,
+     "log_f": 3.654,
+     "log_Eg_exact": 3.9041,
+     "alpha": 0.77879,
+     "se_log_alpha": 0.00048,
+     "omega_min_max": [
+      0.73958,
+      0.8296
+     ]
+    },
+    {
+     "t": 0.012,
+     "log_f": 3.4454,
+     "log_Eg_exact": 3.7408,
+     "alpha": 0.74422,
+     "se_log_alpha": 0.00041,
+     "omega_min_max": [
+      0.71341,
+      0.79306
+     ]
+    },
+    {
+     "t": 0.014,
+     "log_f": 2.7336,
+     "log_Eg_exact": 3.0939,
+     "alpha": 0.69748,
+     "se_log_alpha": 0.00028,
+     "omega_min_max": [
+      0.67208,
+      0.7223
+     ]
+    },
+    {
+     "t": 0.016,
+     "log_f": 1.6357,
+     "log_Eg_exact": 2.0272,
+     "alpha": 0.67606,
+     "se_log_alpha": 0.00031,
+     "omega_min_max": [
+      0.64818,
+      0.70269
+     ]
+    },
+    {
+     "t": 0.02,
+     "log_f": -1.7247,
+     "log_Eg_exact": -1.3167,
+     "alpha": 0.66497,
+     "se_log_alpha": 0.00041,
+     "omega_min_max": [
+      0.61912,
+      0.70011
+     ]
+    },
+    {
+     "t": 0.03,
+     "log_f": -16.2181,
+     "log_Eg_exact": -15.7935,
+     "alpha": 0.65406,
+     "se_log_alpha": 0.00045,
+     "omega_min_max": [
+      0.61014,
+      0.68719
+     ]
+    },
+    {
+     "t": 0.05,
+     "log_f": -57.5667,
+     "log_Eg_exact": -57.0964,
+     "alpha": 0.62487,
+     "se_log_alpha": 0.00055,
+     "omega_min_max": [
+      0.57234,
+      0.67137
+     ]
+    },
+    {
+     "t": 0.07,
+     "log_f": -89.4931,
+     "log_Eg_exact": -88.984,
+     "alpha": 0.60103,
+     "se_log_alpha": 0.00065,
+     "omega_min_max": [
+      0.55101,
+      0.64438
+     ]
+    },
+    {
+     "t": 0.1,
+     "log_f": -104.7617,
+     "log_Eg_exact": -104.2401,
+     "alpha": 0.59355,
+     "se_log_alpha": 0.00068,
+     "omega_min_max": [
+      0.54239,
+      0.6363
+     ]
+    },
+    {
+     "t": 0.14,
+     "log_f": -98.2666,
+     "log_Eg_exact": -97.7676,
+     "alpha": 0.60716,
+     "se_log_alpha": 0.00065,
+     "omega_min_max": [
+      0.54134,
+      0.6609
+     ]
+    },
+    {
+     "t": 0.2,
+     "log_f": -81.7258,
+     "log_Eg_exact": -81.2392,
+     "alpha": 0.6147,
+     "se_log_alpha": 0.00103,
+     "omega_min_max": [
+      0.43236,
+      0.66413
+     ]
+    },
+    {
+     "t": 0.3,
+     "log_f": -63.0488,
+     "log_Eg_exact": -62.5178,
+     "alpha": 0.588,
+     "se_log_alpha": 0.00266,
+     "omega_min_max": [
+      0.27164,
+      0.67182
+     ]
+    },
+    {
+     "t": 0.5,
+     "log_f": -45.9018,
+     "log_Eg_exact": -45.2721,
+     "alpha": 0.53276,
+     "se_log_alpha": 0.0047,
+     "omega_min_max": [
+      0.06986,
+      0.68046
+     ]
+    },
+    {
+     "t": 0.75,
+     "log_f": -37.4205,
+     "log_Eg_exact": -36.6535,
+     "alpha": 0.4644,
+     "se_log_alpha": 0.00786,
+     "omega_min_max": [
+      0.00606,
+      0.67612
+     ]
+    },
+    {
+     "t": 1.0,
+     "log_f": -33.7478,
+     "log_Eg_exact": -32.7847,
+     "alpha": 0.38171,
+     "se_log_alpha": 0.0125,
+     "omega_min_max": [
+      0.00046,
+      0.68148
+     ]
+    },
+    {
+     "t": 1.25,
+     "log_f": -32.0879,
+     "log_Eg_exact": -30.8952,
+     "alpha": 0.30339,
+     "se_log_alpha": 0.01719,
+     "omega_min_max": [
+      0.00025,
+      0.67789
+     ]
+    },
+    {
+     "t": 1.5,
+     "log_f": -31.449,
+     "log_Eg_exact": -30.023,
+     "alpha": 0.24025,
+     "se_log_alpha": 0.0213,
+     "omega_min_max": [
+      3e-05,
+      0.6755
+     ]
+    },
+    {
+     "t": 1.75,
+     "log_f": -31.3247,
+     "log_Eg_exact": -29.7473,
+     "alpha": 0.2065,
+     "se_log_alpha": 0.02347,
+     "omega_min_max": [
+      4e-05,
+      0.67191
+     ]
+    },
+    {
+     "t": 1.9,
+     "log_f": -31.4729,
+     "log_Eg_exact": -29.7748,
+     "alpha": 0.18303,
+     "se_log_alpha": 0.02553,
+     "omega_min_max": [
+      1e-05,
+      0.68488
+     ]
+    },
+    {
+     "t": 2.0,
+     "log_f": -31.5914,
+     "log_Eg_exact": -29.8546,
+     "alpha": 0.17609,
+     "se_log_alpha": 0.02534,
+     "omega_min_max": [
+      0.0,
+      0.67524
+     ]
+    },
+    {
+     "t": 2.1,
+     "log_f": -31.7164,
+     "log_Eg_exact": -29.976,
+     "alpha": 0.17545,
+     "se_log_alpha": 0.02484,
+     "omega_min_max": [
+      1e-05,
+      0.66705
+     ]
+    },
+    {
+     "t": 2.25,
+     "log_f": -32.0478,
+     "log_Eg_exact": -30.2247,
+     "alpha": 0.16153,
+     "se_log_alpha": 0.02606,
+     "omega_min_max": [
+      0.0,
+      0.68015
+     ]
+    },
+    {
+     "t": 2.5,
+     "log_f": -32.6339,
+     "log_Eg_exact": -30.7842,
+     "alpha": 0.15728,
+     "se_log_alpha": 0.02539,
+     "omega_min_max": [
+      0.0,
+      0.68078
+     ]
+    },
+    {
+     "t": 3.0,
+     "log_f": -34.0495,
+     "log_Eg_exact": -32.2964,
+     "alpha": 0.17323,
+     "se_log_alpha": 0.02181,
+     "omega_min_max": [
+      0.0,
+      0.68424
+     ]
+    },
+    {
+     "t": 3.5,
+     "log_f": -35.8839,
+     "log_Eg_exact": -34.1611,
+     "alpha": 0.17856,
+     "se_log_alpha": 0.01941,
+     "omega_min_max": [
+      0.0,
+      0.66425
+     ]
+    },
+    {
+     "t": 4.0,
+     "log_f": -37.9961,
+     "log_Eg_exact": -36.2569,
+     "alpha": 0.17566,
+     "se_log_alpha": 0.01971,
+     "omega_min_max": [
+      0.0,
+      0.66452
+     ]
+    },
+    {
+     "t": 5.0,
+     "log_f": -42.5069,
+     "log_Eg_exact": -40.8834,
+     "alpha": 0.1972,
+     "se_log_alpha": 0.01759,
+     "omega_min_max": [
+      0.0,
+      0.66459
+     ]
+    },
+    {
+     "t": 6.0,
+     "log_f": -47.396,
+     "log_Eg_exact": -45.8573,
+     "alpha": 0.21466,
+     "se_log_alpha": 0.01632,
+     "omega_min_max": [
+      0.0,
+      0.6454
+     ]
+    },
+    {
+     "t": 7.0,
+     "log_f": -52.5486,
+     "log_Eg_exact": -51.0297,
+     "alpha": 0.21896,
+     "se_log_alpha": 0.0156,
+     "omega_min_max": [
+      0.0,
+      0.62049
+     ]
+    },
+    {
+     "t": 8.0,
+     "log_f": -57.8574,
+     "log_Eg_exact": -56.3223,
+     "alpha": 0.21542,
+     "se_log_alpha": 0.01608,
+     "omega_min_max": [
+      0.0,
+      0.66608
+     ]
+    }
+   ],
+   "grid_local_maxima_t": [
+    0.0096,
+    1.75
+   ],
+   "grid_local_minima_t": [
+    0.1
+   ],
+   "max_se_log_alpha": 0.02606,
+   "min_neighbour_|dlogf|": 0.012308086589914335,
+   "log_f_main_peak_minus_secondary_peak": 35.097,
+   "seconds": 7.9
+  },
+  "note": "f(t) = B E[g(Z_t)] alpha(t); E[g] exact, alpha by backward sampling of the exact Gaussian bridge of the time-discretised linear chain conditioned on the tilted terminal law (trapezoid rule for int V). Discretisation: stripe width eps*rho = 0.003 resolved by ~15 steps per sd at unit speed. Illustration at a fixed moderate eps, not a proof of the small-eps statement."
+ },
+ "part5_seconds": 24.9,
+ "total_seconds": 28.1
+}

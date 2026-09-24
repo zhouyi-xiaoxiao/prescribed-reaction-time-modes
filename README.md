@@ -1,13 +1,14 @@
 # Reproduction package: reaction-time peaks programmed with a fixed budget
 
-Release `v1.1.0` of this archive accompanies **“Programming the number and
+Release `v1.1.1` of this archive accompanies **“Programming the number and
 weights of reaction-time peaks with a fixed budget of static reactivity”** by
 Xiaoxiao Zhouyi (University of Bristol; submitted to *Communications in
 Nonlinear Science and Numerical Simulation*).  It contains the simulation,
 analysis and plotting code, the machine-readable numerical records behind the
 numbers and figures of the article and its Supplementary Material, the
-figure-generation scripts, the interval-arithmetic certificates (scripts and
-outputs) that are part of two proofs of the Supplementary Material, the Lean 4
+figure-generation scripts, the interval-arithmetic certificates and enclosures
+(scripts and outputs) that are part of three proofs of the Supplementary
+Material, the Lean 4
 sources, and the drivers, job scripts and records of the large-scale checks
 run on the Isambard 3 supercomputer.
 
@@ -16,7 +17,7 @@ abstract are not part of this release.  The article will be linked here once
 it is published; until then, section and proposition numbers quoted in these
 documents refer to the submitted version.
 
-This package is tag `v1.1.0` of
+This package is tag `v1.1.1` of
 https://github.com/zhouyi-xiaoxiao/prescribed-reaction-time-modes.  Verify it
 from the archive root with `shasum -a 256 -c MANIFEST.sha256`.  If a
 persistent identifier is later minted for this release, cite the identifier
@@ -26,11 +27,27 @@ shown by the repository record together with the tag.
 earlier version of this work under a different title, with its own article and
 Supplemental Material PDFs.  The article cites `v1.0.0` for the full proof of
 the sufficient budget `B_cert` (Sec. S3.5 of that Supplemental Material) and
-for the earlier direct-kill campaigns.  Release `v1.1.0` keeps all code and
-numerical records of `v1.0.0` (they are cited as legacy records) and adds the
+for the earlier direct-kill campaigns.  Release `v1.1.0` kept all code and
+numerical records of `v1.0.0` (they are cited as legacy records) and added the
 2026-09 fixed-budget campaign and its closing campaign; the manuscript files
 of the earlier version are not repeated here and remain available from the
 `v1.0.0` tag.
+
+**Relation to release `v1.1.0`.**  Release `v1.1.1` supersedes `v1.1.0`.
+It adds the checks of the general-transport counterexamples of the
+Supplementary Material (section "Exact count beyond the harmonic trap:
+counterexamples, plug flow and a sufficient criterion"):
+`code/fb_gx_counterexample_checks.py` and its record
+`artifacts/data/exact_m_fixed_budget/GX_counterexamples/checks.json`, whose
+60-digit interval enclosures of arrival actions are part of the proof of the
+variance-driven counterexample.  It also adds the checks of the frozen-gate
+exact count under a uniform contact floor (Supplementary Material, section
+"Random frozen gates: the exact count under a uniform contact floor"):
+`code/fb_gb2_frozen_gate_checks.py` and its record
+`artifacts/data/exact_m_fixed_budget/GB2_frozen_gate/checks.json`
+(consistency checks of the algebra and constants, not part of a proof).  All
+other code and records are those of `v1.1.0`; only these documents and the
+metadata files were updated.
 
 ## Contents
 
@@ -65,6 +82,19 @@ of the earlier version are not repeated here and remain available from the
     mean-field residual (`fb_n13_third_order.py`), the derived numbers quoted
     in the text (`fb_derived_numbers.py`) and the graphical abstract
     (`fb_graphical_abstract.py`).
+  - General-transport counterexamples (new in `v1.1.1`;
+    `fb_gx_counterexample_checks.py`): 60-digit outward-rounded interval
+    enclosures (mpmath `iv`, rational inputs) of the arrival actions and
+    their derivatives in the variance-driven example, the constants,
+    crossing and endpoint checks of the spiral example, closed-form counts
+    of the free envelopes on dense grids, and a seeded finite-noise
+    illustration of the killed density (not a proof).
+  - Frozen-gate exact count under a contact floor (new in `v1.1.1`;
+    `fb_gb2_frozen_gate_checks.py`): 40-digit checks of the bridge, slope and
+    score identities, the free-interval margin at the anchors, the contact
+    probability of the boundary-tangent gate by exact quadrature, the
+    minimum-image and orthant checks, and a Monte Carlo comparison of two
+    transverse directions (consistency checks, not a proof).
   - Large-scale checks on Isambard 3 (2026-09; Supplementary Material,
     section "Large-scale checks on Isambard 3"): the time-step ladder with
     exact Ornstein--Uhlenbeck transitions and Brownian-bridge refinement
@@ -86,8 +116,9 @@ of the earlier version are not repeated here and remain available from the
 - `artifacts/data/exact_m_fixed_budget/`: records of the fixed-budget
   campaign and its closing campaign (see `DATA_AVAILABILITY.md` and
   `RESULTS_SUMMARY.md`), including the ensemble index records
-  `fk_ensembles/*.json` and the certificate outputs `TH8_certificate/` and
-  `C1_preparation_count/`, and the records of the Isambard 3 checks
+  `fk_ensembles/*.json`, the certificate outputs `TH8_certificate/` and
+  `C1_preparation_count/`, the counterexample checks `GX_counterexamples/`
+  and the frozen-gate checks `GB2_frozen_gate/` (both new in `v1.1.1`), and the records of the Isambard 3 checks
   (`HPC_N5full/`, `HPC_N3full/`, `HPC_headline/`, `HPC_census/`, and the job
   accounting `HPC_jobs/hpc_jobs_accounting.json`).
 - `artifacts/data/exact_m_offlattice_production/`,
@@ -198,6 +229,35 @@ python code/fb_hpc_n5n3_report.py figures         # artifacts/figures/fb_hpc_n5f
 
 `fb_th8_interval_certificate.py` aborts instead of writing a certificate if
 a bisection cell becomes narrower than its `MIN_WIDTH` without being resolved.
+
+The general-transport counterexample checks (new in `v1.1.1`; mpmath and
+NumPy; about 30 s on the reference workstation) are one command:
+
+```bash
+python code/fb_gx_counterexample_checks.py        # GX_counterexamples/checks.json
+python code/fb_gx_counterexample_checks.py --skip-mc   # without the seeded illustration: checks_quick.json
+```
+
+Parts 1--4 and the free-envelope grid counts are deterministic.  The
+finite-noise illustration of part 5 draws bridges with the recorded
+`SeedSequence([20260924, 61, tag])` streams (one process) and is labelled an
+illustration, not a proof.  Enclosures are written with outward rounding
+(lower endpoint rounded down, upper endpoint up, to the stated number of
+significant digits); the certified comparisons themselves are made on the
+exact rational endpoints inside the script.  The two development sources whose
+claims the script checks are not archived; their SHA-256 values are recorded
+in the `sources` field of the record (a rerun from this archive records them
+as absent).
+
+The frozen-gate checks (new in `v1.1.1`; mpmath and NumPy; about 45 s) are
+one command:
+
+```bash
+python code/fb_gb2_frozen_gate_checks.py         # GB2_frozen_gate/checks.json
+```
+
+Part 1 uses Python's `random.seed(20260924)`, parts 4a--4b NumPy's
+`default_rng(20260924)`; the other parts draw no random numbers.
 
 The publication figures are redrawn by
 
