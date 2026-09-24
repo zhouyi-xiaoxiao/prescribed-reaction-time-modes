@@ -1,0 +1,1591 @@
+{
+ "script": "code/fb_finite_width_det.py",
+ "item": "TH-8",
+ "deterministic": true,
+ "seeds": null,
+ "geometry": {
+  "gamma": 1.0,
+  "D0": 1.0,
+  "z0": 4.0,
+  "zbar": 0.0,
+  "W": 1.0,
+  "d": 2,
+  "window": [
+   0.5,
+   3.5
+  ],
+  "targets": {
+   "2": [
+    1.0,
+    2.5
+   ],
+   "3": [
+    0.8,
+    1.6,
+    2.8
+   ]
+  },
+  "contact": "1 (eps->0 limit)"
+ },
+ "scan": {
+  "m2_rho0.15": {
+   "m": 2,
+   "rho_s": 0.15,
+   "weights": [
+    0.5,
+    0.5
+   ],
+   "G0_critical_points": [
+    {
+     "t": 1.0000000000001896,
+     "G0": 1.3298076013384335,
+     "G0pp": -127.9785872886881,
+     "type": "max"
+    },
+    {
+     "t": 1.491733902577193,
+     "G0": 0.001869421217649237,
+     "G0pp": 0.9097823281737528,
+     "type": "min"
+    },
+    {
+     "t": 2.49999999999915,
+     "G0": 1.3298076013384335,
+     "G0pp": -6.371678674977807,
+     "type": "max"
+    }
+   ],
+   "G0_n_max": 2,
+   "G0_n_min": 1,
+   "G0_prime_tau": 2.1962507223754873e-07,
+   "G0_prime_T": -0.5688814837794116,
+   "D1_signature_ok": true,
+   "flanks": [
+    {
+     "kind": "first",
+     "a": 0.5,
+     "b": 1.0000000000001896,
+     "r0_tau": 48242059749.636894,
+     "r0_strictly_decreasing": true,
+     "n_r0_critical": 0
+    },
+    {
+     "kind": "interior",
+     "j": 2,
+     "a": 1.491733902577193,
+     "b": 2.49999999999915,
+     "n_r0_critical": 1,
+     "t_fold": 1.5304815842403894,
+     "b_j": 5520.836254775743,
+     "r0pp_at_fold": -5410118.8591482965,
+     "transversal": true
+    }
+   ],
+   "D2_first_flank_monotone": true,
+   "D3_flank_unimodal": true,
+   "D3_includes_transversality": true,
+   "B_top_det": 5520.836254775743,
+   "binding": "flank_2",
+   "fold_time": 1.5304815842403894,
+   "candidates": {
+    "left_endpoint": 48242059749.636894,
+    "flank_2": 5520.836254775743
+   },
+   "Lambda0_at_basin_bounds": {
+    "0.500000": 2.0066174706589806e-11,
+    "1.491734": 0.34342908810922196,
+    "3.500000": 1.8507537354589088
+   },
+   "basin_masses_at_B_top_det": [
+    0.9999998892179414,
+    0.0
+   ],
+   "basin_masses_cut_note": "basin_masses*: nominal fixed cuts at the G0 minima v_j (free-clock valleys)",
+   "basin_masses_at_B_top_det_fold_cut": {
+    "cuts": [
+     0.5,
+     1.5304815842403894,
+     3.5
+    ],
+    "masses": [
+     0.9999998892179414,
+     0.0
+    ],
+    "note": "cut at the fold time t_f of the binding flank (limit of the f_det valley as B -> B_top_det-)"
+   },
+   "late_basin_mass_near_fold_f_det_valley_cut": [
+    {
+     "B": 5520.826254775743,
+     "f_det_valley": 1.5304208143767046,
+     "late_basin_mass_f_det_valley_cut": 0.0
+    },
+    {
+     "B": 5520.835254775743,
+     "f_det_valley": 1.5304623603659477,
+     "late_basin_mass_f_det_valley_cut": 0.0
+    },
+    {
+     "B": 5520.836154775743,
+     "f_det_valley": 1.5304755044413074,
+     "late_basin_mass_f_det_valley_cut": 0.0
+    }
+   ],
+   "f_det_at_budgets": []
+  },
+  "m2_rho0.2": {
+   "m": 2,
+   "rho_s": 0.2,
+   "weights": [
+    0.5,
+    0.5
+   ],
+   "G0_critical_points": [
+    {
+     "t": 1.0000000624954204,
+     "G0": 0.9973557812359213,
+     "G0pp": -53.99082220611832,
+     "type": "max"
+    },
+    {
+     "t": 1.491733902577193,
+     "G0": 0.033593462804780955,
+     "G0pp": 4.875283175311269,
+     "type": "min"
+    },
+    {
+     "t": 2.4999997199150057,
+     "G0": 0.9973557812359213,
+     "G0pp": -2.688046598156806,
+     "type": "max"
+    }
+   ],
+   "G0_n_max": 2,
+   "G0_n_min": 1,
+   "G0_prime_tau": 0.0006524238007615943,
+   "G0_prime_T": -0.3648301703171005,
+   "D1_signature_ok": true,
+   "flanks": [
+    {
+     "kind": "first",
+     "a": 0.5,
+     "b": 1.0000000624954204,
+     "r0_tau": 5138342.12233722,
+     "r0_strictly_decreasing": true,
+     "n_r0_critical": 0
+    },
+    {
+     "kind": "interior",
+     "j": 2,
+     "a": 1.491733902577193,
+     "b": 2.4999997199150057,
+     "n_r0_critical": 1,
+     "t_fold": 1.5605617714323072,
+     "b_j": 158.54441942832986,
+     "r0pp_at_fold": -47448.01501717666,
+     "transversal": true
+    }
+   ],
+   "D2_first_flank_monotone": true,
+   "D3_flank_unimodal": true,
+   "D3_includes_transversality": true,
+   "B_top_det": 158.54441942832986,
+   "binding": "flank_2",
+   "fold_time": 1.5605617714323072,
+   "candidates": {
+    "left_endpoint": 5138342.12233722,
+    "flank_2": 158.54441942832986
+   },
+   "Lambda0_at_basin_bounds": {
+    "0.500000": 1.8410083616939405e-07,
+    "1.491734": 0.34628897930594243,
+    "3.500000": 1.6938020352824592
+   },
+   "basin_masses_at_B_top_det": [
+    0.9999708122657834,
+    1.4331245395907394e-24
+   ],
+   "basin_masses_cut_note": "basin_masses*: nominal fixed cuts at the G0 minima v_j (free-clock valleys)",
+   "basin_masses_at_B_top_det_fold_cut": {
+    "cuts": [
+     0.5,
+     1.5605617714323072,
+     3.5
+    ],
+    "masses": [
+     0.9999708122657834,
+     9.539523160893681e-25
+    ],
+    "note": "cut at the fold time t_f of the binding flank (limit of the f_det valley as B -> B_top_det-)"
+   },
+   "late_basin_mass_near_fold_f_det_valley_cut": [
+    {
+     "B": 158.53441942832987,
+     "f_det_valley": 1.5599145829990415,
+     "late_basin_mass_f_det_valley_cut": 9.616672579519543e-25
+    },
+    {
+     "B": 158.54341942832986,
+     "f_det_valley": 1.5603566696761542,
+     "late_basin_mass_f_det_valley_cut": 9.55669350183883e-25
+    },
+    {
+     "B": 158.54431942832986,
+     "f_det_valley": 1.5604968679888276,
+     "late_basin_mass_f_det_valley_cut": 9.544234790818196e-25
+    }
+   ],
+   "f_det_at_budgets": []
+  },
+  "m2_rho0.25": {
+   "m": 2,
+   "rho_s": 0.25,
+   "weights": [
+    0.5,
+    0.5
+   ],
+   "G0_critical_points": [
+    {
+     "t": 1.0000223934807129,
+     "G0": 0.7979075535127955,
+     "G0pp": -27.626272901697003,
+     "type": "max"
+    },
+    {
+     "t": 1.491733902577193,
+     "G0": 0.11690951720533045,
+     "G0pp": 6.404154424466719,
+     "type": "min"
+    },
+    {
+     "t": 2.499899645541623,
+     "G0": 0.7979075535127955,
+     "G0pp": -1.3757688418318719,
+     "type": "max"
+    }
+   ],
+   "G0_n_max": 2,
+   "G0_n_min": 1,
+   "G0_prime_tau": 0.02017058822734234,
+   "G0_prime_T": -0.22675108749415576,
+   "D1_signature_ok": true,
+   "flanks": [
+    {
+     "kind": "first",
+     "a": 0.5,
+     "b": 1.0000223934807129,
+     "r0_tau": 68076.02632333917,
+     "r0_strictly_decreasing": true,
+     "n_r0_critical": 0
+    },
+    {
+     "kind": "interior",
+     "j": 2,
+     "a": 1.491733902577193,
+     "b": 2.499899645541623,
+     "n_r0_critical": 1,
+     "t_fold": 1.598388997053057,
+     "b_j": 25.84654436971538,
+     "r0pp_at_fold": -3098.9627794010826,
+     "transversal": true
+    }
+   ],
+   "D2_first_flank_monotone": true,
+   "D3_flank_unimodal": true,
+   "D3_includes_transversality": true,
+   "B_top_det": 25.84654436971538,
+   "binding": "flank_2",
+   "fold_time": 1.598388997053057,
+   "candidates": {
+    "left_endpoint": 68076.02632333917,
+    "flank_2": 25.84654436971538
+   },
+   "Lambda0_at_basin_bounds": {
+    "0.500000": 1.3520141956934915e-05,
+    "1.491734": 0.3493648473929862,
+    "3.500000": 1.553984338861851
+   },
+   "basin_masses_at_B_top_det": [
+    0.9995308345205176,
+    0.0001197775806799965
+   ],
+   "basin_masses_cut_note": "basin_masses*: nominal fixed cuts at the G0 minima v_j (free-clock valleys)",
+   "basin_masses_at_B_top_det_fold_cut": {
+    "cuts": [
+     0.5,
+     1.598388997053057,
+     3.5
+    ],
+    "masses": [
+     0.9995664711922612,
+     8.414090893646307e-05
+    ],
+    "note": "cut at the fold time t_f of the binding flank (limit of the f_det valley as B -> B_top_det-)"
+   },
+   "late_basin_mass_near_fold_f_det_valley_cut": [
+    {
+     "B": 25.83654436971538,
+     "f_det_valley": 1.5958690702063207,
+     "late_basin_mass_f_det_valley_cut": 8.526927810837559e-05
+    },
+    {
+     "B": 25.84554436971538,
+     "f_det_valley": 1.597587718467881,
+     "late_basin_mass_f_det_valley_cut": 8.44321894070433e-05
+    },
+    {
+     "B": 25.846444369715382,
+     "f_det_valley": 1.59813516261408,
+     "late_basin_mass_f_det_valley_cut": 8.422653506682581e-05
+    }
+   ],
+   "f_det_at_budgets": []
+  },
+  "m2_rho0.3": {
+   "m": 2,
+   "rho_s": 0.3,
+   "weights": [
+    0.5,
+    0.5
+   ],
+   "G0_critical_points": [
+    {
+     "t": 1.0005514718887372,
+     "G0": 0.6653735639411918,
+     "G0pp": -15.826311635347507,
+     "type": "max"
+    },
+    {
+     "t": 1.491733902577193,
+     "G0": 0.21652642292913216,
+     "G0pp": 5.124670370646153,
+     "type": "min"
+    },
+    {
+     "t": 2.497532203343355,
+     "G0": 0.6653735639411918,
+     "G0pp": -0.7927180932475624,
+     "type": "max"
+    }
+   ],
+   "G0_n_max": 2,
+   "G0_n_min": 1,
+   "G0_prime_tau": 0.10828979065689992,
+   "G0_prime_T": -0.14584018542488192,
+   "D1_signature_ok": true,
+   "flanks": [
+    {
+     "kind": "first",
+     "a": 0.5,
+     "b": 1.0005514718887372,
+     "r0_tau": 6115.053580888354,
+     "r0_strictly_decreasing": true,
+     "n_r0_critical": 0
+    },
+    {
+     "kind": "interior",
+     "j": 2,
+     "a": 1.491733902577193,
+     "b": 2.497532203343355,
+     "n_r0_critical": 1,
+     "t_fold": 1.6418582449894297,
+     "b_j": 8.224664745598302,
+     "r0pp_at_fold": -482.41562988181863,
+     "transversal": true
+    }
+   ],
+   "D2_first_flank_monotone": true,
+   "D3_flank_unimodal": true,
+   "D3_includes_transversality": true,
+   "B_top_det": 8.224664745598302,
+   "binding": "flank_2",
+   "fold_time": 1.6418582449894297,
+   "candidates": {
+    "left_endpoint": 6115.053580888354,
+    "flank_2": 8.224664745598302
+   },
+   "Lambda0_at_basin_bounds": {
+    "0.500000": 0.00014595457274843473,
+    "1.491734": 0.3517915863003605,
+    "3.500000": 1.4410845127565048
+   },
+   "basin_masses_at_B_top_det": [
+    0.9434109381246631,
+    0.05538223349026404
+   ],
+   "basin_masses_cut_note": "basin_masses*: nominal fixed cuts at the G0 minima v_j (free-clock valleys)",
+   "basin_masses_at_B_top_det_fold_cut": {
+    "cuts": [
+     0.5,
+     1.6418582449894297,
+     3.5
+    ],
+    "masses": [
+     0.9572805324215024,
+     0.04151263919342483
+    ],
+    "note": "cut at the fold time t_f of the binding flank (limit of the f_det valley as B -> B_top_det-)"
+   },
+   "late_basin_mass_near_fold_f_det_valley_cut": [
+    {
+     "B": 8.214664745598302,
+     "f_det_valley": 1.6355119222383068,
+     "late_basin_mass_f_det_valley_cut": 0.04224878572389749
+    },
+    {
+     "B": 8.223664745598303,
+     "f_det_valley": 1.6398315617745225,
+     "late_basin_mass_f_det_valley_cut": 0.041711985608316175
+    },
+    {
+     "B": 8.224564745598302,
+     "f_det_valley": 1.6412153163205363,
+     "late_basin_mass_f_det_valley_cut": 0.041572376632006254
+    }
+   ],
+   "f_det_at_budgets": [
+    {
+     "B": 1.0,
+     "f_det_prime_tau_sign": 1,
+     "f_det_prime_T_sign": -1,
+     "stationary_points": [
+      {
+       "t": 0.973962858877838,
+       "type": "max"
+      },
+      {
+       "t": 1.501032351275918,
+       "type": "min"
+      },
+      {
+       "t": 2.176832560058898,
+       "type": "max"
+      }
+     ],
+     "n_max": 2,
+     "basin_masses": [
+      0.29642734561466333,
+      0.46675576367491933
+     ]
+    },
+    {
+     "B": 4.0,
+     "f_det_prime_tau_sign": 1,
+     "f_det_prime_T_sign": -1,
+     "stationary_points": [
+      {
+       "t": 0.9124573833166665,
+       "type": "max"
+      },
+      {
+       "t": 1.5322893670411375,
+       "type": "min"
+      },
+      {
+       "t": 1.8757780940205602,
+       "type": "max"
+      }
+     ],
+     "n_max": 2,
+     "basin_masses": [
+      0.7545802700455767,
+      0.24169861052956282
+     ]
+    },
+    {
+     "B": 7.8,
+     "f_det_prime_tau_sign": 1,
+     "f_det_prime_T_sign": -1,
+     "stationary_points": [
+      {
+       "t": 0.8639770632992114,
+       "type": "max"
+      },
+      {
+       "t": 1.6032468996923983,
+       "type": "min"
+      },
+      {
+       "t": 1.6888481334088716,
+       "type": "max"
+      }
+     ],
+     "n_max": 2,
+     "basin_masses": [
+      0.93454797258522,
+      0.06430109753918552
+     ]
+    },
+    {
+     "B": 8.0,
+     "f_det_prime_tau_sign": 1,
+     "f_det_prime_T_sign": -1,
+     "stationary_points": [
+      {
+       "t": 0.8620077234303221,
+       "type": "max"
+      },
+      {
+       "t": 1.6132010742148535,
+       "type": "min"
+      },
+      {
+       "t": 1.6748764159970984,
+       "type": "max"
+      }
+     ],
+     "n_max": 2,
+     "basin_masses": [
+      0.9388883377657068,
+      0.05993486334710063
+     ]
+    },
+    {
+     "B": 8.2,
+     "f_det_prime_tau_sign": 1,
+     "f_det_prime_T_sign": -1,
+     "stationary_points": [
+      {
+       "t": 0.8600822100038128,
+       "type": "max"
+      },
+      {
+       "t": 1.6319703061300084,
+       "type": "min"
+      },
+      {
+       "t": 1.652217377218717,
+       "type": "max"
+      }
+     ],
+     "n_max": 2,
+     "basin_masses": [
+      0.9429318375107381,
+      0.05586467205693588
+     ]
+    },
+    {
+     "B": 9.0,
+     "f_det_prime_tau_sign": 1,
+     "f_det_prime_T_sign": -1,
+     "stationary_points": [
+      {
+       "t": 0.8527879029216257,
+       "type": "max"
+      }
+     ],
+     "n_max": 1,
+     "basin_masses": [
+      0.9565205631212578,
+      0.04216437838289914
+     ]
+    }
+   ],
+   "peak_location_check": {
+    "G0_maxima": [
+     1.0005514718887372,
+     2.497532203343355
+    ],
+    "targets": [
+     1.0,
+     2.5
+    ],
+    "rows": [
+     {
+      "B": 0.001,
+      "maxima": [
+       {
+        "t": 1.0005234993447627,
+        "flank_index": 1,
+        "G0_max": 1.0005514718887372,
+        "target": 1.0,
+        "before_G0_max": true,
+        "before_target": false
+       },
+       {
+        "t": 2.496974177933808,
+        "flank_index": 2,
+        "G0_max": 2.497532203343355,
+        "target": 2.5,
+        "before_G0_max": true,
+        "before_target": true
+       }
+      ]
+     },
+     {
+      "B": 0.01,
+      "maxima": [
+       {
+        "t": 1.0002718590890511,
+        "flank_index": 1,
+        "G0_max": 1.0005514718887372,
+        "target": 1.0,
+        "before_G0_max": true,
+        "before_target": false
+       },
+       {
+        "t": 2.49199298982914,
+        "flank_index": 2,
+        "G0_max": 2.497532203343355,
+        "target": 2.5,
+        "before_G0_max": true,
+        "before_target": true
+       }
+      ]
+     },
+     {
+      "B": 0.1,
+      "maxima": [
+       {
+        "t": 0.9977667522951703,
+        "flank_index": 1,
+        "G0_max": 1.0005514718887372,
+        "target": 1.0,
+        "before_G0_max": true,
+        "before_target": true
+       },
+       {
+        "t": 2.4458756252819587,
+        "flank_index": 2,
+        "G0_max": 2.497532203343355,
+        "target": 2.5,
+        "before_G0_max": true,
+        "before_target": true
+       }
+      ]
+     },
+     {
+      "B": 1.0,
+      "maxima": [
+       {
+        "t": 0.973962858877838,
+        "flank_index": 1,
+        "G0_max": 1.0005514718887372,
+        "target": 1.0,
+        "before_G0_max": true,
+        "before_target": true
+       },
+       {
+        "t": 2.176832560058898,
+        "flank_index": 2,
+        "G0_max": 2.497532203343355,
+        "target": 2.5,
+        "before_G0_max": true,
+        "before_target": true
+       }
+      ]
+     },
+     {
+      "B": 4.0,
+      "maxima": [
+       {
+        "t": 0.9124573833166665,
+        "flank_index": 1,
+        "G0_max": 1.0005514718887372,
+        "target": 1.0,
+        "before_G0_max": true,
+        "before_target": true
+       },
+       {
+        "t": 1.8757780940205602,
+        "flank_index": 2,
+        "G0_max": 2.497532203343355,
+        "target": 2.5,
+        "before_G0_max": true,
+        "before_target": true
+       }
+      ]
+     },
+     {
+      "B": 7.8,
+      "maxima": [
+       {
+        "t": 0.8639770632992114,
+        "flank_index": 1,
+        "G0_max": 1.0005514718887372,
+        "target": 1.0,
+        "before_G0_max": true,
+        "before_target": true
+       },
+       {
+        "t": 1.6888481334088716,
+        "flank_index": 2,
+        "G0_max": 2.497532203343355,
+        "target": 2.5,
+        "before_G0_max": true,
+        "before_target": true
+       }
+      ]
+     },
+     {
+      "B": 8.0,
+      "maxima": [
+       {
+        "t": 0.8620077234303221,
+        "flank_index": 1,
+        "G0_max": 1.0005514718887372,
+        "target": 1.0,
+        "before_G0_max": true,
+        "before_target": true
+       },
+       {
+        "t": 1.6748764159970984,
+        "flank_index": 2,
+        "G0_max": 2.497532203343355,
+        "target": 2.5,
+        "before_G0_max": true,
+        "before_target": true
+       }
+      ]
+     },
+     {
+      "B": 8.2,
+      "maxima": [
+       {
+        "t": 0.8600822100038128,
+        "flank_index": 1,
+        "G0_max": 1.0005514718887372,
+        "target": 1.0,
+        "before_G0_max": true,
+        "before_target": true
+       },
+       {
+        "t": 1.652217377218717,
+        "flank_index": 2,
+        "G0_max": 2.497532203343355,
+        "target": 2.5,
+        "before_G0_max": true,
+        "before_target": true
+       }
+      ]
+     },
+     {
+      "B": 9.0,
+      "maxima": [
+       {
+        "t": 0.8527879029216257,
+        "flank_index": 1,
+        "G0_max": 1.0005514718887372,
+        "target": 1.0,
+        "before_G0_max": true,
+        "before_target": true
+       }
+      ]
+     }
+    ],
+    "note": "each f_det maximum lies before the next G0 maximum p_j; it need not lie before the target t_j (first peak at small B lies after t_1 = 1)"
+   }
+  },
+  "m2_rho0.35": {
+   "m": 2,
+   "rho_s": 0.35,
+   "weights": [
+    0.5,
+    0.5
+   ],
+   "G0_critical_points": [
+    {
+     "t": 1.0039436628381764,
+     "G0": 0.5727412274888255,
+     "G0pp": -9.504348197123164,
+     "type": "max"
+    },
+    {
+     "t": 1.491733902577193,
+     "G0": 0.3003994044488421,
+     "G0pp": 3.3107658624930387,
+     "type": "min"
+    },
+    {
+     "t": 2.482514304006836,
+     "G0": 0.5727412274888255,
+     "G0pp": -0.49391497920169886,
+     "type": "max"
+    }
+   ],
+   "G0_n_max": 2,
+   "G0_n_min": 1,
+   "G0_prime_tau": 0.26125649814912844,
+   "G0_prime_T": -0.09827207026595722,
+   "D1_signature_ok": true,
+   "flanks": [
+    {
+     "kind": "first",
+     "a": 0.5,
+     "b": 1.0039436628381764,
+     "r0_tau": 1368.1515151172607,
+     "r0_strictly_decreasing": true,
+     "n_r0_critical": 0
+    },
+    {
+     "kind": "interior",
+     "j": 2,
+     "a": 1.491733902577193,
+     "b": 2.482514304006836,
+     "n_r0_critical": 1,
+     "t_fold": 1.6867004923357105,
+     "b_j": 3.488136902883735,
+     "r0pp_at_fold": -119.77205397503334,
+     "transversal": true
+    }
+   ],
+   "D2_first_flank_monotone": true,
+   "D3_flank_unimodal": true,
+   "D3_includes_transversality": true,
+   "B_top_det": 3.488136902883735,
+   "binding": "flank_2",
+   "fold_time": 1.6867004923357105,
+   "candidates": {
+    "left_endpoint": 1368.1515151172607,
+    "flank_2": 3.488136902883735
+   },
+   "Lambda0_at_basin_bounds": {
+    "0.500000": 0.0006310232810044151,
+    "1.491734": 0.35306468805534436,
+    "3.500000": 1.3521429745936857
+   },
+   "basin_masses_at_B_top_det": [
+    0.7059579383397205,
+    0.28289659077372226
+   ],
+   "basin_masses_cut_note": "basin_masses*: nominal fixed cuts at the G0 minima v_j (free-clock valleys)",
+   "basin_masses_at_B_top_det_fold_cut": {
+    "cuts": [
+     0.5,
+     1.6867004923357105,
+     3.5
+    ],
+    "masses": [
+     0.7626986429240885,
+     0.22615588618935423
+    ],
+    "note": "cut at the fold time t_f of the binding flank (limit of the f_det valley as B -> B_top_det-)"
+   },
+   "late_basin_mass_near_fold_f_det_valley_cut": [
+    {
+     "B": 3.478136902883735,
+     "f_det_valley": 1.6740519238666502,
+     "late_basin_mass_f_det_valley_cut": 0.230638976047797
+    },
+    {
+     "B": 3.487136902883735,
+     "f_det_valley": 1.682642327630218,
+     "late_basin_mass_f_det_valley_cut": 0.22740377131729278
+    },
+    {
+     "B": 3.4880369028837346,
+     "f_det_valley": 1.6854111174020767,
+     "late_basin_mass_f_det_valley_cut": 0.2265337114764179
+    }
+   ],
+   "f_det_at_budgets": []
+  },
+  "m2_rho0.4": {
+   "m": 2,
+   "rho_s": 0.4,
+   "weights": [
+    0.5,
+    0.5
+   ],
+   "G0_critical_points": [
+    {
+     "t": 1.0151403280527433,
+     "G0": 0.5077372216999158,
+     "G0pp": -5.633694242327783,
+     "type": "max"
+    },
+    {
+     "t": 1.491733902577193,
+     "G0": 0.35928885869073734,
+     "G0pp": 1.894924247780479,
+     "type": "min"
+    },
+    {
+     "t": 2.4348274696470407,
+     "G0": 0.5077372216999158,
+     "G0pp": -0.32935835854829676,
+     "type": "max"
+    }
+   ],
+   "G0_n_max": 2,
+   "G0_n_min": 1,
+   "G0_prime_tau": 0.4185090564905115,
+   "G0_prime_T": -0.06999414278446024,
+   "D1_signature_ok": true,
+   "flanks": [
+    {
+     "kind": "first",
+     "a": 0.5,
+     "b": 1.0151403280527433,
+     "r0_tau": 500.6648291331606,
+     "r0_strictly_decreasing": true,
+     "n_r0_critical": 0
+    },
+    {
+     "kind": "interior",
+     "j": 2,
+     "a": 1.491733902577193,
+     "b": 2.4348274696470407,
+     "n_r0_critical": 1,
+     "t_fold": 1.7259114497603991,
+     "b_j": 1.647102825332774,
+     "r0pp_at_fold": -39.83855469255052,
+     "transversal": true
+    }
+   ],
+   "D2_first_flank_monotone": true,
+   "D3_flank_unimodal": true,
+   "D3_includes_transversality": true,
+   "B_top_det": 1.647102825332774,
+   "binding": "flank_2",
+   "fold_time": 1.7259114497603991,
+   "candidates": {
+    "left_endpoint": 500.6648291331606,
+    "flank_2": 1.647102825332774
+   },
+   "Lambda0_at_basin_bounds": {
+    "0.500000": 0.0016650327466715383,
+    "1.491734": 0.3530943504710967,
+    "3.500000": 1.2826511926390292
+   },
+   "basin_masses_at_B_top_det": [
+    0.43824836198433104,
+    0.43809681999419003
+   ],
+   "basin_masses_cut_note": "basin_masses*: nominal fixed cuts at the G0 minima v_j (free-clock valleys)",
+   "basin_masses_at_B_top_det_fold_cut": {
+    "cuts": [
+     0.5,
+     1.7259114497603991,
+     3.5
+    ],
+    "masses": [
+     0.5131736700121385,
+     0.36317151196638253
+    ],
+    "note": "cut at the fold time t_f of the binding flank (limit of the f_det valley as B -> B_top_det-)"
+   },
+   "late_basin_mass_near_fold_f_det_valley_cut": [
+    {
+     "B": 1.637102825332774,
+     "f_det_valley": 1.7041280054625831,
+     "late_basin_mass_f_det_valley_cut": 0.37063117656899963
+    },
+    {
+     "B": 1.646102825332774,
+     "f_det_valley": 1.718890860295808,
+     "late_basin_mass_f_det_valley_cut": 0.36545157086535585
+    },
+    {
+     "B": 1.647002825332774,
+     "f_det_valley": 1.7236774185586854,
+     "late_basin_mass_f_det_valley_cut": 0.3638844911379914
+    }
+   ],
+   "f_det_at_budgets": []
+  },
+  "m3_rho0.15": {
+   "m": 3,
+   "rho_s": 0.15,
+   "weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "G0_critical_points": [
+    {
+     "t": 0.8000000001936964,
+     "G0": 0.8865384012039089,
+     "G0pp": -127.28107623914458,
+     "type": "max"
+    },
+    {
+     "t": 1.122046514470917,
+     "G0": 0.007678648762001903,
+     "G0pp": 5.722163344746214,
+     "type": "min"
+    },
+    {
+     "t": 1.6005965606566113,
+     "G0": 0.8872910737768854,
+     "G0pp": -25.37869281899225,
+     "type": "max"
+    },
+    {
+     "t": 2.029864713221915,
+     "G0": 0.30220446062173995,
+     "G0pp": 9.413209495921057,
+     "type": "min"
+    },
+    {
+     "t": 2.798021895861175,
+     "G0": 0.887291073471588,
+     "G0pp": -2.3141889970249157,
+     "type": "max"
+    }
+   ],
+   "G0_n_max": 3,
+   "G0_n_min": 2,
+   "G0_prime_tau": 0.009182559470643753,
+   "G0_prime_T": -0.4177267812199919,
+   "D1_signature_ok": true,
+   "flanks": [
+    {
+     "kind": "first",
+     "a": 0.5,
+     "b": 0.8000000001936964,
+     "r0_tau": 500646.45993088244,
+     "r0_strictly_decreasing": true,
+     "n_r0_critical": 0
+    },
+    {
+     "kind": "interior",
+     "j": 2,
+     "a": 1.122046514470917,
+     "b": 1.6005965606566113,
+     "n_r0_critical": 1,
+     "t_fold": 1.1531091318294964,
+     "b_j": 1659.078819955466,
+     "r0pp_at_fold": -2541064.2481817324,
+     "transversal": true
+    },
+    {
+     "kind": "interior",
+     "j": 3,
+     "a": 2.029864713221915,
+     "b": 2.798021895861175,
+     "n_r0_critical": 1,
+     "t_fold": 2.1607964730831704,
+     "b_j": 6.867500024245994,
+     "r0pp_at_fold": -540.4338657183196,
+     "transversal": true
+    }
+   ],
+   "D2_first_flank_monotone": true,
+   "D3_flank_unimodal": true,
+   "D3_includes_transversality": true,
+   "B_top_det": 6.867500024245994,
+   "binding": "flank_3",
+   "fold_time": 2.1607964730831704,
+   "candidates": {
+    "left_endpoint": 500646.45993088244,
+    "flank_2": 1659.078819955466,
+    "flank_3": 6.867500024245994
+   },
+   "Lambda0_at_basin_bounds": {
+    "0.500000": 1.874285193620398e-06,
+    "1.122047": 0.18677393992941313,
+    "2.029865": 0.6111129398202455,
+    "3.500000": 1.6479477516855423
+   },
+   "basin_masses_at_B_top_det": [
+    0.7226912076578533,
+    0.2622525539699144,
+    0.015031205859548244
+   ],
+   "basin_masses_cut_note": "basin_masses*: nominal fixed cuts at the G0 minima v_j (free-clock valleys)",
+   "basin_masses_at_B_top_det_fold_cut": {
+    "cuts": [
+     0.5,
+     1.122046514470917,
+     2.1607964730831704,
+     3.5
+    ],
+    "masses": [
+     0.7226912076578533,
+     0.2660757157592185,
+     0.011208044070244146
+    ],
+    "note": "cut at the fold time t_f of the binding flank (limit of the f_det valley as B -> B_top_det-)"
+   },
+   "late_basin_mass_near_fold_f_det_valley_cut": [
+    {
+     "B": 6.8575000242459945,
+     "f_det_valley": 2.154806228243424,
+     "late_basin_mass_f_det_valley_cut": 0.011453388902376209
+    },
+    {
+     "B": 6.866500024245994,
+     "f_det_valley": 2.1588822716967533,
+     "late_basin_mass_f_det_valley_cut": 0.011270058541163218
+    },
+    {
+     "B": 6.8674000242459945,
+     "f_det_valley": 2.160189096452058,
+     "late_basin_mass_f_det_valley_cut": 0.011226122882120547
+    }
+   ],
+   "f_det_at_budgets": []
+  },
+  "m3_rho0.2": {
+   "m": 3,
+   "rho_s": 0.2,
+   "weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "G0_critical_points": [
+    {
+     "t": 0.8000026496940322,
+     "G0": 0.6649069998457747,
+     "G0pp": -53.69035131789735,
+     "type": "max"
+    },
+    {
+     "t": 1.122045138802756,
+     "G0": 0.062281064949087965,
+     "G0pp": 13.530054656879456,
+     "type": "min"
+    },
+    {
+     "t": 1.6152786873600529,
+     "G0": 0.6783847190829666,
+     "G0pp": -8.913479045272734,
+     "type": "max"
+    },
+    {
+     "t": 2.029864718680953,
+     "G0": 0.4915286151344414,
+     "G0pp": 3.3601775763054578,
+     "type": "min"
+    },
+    {
+     "t": 2.7508682678093654,
+     "G0": 0.6783823608209127,
+     "G0pp": -0.9198678951451282,
+     "type": "max"
+    }
+   ],
+   "G0_n_max": 3,
+   "G0_n_min": 2,
+   "G0_prime_tau": 0.18098364792416705,
+   "G0_prime_T": -0.2076329914834069,
+   "D1_signature_ok": true,
+   "flanks": [
+    {
+     "kind": "first",
+     "a": 0.5,
+     "b": 0.8000026496940322,
+     "r0_tau": 8037.123008303986,
+     "r0_strictly_decreasing": true,
+     "n_r0_critical": 0
+    },
+    {
+     "kind": "interior",
+     "j": 2,
+     "a": 1.122045138802756,
+     "b": 1.6152786873600529,
+     "n_r0_critical": 1,
+     "t_fold": 1.1772747104913068,
+     "b_j": 103.79985306289343,
+     "r0pp_at_fold": -48792.54615426011,
+     "transversal": true
+    },
+    {
+     "kind": "interior",
+     "j": 3,
+     "a": 2.029864718680953,
+     "b": 2.7508682678093654,
+     "n_r0_critical": 1,
+     "t_fold": 2.2335231741977193,
+     "b_j": 1.3934652370967757,
+     "r0pp_at_fold": -46.67304159731347,
+     "transversal": true
+    }
+   ],
+   "D2_first_flank_monotone": true,
+   "D3_flank_unimodal": true,
+   "D3_includes_transversality": true,
+   "B_top_det": 1.3934652370967757,
+   "binding": "flank_3",
+   "fold_time": 2.2335231741977193,
+   "candidates": {
+    "left_endpoint": 8037.123008303986,
+    "flank_2": 103.79985306289343,
+    "flank_3": 1.3934652370967757
+   },
+   "Lambda0_at_basin_bounds": {
+    "0.500000": 0.00011199835930698441,
+    "1.122045": 0.18767663820560962,
+    "2.029865": 0.6127089428411385,
+    "3.500000": 1.5132406695427585
+   },
+   "basin_masses_at_B_top_det": [
+    0.2299641393812285,
+    0.3440811209011931,
+    0.30439672763578646
+   ],
+   "basin_masses_cut_note": "basin_masses*: nominal fixed cuts at the G0 minima v_j (free-clock valleys)",
+   "basin_masses_at_B_top_det_fold_cut": {
+    "cuts": [
+     0.5,
+     1.122045138802756,
+     2.2335231741977193,
+     3.5
+    ],
+    "masses": [
+     0.2299641393812285,
+     0.40149338480776964,
+     0.2469844637292099
+    ],
+    "note": "cut at the fold time t_f of the binding flank (limit of the f_det valley as B -> B_top_det-)"
+   },
+   "late_basin_mass_near_fold_f_det_valley_cut": [
+    {
+     "B": 1.3834652370967757,
+     "f_det_valley": 2.2133965626675325,
+     "late_basin_mass_f_det_valley_cut": 0.2533942734132225
+    },
+    {
+     "B": 1.3924652370967758,
+     "f_det_valley": 2.2270369890791235,
+     "late_basin_mass_f_det_valley_cut": 0.24887322550998586
+    },
+    {
+     "B": 1.3933652370967757,
+     "f_det_valley": 2.2314591921452545,
+     "late_basin_mass_f_det_valley_cut": 0.2475679847741431
+    }
+   ],
+   "f_det_at_budgets": []
+  },
+  "m3_rho0.25": {
+   "m": 3,
+   "rho_s": 0.25,
+   "weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "G0_critical_points": [
+    {
+     "t": 0.8002188372936749,
+     "G0": 0.5321338285747155,
+     "G0pp": -27.320426940885394,
+     "type": "max"
+    },
+    {
+     "t": 1.1219218406400215,
+     "G0": 0.1500492784448986,
+     "G0pp": 11.913563063352367,
+     "type": "min"
+    },
+    {
+     "t": 1.6981669061420162,
+     "G0": 0.5869005000987636,
+     "G0pp": -2.047545576182086,
+     "type": "max"
+    },
+    {
+     "t": 2.029884721803761,
+     "G0": 0.5626601759624907,
+     "G0pp": 0.6809294263206799,
+     "type": "min"
+    },
+    {
+     "t": 2.528790672789386,
+     "G0": 0.5868399289294225,
+     "G0pp": -0.38951926285472244,
+     "type": "max"
+    }
+   ],
+   "G0_n_max": 3,
+   "G0_n_min": 2,
+   "G0_prime_tau": 0.5490925142916162,
+   "G0_prime_T": -0.12786987524276808,
+   "D1_signature_ok": true,
+   "flanks": [
+    {
+     "kind": "first",
+     "a": 0.5,
+     "b": 0.8002188372936749,
+     "r0_tau": 1085.0616229541547,
+     "r0_strictly_decreasing": true,
+     "n_r0_critical": 0
+    },
+    {
+     "kind": "interior",
+     "j": 2,
+     "a": 1.1219218406400215,
+     "b": 1.6981669061420162,
+     "n_r0_critical": 1,
+     "t_fold": 1.2072726998119117,
+     "b_j": 23.80815495328555,
+     "r0pp_at_fold": -4580.122346138226,
+     "transversal": true
+    },
+    {
+     "kind": "interior",
+     "j": 3,
+     "a": 2.029884721803761,
+     "b": 2.528790672789386,
+     "n_r0_critical": 1,
+     "t_fold": 2.2378233659689455,
+     "b_j": 0.23028584718173017,
+     "r0pp_at_fold": -9.173492455333385,
+     "transversal": true
+    }
+   ],
+   "D2_first_flank_monotone": true,
+   "D3_flank_unimodal": true,
+   "D3_includes_transversality": true,
+   "B_top_det": 0.23028584718173017,
+   "binding": "flank_3",
+   "fold_time": 2.2378233659689455,
+   "candidates": {
+    "left_endpoint": 1085.0616229541547,
+    "flank_2": 23.80815495328555,
+    "flank_3": 0.23028584718173017
+   },
+   "Lambda0_at_basin_bounds": {
+    "0.500000": 0.0007916558767333277,
+    "1.121922": 0.1883621448648831,
+    "2.029885": 0.6101056989331566,
+    "3.500000": 1.4265103378378334
+   },
+   "basin_masses_at_B_top_det": [
+    0.04226751426423525,
+    0.08862540740766978,
+    0.1489255615774876
+   ],
+   "basin_masses_cut_note": "basin_masses*: nominal fixed cuts at the G0 minima v_j (free-clock valleys)",
+   "basin_masses_at_B_top_det_fold_cut": {
+    "cuts": [
+     0.5,
+     1.1219218406400215,
+     2.2378233659689455,
+     3.5
+    ],
+    "masses": [
+     0.04226751426423525,
+     0.1118804002492122,
+     0.12567056873594518
+    ],
+    "note": "cut at the fold time t_f of the binding flank (limit of the f_det valley as B -> B_top_det-)"
+   },
+   "late_basin_mass_near_fold_f_det_valley_cut": [
+    {
+     "B": 0.22028584718173017,
+     "f_det_valley": 2.1925009453857394,
+     "late_basin_mass_f_det_valley_cut": 0.1263769326258768
+    },
+    {
+     "B": 0.22928584718173017,
+     "f_det_valley": 2.223207332906437,
+     "late_basin_mass_f_det_valley_cut": 0.12688363049478446
+    },
+    {
+     "B": 0.23018584718173019,
+     "f_det_valley": 2.2331694629461287,
+     "late_basin_mass_f_det_valley_cut": 0.1261485504422326
+    }
+   ],
+   "f_det_at_budgets": []
+  },
+  "m3_rho0.3": {
+   "m": 3,
+   "rho_s": 0.3,
+   "weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "G0_critical_points": [
+    {
+     "t": 0.8024985093352139,
+     "G0": 0.445236871627522,
+     "G0pp": -15.120140962730776,
+     "type": "max"
+    },
+    {
+     "t": 1.1202839045438275,
+     "G0": 0.22828297492745883,
+     "G0pp": 7.587281556727555,
+     "type": "min"
+    },
+    {
+     "t": 2.0277955558812524,
+     "G0": 0.5696832368380309,
+     "G0pp": -0.1994011414874587,
+     "type": "max"
+    }
+   ],
+   "G0_n_max": 2,
+   "G0_n_min": 1,
+   "G0_prime_tau": 0.8353423658961484,
+   "G0_prime_T": -0.0967568028900308,
+   "D1_signature_ok": false,
+   "note": "G0 does not have the complete m-signature on I; B_top^det undefined"
+  },
+  "m3_rho0.35": {
+   "m": 3,
+   "rho_s": 0.35,
+   "weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "G0_critical_points": [
+    {
+     "t": 0.8118627153226354,
+     "G0": 0.38753322201069224,
+     "G0pp": -8.302550622343949,
+     "type": "max"
+    },
+    {
+     "t": 1.1118548275115137,
+     "G0": 0.2833466166992304,
+     "G0pp": 4.346493462649996,
+     "type": "min"
+    },
+    {
+     "t": 2.0231731875418664,
+     "G0": 0.5495738298651952,
+     "G0pp": -0.4241457840331306,
+     "type": "max"
+    }
+   ],
+   "G0_n_max": 2,
+   "G0_n_min": 1,
+   "G0_prime_tau": 0.942426876583307,
+   "G0_prime_T": -0.08068222110804447,
+   "D1_signature_ok": false,
+   "note": "G0 does not have the complete m-signature on I; B_top^det undefined"
+  },
+  "m3_rho0.4": {
+   "m": 3,
+   "rho_s": 0.4,
+   "weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "G0_critical_points": [
+    {
+     "t": 0.8379123300411162,
+     "G0": 0.35138999281074396,
+     "G0pp": -4.006108318410215,
+     "type": "max"
+    },
+    {
+     "t": 1.0849740831634835,
+     "G0": 0.317694837789625,
+     "G0pp": 2.3173910991004143,
+     "type": "min"
+    },
+    {
+     "t": 2.0087519499800246,
+     "G0": 0.5206539761373528,
+     "G0pp": -0.4314157855875377,
+     "type": "max"
+    }
+   ],
+   "G0_n_max": 2,
+   "G0_n_min": 1,
+   "G0_prime_tau": 0.9236078927499799,
+   "G0_prime_T": -0.06886356008360334,
+   "D1_signature_ok": false,
+   "note": "G0 does not have the complete m-signature on I; B_top^det undefined"
+  }
+ },
+ "effective_width_identity": {
+  "m2_eps0.05": {
+   "rho_eff": 0.06123724356957945,
+   "B_top_det_at_rho_eff": 8.587877226917315e+19,
+   "binding": "flank_2",
+   "D1_B_top_mf_with_contact": "8.6e+19"
+  },
+  "m2_eps0.075": {
+   "rho_eff": 0.09185586535436917,
+   "B_top_det_at_rho_eff": 1731297926.534557,
+   "binding": "flank_2",
+   "D1_B_top_mf_with_contact": "1.8e+09"
+  },
+  "m2_eps0.1": {
+   "rho_eff": 0.1224744871391589,
+   "B_top_det_at_rho_eff": 264145.68074542587,
+   "binding": "flank_2",
+   "D1_B_top_mf_with_contact": "3.02e+05"
+  },
+  "m3_eps0.05": {
+   "rho_eff": 0.06123724356957945,
+   "B_top_det_at_rho_eff": 174021.98330209742,
+   "binding": "flank_3",
+   "D1_B_top_mf_with_contact": "1.75e+05"
+  },
+  "m3_eps0.075": {
+   "rho_eff": 0.09185586535436917,
+   "B_top_det_at_rho_eff": 291.95092956729525,
+   "binding": "flank_3",
+   "D1_B_top_mf_with_contact": "313"
+  },
+  "m3_eps0.1": {
+   "rho_eff": 0.1224744871391589,
+   "B_top_det_at_rho_eff": 24.286509342849723,
+   "binding": "flank_3",
+   "D1_B_top_mf_with_contact": "29"
+  }
+ },
+ "small_width_asymptotics_m2": {
+  "Delta": 1.1431777701901742,
+  "t_s": 1.491733902577193,
+  "C_rho_predicted": -0.4389834671780836,
+  "rows": [
+   {
+    "source": "m2_eps0.05",
+    "rho": 0.06123724356957945,
+    "B_top_det": 8.587877226917315e+19,
+    "residual": -0.4553785104855863
+   },
+   {
+    "source": "m2_eps0.075",
+    "rho": 0.09185586535436917,
+    "B_top_det": 1731297926.534557,
+    "residual": -0.47621835263338275
+   },
+   {
+    "source": "m2_eps0.1",
+    "rho": 0.1224744871391589,
+    "B_top_det": 264145.68074542587,
+    "residual": -0.5060582734781556
+   },
+   {
+    "source": "m2_rho0.15",
+    "rho": 0.15,
+    "B_top_det": 5520.836254775743,
+    "residual": -0.5411432186418423
+   },
+   {
+    "source": "m2_rho0.2",
+    "rho": 0.2,
+    "B_top_det": 158.54441942832986,
+    "residual": -0.6273262791729921
+   },
+   {
+    "source": "m2_rho0.25",
+    "rho": 0.25,
+    "B_top_det": 25.84654436971538,
+    "residual": -0.7478282777037693
+   },
+   {
+    "source": "m2_rho0.3",
+    "rho": 0.3,
+    "B_top_det": 8.224664745598302,
+    "residual": -0.9119122331646132
+   },
+   {
+    "source": "m2_rho0.35",
+    "rho": 0.35,
+    "B_top_det": 3.488136902883735,
+    "residual": -1.1339803024575077
+   },
+   {
+    "source": "m2_rho0.4",
+    "rho": 0.4,
+    "B_top_det": 1.647102825332774,
+    "residual": -1.4382536431196684
+   }
+  ]
+ },
+ "runtime_seconds": 4.157771110534668
+}

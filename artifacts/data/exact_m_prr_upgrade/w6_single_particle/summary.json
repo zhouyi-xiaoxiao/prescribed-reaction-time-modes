@@ -1,0 +1,440 @@
+{
+  "budget": 1.0,
+  "cells": [
+    {
+      "G1_peak_times": [
+        1.01,
+        2.5100000000000002
+      ],
+      "G1_window_maxima": 2,
+      "budget": 1.0,
+      "comparator": {
+        "event_fraction_in_window": 0.839509,
+        "file": "exact_m_prr_upgrade/w1_phase_diagram/cell_m2_eps0.05_B1.json",
+        "mode_count": 2,
+        "peak_times": [
+          0.9900000000000004,
+          2.4300000000000015
+        ],
+        "walkers": 1000000,
+        "z_covariance_aware": [
+          494.0209142680114,
+          422.6961765786511
+        ]
+      },
+      "dt_halving_max_abs_z": null,
+      "eps": 0.05,
+      "event_fraction_in_window": 0.8346542,
+      "file": "m2_eps0.05_B1_p1.json",
+      "gates_passed": {
+        "gate0": true,
+        "gate1": true,
+        "gate2": true,
+        "gate3": true,
+        "theory_limit_check": true
+      },
+      "kill_fraction": 0.8353224,
+      "kill_probability_max": 0.0039814756285865135,
+      "m": 2,
+      "mean_field_f1_peak_times": [
+        1.0050000000000001,
+        2.415
+      ],
+      "mode_count": 2,
+      "particle": 1,
+      "passes_m_mode_criterion": true,
+      "peak_deltas_vs_pair_centre": [
+        0.020000000000000018,
+        0.0
+      ],
+      "peak_deltas_vs_target": [
+        0.010000000000000453,
+        -0.06999999999999851
+      ],
+      "peak_times": [
+        1.0100000000000005,
+        2.4300000000000015
+      ],
+      "prominence_over_sigma_prom": [
+        1080.2228704040003,
+        877.5593743764657
+      ],
+      "relative_prominences": [
+        1.0,
+        0.600392153294468
+      ],
+      "runtime_seconds": 161.450050458,
+      "walkers": 5000000
+    },
+    {
+      "G1_peak_times": [
+        0.985,
+        2.485
+      ],
+      "G1_window_maxima": 2,
+      "budget": 1.0,
+      "comparator": {
+        "event_fraction_in_window": 0.839509,
+        "file": "exact_m_prr_upgrade/w1_phase_diagram/cell_m2_eps0.05_B1.json",
+        "mode_count": 2,
+        "peak_times": [
+          0.9900000000000004,
+          2.4300000000000015
+        ],
+        "walkers": 1000000,
+        "z_covariance_aware": [
+          494.0209142680114,
+          422.6961765786511
+        ]
+      },
+      "dt_halving_max_abs_z": null,
+      "eps": 0.05,
+      "event_fraction_in_window": 0.8352734,
+      "file": "m2_eps0.05_B1_p2.json",
+      "gates_passed": {
+        "gate0": true,
+        "gate1": true,
+        "gate2": true,
+        "gate3": true,
+        "theory_limit_check": true
+      },
+      "kill_fraction": 0.8358666,
+      "kill_probability_max": 0.0039814756285865135,
+      "m": 2,
+      "mean_field_f1_peak_times": [
+        0.98,
+        2.39
+      ],
+      "mode_count": 2,
+      "particle": 2,
+      "passes_m_mode_criterion": true,
+      "peak_deltas_vs_pair_centre": [
+        0.0,
+        -0.019999999999999574
+      ],
+      "peak_deltas_vs_target": [
+        -0.009999999999999565,
+        -0.08999999999999808
+      ],
+      "peak_times": [
+        0.9900000000000004,
+        2.410000000000002
+      ],
+      "prominence_over_sigma_prom": [
+        1079.3816068539488,
+        878.786265399739
+      ],
+      "relative_prominences": [
+        1.0,
+        0.6029893639301961
+      ],
+      "runtime_seconds": 149.232038416,
+      "walkers": 5000000
+    },
+    {
+      "G1_peak_times": [
+        1.01,
+        2.5
+      ],
+      "G1_window_maxima": 2,
+      "budget": 1.0,
+      "comparator": {
+        "event_fraction_in_window": 0.7559924,
+        "file": "exact_m_offlattice_production/m2_eps0.1_B1_w50-50.json",
+        "mode_count": 2,
+        "peak_times": [
+          0.9900000000000004,
+          2.370000000000002
+        ],
+        "walkers": 5000000,
+        "z_covariance_aware": [
+          886.639842361308,
+          544.9294547391328
+        ]
+      },
+      "dt_halving_max_abs_z": 1.9636720531102057,
+      "eps": 0.1,
+      "event_fraction_in_window": 0.7450536,
+      "file": "m2_eps0.1_B1_p1.json",
+      "gates_passed": {
+        "gate0": true,
+        "gate1": true,
+        "gate2": true,
+        "gate3": true,
+        "theory_limit_check": true
+      },
+      "kill_fraction": 0.7672218,
+      "kill_probability_max": 0.0019927232873432166,
+      "m": 2,
+      "mean_field_f1_peak_times": [
+        1.0,
+        2.35
+      ],
+      "mode_count": 2,
+      "particle": 1,
+      "passes_m_mode_criterion": true,
+      "peak_deltas_vs_pair_centre": [
+        0.020000000000000018,
+        0.0
+      ],
+      "peak_deltas_vs_target": [
+        0.010000000000000453,
+        -0.12999999999999812
+      ],
+      "peak_times": [
+        1.0100000000000005,
+        2.370000000000002
+      ],
+      "prominence_over_sigma_prom": [
+        846.1030624277499,
+        479.2989912336145
+      ],
+      "relative_prominences": [
+        0.9994186540133461,
+        0.43557149358728936
+      ],
+      "runtime_seconds": 129.766597167,
+      "walkers": 5000000
+    },
+    {
+      "G1_peak_times": [
+        0.985,
+        2.48
+      ],
+      "G1_window_maxima": 2,
+      "budget": 1.0,
+      "comparator": {
+        "event_fraction_in_window": 0.7559924,
+        "file": "exact_m_offlattice_production/m2_eps0.1_B1_w50-50.json",
+        "mode_count": 2,
+        "peak_times": [
+          0.9900000000000004,
+          2.370000000000002
+        ],
+        "walkers": 5000000,
+        "z_covariance_aware": [
+          886.639842361308,
+          544.9294547391328
+        ]
+      },
+      "dt_halving_max_abs_z": 2.847647856491349,
+      "eps": 0.1,
+      "event_fraction_in_window": 0.7471894,
+      "file": "m2_eps0.1_B1_p2.json",
+      "gates_passed": {
+        "gate0": true,
+        "gate1": true,
+        "gate2": true,
+        "gate3": true,
+        "theory_limit_check": true
+      },
+      "kill_fraction": 0.7685174,
+      "kill_probability_max": 0.0019927232873432166,
+      "m": 2,
+      "mean_field_f1_peak_times": [
+        0.975,
+        2.33
+      ],
+      "mode_count": 2,
+      "particle": 2,
+      "passes_m_mode_criterion": true,
+      "peak_deltas_vs_pair_centre": [
+        -0.020000000000000018,
+        -0.020000000000000462
+      ],
+      "peak_deltas_vs_target": [
+        -0.029999999999999583,
+        -0.14999999999999858
+      ],
+      "peak_times": [
+        0.9700000000000004,
+        2.3500000000000014
+      ],
+      "prominence_over_sigma_prom": [
+        846.4133594730687,
+        483.08687909238176
+      ],
+      "relative_prominences": [
+        0.9994946390308233,
+        0.43686895083085203
+      ],
+      "runtime_seconds": 201.023345625,
+      "walkers": 5000000
+    },
+    {
+      "G1_peak_times": [
+        0.81,
+        1.61,
+        2.795
+      ],
+      "G1_window_maxima": 3,
+      "budget": 1.0,
+      "comparator": {
+        "event_fraction_in_window": 0.7375706,
+        "file": "exact_m_offlattice_production/m3_eps0.1_B1_w33-33-33.json",
+        "mode_count": 3,
+        "peak_times": [
+          0.7900000000000003,
+          1.570000000000001,
+          2.6300000000000017
+        ],
+        "walkers": 5000000,
+        "z_covariance_aware": [
+          731.3513861745516,
+          554.2803010616599,
+          255.29332712264875
+        ]
+      },
+      "dt_halving_max_abs_z": null,
+      "eps": 0.1,
+      "event_fraction_in_window": 0.7227806,
+      "file": "m3_eps0.1_B1_p1.json",
+      "gates_passed": {
+        "gate0": true,
+        "gate1": true,
+        "gate2": true,
+        "gate3": true,
+        "theory_limit_check": true
+      },
+      "kill_fraction": 0.765211,
+      "kill_probability_max": 0.001328923960218174,
+      "m": 3,
+      "mean_field_f1_peak_times": [
+        0.805,
+        1.585,
+        2.62
+      ],
+      "mode_count": 3,
+      "particle": 1,
+      "passes_m_mode_criterion": true,
+      "peak_deltas_vs_pair_centre": [
+        0.020000000000000018,
+        0.020000000000000018,
+        0.0
+      ],
+      "peak_deltas_vs_target": [
+        0.010000000000000231,
+        -0.00999999999999912,
+        -0.16999999999999815
+      ],
+      "peak_times": [
+        0.8100000000000003,
+        1.590000000000001,
+        2.6300000000000017
+      ],
+      "prominence_over_sigma_prom": [
+        701.1852341996961,
+        456.4201442998804,
+        210.26313335708673
+      ],
+      "relative_prominences": [
+        0.9935537093396534,
+        0.602329437345001,
+        0.23937448910859058
+      ],
+      "runtime_seconds": 164.14325829199998,
+      "walkers": 5000000
+    },
+    {
+      "G1_peak_times": [
+        0.785,
+        1.585,
+        2.775
+      ],
+      "G1_window_maxima": 3,
+      "budget": 1.0,
+      "comparator": {
+        "event_fraction_in_window": 0.7375706,
+        "file": "exact_m_offlattice_production/m3_eps0.1_B1_w33-33-33.json",
+        "mode_count": 3,
+        "peak_times": [
+          0.7900000000000003,
+          1.570000000000001,
+          2.6300000000000017
+        ],
+        "walkers": 5000000,
+        "z_covariance_aware": [
+          731.3513861745516,
+          554.2803010616599,
+          255.29332712264875
+        ]
+      },
+      "dt_halving_max_abs_z": null,
+      "eps": 0.1,
+      "event_fraction_in_window": 0.726459,
+      "file": "m3_eps0.1_B1_p2.json",
+      "gates_passed": {
+        "gate0": true,
+        "gate1": true,
+        "gate2": true,
+        "gate3": true,
+        "theory_limit_check": true
+      },
+      "kill_fraction": 0.7675672,
+      "kill_probability_max": 0.001328923960218174,
+      "m": 3,
+      "mean_field_f1_peak_times": [
+        0.78,
+        1.56,
+        2.6
+      ],
+      "mode_count": 3,
+      "particle": 2,
+      "passes_m_mode_criterion": true,
+      "peak_deltas_vs_pair_centre": [
+        0.0,
+        0.0,
+        -0.019999999999999574
+      ],
+      "peak_deltas_vs_target": [
+        -0.009999999999999787,
+        -0.02999999999999914,
+        -0.18999999999999773
+      ],
+      "peak_times": [
+        0.7900000000000003,
+        1.570000000000001,
+        2.610000000000002
+      ],
+      "prominence_over_sigma_prom": [
+        702.6554554580114,
+        457.71680596616955,
+        215.42939622209818
+      ],
+      "relative_prominences": [
+        0.9935954674357294,
+        0.6016521905366777,
+        0.24261372351869614
+      ],
+      "runtime_seconds": 218.9038325,
+      "walkers": 5000000
+    }
+  ],
+  "headline": {
+    "all_alternative_cells_retain_m_modes": true,
+    "all_gates_passed": true,
+    "all_primary_cells_retain_m_modes": true,
+    "kill_probability_max_over_stream": 0.0039814756285865135,
+    "max_abs_peak_delta_vs_pair_centre_alternative": 0.020000000000000462,
+    "max_abs_peak_delta_vs_pair_centre_primary": 0.020000000000000018,
+    "min_counted_z_alternative": 215.42939622209818,
+    "min_counted_z_primary": 210.26313335708673,
+    "n_alternative_cells": 3,
+    "n_primary_cells": 3
+  },
+  "seed": 20260813,
+  "stream": "w6_single_particle",
+  "tags": {
+    "dt_check": 63,
+    "gate": 62,
+    "main": 61
+  },
+  "ungated_estimates": {
+    "deterministic_time_shift_of_field_particle": 0.0125,
+    "note_sigma": "sqrt((D0/2g + rho^2 + D0/2g)/(D0/2g + rho^2)) using the stationary relative variance Var R_par = 2 eps^2 D0/gamma",
+    "note_time_shift": "r_par0/(2 gamma |z0 - z_bar|) with sign of the particle: constant in t because r_*(t)/2 and |mu'(t)| decay alike",
+    "sigma_ratio_single_over_pair_stationary": 1.1547005383792515
+  },
+  "variant": "static conserved-budget slab field evaluated at the longitudinal lab-frame position of ONE particle, x = Z + (particle_sign/2) R_par (particle 1: +1/2 = Z + R_par/2 with R = x_1 - x_2; particle 2: -1/2), on the contact set |R|_mi < a; everything else identical to production",
+  "wall_seconds": 618.487489125
+}

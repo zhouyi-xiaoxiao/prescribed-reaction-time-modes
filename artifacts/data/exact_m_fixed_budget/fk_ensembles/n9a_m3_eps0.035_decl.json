@@ -1,0 +1,386 @@
+{
+ "name": "n9a_m3_eps0.035_decl",
+ "schema": "fk_exact_law_ensemble_v1",
+ "mode": "declared",
+ "spec": {
+  "m": 3,
+  "eps": 0.035,
+  "dt": 0.0005,
+  "tmax": 4.0,
+  "z0": 4.0,
+  "var_z0_scale": 1.0,
+  "r_par0": 0.1,
+  "r_perp0": 0.0,
+  "u0": 0.3,
+  "sigma_perp0": 0.3,
+  "n_perp": 1,
+  "gamma": 1.0,
+  "d0": 1.0,
+  "z_bar": 0.0,
+  "torus_w": 1.0,
+  "contact_a": 0.4,
+  "rho": 1.0,
+  "slab_shape": "gauss",
+  "slab_sd": null,
+  "target_times": null,
+  "centres_z": null,
+  "kernel_cutoff_sd": 12.0,
+  "target_times_resolved": [
+   0.8,
+   1.6,
+   2.8
+  ],
+  "centres_z_resolved": [
+   1.7973158564688863,
+   0.8075860719786215,
+   0.2432402505008719
+  ],
+  "slab_sd_resolved": 0.035
+ },
+ "variants": [
+  {
+   "gate": "contact",
+   "a": 0.4,
+   "field": "mid",
+   "name": "full"
+  },
+  {
+   "gate": "none",
+   "a": 0.4,
+   "field": "mid",
+   "name": "nogate"
+  }
+ ],
+ "n_paths": 500000,
+ "chunk": 50000,
+ "chunk_sizes": [
+  50000,
+  50000,
+  50000,
+  50000,
+  50000,
+  50000,
+  50000,
+  50000,
+  50000,
+  50000
+ ],
+ "seed": 20260923,
+ "tag": 87,
+ "replicate": 0,
+ "seed_entropy": [
+  20260923,
+  87,
+  0,
+  1,
+  35000000,
+  500000000000,
+  4000000000,
+  1000000000,
+  100000000,
+  0,
+  300000000,
+  300000000,
+  1000000000,
+  1000000000,
+  0,
+  1000000000,
+  50000
+ ],
+ "rng": "numpy Philox; chunk i uses SeedSequence(seed_entropy).spawn(n_chunks)[i]",
+ "ensemble_dir": "<local-ensemble-store>/prr_fk_ensembles/n9a_m3_eps0.035_decl",
+ "note": "N9a TH-6 matching-zone census (fb_n9a_matching_census.py)",
+ "driver": "exact_m_prr_fk_exact_law.py",
+ "exactness": "exact discrete-time Feynman-Kac law of the production Euler-Maruyama + end-of-step Doi killing process; sampling error only (iid per-path SE, path-group batch means)",
+ "declared": [
+  {
+   "B": 0.5,
+   "w": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "variant": "full",
+   "cap": null,
+   "pair": 0,
+   "label": "full_B0.5"
+  },
+  {
+   "B": 1.0,
+   "w": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "variant": "full",
+   "cap": null,
+   "pair": 0,
+   "label": "full_B1"
+  },
+  {
+   "B": 4.0,
+   "w": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "variant": "full",
+   "cap": null,
+   "pair": 0,
+   "label": "full_B4"
+  },
+  {
+   "B": 8.0,
+   "w": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "variant": "full",
+   "cap": null,
+   "pair": 0,
+   "label": "full_B8"
+  },
+  {
+   "B": 20.0,
+   "w": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "variant": "full",
+   "cap": null,
+   "pair": 0,
+   "label": "full_B20"
+  },
+  {
+   "B": 50.0,
+   "w": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "variant": "full",
+   "cap": null,
+   "pair": 0,
+   "label": "full_B50"
+  },
+  {
+   "B": 0.5,
+   "w": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "variant": "nogate",
+   "cap": null,
+   "pair": 1,
+   "label": "nogate_B0.5"
+  },
+  {
+   "B": 1.0,
+   "w": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "variant": "nogate",
+   "cap": null,
+   "pair": 1,
+   "label": "nogate_B1"
+  },
+  {
+   "B": 4.0,
+   "w": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "variant": "nogate",
+   "cap": null,
+   "pair": 1,
+   "label": "nogate_B4"
+  },
+  {
+   "B": 8.0,
+   "w": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "variant": "nogate",
+   "cap": null,
+   "pair": 1,
+   "label": "nogate_B8"
+  },
+  {
+   "B": 20.0,
+   "w": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "variant": "nogate",
+   "cap": null,
+   "pair": 1,
+   "label": "nogate_B20"
+  },
+  {
+   "B": 50.0,
+   "w": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "variant": "nogate",
+   "cap": null,
+   "pair": 1,
+   "label": "nogate_B50"
+  }
+ ],
+ "pairs": [
+  {
+   "variant": "full",
+   "w": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ]
+  },
+  {
+   "variant": "nogate",
+   "w": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ]
+  }
+ ],
+ "batch": 10000,
+ "storage": "per-step sums of exact kill probability and exposure moments",
+ "chunks": [
+  {
+   "chunk": 0,
+   "size": 50000,
+   "runtime_seconds": 117.724762584,
+   "contact_steps": 399690802,
+   "max_step_unit_exposure": 0.0018997251447687266,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/n9a_m3_eps0.035_decl/chunk0000.npz",
+   "sha256": "2527509c6de01977eb0809c02d6f0424557239266de0bbe9003479a6ab2126b8",
+   "bytes": 7319075
+  },
+  {
+   "chunk": 1,
+   "size": 50000,
+   "runtime_seconds": 117.888345583,
+   "contact_steps": 399686670,
+   "max_step_unit_exposure": 0.0018997251447687264,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/n9a_m3_eps0.035_decl/chunk0001.npz",
+   "sha256": "98c802be3cc04c8196ae3bfcd8d23b9bdb2d1b780a8d65abbb491c7a192094ac",
+   "bytes": 7315368
+  },
+  {
+   "chunk": 2,
+   "size": 50000,
+   "runtime_seconds": 116.34827600000001,
+   "contact_steps": 399655931,
+   "max_step_unit_exposure": 0.001899725144768727,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/n9a_m3_eps0.035_decl/chunk0002.npz",
+   "sha256": "fc7953e024c9a7ff2d962028db7e1d5482dfc49d6e9f628e04b2a86992f73bd1",
+   "bytes": 7326777
+  },
+  {
+   "chunk": 3,
+   "size": 50000,
+   "runtime_seconds": 116.218251084,
+   "contact_steps": 399688084,
+   "max_step_unit_exposure": 0.001899725144768727,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/n9a_m3_eps0.035_decl/chunk0003.npz",
+   "sha256": "473e35497e1e992657f8d2898cc4027e99dc0eedf81bfddab4292b487ca26718",
+   "bytes": 7325259
+  },
+  {
+   "chunk": 4,
+   "size": 50000,
+   "runtime_seconds": 127.77719112500003,
+   "contact_steps": 399698857,
+   "max_step_unit_exposure": 0.0018997251447687247,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/n9a_m3_eps0.035_decl/chunk0004.npz",
+   "sha256": "5aa6213cfc2c8160422e72aa4f092a04396fab49ba0cda7194d3fa714ff5613b",
+   "bytes": 7322121
+  },
+  {
+   "chunk": 5,
+   "size": 50000,
+   "runtime_seconds": 127.241018167,
+   "contact_steps": 399685133,
+   "max_step_unit_exposure": 0.001899725144768727,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/n9a_m3_eps0.035_decl/chunk0005.npz",
+   "sha256": "07422f6ad7452102f15a1806eb660ebd25be022e954a915c5635a9a897ce9d56",
+   "bytes": 7317166
+  },
+  {
+   "chunk": 6,
+   "size": 50000,
+   "runtime_seconds": 107.03863587500001,
+   "contact_steps": 399686755,
+   "max_step_unit_exposure": 0.0018997251447687266,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/n9a_m3_eps0.035_decl/chunk0006.npz",
+   "sha256": "56e02c91c17f42795e58de52128217d9935825caef15afbcab100b1983621aa4",
+   "bytes": 7324915
+  },
+  {
+   "chunk": 7,
+   "size": 50000,
+   "runtime_seconds": 107.57670912499998,
+   "contact_steps": 399702590,
+   "max_step_unit_exposure": 0.0018997251447687266,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/n9a_m3_eps0.035_decl/chunk0007.npz",
+   "sha256": "3b86bf606bf2596ea668df6f0967e40f3881b65f251dc632f768a87638bc051a",
+   "bytes": 7320532
+  },
+  {
+   "chunk": 8,
+   "size": 50000,
+   "runtime_seconds": 124.16538783399994,
+   "contact_steps": 399655234,
+   "max_step_unit_exposure": 0.001899725144768727,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/n9a_m3_eps0.035_decl/chunk0008.npz",
+   "sha256": "1d88bdf7e3f12169412f1413d0b52f60a852859615666146ca49c4099e35647a",
+   "bytes": 7325282
+  },
+  {
+   "chunk": 9,
+   "size": 50000,
+   "runtime_seconds": 124.17279454199996,
+   "contact_steps": 399651535,
+   "max_step_unit_exposure": 0.0018997251447687264,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/n9a_m3_eps0.035_decl/chunk0009.npz",
+   "sha256": "620590e8658301656acc0dffd8e14fcd518435da915b4163381b08b652e7f642",
+   "bytes": 7328923
+  }
+ ],
+ "complete": true,
+ "last_invocation": {
+  "wall_seconds": 594.9970400333405,
+  "workers": 2,
+  "chunks_run": [
+   0,
+   1,
+   2,
+   3,
+   5,
+   4,
+   6,
+   7,
+   8,
+   9
+  ],
+  "cpu_wait": {
+   "python_processes": 3,
+   "waited_seconds": 0.03171110153198242
+  },
+  "finished_utc": "2026-09-23T05:07:07Z"
+ },
+ "process_seconds_total": 1186.151371919
+}

@@ -1,8 +1,64 @@
-# Robustness-results summary
+# Results map
 
-This file is a compact reading guide to the machine-readable records under
-`artifacts/data/exact_m_prr_upgrade/robustness/`.  Values below are descriptive
-diagnostics, not preregistered hypothesis tests.
+This file maps the results of the article (release `v1.1.0`) to the records
+and scripts of this archive, and then reproduces the reading guide to the
+robustness records of release `v1.0.0`.  It quotes no new numbers: the values
+are in the records and in the article, whose LaTeX sources cite the JSON key
+path of every quoted number.  Paths are relative to
+`artifacts/data/exact_m_fixed_budget/` unless they start with another
+top-level directory.
+
+## Fixed-budget campaign (release v1.1.0)
+
+| result in the article | records | script(s) in `code/` |
+|:---|:---|:---|
+| Exact-law estimator and its validation against direct-kill histograms (Supplementary Material, numerical methods) | `n0_validation.json`, `n0_selftest.json`, `fk_ensembles/n0_*.json` | `exact_m_prr_fk_exact_law.py`, `exact_m_prr_fk_n0_validation.py` |
+| Large-budget validation of the exact-law estimator against direct kill, up to `B = 10^3` (Sec. 4.1; SM large-budget figure) | `N10_largeB_validation/` (`n10_summary.json`, `directkill/`, `fk/`) | `fb_n10_largeB_validation.py` |
+| Allocation law and max--min design (Prop. 1; allocation-law figure) | `allocation_law.json` | `fb_allocation_law.py`; Lean module `StickBreaking` |
+| Designed allocations at finite noise (design-density and design-mass figures) | `N1/`, `fk_ensembles/n1_*.json` | `fb_n1_allocation_design.py` |
+| Shift-compensated timing design (SM Sec. S6.2.1) | `N11_shift_compensation/` (`n11_shift_compensation.json`, `n11_designs.json`, `fk_index/`, `directkill/`) | `fb_n11_shift_compensation.py` |
+| Mean-field sandwich and residual decomposition (Prop. 2) | `N2/`, `fk_ensembles/n2_*.json`, `TH_core/theory_core_checks.json`, `TH_core/th1_passage_sign.json` | `fb_n2_meanfield_residual.py`, `fb_theory_core_checks.py`, `fb_th1_passage_sign.py`; Lean module `SurvivalSandwich` |
+| Third-order (two-term) expansion of the mean-field residual (Supplementary Material, Sec. S3) | `N13_third_order/n13_third_order.json` | `fb_n13_third_order.py` |
+| Mean-field level set (Prop. 3) | `TH5/meanfield_levelset_asymptotics.json`, `I4_mean_field_topology/` | `fb_meanfield_levelset_check.py`, `exact_m_prr_mean_field_topology.py`; Lean module `MeanFieldLevelSet` |
+| Fixed-budget masses and local passage profile (Thm. 2) | `TH3/local_profile_check.json`, `TH_core/theory_core_checks.json`, `notes/gap_diagnosis_20260923/theory_scout/analysis_m{2,3}.json` | `fb_local_profile_check.py`, `fb_theory_core_checks.py`, scout `analyze_fk.py`; Lean modules `PassageProfile`, `SignatureStability` |
+| Exact count at fixed budget (Thm. 3) and its numerical census | `TH6/`, `N9a/` | `exact_m_fb_th6_tilted_bridge_checks.py`, `fb_th6_contact_constants.py`, `fb_n9a_matching_census.py` |
+| Census resolution of the three unresolved census cells (SM Sec. S6.9.1) | `N12_census_resolution/` (`n12_census_resolution.json`, `runs/`, `directkill/`, `diagnostics/`) | `fb_n12_census_resolution.py` |
+| Contact rule and frozen gate (Prop. 5; contact figure) | `N3/`, `fk_ensembles/n3_*.json`, `TH7/frozen_gate_check.json`, `notes/gap_diagnosis_20260923/theory_scout/analysis_h3.json` | `fb_n3_contact_factorial.py`, `fb_frozen_gate_check.py` |
+| Frozen-gate passage profile and gate-switching correction (Prop. 5; SM gate-switching figure) | `P5_gate_switching/` (`p5_summary.json`, `p5_jfun.json`, `p5_predict.json`, `p5_oracle.json`, `p5_profile.json`, `p5_step6_tail.json`) | `fb_p5_gate_switching.py`, `fb_p5_step6_tail.py` |
+| Finite width and fold (Prop. 4; fold figure) | `TH8/finite_width_det.json`, `N9b/n9b_fold.json`, `fk_ensembles/n9b_*.json` | `fb_finite_width_det.py`, `fb_n9b_fold.py` |
+| Interval-arithmetic certificate of (D1)--(D4) and of `B_top^det`, and the saddle-node of the exact law (Prop. 4) | `TH8_certificate/certificate.json`, `TH8_certificate/fold_normal_form.json` | `fb_th8_interval_certificate.py`, `fb_th8b_fold_normal_form.py` |
+| Outside the window (Prop. 6) and robustness | `N8/n8_summary.json`, `fk_ensembles/n8*.json` | `fb_n8_robustness.py` |
+| Preparation (Cor. 1) | `N4/n4_preparation.json`, `fk_ensembles/n4_*.json`, `TH10/preparation_predictions.json` | `fb_n4_preparation.py`, `fb_preparation_predictions.py` |
+| Small-budget count for every preparation (Cor. 1; interval certificates and census) | `C1_preparation_count/` (`c1_interval_certificates.json`, `c1_floatG_census.json`, `c1_fk_small_budget.json`) | `fb_c1_preparation_count.py` |
+| Universality of the mass law and of one peak per stripe (Sec. 3.9 and Sec. 4.8; universality figure) | `N14_universality/` (`n14_universality.json`, `n14_general_mc.json`, `mc_*.json`, `n14_unimodality.json`, `n14_fix_checks.json`) | `fb_n14_universality.py`, `fb_n14_general_mc.py`, `fb_n14_unimodality.py`, `fb_n14_fix_checks.py` |
+| Visibility thresholds (visibility figure) | `N6/`, `fk_ensembles/n6_*.json`, `exact_m_prr_upgrade/robustness/w2_seed_repeat_summary.json` | `fb_n6_visibility_thresholds.py`, `exact_m_prr_w2_seed_repeat.py` |
+| Time-step ladder | `N5/` | `fb_n5_dt_ladder.py` |
+| Sufficient budget `B_cert` (Supplementary remark; proof in release `v1.0.0`) | `TH11/bcert_nominal_windows.json` | `fb_bcert_window_check.py`, `b0_dyson_numerics.py`, `b0_dyson_chaincheck.py`; Lean modules `BudgetThreshold`, `BZeroThreshold`, `B0ChainKernel` |
+| Small budget at fixed noise (Thm. 1); legacy direct-kill campaigns of the Supplementary Material | release `v1.0.0` records (`exact_m_offlattice_production/`, `exact_m_prr_upgrade/`; guide below) | production and W1--W5 drivers; Lean modules `ExpPolyZeros`, `ZeroBound`, `MixtureIdentities`, `GaussianMixture`, `CrossoverBounds`, `WindowSignature`, `SignatureStability` |
+| Single-particle control (I1) | `exact_m_prr_upgrade/w6_single_particle/` | `exact_m_prr_upgrade_w6_single_particle.py`, `exact_m_prr_w6_width_diagnostic.py` |
+| Release-time smearing (I3) | `exact_m_prr_upgrade/robustness/release_time_smearing/` | `exact_m_prr_release_time_smearing.py` |
+| Classifier null calibration and power (I5) | `I5_classifier_null/` | `exact_m_prr_classifier_null_calibration.py` |
+| Effective sample sizes and additional direct-kill and time-step checks | `R1_checks/`, `N3/dk_a0.2_B100.json`, `N3/dk_a0.4_B1e4.json`, `fk_ensembles/n3_tangent_m2_eps0.0125_dt0.0005.json` | `fb_referee_checks.py` |
+| Numbers quoted in the text that combine several records (pooled estimates, ratios, contact factors) | `derived_numbers.json` | `fb_derived_numbers.py` |
+| Publication figures and their checks | `artifacts/figures/fb_paper_figures_manifest.json` | `fb_make_paper_figures.py` (other Supplementary figures: the item drivers above) |
+| Large-scale checks on Isambard 3: time-step ladder with exact transitions (SM section on the Isambard 3 checks) | `HPC_N5full/hpc_n5full.json`, `HPC_N5full/hpc_n5full_assessment.json` | `fb_hpc_n5full.py`, `fb_hpc_n5n3_report.py`; job `code/hpc_jobs/prr_n5full.sbatch` |
+| Large-scale checks on Isambard 3: contact factorial with exact transitions | `HPC_N3full/hpc_n3full.json`, `HPC_N3full/hpc_n3full_assessment.json` | `fb_hpc_n3full.py`, `fb_hpc_n5n3_report.py`; job `code/hpc_jobs/prr_n3full.sbatch` |
+| Large-scale checks on Isambard 3: direct-kill confirmation of the design cells (Sec. 4 of the article) | `HPC_headline/hpc_headline.json` | `fb_hpc_headline.py`; job `code/hpc_jobs/prr_headline.sbatch` |
+| Large-scale checks on Isambard 3: census of the three gated cells | `HPC_census/hpc_census.json` | `fb_hpc_census.py`; jobs `code/hpc_jobs/prr_census_{m2,m3,analyze}.sbatch` |
+| Computing resources of the Isambard 3 checks | `HPC_jobs/hpc_jobs_accounting.json` | (scheduler accounting) |
+| Graphical abstract (not shipped; the script redraws it) | - | `fb_graphical_abstract.py` (closed-form laws; no simulation) |
+
+The proposition and theorem numbers follow the article; the figure is named
+where the article has a figure for the result.  What the Lean modules check,
+and what they take as hypotheses, is stated in the Supplementary Material
+(Lean chapter) and in `lean/formal_lean_prr/README.md`.
+
+# Release v1.0.0 robustness records
+
+In this part, "the article" means the earlier version archived in release
+`v1.0.0`.  This is a compact reading guide to the machine-readable records
+under `artifacts/data/exact_m_prr_upgrade/robustness/`.  Values below are
+descriptive diagnostics, not preregistered hypothesis tests.
 
 ## Covariance-aware reclassification (formal definition used in the article)
 

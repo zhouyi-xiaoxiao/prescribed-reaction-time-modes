@@ -1,0 +1,81 @@
+{
+ "script": "code/fb_th6_contact_constants.py",
+ "purpose": "constants of Proposition th6:prop-contact at the anchors (Remark th6:rem-contact-existence)",
+ "random_numbers": "none (deterministic)",
+ "anchors": {
+  "m2": {
+   "target_times": [
+    1.0,
+    2.5
+   ],
+   "centres": [
+    1.4715177646857693,
+    0.3283399944955952
+   ],
+   "parameters": {
+    "gamma": 1.0,
+    "D0": 1.0,
+    "rho": 1.0,
+    "d": 2,
+    "Q": 4.0,
+    "a": 0.4,
+    "r_par0": 0.1,
+    "u0_sq": 0.09,
+    "Sigma_perp0_ii": 0.09,
+    "tau": 0.5,
+    "T": 3.5
+   },
+   "eta_star": 0.33934693402873667,
+   "eta": 0.16967346701436833,
+   "s0_sq": 0.09,
+   "q_T": 547.8165792142293,
+   "c_R_initial_term": 0.019992420422691625,
+   "c_R_brownian_term": 8.211315184286366e-07,
+   "c_R": 8.211315184286366e-07,
+   "C_X": 16.001278772378516,
+   "J_star": 1.4668973409855992,
+   "n_interpolation_order": 340372797,
+   "log10_n": 8.531954843466377
+  },
+  "m3": {
+   "target_times": [
+    0.8,
+    1.6,
+    2.8
+   ],
+   "centres": [
+    1.7973158564688863,
+    0.8075860719786215,
+    0.2432402505008719
+   ],
+   "parameters": {
+    "gamma": 1.0,
+    "D0": 1.0,
+    "rho": 1.0,
+    "d": 2,
+    "Q": 4.0,
+    "a": 0.4,
+    "r_par0": 0.1,
+    "u0_sq": 0.09,
+    "Sigma_perp0_ii": 0.09,
+    "tau": 0.5,
+    "T": 3.5
+   },
+   "eta_star": 0.33934693402873667,
+   "eta": 0.16967346701436833,
+   "s0_sq": 0.09,
+   "q_T": 547.8165792142293,
+   "c_R_initial_term": 0.019992420422691625,
+   "c_R_brownian_term": 8.211315184286366e-07,
+   "c_R": 8.211315184286366e-07,
+   "C_X": 16.001278772378516,
+   "J_star": 1.5883251737890414,
+   "n_interpolation_order": 342738855,
+   "log10_n": 8.534963341533919
+  }
+ },
+ "comparison": {
+  "TH3_leading_order_gate_rate_c0": "local_profile_check.json#gate_transfer_anchor.c0_leading_order (4.086e-3; gives n > 7.8e3)",
+  "note": "The 1e4 order quoted before the gate edit used TH-3's leading-order rate; the proposition's own c_R is ~5000x smaller."
+ }
+}

@@ -1,0 +1,282 @@
+{
+  "configurations": [
+    {
+      "B_top_mf": 380319.791050965,
+      "B_top_mf_3sf": "3.8e+05",
+      "bisection_iterations": 13,
+      "bracket": [
+        380317.6530719123,
+        380321.9290420365
+      ],
+      "centres_x": [
+        -1.4715177646857693,
+        -0.3283399944955952
+      ],
+      "centres_z": [
+        1.4715177646857693,
+        0.3283399944955952
+      ],
+      "count_at_scan_maximum": 0,
+      "count_at_scan_minimum": 2,
+      "diagnostics_at_threshold": {
+        "fold_time_of_lost_maximum": [
+          1.5179
+        ],
+        "lambda_at_last_valley": 0.27731073559569797,
+        "last_mode_relative_prominence": {
+          "0.5_B_top_mf": {
+            "budget": 190159.8955254825,
+            "last_max_time": 1.55312,
+            "log10_base_over_last_max": -0.18169189645531428,
+            "log10_last_max_height_abs_approx": -22900.74577090787,
+            "log10_relative_prominence": -22902.621963501148,
+            "log10_window_max_over_last_max": 22902.155831393433,
+            "maxima_count_agrees_with_psi": true,
+            "maxima_times": [
+              0.7071400000000001,
+              1.55312
+            ],
+            "method": "log-domain cumulative sum of per-step increments anchored at the last maximum",
+            "minima_times": [
+              1.4996200000000002
+            ],
+            "n_interior_maxima": 2,
+            "n_interior_maxima_psi": 2,
+            "n_interior_minima": 1,
+            "psi_sign_at_T": -1,
+            "psi_sign_at_tau": 1,
+            "relative_prominence": 0.0
+          },
+          "0.99_B_top_mf": {
+            "budget": 376516.59314045537,
+            "last_max_time": 1.52092,
+            "log10_base_over_last_max": -0.0003826818160291791,
+            "log10_last_max_height_abs_approx": -45344.456884503066,
+            "log10_relative_prominence": -45348.94072231605,
+            "log10_window_max_over_last_max": 45345.88558450415,
+            "maxima_count_agrees_with_psi": true,
+            "maxima_times": [
+              0.69764,
+              1.52092
+            ],
+            "method": "log-domain cumulative sum of per-step increments anchored at the last maximum",
+            "minima_times": [
+              1.51492
+            ],
+            "n_interior_maxima": 2,
+            "n_interior_maxima_psi": 2,
+            "n_interior_minima": 1,
+            "psi_sign_at_T": -1,
+            "psi_sign_at_tau": 1,
+            "relative_prominence": 0.0
+          },
+          "0.9_B_top_mf": {
+            "budget": 342287.81194586854,
+            "last_max_time": 1.52882,
+            "log10_base_over_last_max": -0.01262843491108174,
+            "log10_last_max_height_abs_approx": -41222.14608048135,
+            "log10_relative_prominence": -41225.11497859504,
+            "log10_window_max_over_last_max": 41223.572244896764,
+            "maxima_count_agrees_with_psi": true,
+            "maxima_times": [
+              0.69894,
+              1.52882
+            ],
+            "method": "log-domain cumulative sum of per-step increments anchored at the last maximum",
+            "minima_times": [
+              1.5092
+            ],
+            "n_interior_maxima": 2,
+            "n_interior_maxima_psi": 2,
+            "n_interior_minima": 1,
+            "psi_sign_at_T": -1,
+            "psi_sign_at_tau": 1,
+            "relative_prominence": 0.0
+          },
+          "free_clock_limit_B_to_0": {
+            "budget": 1e-06,
+            "last_max_time": 2.47786,
+            "log10_base_over_last_max": -0.6750110453990162,
+            "log10_last_max_height_abs_approx": -6.047595234808881,
+            "log10_relative_prominence": -0.27280587742731033,
+            "log10_window_max_over_last_max": 0.16969374862147577,
+            "maxima_count_agrees_with_psi": true,
+            "maxima_times": [
+              0.9975400000000001,
+              2.47786
+            ],
+            "method": "log-domain cumulative sum of per-step increments anchored at the last maximum",
+            "minima_times": [
+              1.4920000000000002
+            ],
+            "n_interior_maxima": 2,
+            "n_interior_maxima_psi": 2,
+            "n_interior_minima": 1,
+            "psi_sign_at_T": -1,
+            "psi_sign_at_tau": 1,
+            "relative_prominence": 0.5335733408016119
+          }
+        },
+        "last_valley_time_free_clock": 1.4920000000000002,
+        "log10_last_basin_mass_fraction_at_B_top_mf": -45803.63233430261,
+        "log10_survival_at_last_valley_at_B_top_mf": -45803.63233430261
+      },
+      "dimension": 3,
+      "dt_checks_run_in_this_part": [],
+      "eps": 0.1,
+      "family": "w5_d3_spotcheck",
+      "first_loss": {
+        "complete_signature_just_below": true,
+        "count_just_above": 1,
+        "count_just_below": 2,
+        "endpoint_psi_signs_just_above": {
+          "psi_sign_at_T": -1,
+          "psi_sign_at_tau": 1
+        },
+        "endpoint_psi_signs_just_below": {
+          "psi_sign_at_T": -1,
+          "psi_sign_at_tau": 1
+        },
+        "lost_maximum_time": [
+          1.5179
+        ],
+        "maxima_times_just_above": [
+          0.6975100000000001
+        ],
+        "maxima_times_just_below": [
+          0.6975100000000001,
+          1.5178500000000001
+        ],
+        "minima_times_just_above": [],
+        "minima_times_just_below": [
+          1.5177500000000002
+        ],
+        "n_minima_just_above": 0,
+        "n_minima_just_below": 1
+      },
+      "free_clock": {
+        "lambda_at_valleys": [
+          0.27731073559569797
+        ],
+        "lambda_at_window_end": 1.1337308845487684,
+        "lambda_total_to_tmax": 1.198657956312678,
+        "n_window_maxima": 2,
+        "peak_times": [
+          0.9975400000000001,
+          2.47786
+        ],
+        "peak_values": [
+          1.324642149601287,
+          0.8962001799342113
+        ],
+        "valley_times": [
+          1.4920000000000002
+        ],
+        "valley_to_adjacent_peak_ratio": [
+          4.677413712655838e-05
+        ],
+        "valley_values": [
+          4.19189901090891e-05
+        ]
+      },
+      "free_clock_has_m_window_maxima": true,
+      "label": "w5_d3_m2_eps0.1",
+      "level_set_cross_check": {
+        "definition": "interior maxima of f_1(.;B) are downward crossings of the level B by r(t) = G'(t)/G(t)^2; a rising flank of G contributes one maximum iff B < max_flank r",
+        "first_flank_sup_if_monotone": 1536605479150647.0,
+        "local_maxima_of_r": [
+          {
+            "g_at_r_max": 5.782343010939835e-05,
+            "preceding_valley_time": 1.4920000000000002,
+            "r_grid": 380318.73256917985,
+            "r_parabolic": 380318.75642024865,
+            "rising_flank_index": 2,
+            "time": 1.5178
+          }
+        ],
+        "n_local_maxima_of_r_after_first_peak": 1,
+        "predicted_B_top_mf": 380318.75642024865,
+        "predicted_first_loss_flank": 2,
+        "r_at_window_start": 1536605479150647.0,
+        "relative_difference_level_set_vs_bisection": -2.7204230248489836e-06
+      },
+      "log10_B_top_mf": 5.58014892578125,
+      "m": 2,
+      "max_count_in_scan": 2,
+      "n_perp": 2,
+      "on_w2_grid": false,
+      "ordering": {},
+      "relative_halfwidth": 5.621561438129419e-06,
+      "retained_scan_range": [
+        0.001,
+        363078.05477010173
+      ],
+      "retained_set_gaps": null,
+      "retained_set_is_interval": true,
+      "runtime_seconds": 737.072000917,
+      "sensitivity": {
+        "finite_difference_derivative": {
+          "B_top_mf": 380319.791050965,
+          "relative_difference": 0.0,
+          "status": "bisected"
+        },
+        "grid": [],
+        "max_abs_relative_deviation_from_canonical": 0.001999269040747542,
+        "tolerance": [
+          {
+            "B_top_mf": 380319.791050965,
+            "relative_difference": 0.0,
+            "status": "bisected",
+            "tolerance": 1e-12
+          },
+          {
+            "B_top_mf": 380319.791050965,
+            "relative_difference": 0.0,
+            "status": "bisected",
+            "tolerance": 1e-06
+          },
+          {
+            "B_top_mf": 379559.42946713325,
+            "relative_difference": -0.001999269040747542,
+            "status": "bisected",
+            "tolerance": 0.001
+          }
+        ]
+      },
+      "sigma_x_space": 0.1224744871391589,
+      "status": "bisected",
+      "stored_comparators": {},
+      "target_times": [
+        1.0,
+        2.5
+      ],
+      "transitions": [
+        {
+          "from_budget": 363078.05477010173,
+          "from_count": 2,
+          "to_budget": 398107.1705534969,
+          "to_count": 1
+        },
+        {
+          "from_budget": 1445439770745928.0,
+          "from_count": 1,
+          "to_budget": 1584893192461111.0,
+          "to_count": 0
+        }
+      ],
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "z0": 4.0
+    }
+  ],
+  "dt_check_only": null,
+  "dt_check_rows": [],
+  "dt_checks_run": [],
+  "labels": [
+    "w5_d3_m2_eps0.1"
+  ],
+  "part": true,
+  "runtime_seconds": 737.0827882909999
+}

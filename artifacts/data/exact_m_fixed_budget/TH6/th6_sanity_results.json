@@ -1,0 +1,82 @@
+{
+  "status": "NUMERICAL sanity only; no theorem or epsilon_0 certification",
+  "process_limits": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "alarm_seconds": 240
+  },
+  "algebra": {
+    "samples": 512,
+    "seed": 20260923,
+    "max_scaled_cancellation_residual": 1.08660303557095e-14,
+    "max_scaled_L2_identity_residual": 1.0560344317894213e-11,
+    "max_scaled_product_identity_residual": 4.716231309498814e-16,
+    "decimal_precision": 80,
+    "max_scaled_L2_decimal_residual": "1.9985999090251150830693129698852044136533420845546950344899654386615778259677706E-75",
+    "decimal_acceptance_tolerance": "1e-60",
+    "float_acceptance_tolerance": 1e-09
+  },
+  "anchors": {
+    "2": {
+      "target_times": [
+        1.0,
+        2.5
+      ],
+      "centers": [
+        1.4715177646857693,
+        0.3283399944955952
+      ],
+      "full_0_T_contact_margin": 0.30000000000000004,
+      "I_contact_margin": 0.33934693402873667,
+      "delta_star": 0.3283399944955952,
+      "strip_r": 0.02736166620796627,
+      "strip_speed_vstar": 0.23217143664258907,
+      "theoretical_CE": 48.45861864197531,
+      "sampled_exposure_max": 3.976625988234619,
+      "sampled_min_current_earlier_discriminant": 0.0718731107203576,
+      "theoretical_current_earlier_discriminant_floor": 0.07187143465691166,
+      "sampled_min_later_separation": 0.787686695316455,
+      "grid": {
+        "observation_times": 61,
+        "path_grid_points": 801,
+        "eps": [
+          0.02,
+          0.05,
+          0.1
+        ]
+      }
+    },
+    "3": {
+      "target_times": [
+        0.8,
+        1.6,
+        2.8
+      ],
+      "centers": [
+        1.7973158564688863,
+        0.8075860719786215,
+        0.2432402505008719
+      ],
+      "full_0_T_contact_margin": 0.30000000000000004,
+      "I_contact_margin": 0.33934693402873667,
+      "delta_star": 0.2432402505008719,
+      "strip_r": 0.02027002087507266,
+      "strip_speed_vstar": 0.17199683058668103,
+      "theoretical_CE": 65.41229317683707,
+      "sampled_exposure_max": 5.159015998872852,
+      "sampled_min_current_earlier_discriminant": 0.03944479948560657,
+      "theoretical_current_earlier_discriminant_floor": 0.03944387964248461,
+      "sampled_min_later_separation": 0.38684919545630253,
+      "grid": {
+        "observation_times": 61,
+        "path_grid_points": 801,
+        "eps": [
+          0.02,
+          0.05,
+          0.1
+        ]
+      }
+    }
+  },
+  "all_checks_passed": true
+}

@@ -1,0 +1,141 @@
+%% =====================================================================
+%% figures/fig1_schematic.tex -- Fig. 1 of the CNSNS main text (sec-model).
+%% Adapted (copy) from prr_submission/prr_assets/fig1_mechanism_schematic.tex;
+%% the original is not edited.  Qualitative schematic, not data:
+%% the drawn geometry (target times 0.75/1.4/2.4, weights 0.5/0.3/0.2,
+%% peak heights and widths) is illustrative only.
+%% Changes w.r.t. the original: plain-word labels; decreasing mean path
+%% (the numerical anchors have z_0 > \bar z); stripe profiles drawn with
+%% amplitude proportional to their weights; peak weights M_j in (b);
+%% the small-budget annotation and the y-label f/B are removed.
+%% R1 fix editor (2026-09-23, finding O15, optional item): the drawn peaks in (b)
+%%   sit slightly BEFORE the dashed target times (drawn early shifts 0.02, 0.04,
+%%   0.12, largest for the slow last passage), as Theorem 2(c) predicts; the
+%%   shifts are illustrative, not data.
+%% Requires: tikz with the arrows.meta library (loaded by main_cnsns.tex).
+%% Natural width about 13 cm; the float scales it to \linewidth if wider.
+%% =====================================================================
+\begin{tikzpicture}[>={Stealth[length=2.0mm]}, line cap=round, line join=round]
+  % ---------------- tunables (drawing units, not data) ----------------
+  \pgfmathsetmacro\xu{2.30}    % cm per time unit
+  \pgfmathsetmacro\zu{1.95}    % cm per Z unit
+  \pgfmathsetmacro\zbar{0.25}  % new trap centre \bar z (drawing units)
+  \pgfmathsetmacro\zamp{1.60}  % z_0 - \bar z (drawing units)
+  \pgfmathsetmacro\tmax{3.95}  % drawn time range
+  \pgfmathsetmacro\tA{0.75}    % target times t_1 < t_2 < t_3
+  \pgfmathsetmacro\tB{1.40}
+  \pgfmathsetmacro\tC{2.40}
+  \pgfmathsetmacro\ttau{0.40}  % window [tau, T]
+  \pgfmathsetmacro\tT{3.40}
+  \pgfmathsetmacro\cA{\zbar+\zamp*exp(-\tA)}   % stripe centres z_j = mu(t_j)
+  \pgfmathsetmacro\cB{\zbar+\zamp*exp(-\tB)}
+  \pgfmathsetmacro\cC{\zbar+\zamp*exp(-\tC)}
+  \pgfmathsetmacro\wA{0.50}\pgfmathsetmacro\wB{0.30}\pgfmathsetmacro\wC{0.20} % drawn weights
+  \pgfmathsetmacro\sdz{0.034}  % stripe s.d. (~ eps*rho), exaggerated
+  \pgfmathsetmacro\bshift{-3.05} % panel (b) baseline
+  \pgfmathsetmacro\fu{1.45}    % cm per unit of drawn density
+  \pgfmathsetmacro\sA{0.09}\pgfmathsetmacro\sB{0.14}\pgfmathsetmacro\sC{0.30}
+  \pgfmathsetmacro\hA{1.00}\pgfmathsetmacro\hB{0.95}\pgfmathsetmacro\hC{0.82}
+  \pgfmathsetmacro\dA{0.02}\pgfmathsetmacro\dB{0.04}\pgfmathsetmacro\dC{0.12} % drawn early shifts
+  \pgfmathsetmacro\ix{\xu*\tmax+1.75}        % inset x offset
+  % ---------------- styles ----------------
+  \tikzset{
+    slabband/.style={fill=blue!9},
+    slabprof/.style={fill=blue!30, draw=blue!55!black, line width=0.5pt},
+    mucurve/.style={line width=1.0pt},
+    samplepath/.style={gray!60, line width=0.4pt},
+    fcurve/.style={red!60!black, line width=1.0pt},
+    guide/.style={dashed, gray!75, line width=0.5pt},
+    axis/.style={line width=0.6pt},
+    lbl/.style={font=\footnotesize},
+    Lbl/.style={font=\small},
+  }
+  % ================= panel (a): geometry =================
+  % stripes are static in space: horizontal bands in the (t, Z) plane
+  \foreach \zc in {\cA,\cB,\cC}{
+    \fill[slabband] (0,{\zu*(\zc-2*\sdz)}) rectangle ({\xu*\tmax},{\zu*(\zc+2*\sdz)});
+  }
+  % dashed guides from the crossings (t_j, z_j) down to the peaks in (b)
+  \draw[guide] ({\xu*\tA},{\zu*\cA}) -- ({\xu*\tA},{\bshift+\fu*(\hA+0.02)+0.30});
+  \draw[guide] ({\xu*\tB},{\zu*\cB}) -- ({\xu*\tB},{\bshift+\fu*(\hB+0.02)+0.30});
+  \draw[guide] ({\xu*\tC},{\zu*\cC}) -- ({\xu*\tC},{\bshift+\fu*(\hC+0.02)+0.30});
+  % stripe profiles w_j phi_j on the Z axis (amplitude proportional to w_j)
+  \foreach \zc/\wj/\lab in {\cA/\wA/{w_1}, \cB/\wB/{w_2}, \cC/\wC/{w_3}}{
+    \filldraw[slabprof]
+      plot[domain=\zc-2.8*\sdz:\zc+2.8*\sdz, samples=50]
+        ({1.2*\wj*exp(-(\x-\zc)^2/(2*\sdz*\sdz))},{\zu*\x}) -- cycle;
+    \node[lbl, anchor=west, blue!45!black] at ({1.2*\wj+0.03},{\zu*\zc+0.13}) {$\lab$};
+  }
+  % sample path of the pair centre (light) and mean path mu(t) (thick)
+  \draw[samplepath]
+    plot[domain=0:3.90, samples=420]
+      ({\xu*\x},{\zu*(\zbar+\zamp*exp(-\x) + 0.030*sin(520*\x) + 0.017*sin(1210*\x+70))});
+  \draw[mucurve,->]
+    plot[domain=0:\tmax, samples=220] ({\xu*\x},{\zu*(\zbar+\zamp*exp(-\x))});
+  % new trap centre \bar z
+  \draw[dashed, gray!80] (0,{\zu*\zbar}) -- ({\xu*\tmax},{\zu*\zbar})
+    node[lbl, right, black] {$\bar z$};
+  % crossing markers
+  \foreach \tj/\zc in {\tA/\cA, \tB/\cB, \tC/\cC}{
+    \fill ({\xu*\tj},{\zu*\zc}) circle (1.5pt);
+  }
+  % axes
+  \draw[axis,->] (0,0) -- (0,{\zu*(\zbar+\zamp)+0.45});
+  \draw[axis] (0,0) -- ({\xu*\tmax+0.15},0);
+  \node[Lbl, rotate=90] at (-0.95,{\zu*(\zbar+0.5*\zamp)}) {pair-centre position $Z$};
+  % labels
+  \node[lbl, left] at (0,{\zu*\cA}) {$z_1$};
+  \node[lbl, left] at (0,{\zu*\cB}) {$z_2$};
+  \node[lbl, left] at (0,{\zu*\cC}) {$z_3$};
+  \node[lbl, left] at (0,{\zu*(\zbar+\zamp)}) {$z_0$};
+  \node[lbl, anchor=south west] at ({\xu*0.45+0.08},{\zu*(\zbar+\zamp*exp(-0.45))+0.06}) {$\mu(t)$};
+  \node[lbl, align=left, anchor=west] at ({\xu*1.55},{\zu*1.62})
+    {catalyst stripes: weights $w_j$, width $\varepsilon\rho$\\
+     total catalyst $B$ fixed};
+  \draw[gray!75, line width=0.4pt] ({\xu*1.53},{\zu*1.55}) -- ({\xu*1.12},{\zu*\cA+0.10});
+  % panel tag
+  \node[Lbl] at (-1.45,{\zu*(\zbar+\zamp)+0.45}) {(a)};
+  % ================= inset: contact and transverse geometry =================
+  \begin{scope}
+    \fill ({\ix+0.50},2.80) circle (1.6pt);
+    \fill ({\ix+0.84},3.02) circle (1.6pt);
+    \draw[line width=0.5pt] ({\ix+0.50},2.80) -- ({\ix+0.84},3.02)
+      node[lbl, midway, above left=-2pt] {$R$};
+    \draw[dashed, line width=0.5pt] ({\ix+0.50},2.80) circle (0.55);
+    \draw[->, line width=0.4pt] ({\ix+0.50},2.80) -- ++(210:0.55)
+      node[lbl, midway, below right=-3pt] {$a$};
+    \node[lbl, align=center] at ({\ix+0.55},1.72) {contact:\\ $|R|<a$};
+    % transverse torus
+    \draw[line width=0.5pt] ({\ix+0.55},1.00) ellipse (0.62 and 0.30);
+    \draw[line width=0.5pt] ({\ix+0.27},1.05) .. controls ({\ix+0.43},0.87) and ({\ix+0.67},0.87) .. ({\ix+0.83},1.05);
+    \draw[line width=0.5pt] ({\ix+0.32},1.00) .. controls ({\ix+0.46},1.12) and ({\ix+0.64},1.12) .. ({\ix+0.78},1.00);
+    % R3 fix (O36-2): label moved from y=0.36 to y=0.24 (the torus ellipse, centre 1.00, ry 0.30, cut the ascenders of "transverse")
+    \node[lbl, align=center] at ({\ix+0.55},0.24) {periodic transverse\\ directions (period $W$)};
+  \end{scope}
+  % ================= panel (b): reaction-time density =================
+  \draw[fcurve]
+    plot[domain=0:\tmax, samples=320]
+      ({\xu*\x},{\bshift+\fu*(0.02
+        + \hA*exp(-(\x-\tA+\dA)^2/(2*\sA*\sA))
+        + \hB*exp(-(\x-\tB+\dB)^2/(2*\sB*\sB))
+        + \hC*exp(-(\x-\tC+\dC)^2/(2*\sC*\sC)))});
+  \draw[axis,->] (0,\bshift) -- ({\xu*\tmax+0.15},\bshift) node[Lbl, right] {$t$};
+  \draw[axis,->] (0,\bshift) -- (0,{\bshift+\fu*1.30});
+  \node[Lbl, rotate=90, align=center] at (-0.55,{\bshift+\fu*0.62}) {reaction-time\\ density $f(t)$};
+  % peak weights M_j
+  \node[lbl, fill=white, inner sep=1pt] at ({\xu*\tA+0.30},{\bshift+\fu*(\hA+0.02)+0.12}) {$M_1$};
+  \node[lbl, fill=white, inner sep=1pt] at ({\xu*\tB+0.34},{\bshift+\fu*(\hB+0.02)+0.12}) {$M_2$};
+  \node[lbl, fill=white, inner sep=1pt] at ({\xu*\tC+0.50},{\bshift+\fu*(\hC+0.02)+0.12}) {$M_3$};
+  % window ticks tau, T
+  \draw[axis] ({\xu*\ttau},\bshift) -- ({\xu*\ttau},{\bshift-0.09})
+    node[lbl, below] {$\tau$};
+  \draw[axis] ({\xu*\tT},\bshift) -- ({\xu*\tT},{\bshift-0.09})
+    node[lbl, below] {$T$};
+  % target-time ticks
+  \foreach \tj/\lab in {\tA/{t_1}, \tB/{t_2}, \tC/{t_3}}{
+    \draw[axis] ({\xu*\tj},\bshift) -- ({\xu*\tj},{\bshift-0.09})
+      node[lbl, below] {$\lab$};
+  }
+  % panel tag
+  \node[Lbl] at (-1.45,{\bshift+\fu*1.30}) {(b)};
+\end{tikzpicture}

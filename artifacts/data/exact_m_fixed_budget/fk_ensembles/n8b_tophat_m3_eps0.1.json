@@ -1,0 +1,180 @@
+{
+ "name": "n8b_tophat_m3_eps0.1",
+ "schema": "fk_exact_law_ensemble_v1",
+ "mode": "declared",
+ "spec": {
+  "m": 3,
+  "eps": 0.1,
+  "dt": 0.001,
+  "tmax": 4.0,
+  "z0": 4.0,
+  "var_z0_scale": 1.0,
+  "r_par0": 0.1,
+  "r_perp0": 0.0,
+  "u0": 0.3,
+  "sigma_perp0": 0.3,
+  "n_perp": 1,
+  "gamma": 1.0,
+  "d0": 1.0,
+  "z_bar": 0.0,
+  "torus_w": 1.0,
+  "contact_a": 0.4,
+  "rho": 1.0,
+  "slab_shape": "tophat",
+  "slab_sd": null,
+  "target_times": null,
+  "centres_z": null,
+  "kernel_cutoff_sd": 12.0,
+  "target_times_resolved": [
+   0.8,
+   1.6,
+   2.8
+  ],
+  "centres_z_resolved": [
+   1.7973158564688863,
+   0.8075860719786215,
+   0.2432402505008719
+  ],
+  "slab_sd_resolved": 0.1
+ },
+ "variants": [
+  {
+   "gate": "contact",
+   "a": 0.4,
+   "field": "mid",
+   "name": "full"
+  }
+ ],
+ "n_paths": 200000,
+ "chunk": 50000,
+ "chunk_sizes": [
+  50000,
+  50000,
+  50000,
+  50000
+ ],
+ "seed": 20260923,
+ "tag": 86,
+ "replicate": 0,
+ "seed_entropy": [
+  20260923,
+  86,
+  0,
+  1,
+  100000000,
+  1000000000000,
+  4000000000,
+  1000000000,
+  100000000,
+  0,
+  300000000,
+  300000000,
+  1000000000,
+  1000000000,
+  0,
+  1000000000,
+  50000
+ ],
+ "rng": "numpy Philox; chunk i uses SeedSequence(seed_entropy).spawn(n_chunks)[i]",
+ "ensemble_dir": "<local-ensemble-store>/prr_fk_ensembles/n8b_tophat_m3_eps0.1",
+ "note": "N8(b) top-hat slabs matched in mass and 2nd moment",
+ "driver": "exact_m_prr_fk_exact_law.py",
+ "exactness": "exact discrete-time Feynman-Kac law of the production Euler-Maruyama + end-of-step Doi killing process; sampling error only (iid per-path SE, path-group batch means)",
+ "declared": [
+  {
+   "B": 1.0,
+   "w": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "variant": "full",
+   "cap": null,
+   "pair": 0,
+   "label": "full_B1"
+  },
+  {
+   "B": 4.0,
+   "w": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "variant": "full",
+   "cap": null,
+   "pair": 0,
+   "label": "full_B4"
+  }
+ ],
+ "pairs": [
+  {
+   "variant": "full",
+   "w": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+   ]
+  }
+ ],
+ "batch": 5000,
+ "storage": "per-step sums of exact kill probability and exposure moments",
+ "chunks": [
+  {
+   "chunk": 0,
+   "size": 50000,
+   "runtime_seconds": 20.222316125,
+   "contact_steps": 171558785,
+   "max_step_unit_exposure": 0.0009622504486493763,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/n8b_tophat_m3_eps0.1/chunk0000.npz",
+   "sha256": "3f3c532efed88277f233968e29460e577dccdfdde3b8ed8c56feb395124d0e9b",
+   "bytes": 2052617
+  },
+  {
+   "chunk": 1,
+   "size": 50000,
+   "runtime_seconds": 20.156245375,
+   "contact_steps": 171321047,
+   "max_step_unit_exposure": 0.0009622504486493763,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/n8b_tophat_m3_eps0.1/chunk0001.npz",
+   "sha256": "0a9fc36609f647defb57a434cdd9650ae181a272e718471c1d78678c3ea8f652",
+   "bytes": 2057432
+  },
+  {
+   "chunk": 2,
+   "size": 50000,
+   "runtime_seconds": 20.213789458,
+   "contact_steps": 171381907,
+   "max_step_unit_exposure": 0.0009622504486493763,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/n8b_tophat_m3_eps0.1/chunk0002.npz",
+   "sha256": "2c2c01c68f0343cab7a0af3c9a12781c6590fcc7382218c553ac39828b4eb26a",
+   "bytes": 2049411
+  },
+  {
+   "chunk": 3,
+   "size": 50000,
+   "runtime_seconds": 18.810617291,
+   "contact_steps": 171241759,
+   "max_step_unit_exposure": 0.0009622504486493763,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/n8b_tophat_m3_eps0.1/chunk0003.npz",
+   "sha256": "146b9027174f3fe1bab39b400a14e1717b179981818a829b29a4ce2994d930e9",
+   "bytes": 2046494
+  }
+ ],
+ "complete": true,
+ "last_invocation": {
+  "wall_seconds": 39.351046323776245,
+  "workers": 3,
+  "chunks_run": [
+   1,
+   2,
+   0,
+   3
+  ],
+  "cpu_wait": {
+   "python_processes": 3,
+   "waited_seconds": 0.032569169998168945
+  },
+  "finished_utc": "2026-09-23T04:54:45Z"
+ },
+ "process_seconds_total": 79.402968249
+}

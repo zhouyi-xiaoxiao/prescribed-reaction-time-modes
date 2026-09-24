@@ -1,0 +1,167 @@
+{
+  "eps0.0125": {
+    "L_eps": 4.382026634673881,
+    "N_paths": 200000,
+    "eps": 0.0125,
+    "note": "same relative paths as the tangent FK ensemble (same entropy and draw order); switch = contact indicator not constant on the window",
+    "p_gate_switches_in_window": {
+      "J_theory_eps_log_j1": 0.1903,
+      "J_theory_eps_log_j2": 0.12438,
+      "passage_2sigma_t_j1": 0.11111,
+      "passage_2sigma_t_j2": 0.164885
+    },
+    "se": {
+      "J_theory_eps_log_j1": 0.0008777411634417062,
+      "J_theory_eps_log_j2": 0.0007379350093334778,
+      "passage_2sigma_t_j1": 0.0007027252944785751,
+      "passage_2sigma_t_j2": 0.0008297527847949652
+    },
+    "seed_entropy": [
+      20260923,
+      82,
+      0,
+      1,
+      12500000,
+      1000000000000,
+      4000000000,
+      1000000000,
+      0,
+      400000000,
+      300000000,
+      300000000,
+      1000000000,
+      1000000000,
+      0,
+      1000000000,
+      50000
+    ],
+    "windows": {
+      "J_theory_eps_log_j1": [
+        0.9460000000000001,
+        1.054
+      ],
+      "J_theory_eps_log_j2": [
+        2.446,
+        2.5540000000000003
+      ],
+      "passage_2sigma_t_j1": [
+        0.98,
+        1.02
+      ],
+      "passage_2sigma_t_j2": [
+        2.407,
+        2.593
+      ]
+    }
+  },
+  "eps0.025": {
+    "L_eps": 3.6888794541139363,
+    "N_paths": 200000,
+    "eps": 0.025,
+    "note": "same relative paths as the tangent FK ensemble (same entropy and draw order); switch = contact indicator not constant on the window",
+    "p_gate_switches_in_window": {
+      "J_theory_eps_log_j1": 0.25358,
+      "J_theory_eps_log_j2": 0.169285,
+      "passage_2sigma_t_j1": 0.166005,
+      "passage_2sigma_t_j2": 0.244155
+    },
+    "se": {
+      "J_theory_eps_log_j1": 0.0009728236828942848,
+      "J_theory_eps_log_j2": 0.0008385332097627379,
+      "passage_2sigma_t_j1": 0.0008320076321014129,
+      "passage_2sigma_t_j2": 0.0009605814280293993
+    },
+    "seed_entropy": [
+      20260923,
+      82,
+      0,
+      1,
+      25000000,
+      1000000000000,
+      4000000000,
+      1000000000,
+      0,
+      400000000,
+      300000000,
+      300000000,
+      1000000000,
+      1000000000,
+      0,
+      1000000000,
+      50000
+    ],
+    "windows": {
+      "J_theory_eps_log_j1": [
+        0.908,
+        1.092
+      ],
+      "J_theory_eps_log_j2": [
+        2.408,
+        2.592
+      ],
+      "passage_2sigma_t_j1": [
+        0.9590000000000001,
+        1.041
+      ],
+      "passage_2sigma_t_j2": [
+        2.314,
+        2.686
+      ]
+    }
+  },
+  "eps0.05": {
+    "L_eps": 2.995732273553991,
+    "N_paths": 200000,
+    "eps": 0.05,
+    "note": "same relative paths as the tangent FK ensemble (same entropy and draw order); switch = contact indicator not constant on the window",
+    "p_gate_switches_in_window": {
+      "J_theory_eps_log_j1": 0.36873,
+      "J_theory_eps_log_j2": 0.30194,
+      "passage_2sigma_t_j1": 0.27215,
+      "passage_2sigma_t_j2": 0.478805
+    },
+    "se": {
+      "J_theory_eps_log_j1": 0.0010788145973706512,
+      "J_theory_eps_log_j2": 0.0010265774115964174,
+      "passage_2sigma_t_j1": 0.0009951994209704907,
+      "passage_2sigma_t_j2": 0.0011170290326911832
+    },
+    "seed_entropy": [
+      20260923,
+      82,
+      0,
+      1,
+      50000000,
+      1000000000000,
+      4000000000,
+      1000000000,
+      0,
+      400000000,
+      300000000,
+      300000000,
+      1000000000,
+      1000000000,
+      0,
+      1000000000,
+      50000
+    ],
+    "windows": {
+      "J_theory_eps_log_j1": [
+        0.851,
+        1.149
+      ],
+      "J_theory_eps_log_j2": [
+        2.351,
+        2.649
+      ],
+      "passage_2sigma_t_j1": [
+        0.917,
+        1.083
+      ],
+      "passage_2sigma_t_j2": [
+        2.1270000000000002,
+        2.873
+      ]
+    }
+  }
+}

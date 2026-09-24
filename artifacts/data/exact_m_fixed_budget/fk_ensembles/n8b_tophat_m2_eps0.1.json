@@ -1,0 +1,175 @@
+{
+ "name": "n8b_tophat_m2_eps0.1",
+ "schema": "fk_exact_law_ensemble_v1",
+ "mode": "declared",
+ "spec": {
+  "m": 2,
+  "eps": 0.1,
+  "dt": 0.001,
+  "tmax": 4.0,
+  "z0": 4.0,
+  "var_z0_scale": 1.0,
+  "r_par0": 0.1,
+  "r_perp0": 0.0,
+  "u0": 0.3,
+  "sigma_perp0": 0.3,
+  "n_perp": 1,
+  "gamma": 1.0,
+  "d0": 1.0,
+  "z_bar": 0.0,
+  "torus_w": 1.0,
+  "contact_a": 0.4,
+  "rho": 1.0,
+  "slab_shape": "tophat",
+  "slab_sd": null,
+  "target_times": null,
+  "centres_z": null,
+  "kernel_cutoff_sd": 12.0,
+  "target_times_resolved": [
+   1.0,
+   2.5
+  ],
+  "centres_z_resolved": [
+   1.4715177646857693,
+   0.3283399944955952
+  ],
+  "slab_sd_resolved": 0.1
+ },
+ "variants": [
+  {
+   "gate": "contact",
+   "a": 0.4,
+   "field": "mid",
+   "name": "full"
+  }
+ ],
+ "n_paths": 200000,
+ "chunk": 50000,
+ "chunk_sizes": [
+  50000,
+  50000,
+  50000,
+  50000
+ ],
+ "seed": 20260923,
+ "tag": 86,
+ "replicate": 0,
+ "seed_entropy": [
+  20260923,
+  86,
+  0,
+  1,
+  100000000,
+  1000000000000,
+  4000000000,
+  1000000000,
+  100000000,
+  0,
+  300000000,
+  300000000,
+  1000000000,
+  1000000000,
+  0,
+  1000000000,
+  50000
+ ],
+ "rng": "numpy Philox; chunk i uses SeedSequence(seed_entropy).spawn(n_chunks)[i]",
+ "ensemble_dir": "<local-ensemble-store>/prr_fk_ensembles/n8b_tophat_m2_eps0.1",
+ "note": "N8(b) top-hat slabs matched in mass and 2nd moment",
+ "driver": "exact_m_prr_fk_exact_law.py",
+ "exactness": "exact discrete-time Feynman-Kac law of the production Euler-Maruyama + end-of-step Doi killing process; sampling error only (iid per-path SE, path-group batch means)",
+ "declared": [
+  {
+   "B": 1.0,
+   "w": [
+    0.5,
+    0.5
+   ],
+   "variant": "full",
+   "cap": null,
+   "pair": 0,
+   "label": "full_B1"
+  },
+  {
+   "B": 4.0,
+   "w": [
+    0.5,
+    0.5
+   ],
+   "variant": "full",
+   "cap": null,
+   "pair": 0,
+   "label": "full_B4"
+  }
+ ],
+ "pairs": [
+  {
+   "variant": "full",
+   "w": [
+    0.5,
+    0.5
+   ]
+  }
+ ],
+ "batch": 5000,
+ "storage": "per-step sums of exact kill probability and exposure moments",
+ "chunks": [
+  {
+   "chunk": 0,
+   "size": 50000,
+   "runtime_seconds": 15.160846458,
+   "contact_steps": 171558785,
+   "max_step_unit_exposure": 0.0014433756729740645,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/n8b_tophat_m2_eps0.1/chunk0000.npz",
+   "sha256": "4025787babdf2d28b0d39a337199b6fd5de3b0ff3502fbd4b14a6eefe9aa3b30",
+   "bytes": 1680653
+  },
+  {
+   "chunk": 1,
+   "size": 50000,
+   "runtime_seconds": 15.116968624999998,
+   "contact_steps": 171321047,
+   "max_step_unit_exposure": 0.0014433756729740645,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/n8b_tophat_m2_eps0.1/chunk0001.npz",
+   "sha256": "94525ba186a12f4ad577d1fecc5c8b27f004bf2d1c4aa6cafef486e66ab22d84",
+   "bytes": 1676000
+  },
+  {
+   "chunk": 2,
+   "size": 50000,
+   "runtime_seconds": 15.132812125000001,
+   "contact_steps": 171381907,
+   "max_step_unit_exposure": 0.0014433756729740645,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/n8b_tophat_m2_eps0.1/chunk0002.npz",
+   "sha256": "2aad8ea2df099579100a439759501d401444f1b22fec0f2d5b9fcee06dcc04b2",
+   "bytes": 1677447
+  },
+  {
+   "chunk": 3,
+   "size": 50000,
+   "runtime_seconds": 13.798374375000002,
+   "contact_steps": 171241759,
+   "max_step_unit_exposure": 0.0014433756729740645,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/n8b_tophat_m2_eps0.1/chunk0003.npz",
+   "sha256": "0589e6f7eee0528eff5f8dfb78636fa430b6310b3f7507e6da5ef128f61486a7",
+   "bytes": 1678923
+  }
+ ],
+ "complete": true,
+ "last_invocation": {
+  "wall_seconds": 29.23636293411255,
+  "workers": 3,
+  "chunks_run": [
+   1,
+   2,
+   0,
+   3
+  ],
+  "cpu_wait": {
+   "python_processes": 2,
+   "waited_seconds": 0.031055927276611328
+  },
+  "finished_utc": "2026-09-23T04:54:05Z"
+ },
+ "process_seconds_total": 59.209001583
+}

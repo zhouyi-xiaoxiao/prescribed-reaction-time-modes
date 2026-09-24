@@ -1,0 +1,2283 @@
+{
+  "cells": [
+    {
+      "detection_full_rule": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 199999.99946116618,
+      "key": "m2_eps0.1_p0.01_N2e+05",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 37.8298409330351,
+        "q50": 38.53094914916326,
+        "q95": 39.30741345756075
+      },
+      "m": 2,
+      "mode_count_equals_m": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.010000000001398942,
+      "noise_free_last_mode_z_cov": 38.544410529732104,
+      "noise_free_mode_count": 1,
+      "p": 0.01,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        0,
+        0,
+        0
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.010000000001398942,
+        "budget": 12.486497114371188,
+        "last_mode_bin": 78,
+        "last_mode_time": 2.070000000000001,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 2,
+        "status": "bisected",
+        "target": 0.01
+      },
+      "walkers": 200000
+    },
+    {
+      "detection_full_rule": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 999999.9973058309,
+      "key": "m2_eps0.1_p0.01_N1e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 85.41751371386837,
+        "q50": 86.2020897182708,
+        "q95": 86.91708717329752
+      },
+      "m": 2,
+      "mode_count_equals_m": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.010000000001398942,
+      "noise_free_last_mode_z_cov": 86.18792209713966,
+      "noise_free_mode_count": 1,
+      "p": 0.01,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        0,
+        0,
+        1
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.010000000001398942,
+        "budget": 12.486497114371188,
+        "last_mode_bin": 78,
+        "last_mode_time": 2.070000000000001,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 2,
+        "status": "bisected",
+        "target": 0.01
+      },
+      "walkers": 1000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 4999999.986529155,
+      "key": "m2_eps0.1_p0.01_N5e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 191.96282482185745,
+        "q50": 192.71229913223107,
+        "q95": 193.43698893630742
+      },
+      "m": 2,
+      "mode_count_equals_m": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.010000000001398944,
+      "noise_free_last_mode_z_cov": 192.7220526486605,
+      "noise_free_mode_count": 1,
+      "p": 0.01,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        0,
+        0,
+        2
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.010000000001398942,
+        "budget": 12.486497114371188,
+        "last_mode_bin": 78,
+        "last_mode_time": 2.070000000000001,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 2,
+        "status": "bisected",
+        "target": 0.01
+      },
+      "walkers": 5000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 199999.98330351434,
+      "key": "m2_eps0.1_p0.02_N2e+05",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 52.18707759689239,
+        "q50": 52.9494511698844,
+        "q95": 53.7179798147426
+      },
+      "m": 2,
+      "mode_count_equals_m": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.020000000001107646,
+      "noise_free_last_mode_z_cov": 52.97680846588846,
+      "noise_free_mode_count": 1,
+      "p": 0.02,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        0,
+        1,
+        0
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.020000000001107646,
+        "budget": 10.313751594586785,
+        "last_mode_bin": 79,
+        "last_mode_time": 2.0900000000000016,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 2,
+        "status": "bisected",
+        "target": 0.02
+      },
+      "walkers": 200000
+    },
+    {
+      "detection_full_rule": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 999999.9165175717,
+      "key": "m2_eps0.1_p0.02_N1e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 117.70670807050026,
+        "q50": 118.47131347747654,
+        "q95": 119.2195846727566
+      },
+      "m": 2,
+      "mode_count_equals_m": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.020000000001107646,
+      "noise_free_last_mode_z_cov": 118.45974496071294,
+      "noise_free_mode_count": 1,
+      "p": 0.02,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        0,
+        1,
+        1
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.020000000001107646,
+        "budget": 10.313751594586785,
+        "last_mode_bin": 79,
+        "last_mode_time": 2.0900000000000016,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 2,
+        "status": "bisected",
+        "target": 0.02
+      },
+      "walkers": 1000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 4999999.582587858,
+      "key": "m2_eps0.1_p0.02_N5e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 264.1390118641477,
+        "q50": 264.89119292970713,
+        "q95": 265.65158282033354
+      },
+      "m": 2,
+      "mode_count_equals_m": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.020000000001107646,
+      "noise_free_last_mode_z_cov": 264.8840423294423,
+      "noise_free_mode_count": 1,
+      "p": 0.02,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        0,
+        1,
+        2
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.020000000001107646,
+        "budget": 10.313751594586785,
+        "last_mode_bin": 79,
+        "last_mode_time": 2.0900000000000016,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 2,
+        "status": "bisected",
+        "target": 0.02
+      },
+      "walkers": 5000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 199999.88010167095,
+      "key": "m2_eps0.1_p0.03_N2e+05",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 62.56642481942407,
+        "q50": 63.31940212379631,
+        "q95": 64.04726190374669
+      },
+      "m": 2,
+      "mode_count_equals_m": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.02999999999762488,
+      "noise_free_last_mode_z_cov": 63.311784275811725,
+      "noise_free_mode_count": 1,
+      "p": 0.03,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        0,
+        2,
+        0
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.02999999999762488,
+        "budget": 9.066223181642115,
+        "last_mode_bin": 80,
+        "last_mode_time": 2.110000000000001,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 2,
+        "status": "bisected",
+        "target": 0.03
+      },
+      "walkers": 200000
+    },
+    {
+      "detection_full_rule": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 999999.4005083545,
+      "key": "m2_eps0.1_p0.03_N1e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 140.79220556501699,
+        "q50": 141.56522241366082,
+        "q95": 142.3299914259436
+      },
+      "m": 2,
+      "mode_count_equals_m": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.02999999999762488,
+      "noise_free_last_mode_z_cov": 141.5694534175173,
+      "noise_free_mode_count": 1,
+      "p": 0.03,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        0,
+        2,
+        1
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.02999999999762488,
+        "budget": 9.066223181642115,
+        "last_mode_bin": 80,
+        "last_mode_time": 2.110000000000001,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 2,
+        "status": "bisected",
+        "target": 0.03
+      },
+      "walkers": 1000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 4999997.002541773,
+      "key": "m2_eps0.1_p0.03_N5e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 315.8381708705142,
+        "q50": 316.57492666851635,
+        "q95": 317.31679445898914
+      },
+      "m": 2,
+      "mode_count_equals_m": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.02999999999762488,
+      "noise_free_last_mode_z_cov": 316.55892137905863,
+      "noise_free_mode_count": 1,
+      "p": 0.03,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        0,
+        2,
+        2
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.02999999999762488,
+        "budget": 9.066223181642115,
+        "last_mode_bin": 80,
+        "last_mode_time": 2.110000000000001,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 2,
+        "status": "bisected",
+        "target": 0.03
+      },
+      "walkers": 5000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 1053,
+        "rate": 0.5265,
+        "trials": 2000,
+        "wilson95": [
+          0.5045874561669267,
+          0.548310936600246
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 199998.52818172862,
+      "key": "m2_eps0.1_p0.05_N2e+05",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 78.28206558214343,
+        "q50": 79.02211741664155,
+        "q95": 79.76075353064508
+      },
+      "m": 2,
+      "mode_count_equals_m": {
+        "count": 1053,
+        "rate": 0.5265,
+        "trials": 2000,
+        "wilson95": [
+          0.5045874561669267,
+          0.548310936600246
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.05000000000192561,
+      "noise_free_last_mode_z_cov": 79.01672130017484,
+      "noise_free_mode_count": 2,
+      "p": 0.05,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        0,
+        3,
+        0
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.05000000000192561,
+        "budget": 7.479411030805015,
+        "last_mode_bin": 81,
+        "last_mode_time": 2.1300000000000017,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 2,
+        "status": "bisected",
+        "target": 0.05
+      },
+      "walkers": 200000
+    },
+    {
+      "detection_full_rule": {
+        "count": 984,
+        "rate": 0.492,
+        "trials": 2000,
+        "wilson95": [
+          0.47012568322441206,
+          0.5139049906571961
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 999992.6409086431,
+      "key": "m2_eps0.1_p0.05_N1e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 175.91209399484947,
+        "q50": 176.6682822148735,
+        "q95": 177.4190742897421
+      },
+      "m": 2,
+      "mode_count_equals_m": {
+        "count": 984,
+        "rate": 0.492,
+        "trials": 2000,
+        "wilson95": [
+          0.47012568322441206,
+          0.5139049906571961
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.05000000000192561,
+      "noise_free_last_mode_z_cov": 176.6867601863465,
+      "noise_free_mode_count": 2,
+      "p": 0.05,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        0,
+        3,
+        1
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.05000000000192561,
+        "budget": 7.479411030805015,
+        "last_mode_bin": 81,
+        "last_mode_time": 2.1300000000000017,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 2,
+        "status": "bisected",
+        "target": 0.05
+      },
+      "walkers": 1000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 1000,
+        "rate": 0.5,
+        "trials": 2000,
+        "wilson95": [
+          0.4781075492434439,
+          0.5218924507565561
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 4999963.204543215,
+      "key": "m2_eps0.1_p0.05_N5e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 394.32192418370414,
+        "q50": 395.0830491680041,
+        "q95": 395.84515411875475
+      },
+      "m": 2,
+      "mode_count_equals_m": {
+        "count": 1000,
+        "rate": 0.5,
+        "trials": 2000,
+        "wilson95": [
+          0.4781075492434439,
+          0.5218924507565561
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.05000000000192561,
+      "noise_free_last_mode_z_cov": 395.08360650087417,
+      "noise_free_mode_count": 2,
+      "p": 0.05,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        0,
+        3,
+        2
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.05000000000192561,
+        "budget": 7.479411030805015,
+        "last_mode_bin": 81,
+        "last_mode_time": 2.1300000000000017,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 2,
+        "status": "bisected",
+        "target": 0.05
+      },
+      "walkers": 5000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 199992.53679641624,
+      "key": "m2_eps0.1_p0.07_N2e+05",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 89.9690972485023,
+        "q50": 90.70304310895403,
+        "q95": 91.41001001307005
+      },
+      "m": 2,
+      "mode_count_equals_m": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.07000000000417428,
+      "noise_free_last_mode_z_cov": 90.67979546004452,
+      "noise_free_mode_count": 2,
+      "p": 0.07,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        0,
+        4,
+        0
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.07000000000417429,
+        "budget": 6.4520710850342615,
+        "last_mode_bin": 82,
+        "last_mode_time": 2.1500000000000012,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 2,
+        "status": "bisected",
+        "target": 0.07
+      },
+      "walkers": 200000
+    },
+    {
+      "detection_full_rule": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 999962.6839820811,
+      "key": "m2_eps0.1_p0.07_N1e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 201.9780669726221,
+        "q50": 202.73942006294595,
+        "q95": 203.52121750947842
+      },
+      "m": 2,
+      "mode_count_equals_m": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.07000000000417429,
+      "noise_free_last_mode_z_cov": 202.7661868344364,
+      "noise_free_mode_count": 2,
+      "p": 0.07,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        0,
+        4,
+        1
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.07000000000417429,
+        "budget": 6.4520710850342615,
+        "last_mode_bin": 82,
+        "last_mode_time": 2.1500000000000012,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 2,
+        "status": "bisected",
+        "target": 0.07
+      },
+      "walkers": 1000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 4999813.419910405,
+      "key": "m2_eps0.1_p0.07_N5e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 452.6013165236457,
+        "q50": 453.38439744843436,
+        "q95": 454.1207218738404
+      },
+      "m": 2,
+      "mode_count_equals_m": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.0700000000041743,
+      "noise_free_last_mode_z_cov": 453.3989773002228,
+      "noise_free_mode_count": 2,
+      "p": 0.07,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        0,
+        4,
+        2
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.07000000000417429,
+        "budget": 6.4520710850342615,
+        "last_mode_bin": 82,
+        "last_mode_time": 2.1500000000000012,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 2,
+        "status": "bisected",
+        "target": 0.07
+      },
+      "walkers": 5000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 199960.67146556446,
+      "key": "m2_eps0.1_p0.1_N2e+05",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 102.96573657033888,
+        "q50": 103.70946058598955,
+        "q95": 104.44547163750843
+      },
+      "m": 2,
+      "mode_count_equals_m": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.09999999999827437,
+      "noise_free_last_mode_z_cov": 103.65056467820425,
+      "noise_free_mode_count": 2,
+      "p": 0.1,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        0,
+        5,
+        0
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.09999999999827437,
+        "budget": 5.4003814480054855,
+        "last_mode_bin": 83,
+        "last_mode_time": 2.1700000000000017,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 2,
+        "status": "bisected",
+        "target": 0.1
+      },
+      "walkers": 200000
+    },
+    {
+      "detection_full_rule": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 999803.3573278224,
+      "key": "m2_eps0.1_p0.1_N1e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 231.02266329224713,
+        "q50": 231.78561245457337,
+        "q95": 232.51097638406864
+      },
+      "m": 2,
+      "mode_count_equals_m": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.09999999999827437,
+      "noise_free_last_mode_z_cov": 231.7697085267033,
+      "noise_free_mode_count": 2,
+      "p": 0.1,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        0,
+        5,
+        1
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.09999999999827437,
+        "budget": 5.4003814480054855,
+        "last_mode_bin": 83,
+        "last_mode_time": 2.1700000000000017,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 2,
+        "status": "bisected",
+        "target": 0.1
+      },
+      "walkers": 1000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 4999016.786639111,
+      "key": "m2_eps0.1_p0.1_N5e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 517.4953588195986,
+        "q50": 518.2365704450242,
+        "q95": 518.9898198340729
+      },
+      "m": 2,
+      "mode_count_equals_m": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.09999999999827437,
+      "noise_free_last_mode_z_cov": 518.2528233910213,
+      "noise_free_mode_count": 2,
+      "p": 0.1,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        0,
+        5,
+        2
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.09999999999827437,
+        "budget": 5.4003814480054855,
+        "last_mode_bin": 83,
+        "last_mode_time": 2.1700000000000017,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 2,
+        "status": "bisected",
+        "target": 0.1
+      },
+      "walkers": 5000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 199967.4867287982,
+      "key": "m3_eps0.1_p0.01_N2e+05",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 17.29992700719648,
+        "q50": 18.77538098006997,
+        "q95": 20.28906865082767
+      },
+      "m": 3,
+      "mode_count_equals_m": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.009999999999722786,
+      "noise_free_last_mode_z_cov": 18.6535669020115,
+      "noise_free_mode_count": 2,
+      "p": 0.01,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        1,
+        0,
+        0
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.009999999999722786,
+        "budget": 6.0474432363540025,
+        "last_mode_bin": 93,
+        "last_mode_time": 2.370000000000002,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 3,
+        "status": "bisected",
+        "target": 0.01
+      },
+      "walkers": 200000
+    },
+    {
+      "detection_full_rule": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 999837.433643991,
+      "key": "m3_eps0.1_p0.01_N1e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 40.19115068685619,
+        "q50": 41.741227795137725,
+        "q95": 43.300150258087534
+      },
+      "m": 3,
+      "mode_count_equals_m": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.009999999999722786,
+      "noise_free_last_mode_z_cov": 41.71064361573787,
+      "noise_free_mode_count": 2,
+      "p": 0.01,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        1,
+        0,
+        1
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.009999999999722786,
+        "budget": 6.0474432363540025,
+        "last_mode_bin": 93,
+        "last_mode_time": 2.370000000000002,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 3,
+        "status": "bisected",
+        "target": 0.01
+      },
+      "walkers": 1000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 4999187.168219955,
+      "key": "m3_eps0.1_p0.01_N5e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 91.6565749813039,
+        "q50": 93.23615988438102,
+        "q95": 94.80628750774933
+      },
+      "m": 3,
+      "mode_count_equals_m": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.009999999999722786,
+      "noise_free_last_mode_z_cov": 93.2678345100575,
+      "noise_free_mode_count": 2,
+      "p": 0.01,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        1,
+        0,
+        2
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.009999999999722786,
+        "budget": 6.0474432363540025,
+        "last_mode_bin": 93,
+        "last_mode_time": 2.370000000000002,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 3,
+        "status": "bisected",
+        "target": 0.01
+      },
+      "walkers": 5000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 199853.0663685295,
+      "key": "m3_eps0.1_p0.02_N2e+05",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 24.969206950902283,
+        "q50": 26.388177017961088,
+        "q95": 27.92109517852983
+      },
+      "m": 3,
+      "mode_count_equals_m": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.019999999998966227,
+      "noise_free_last_mode_z_cov": 26.310715716198313,
+      "noise_free_mode_count": 2,
+      "p": 0.02,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        1,
+        1,
+        0
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.019999999998966234,
+        "budget": 5.001607390940989,
+        "last_mode_bin": 95,
+        "last_mode_time": 2.410000000000002,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 3,
+        "status": "bisected",
+        "target": 0.02
+      },
+      "walkers": 200000
+    },
+    {
+      "detection_full_rule": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 999265.3318426476,
+      "key": "m3_eps0.1_p0.02_N1e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 57.308449504433874,
+        "q50": 58.891058281268826,
+        "q95": 60.34153612518131
+      },
+      "m": 3,
+      "mode_count_equals_m": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.019999999998966234,
+      "noise_free_last_mode_z_cov": 58.8325488780915,
+      "noise_free_mode_count": 2,
+      "p": 0.02,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        1,
+        1,
+        1
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.019999999998966234,
+        "budget": 5.001607390940989,
+        "last_mode_bin": 95,
+        "last_mode_time": 2.410000000000002,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 3,
+        "status": "bisected",
+        "target": 0.02
+      },
+      "walkers": 1000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 4996326.659213237,
+      "key": "m3_eps0.1_p0.02_N5e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 130.0034053073834,
+        "q50": 131.52068355285826,
+        "q95": 133.09526389931204
+      },
+      "m": 3,
+      "mode_count_equals_m": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.019999999998966227,
+      "noise_free_last_mode_z_cov": 131.55357858099157,
+      "noise_free_mode_count": 2,
+      "p": 0.02,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        1,
+        1,
+        2
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.019999999998966234,
+        "budget": 5.001607390940989,
+        "last_mode_bin": 95,
+        "last_mode_time": 2.410000000000002,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 3,
+        "status": "bisected",
+        "target": 0.02
+      },
+      "walkers": 5000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 199644.88621270005,
+      "key": "m3_eps0.1_p0.03_N2e+05",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 30.627222639351814,
+        "q50": 32.12151061663947,
+        "q95": 33.5978613548967
+      },
+      "m": 3,
+      "mode_count_equals_m": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.02999999999657228,
+      "noise_free_last_mode_z_cov": 31.951911425365775,
+      "noise_free_mode_count": 2,
+      "p": 0.03,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        1,
+        2,
+        0
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.029999999996572276,
+        "budget": 4.389913610694224,
+        "last_mode_bin": 96,
+        "last_mode_time": 2.4300000000000015,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 3,
+        "status": "bisected",
+        "target": 0.03
+      },
+      "walkers": 200000
+    },
+    {
+      "detection_full_rule": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 998224.4310635002,
+      "key": "m3_eps0.1_p0.03_N1e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 70.01904515952243,
+        "q50": 71.5304034358183,
+        "q95": 73.01391231827871
+      },
+      "m": 3,
+      "mode_count_equals_m": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.029999999996572276,
+      "noise_free_last_mode_z_cov": 71.4466459581701,
+      "noise_free_mode_count": 2,
+      "p": 0.03,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        1,
+        2,
+        1
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.029999999996572276,
+        "budget": 4.389913610694224,
+        "last_mode_bin": 96,
+        "last_mode_time": 2.4300000000000015,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 3,
+        "status": "bisected",
+        "target": 0.03
+      },
+      "walkers": 1000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 4991122.155317501,
+      "key": "m3_eps0.1_p0.03_N5e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 158.29732308488397,
+        "q50": 159.75145587193794,
+        "q95": 161.22927319117755
+      },
+      "m": 3,
+      "mode_count_equals_m": {
+        "count": 0,
+        "rate": 0.0,
+        "trials": 2000,
+        "wilson95": [
+          0.0,
+          0.0019171176005129348
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.02999999999657228,
+      "noise_free_last_mode_z_cov": 159.7595571268289,
+      "noise_free_mode_count": 2,
+      "p": 0.03,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        1,
+        2,
+        2
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.029999999996572276,
+        "budget": 4.389913610694224,
+        "last_mode_bin": 96,
+        "last_mode_time": 2.4300000000000015,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 3,
+        "status": "bisected",
+        "target": 0.03
+      },
+      "walkers": 5000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 1117,
+        "rate": 0.5585,
+        "trials": 2000,
+        "wilson95": [
+          0.5366454678318769,
+          0.5801302294088629
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 198941.47423725238,
+      "key": "m3_eps0.1_p0.05_N2e+05",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 38.96133705357918,
+        "q50": 40.40720780090139,
+        "q95": 41.929495835886314
+      },
+      "m": 3,
+      "mode_count_equals_m": {
+        "count": 1117,
+        "rate": 0.5585,
+        "trials": 2000,
+        "wilson95": [
+          0.5366454678318769,
+          0.5801302294088629
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.05000000000489702,
+      "noise_free_last_mode_z_cov": 40.2709375599499,
+      "noise_free_mode_count": 3,
+      "p": 0.05,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        1,
+        3,
+        0
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.05000000000489702,
+        "budget": 3.6328835436185534,
+        "last_mode_bin": 97,
+        "last_mode_time": 2.450000000000002,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 3,
+        "status": "bisected",
+        "target": 0.05
+      },
+      "walkers": 200000
+    },
+    {
+      "detection_full_rule": {
+        "count": 1085,
+        "rate": 0.5425,
+        "trials": 2000,
+        "wilson95": [
+          0.5206051494238642,
+          0.5642318955800922
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 994707.3711862619,
+      "key": "m3_eps0.1_p0.05_N1e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 88.7127464332242,
+        "q50": 90.1729455402209,
+        "q95": 91.65306306027226
+      },
+      "m": 3,
+      "mode_count_equals_m": {
+        "count": 1085,
+        "rate": 0.5425,
+        "trials": 2000,
+        "wilson95": [
+          0.5206051494238642,
+          0.5642318955800922
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.05000000000489702,
+      "noise_free_last_mode_z_cov": 90.04855390169749,
+      "noise_free_mode_count": 3,
+      "p": 0.05,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        1,
+        3,
+        1
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.05000000000489702,
+        "budget": 3.6328835436185534,
+        "last_mode_bin": 97,
+        "last_mode_time": 2.450000000000002,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 3,
+        "status": "bisected",
+        "target": 0.05
+      },
+      "walkers": 1000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 1043,
+        "rate": 0.5215,
+        "trials": 2000,
+        "wilson95": [
+          0.49958654131263347,
+          0.5433310226305443
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 4973536.85593131,
+      "key": "m3_eps0.1_p0.05_N5e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 199.94758171933043,
+        "q50": 201.43325958165065,
+        "q95": 202.89547556785107
+      },
+      "m": 3,
+      "mode_count_equals_m": {
+        "count": 1043,
+        "rate": 0.5215,
+        "trials": 2000,
+        "wilson95": [
+          0.49958654131263347,
+          0.5433310226305443
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.05000000000489701,
+      "noise_free_last_mode_z_cov": 201.35468779974948,
+      "noise_free_mode_count": 3,
+      "p": 0.05,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        1,
+        3,
+        2
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.05000000000489702,
+        "budget": 3.6328835436185534,
+        "last_mode_bin": 97,
+        "last_mode_time": 2.450000000000002,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 3,
+        "status": "bisected",
+        "target": 0.05
+      },
+      "walkers": 5000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 197856.4098709292,
+      "key": "m3_eps0.1_p0.07_N2e+05",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 45.12957892786415,
+        "q50": 46.54321162320211,
+        "q95": 47.96249283486602
+      },
+      "m": 3,
+      "mode_count_equals_m": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.07000000000165606,
+      "noise_free_last_mode_z_cov": 46.40859481876076,
+      "noise_free_mode_count": 3,
+      "p": 0.07,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        1,
+        4,
+        0
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.07000000000165606,
+        "budget": 3.1438192535370972,
+        "last_mode_bin": 98,
+        "last_mode_time": 2.4700000000000015,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 3,
+        "status": "bisected",
+        "target": 0.07
+      },
+      "walkers": 200000
+    },
+    {
+      "detection_full_rule": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 989282.049354646,
+      "key": "m3_eps0.1_p0.07_N1e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 102.47370993391564,
+        "q50": 103.91193982582166,
+        "q95": 105.32149268884264
+      },
+      "m": 3,
+      "mode_count_equals_m": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.07000000000165606,
+      "noise_free_last_mode_z_cov": 103.77277275499358,
+      "noise_free_mode_count": 3,
+      "p": 0.07,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        1,
+        4,
+        1
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.07000000000165606,
+        "budget": 3.1438192535370972,
+        "last_mode_bin": 98,
+        "last_mode_time": 2.4700000000000015,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 3,
+        "status": "bisected",
+        "target": 0.07
+      },
+      "walkers": 1000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 4946410.24677323,
+      "key": "m3_eps0.1_p0.07_N5e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 230.72291840795017,
+        "q50": 232.21966723970468,
+        "q95": 233.61456009943515
+      },
+      "m": 3,
+      "mode_count_equals_m": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.07000000000165606,
+      "noise_free_last_mode_z_cov": 232.04297409380376,
+      "noise_free_mode_count": 3,
+      "p": 0.07,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        1,
+        4,
+        2
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.07000000000165606,
+        "budget": 3.1438192535370972,
+        "last_mode_bin": 98,
+        "last_mode_time": 2.4700000000000015,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 3,
+        "status": "bisected",
+        "target": 0.07
+      },
+      "walkers": 5000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 195543.32680156766,
+      "key": "m3_eps0.1_p0.1_N2e+05",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 52.11957290558366,
+        "q50": 53.5027074204043,
+        "q95": 54.868865660624145
+      },
+      "m": 3,
+      "mode_count_equals_m": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.10000000000205916,
+      "noise_free_last_mode_z_cov": 53.33862401588001,
+      "noise_free_mode_count": 3,
+      "p": 0.1,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        1,
+        5,
+        0
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.10000000000205915,
+        "budget": 2.6365183292956065,
+        "last_mode_bin": 100,
+        "last_mode_time": 2.5100000000000016,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 3,
+        "status": "bisected",
+        "target": 0.1
+      },
+      "walkers": 200000
+    },
+    {
+      "detection_full_rule": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 977716.6340078383,
+      "key": "m3_eps0.1_p0.1_N1e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 117.9171048798888,
+        "q50": 119.38353593565957,
+        "q95": 120.82342080171577
+      },
+      "m": 3,
+      "mode_count_equals_m": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.10000000000205915,
+      "noise_free_last_mode_z_cov": 119.26878912581053,
+      "noise_free_mode_count": 3,
+      "p": 0.1,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        1,
+        5,
+        1
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.10000000000205915,
+        "budget": 2.6365183292956065,
+        "last_mode_bin": 100,
+        "last_mode_time": 2.5100000000000016,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 3,
+        "status": "bisected",
+        "target": 0.1
+      },
+      "walkers": 1000000
+    },
+    {
+      "detection_full_rule": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "detection_gate_only": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "eps": 0.1,
+      "expected_window_events": 4888583.170039192,
+      "key": "m3_eps0.1_p0.1_N5e+06",
+      "last_mode_matched_fraction": 1.0,
+      "last_mode_z_quantiles": {
+        "q05": 265.31224082843625,
+        "q50": 266.7289746706267,
+        "q95": 268.16832324430214
+      },
+      "m": 3,
+      "mode_count_equals_m": {
+        "count": 2000,
+        "rate": 1.0,
+        "trials": 2000,
+        "wilson95": [
+          0.9980828823994873,
+          1.0
+        ]
+      },
+      "noise_free_last_mode_relative_prominence": 0.10000000000205916,
+      "noise_free_last_mode_z_cov": 266.69312007940005,
+      "noise_free_mode_count": 3,
+      "p": 0.1,
+      "replicas": 2000,
+      "seed_entropy": [
+        20260923,
+        87,
+        1,
+        5,
+        2
+      ],
+      "tuning": {
+        "achieved_relative_prominence": 0.10000000000205915,
+        "budget": 2.6365183292956065,
+        "last_mode_bin": 100,
+        "last_mode_time": 2.5100000000000016,
+        "monotone_after_peak_scan": true,
+        "n_bin_level_maxima": 3,
+        "status": "bisected",
+        "target": 0.1
+      },
+      "walkers": 5000000
+    }
+  ],
+  "classifier": {
+    "bandwidth": 0.04,
+    "bin_width": 0.02,
+    "relative_floor": 0.05,
+    "sigma_factor": 5.0,
+    "window": [
+      0.5,
+      3.5
+    ]
+  },
+  "definition": "full mean-field f1 for (m, eps) at the budget B_p where the noise-free smoothed (bandwidth 0.04) relative prominence of the LAST mode equals p (log-B bisection above the prominence maximum, expected counts at N = 1e6; relative prominence is N-invariant); Poisson histograms at N walkers; detection = the smoothed maximum matched to the noise-free last-mode bin (tallest within +-10 bins) has z_cov >= 5 (gate only) or z_cov >= 5 and prominence >= 5% of the global max (full rule)",
+  "designs": [
+    [
+      2,
+      0.1
+    ],
+    [
+      3,
+      0.1
+    ]
+  ],
+  "relative_prominences": [
+    0.01,
+    0.02,
+    0.03,
+    0.05,
+    0.07,
+    0.1
+  ],
+  "replicas_per_cell": 2000,
+  "runtime": {
+    "wall_seconds": 46.541931,
+    "worker_cpu_seconds": 46.178336879999996,
+    "workers": 1
+  },
+  "seeds": {
+    "base": 20260923,
+    "entropy": "[20260923, 87, design index, p index, N index, half index]",
+    "tag": 87
+  },
+  "stream": "I5_power_curves",
+  "walkers": [
+    200000,
+    1000000,
+    5000000
+  ],
+  "wording": "operational gate, not a calibrated post-selection level"
+}

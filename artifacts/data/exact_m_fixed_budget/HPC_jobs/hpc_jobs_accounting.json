@@ -1,0 +1,126 @@
+{
+ "description": "Isambard 3 (GW4/Bristol, partition grace; aarch64 nodes with 144 cores) job accounting for the large-scale checks of SM Sec. sec:sm-hpc. Transcribed from the operator's sacct table (session notes hpc_operator_resumed_20260923.md, sacct at 2026-09-23 23:34 UTC plus the 5768647 completion record at 2026-09-24 04:17 UTC) and jobs.json. node_h = elapsed_s * nodes / 3600; core_h = elapsed_s * cpus / 3600.",
+ "created": "2026-09-24 (verify round 1, finding C17)",
+ "jobs": [
+  {
+   "job_id": "5768121",
+   "name": "prr_validate",
+   "state": "CANCELLED",
+   "elapsed": "00:04:08",
+   "elapsed_s": 248,
+   "nodes": 1,
+   "cpus": 32,
+   "node_h": 0.06889,
+   "core_h": 2.204,
+   "purpose": "validation job; failed at start-up (missing spawn guard in code/hpc_jobs/hpc_validate_tiny.py) and cancelled",
+   "data": "-"
+  },
+  {
+   "job_id": "5768124",
+   "name": "prr_census_m3",
+   "state": "COMPLETED",
+   "elapsed": "03:15:00",
+   "elapsed_s": 11700,
+   "nodes": 1,
+   "cpus": 144,
+   "node_h": 3.25,
+   "core_h": 468.0,
+   "purpose": "census m=3, 2e9 paths (tag 98)",
+   "data": "HPC_census"
+  },
+  {
+   "job_id": "5768125",
+   "name": "prr_census_m2",
+   "state": "COMPLETED",
+   "elapsed": "01:25:25",
+   "elapsed_s": 5125,
+   "nodes": 1,
+   "cpus": 144,
+   "node_h": 1.42361,
+   "core_h": 205.0,
+   "purpose": "census m=2, 1e9 paths (tag 98)",
+   "data": "HPC_census"
+  },
+  {
+   "job_id": "5768126",
+   "name": "prr_n3full",
+   "state": "COMPLETED",
+   "elapsed": "00:03:23",
+   "elapsed_s": 203,
+   "nodes": 1,
+   "cpus": 144,
+   "node_h": 0.05639,
+   "core_h": 8.12,
+   "purpose": "contact factorial, exact OU ladder (tag 96)",
+   "data": "HPC_N3full"
+  },
+  {
+   "job_id": "5768127",
+   "name": "prr_n5full",
+   "state": "COMPLETED",
+   "elapsed": "00:06:01",
+   "elapsed_s": 361,
+   "nodes": 1,
+   "cpus": 144,
+   "node_h": 0.10028,
+   "core_h": 14.44,
+   "purpose": "time-step ladder (tag 95)",
+   "data": "HPC_N5full"
+  },
+  {
+   "job_id": "5768128",
+   "name": "prr_headline",
+   "state": "COMPLETED",
+   "elapsed": "00:07:02",
+   "elapsed_s": 422,
+   "nodes": 1,
+   "cpus": 144,
+   "node_h": 0.11722,
+   "core_h": 16.88,
+   "purpose": "direct-kill design cells (tag 97)",
+   "data": "HPC_headline"
+  },
+  {
+   "job_id": "5768129",
+   "name": "prr_census_an",
+   "state": "COMPLETED",
+   "elapsed": "00:00:02",
+   "elapsed_s": 2,
+   "nodes": 1,
+   "cpus": 144,
+   "node_h": 0.00056,
+   "core_h": 0.08,
+   "purpose": "census analysis",
+   "data": "HPC_census"
+  },
+  {
+   "job_id": "5768647",
+   "name": "prr_reanalyze",
+   "state": "COMPLETED",
+   "elapsed": "00:00:28",
+   "elapsed_s": 28,
+   "nodes": 1,
+   "cpus": 144,
+   "node_h": 0.00778,
+   "core_h": 1.12,
+   "purpose": "deterministic re-analysis of N3full and N5full with local comparison inputs",
+   "data": "HPC_N3full, HPC_N5full"
+  }
+ ],
+ "totals": {
+  "n_node_jobs": 8,
+  "elapsed_node_s": 18089,
+  "node_h": 5.02472,
+  "node_h_printed": "5.02",
+  "core_h": 715.844,
+  "core_h_printed": "715.8",
+  "census_node_h": 4.67417,
+  "census_core_h": 673.08,
+  "note": "Earlier notes quoted 5.03 node-h (and 4.675 for the census jobs) by summing per-job values already rounded to 3 decimals (5.025) and rounding again; the unrounded total is 5.0247 node-h, printed 5.02 (census 4.6742, printed 4.674)."
+ },
+ "sources": [
+  "operator notes (not archived) isambard/hpc_operator_resumed_20260923.md (sacct table; 5768647 completion)",
+  "operator notes (not archived) isambard/jobs.json",
+  "code/hpc_jobs/*.sbatch"
+ ]
+}

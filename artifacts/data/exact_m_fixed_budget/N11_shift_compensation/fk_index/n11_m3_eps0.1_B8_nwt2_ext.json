@@ -1,0 +1,157 @@
+{
+ "name": "n11_m3_eps0.1_B8_nwt2_ext",
+ "schema": "fk_exact_law_ensemble_v1",
+ "mode": "declared",
+ "spec": {
+  "m": 3,
+  "eps": 0.1,
+  "dt": 0.001,
+  "tmax": 4.0,
+  "z0": 4.0,
+  "var_z0_scale": 1.0,
+  "r_par0": 0.1,
+  "r_perp0": 0.0,
+  "u0": 0.3,
+  "sigma_perp0": 0.3,
+  "n_perp": 1,
+  "gamma": 1.0,
+  "d0": 1.0,
+  "z_bar": 0.0,
+  "torus_w": 1.0,
+  "contact_a": 0.4,
+  "rho": 1.0,
+  "slab_shape": "gauss",
+  "slab_sd": null,
+  "target_times": null,
+  "centres_z": [
+   1.7807543903312026,
+   0.7766971728584845,
+   0.038356481105114346
+  ],
+  "kernel_cutoff_sd": 12.0,
+  "target_times_resolved": [
+   0.8092572718072086,
+   1.638999104623202,
+   4.647126127737877
+  ],
+  "centres_z_resolved": [
+   1.7807543903312026,
+   0.7766971728584845,
+   0.038356481105114346
+  ],
+  "slab_sd_resolved": 0.1
+ },
+ "variants": [
+  {
+   "gate": "contact",
+   "a": 0.4,
+   "field": "mid",
+   "name": "full"
+  }
+ ],
+ "n_paths": 210000,
+ "chunk": 70000,
+ "chunk_sizes": [
+  70000,
+  70000,
+  70000
+ ],
+ "seed": 20260923,
+ "tag": 90,
+ "replicate": 0,
+ "seed_entropy": [
+  20260923,
+  90,
+  0,
+  1,
+  100000000,
+  1000000000000,
+  4000000000,
+  1000000000,
+  100000000,
+  0,
+  300000000,
+  300000000,
+  1000000000,
+  1000000000,
+  0,
+  1000000000,
+  70000
+ ],
+ "rng": "numpy Philox; chunk i uses SeedSequence(seed_entropy).spawn(n_chunks)[i]",
+ "ensemble_dir": "<local-ensemble-store>/prr_fk_ensembles/n11_m3_eps0.1_B8_nwt2_ext",
+ "note": "N11 m3_eps0.1_B8: designs ['nwt2_ext']; cpu wait {'busy_python_processes': 3, 'waited_seconds': 0.12954020500183105}",
+ "driver": "exact_m_prr_fk_exact_law.py",
+ "exactness": "exact discrete-time Feynman-Kac law of the production Euler-Maruyama + end-of-step Doi killing process; sampling error only (iid per-path SE, path-group batch means)",
+ "declared": [
+  {
+   "B": 8.0,
+   "w": [
+    0.09403582932182723,
+    0.08021204992894926,
+    0.8257521207492236
+   ],
+   "variant": "full",
+   "cap": null,
+   "pair": 0,
+   "label": "nwt2_ext"
+  }
+ ],
+ "pairs": [
+  {
+   "variant": "full",
+   "w": [
+    0.09403582932182723,
+    0.08021204992894926,
+    0.8257521207492236
+   ]
+  }
+ ],
+ "batch": 5000,
+ "storage": "per-step sums of exact kill probability and exposure moments",
+ "chunks": [
+  {
+   "chunk": 0,
+   "size": 70000,
+   "runtime_seconds": 62.265373417000006,
+   "contact_steps": 239690451,
+   "max_step_unit_exposure": 0.0032942743409806094,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/n11_m3_eps0.1_B8_nwt2_ext/chunk0000.npz",
+   "sha256": "df3e617c52871e13cf3fbb3d3c418257e2b69e6d2a0b2bc46845a46b6271fd4d",
+   "bytes": 2758705
+  },
+  {
+   "chunk": 1,
+   "size": 70000,
+   "runtime_seconds": 62.440424417,
+   "contact_steps": 239674723,
+   "max_step_unit_exposure": 0.0032942743409806077,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/n11_m3_eps0.1_B8_nwt2_ext/chunk0001.npz",
+   "sha256": "af3e95b02545bfe771232bc99fc1d2009367dddb9481c86ff88eab33ac3f75b4",
+   "bytes": 2762607
+  },
+  {
+   "chunk": 2,
+   "size": 70000,
+   "runtime_seconds": 62.336415041,
+   "contact_steps": 239937610,
+   "max_step_unit_exposure": 0.0032942743409805977,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/n11_m3_eps0.1_B8_nwt2_ext/chunk0002.npz",
+   "sha256": "8df5d483e86c65f9aca15a9979e2dd9950214cf92c59e67f9d90f2263eff8ba6",
+   "bytes": 2758383
+  }
+ ],
+ "complete": true,
+ "last_invocation": {
+  "wall_seconds": 67.2780601978302,
+  "workers": 3,
+  "chunks_run": [
+   0,
+   2,
+   1
+  ],
+  "cpu_wait": {},
+  "finished_utc": "2026-09-23T15:14:55Z"
+ },
+ "process_seconds_total": 187.04221287500002
+}

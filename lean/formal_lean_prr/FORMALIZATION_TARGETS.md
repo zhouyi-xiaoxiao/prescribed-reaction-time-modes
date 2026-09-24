@@ -1,6 +1,6 @@
 # Formalization targets for "Prescribed finite-window reaction-time modality" (PRR v2)
 
-Source of truth (present submission): ~/Library/CloudStorage/OneDrive-UniversityofBristol/Desktop/valley-k-small/research/reports/encounter_multimodal_prr/manuscript/prr_submission/ — exact_m_theorem_spine.tex (spine), exact_m_theorem_full_proof.tex (full proof), prr_assets/b0_quantitative_bound.tex (B0 propositions); mirrored for anchoring under tex_anchors/. The JCP-companion targets (A4/A5 below) anchor instead to the mirrored companion supplement tex_anchors/COMPANION_jcp_supplement.tex (fold-transfer theorem proof, "Step 0 (seed conditioning)" ≈ lines 1934–1943 and "Step 2 (simplified Newton)" ≈ lines 1952–1983 of the mirror). Every Lean theorem must carry a docstring naming the source equation/lemma it encodes (or an explicit "internal helper, no direct paper display" note). NO sorry, NO added axioms (verify with #print axioms), NO strawman weakening without an explicit `-- SCOPE NOTE:` comment stating the gap vs the paper.
+Source of truth (present submission): <source-repository>/research/reports/encounter_multimodal_prr/manuscript/prr_submission/ — exact_m_theorem_spine.tex (spine), exact_m_theorem_full_proof.tex (full proof), prr_assets/b0_quantitative_bound.tex (B0 propositions); mirrored for anchoring under tex_anchors/. The JCP-companion targets (A4/A5 below) anchor instead to the mirrored companion supplement tex_anchors/COMPANION_jcp_supplement.tex (fold-transfer theorem proof, "Step 0 (seed conditioning)" ≈ lines 1934–1943 and "Step 2 (simplified Newton)" ≈ lines 1952–1983 of the mirror). Every Lean theorem must carry a docstring naming the source equation/lemma it encodes (or an explicit "internal helper, no direct paper display" note). NO sorry, NO added axioms (verify with #print axioms), NO strawman weakening without an explicit `-- SCOPE NOTE:` comment stating the gap vs the paper.
 
 ## Tier A — present-submission targets (must deliver)
 
@@ -75,3 +75,55 @@ Root import file: FormalPRR.lean (16 modules, matching this list):
 (ZeroBound, GaussianMixture, BZeroThreshold, NewtonContraction and SigmaBound additionally carry in-file `#print axioms` blocks.)
 
 Rules: every file header comments the tex source; `lake build` must pass from clean; run `#print axioms <each main theorem>` into AxiomsReport.lean + a text log. Toolchain pinned v4.32.0-rc1 with the local mathlib cache (never `lake update`).
+
+---
+
+## Addendum 2026-09-23: rebuild for the fixed-budget paper (gap-closure items L1–L3)
+
+The paper was re-scoped to a fixed-budget design law, with CNSNS as the target;
+see `notes/gap_diagnosis_20260923/GAP_CLOSURE_PLAN.md` §4. Everything above is
+the PRR-era design record. The current layout and status are in `README.md`
+and `BUILD_RECEIPT.txt`.
+
+**L1 (DELIVERED): companion separation.** The four JCP-companion modules
+(SeedConditioning, NewtonKernel, NewtonContraction, SigmaBound: 37 audited
+declarations and 39 declared) now live in the non-default library
+`FormalPRRCompanion` (folder `FormalPRRCompanion/`).
+- No `FormalPRR` module imports them; this was checked on the import graph
+  before the move.
+- The files were moved byte-for-byte, and their namespaces are unchanged.
+- Their `#print axioms` block moved from `AxiomsReportBeta` to
+  `FormalPRRCompanion/AxiomsReportCompanion.lean`.
+- The paper audit now lists 101 carried-over declarations plus 80 new ones.
+
+**L2 (DELIVERED): new kernels.**
+- (a) `MeanFieldLevelSet` (TH-5): derivative of f₁ = B G e^{−BΛ}, the sign law,
+  the level set, flank monotonicity and downward closure in B.
+- (b) `StickBreaking` (TH-2/TH-4):
+  - masses from exposures, and the telescoping total mass;
+  - the inverse design in both directions, and the budget identity with its
+    converse;
+  - max–min ⇒ equal masses, with a unique and explicit optimal allocation;
+  - existence, uniqueness and monotonicity of p*(B).
+- (c) `SurvivalSandwich` (TH-1): the scalar core, plus the expectation forms on
+  a probability space (Jensen lower bound, variance upper bound, `variance`
+  form, event-mass floor). These are proved by integral monotonicity against
+  tangent-line and quadratic majorants.
+- (d) `PassageProfile` (optional; GPT-6 A8):
+  - one sign change of p_β′;
+  - identity (A8), and F″ < 0 at every critical point (differentiation under
+    the integral sign is a hypothesis);
+  - uniqueness of downcrossing zeros.
+
+**L3 (DELIVERED): `SignatureStability`.** This is the perturbation-stable
+signature lemma: exactly one nondegenerate zero of F′ per tube, none elsewhere,
+and a count of n.
+- It uses Darboux, so continuity of F″ is not assumed.
+- Corollaries chain it with `margins_iff` and `Ec_lt_iff`.
+
+**Not formalized (by design; plan §4 L4/L5 skipped):**
+- the Cauchy jet step, Dyson summation, and the complex identifications for
+  B_cert;
+- the existence half of the pure-mixture topology;
+- all stochastic-process statements (Feynman–Kac, OU/semigroup, the
+  vanishing-noise limits, C²_loc convergence).

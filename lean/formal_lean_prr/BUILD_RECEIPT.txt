@@ -1,0 +1,74 @@
+BUILD RECEIPT — FormalPRR Lean 4 package (fixed-budget paper, CNSNS rebuild)
+==============================================================================
+Rebuilt: 2026-09-23 (local time Europe/London, BST); gap-closure items L1-L3
+Host: macOS 26.7 (arm64), Apple M4 Pro (shared machine; builds run under nice)
+Toolchain: leanprover/lean4:v4.32.0-rc1
+Lake: Lake version 5.0.0-src+b4812ae (Lean version 4.32.0-rc1)
+mathlib: inputRev v4.32.0-rc1, rev 360da6fa66c1273b76b6b2d8c5666fd5ac2e3b56 (pinned in lake-manifest.json; prebuilt oleans via 'lake exe cache get')
+
+Commands and results:
+  lake build                                  -> exit 0, 'Build completed successfully (3612 jobs).', 0 warnings (log: lean_build_20260923_output.txt)
+  lake env lean audit_paper_20260923.lean     -> rc 0 (output: audit_paper_20260923_output.txt)
+      181 named '#print axioms' lines (101 carried over + 80 new), every one exactly [propext, Classical.choice, Quot.sound];
+      the 101 carried-over lines are identical (sorted diff) to the corresponding lines of audit_all_138_20260903_output.txt;
+      SWEEP PASS: 376 theorems (233 non-auxiliary) and 36 other constants in FormalPRR.* modules, every axiom footprint
+      a subset of [propext, Classical.choice, Quot.sound]; sorryAx occurrences 0; non-standard footprints 0.
+  lake build FormalPRRCompanion               -> exit 0, 'Build completed successfully (2979 jobs).' (companion library, not a default target;
+      37 axiom lines, all [propext, Classical.choice, Quot.sound]: audit_companion_20260923_output.txt)
+  Intermediate check after the L1 move only (before the new modules): lake build -> exit 0 (3603 jobs).
+
+Declaration counts (grep '^(theorem|lemma) ', same convention as the PRR-era '174'):
+  paper library FormalPRR: 215 = 135 carried over (B0ChainKernel 34, BZeroThreshold 6, BudgetThreshold 24, CrossoverBounds 14,
+    ExpPolyZeros 18, GaussianMixture 9, MixtureIdentities 13, Smoke 1, WindowSignature 3, ZeroBound 13)
+    + 80 new (MeanFieldLevelSet 11, StickBreaking 35, SurvivalSandwich 12, SignatureStability 9, PassageProfile 13)
+  companion library FormalPRRCompanion (not counted for this paper): 39 (NewtonContraction 9, NewtonKernel 7, SeedConditioning 19, SigmaBound 4)
+
+Source hashes (sha256) of the released files:
+  8adc885cc7c15bca011f56f222214b0924680539c792e284fafff13487f41a3f  FormalPRR.lean
+  63cd0432fbe06efa70d486e592f6746e1dfe362db0686390e20e523670ad519f  lakefile.toml
+  6f8737337cc0bad711d5e0b472666c7ba35fdaff91bf2453ce03ac32ccaa1974  lake-manifest.json
+  72681913b978b3f7c2f48229836771f736f6e97d833917726b2263afbc6108ed  lean-toolchain
+  ea19112b15bbf9152a4699d5240e84ec686e4f59b11bb29acf56aed02f25618c  FormalPRR/AxiomsReportAlpha.lean
+  04e3fda00a55b53371782affca085933363ba84ec0fc92259d548ef404a90402  FormalPRR/AxiomsReportBeta.lean
+  c1a23eb400e5459a32d60ccfd027d91bc76028d43d240e2877a9e30a7fb42e5c  FormalPRR/AxiomsReportFixedBudget.lean
+  5ffaed91d4863c9a6330cc1d8a0e1c2e28642717e7e4d31891c3627b786d0f11  FormalPRR/B0ChainKernel.lean
+  8f7dce937bf97771b374863ccc03fca993a580ab75d156481ef047aa8e575cb0  FormalPRR/BZeroThreshold.lean
+  8166ecfc0e2c9390ab36cb6278390b36a8242f10552ce21425bd6c992490e6e3  FormalPRR/BudgetThreshold.lean
+  8e1e0816afea792a04cacb524099c37e76e60ded77b05a6a43b3ca82cdeac301  FormalPRR/CrossoverBounds.lean
+  7d99dc72cfe1cfd892dbde8c6567b6c974a5684ca2882f46fce08d9d8451902e  FormalPRR/ExpPolyZeros.lean
+  7e7e60bccd99bc7408250bb5b7a8f6d3013a9debebb616ce43531ec8e77a4ee0  FormalPRR/GaussianMixture.lean
+  9c8a2e2adc858c5dcd57614079bfa65b82925e17dc84dddc386fe7f33c475eca  FormalPRR/MeanFieldLevelSet.lean
+  74a8fc956adfabe22ebd5ac190d66ed5873aa3b0e48fdfddd08806c98f95a801  FormalPRR/MixtureIdentities.lean
+  988c4e776a7812b01db83dfcf0532ff7249cc78ad2e06826c37d3e13f9a29116  FormalPRR/PassageProfile.lean
+  8df8f648cc1f636281b17cb38d4845593f301a1b262820fbe39dbe59fcc25f00  FormalPRR/SignatureStability.lean
+  69ab1ec2e77ecb3da7326e3cd7481db007858e7eb703a0c9a3cadb03f28219ef  FormalPRR/Smoke.lean
+  98801231d8137b5ef8d7b8039b34942fbc4270a547d288bf9cf228e6f057fc4f  FormalPRR/StickBreaking.lean
+  a8cf7e163ebf0ccab9a17a32fecd193aa0994fa86c17719b2389eaab9a963ae0  FormalPRR/SurvivalSandwich.lean
+  5bd7020e5b91a5da8b36d35d2588aafa343cc1274e247920333612d8882c0f45  FormalPRR/WindowSignature.lean
+  f29cd9d8b637363b74ccdb24ba98c22ae47dc0f0e989eea70791c8dec6f39f82  FormalPRR/ZeroBound.lean
+  cc5b07f9408f49503974ca8cc182bb8e7a1853004135f7a709ad030f1a62c394  FormalPRRCompanion.lean
+  4792d44608c8cc8a73e2e0d5f2b3690013a6ae6532e4f4fe5fd30b19dbe3acf5  FormalPRRCompanion/AxiomsReportCompanion.lean
+  0cfc8e3510bb3b3e26644becf10d663b2f5e81e8bbe69dedefe8282937cd7cae  FormalPRRCompanion/NewtonContraction.lean
+  aa190dcf6220ba27a854d3fa23e24aa71b8e93f4ad1c6df6a02dbcb5e7f00a32  FormalPRRCompanion/NewtonKernel.lean
+  aac16a265fd7b4b3e9672d384364b213b11f2f438083cb679acecb4fe2e76dfa  FormalPRRCompanion/SeedConditioning.lean
+  90d08f1f8eb909dcf825a5d0e9ef9ce630e6ec9f79e21d016596e999ab55fe49  FormalPRRCompanion/SigmaBound.lean
+  749161ab5026bbf752fc408ddb9946dc2dbd67f7eb468a484c40f945dc090433  audit_paper_20260923.lean
+
+SM anchors (first 16 hex digits of sha256(FormalPRR/<Module>.lean)):
+  ExpPolyZeros        7d99dc72cfe1cfd8
+  ZeroBound           f29cd9d8b637363b
+  MixtureIdentities   74a8fc956adfabe2
+  GaussianMixture     7e7e60bccd99bc74
+  CrossoverBounds     8e1e0816afea792a
+  BudgetThreshold     8166ecfc0e2c9390
+  BZeroThreshold      8f7dce937bf97771
+  B0ChainKernel       5ffaed91d4863c9a
+  WindowSignature     5bd7020e5b91a5da
+  MeanFieldLevelSet   9c8a2e2adc858c5d
+  StickBreaking       98801231d8137b5e
+  SurvivalSandwich    a8cf7e163ebf0cca
+  SignatureStability  8df8f648cc1f6362
+  PassageProfile      988c4e776a7812b0
+  (the nine carried-over anchors are identical to the 2026-09-03 receipt)
+
+Reproduce: install elan; in this directory run 'lake exe cache get && lake build', then 'lake env lean audit_paper_20260923.lean'.

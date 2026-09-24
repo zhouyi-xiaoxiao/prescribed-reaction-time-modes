@@ -1,0 +1,20 @@
+{
+  "configurations": [],
+  "dt_check_only": 4e-05,
+  "dt_check_rows": [
+    {
+      "B_top_mf": 380319.791050965,
+      "dt": 4e-05,
+      "label": "w5_d3_m2_eps0.1",
+      "level_set_predicted_B_top_mf": 380318.7565158535,
+      "runtime_seconds": 406.619588375,
+      "status": "bisected"
+    }
+  ],
+  "dt_checks_run": [],
+  "labels": [
+    "w5_d3_m2_eps0.1"
+  ],
+  "part": true,
+  "runtime_seconds": 406.63008
+}

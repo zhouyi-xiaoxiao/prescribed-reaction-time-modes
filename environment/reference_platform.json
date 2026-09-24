@@ -1,10 +1,33 @@
 {
   "architecture": "arm64",
+  "fixed_budget_campaign": {
+    "architecture": "arm64",
+    "note": "interpreter and package versions of the workstation Python used for the 2026-09 fixed-budget campaign, read from that interpreter when this release was prepared; the top-level keys describe the 2026-08 reference run of release v1.0.0",
+    "operating_system": "macOS 26.7 (build 25G229)",
+    "packages": {
+      "matplotlib": "3.9.4",
+      "numpy": "2.0.2",
+      "scipy": "1.13.1"
+    },
+    "python": "CPython 3.9.6",
+    "recorded_on": "2026-09-23"
+  },
+  "hpc_campaign": {
+    "architecture": "aarch64",
+    "cores_per_node": 144,
+    "note": "large-scale checks of 2026-09-23/24 (records artifacts/data/exact_m_fixed_budget/HPC_*); values copied from the env field of those records; job accounting in HPC_jobs/hpc_jobs_accounting.json",
+    "packages": {
+      "numpy": "2.0.2"
+    },
+    "python": "CPython 3.11.15",
+    "system": "Isambard 3 (GW4/Bristol), Slurm partition grace"
+  },
   "operating_system": "macOS 26.5.2 (build 25F84)",
   "python": "CPython 3.12.13",
   "recorded_on": "2026-08-14",
-  "release_commit": "0a5c9acccc8168bf61278aa03a6e873557a066a9",
-  "release_date": "2026-09-08",
+  "release_commit": "1d45bb7b97acc686808c6cfe7073a0d759cc678b",
+  "release_date": "2026-09-24",
   "release_repository": "https://github.com/zhouyi-xiaoxiao/prescribed-reaction-time-modes",
+  "release_version": "1.1.0",
   "time_zone": "Asia/Shanghai"
 }

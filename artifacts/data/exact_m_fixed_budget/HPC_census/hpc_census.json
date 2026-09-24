@@ -1,0 +1,5711 @@
+{
+ "item": "HPC_census (extreme-scale FK census of the gated N9a cells)",
+ "driver": "fb_hpc_census.py",
+ "env": {
+  "host": "x3004c0s27b3n0",
+  "machine": "aarch64",
+  "python": "3.11.15",
+  "numpy": "2.0.2",
+  "slurm_job_id": "5768129",
+  "slurm_cpus_per_task": "144",
+  "cpu_count": 144,
+  "utc": "2026-09-23T23:32:35Z"
+ },
+ "zthr": 5.0,
+ "resolutions_h_over_eps": [
+  0.05,
+  0.1,
+  0.25,
+  0.5,
+  1.0,
+  2.0
+ ],
+ "model": "production EM dt=1e-3, end-of-step Doi kill, gated kernel 'full', equal weights",
+ "n9a_reference": "artifacts/data/exact_m_fixed_budget/N9a/n9a_census.json (5e5 paths, tag 87)",
+ "cells": {
+  "m2_eps0.05": {
+   "cell": "m2_eps0.05",
+   "m": 2,
+   "eps": 0.05,
+   "dt": 0.001,
+   "tmax": 3.52,
+   "N_paths": 1000000000,
+   "chunks_folded": 20000,
+   "groups": 400,
+   "group_paths_min_max": [
+    2500000,
+    2500000
+   ],
+   "core_hours": 198.32477137052427,
+   "seed": {
+    "base_seed": 20260923,
+    "tag": 98,
+    "replicate": 0,
+    "entropy": [
+     20260923,
+     98,
+     0,
+     1,
+     50000000,
+     1000000000000,
+     4000000000,
+     1000000000,
+     100000000,
+     0,
+     300000000,
+     300000000,
+     1000000000,
+     1000000000,
+     0,
+     1000000000,
+     50000
+    ],
+    "chunk": 50000,
+    "stream": "SeedSequence(entropy).spawn(40000)[i], i < n_chunks"
+   },
+   "targets": [
+    1.0,
+    2.5
+   ],
+   "g_valleys": [
+    1.491031894934334
+   ],
+   "items": {
+    "full_B8": {
+     "B": 8.0,
+     "gated_n9a_cell": false,
+     "counts_by_resolution": {
+      "0.05": [
+       2,
+       1
+      ],
+      "0.1": [
+       2,
+       1
+      ],
+      "0.25": [
+       2,
+       1
+      ],
+      "0.5": [
+       2,
+       1
+      ],
+      "1": [
+       2,
+       1
+      ],
+      "2": [
+       2,
+       1
+      ]
+     },
+     "exactly_m_by_resolution": {
+      "0.05": true,
+      "0.1": true,
+      "0.25": true,
+      "0.5": true,
+      "1": true,
+      "2": true
+     },
+     "any_EXTRA_PAIR": false,
+     "decision_last_mode": {
+      "decision": "resolvable_present",
+      "present_at": [
+       {
+        "res": "0.05",
+        "t": [
+         2.285
+        ],
+        "z": [
+         [
+          115.4963322651829,
+          -13.976634599999358
+         ]
+        ]
+       },
+       {
+        "res": "0.1",
+        "t": [
+         2.2875
+        ],
+        "z": [
+         [
+          87.48866106057207,
+          -450.4803358340464
+         ]
+        ]
+       },
+       {
+        "res": "0.25",
+        "t": [
+         2.2860000000000005
+        ],
+        "z": [
+         [
+          893.0770613872498,
+          -966.507602533492
+         ]
+        ]
+       },
+       {
+        "res": "0.5",
+        "t": [
+         2.2875000000000005
+        ],
+        "z": [
+         [
+          2195.775453903942,
+          -2676.2216586402365
+         ]
+        ]
+       },
+       {
+        "res": "1",
+        "t": [
+         2.2750000000000004
+        ],
+        "z": [
+         [
+          8947.815236950542,
+          -3171.643229967628
+         ]
+        ]
+       },
+       {
+        "res": "2",
+        "t": [
+         2.25
+        ],
+        "z": [
+         [
+          26142.62383406652,
+          -3613.7247615168517
+         ]
+        ]
+       }
+      ],
+      "monotone_decrease_resolved_at": []
+     },
+     "mass_after_last_G_valley": 0.06779317619304424,
+     "mass_after_last_G_valley_se": 6.012827723835308e-07,
+     "window_mass": 0.9996411595549867,
+     "per_step_ess_last_basin": {
+      "median": 449441.9082450587,
+      "min": 73.22186948550126,
+      "max": 719955700.482538
+     },
+     "late_prominence": {
+      "smoothed_bw0.04": {
+       "rel_prominence": 0.03454631479570939,
+       "time": 2.29,
+       "n_late_maxima": 1,
+       "jackknife_se": 5.603604067525504e-07,
+       "ci95": [
+        0.03454521648931216,
+        0.03454741310210662
+       ],
+       "time_se": 2.217668754793476e-13
+      },
+      "unsmoothed_0.02": {
+       "rel_prominence": 0.024890308587709898,
+       "time": 2.29,
+       "n_late_maxima": 1,
+       "jackknife_se": 5.115645079772171e-07,
+       "ci95": [
+        0.024889305921274262,
+        0.024891311254145534
+       ],
+       "time_se": 2.217668754793476e-13
+      },
+      "after_time": 1.491031894934334,
+      "groups_used": 400
+     },
+     "by_resolution": {
+      "0.05": {
+       "h_g": 0.002,
+       "k_steps": 2,
+       "n_max": 2,
+       "n_min": 1,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.973,
+         "t_bracket": [
+          0.972,
+          0.974
+         ],
+         "z_before": 1237.550302267199,
+         "z_after": -529.0750544674021,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.5400000000000005,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.488,
+         "t_bracket": [
+          1.484,
+          1.492
+         ],
+         "z_before": -5.337762772695433,
+         "z_after": 5.563012125529336,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 9.76,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.285,
+         "t_bracket": [
+          2.2840000000000003,
+          2.286
+         ],
+         "z_before": 115.4963322651829,
+         "z_after": -13.976634599999358,
+         "zone": "matching",
+         "nearest_passage": 2,
+         "s_scaled": -4.299999999999997,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 1501,
+       "n_undecided": 93,
+       "undecided_intervals_longest": [
+        [
+         0.14,
+         [
+          0.5,
+          0.638
+         ]
+        ],
+        [
+         0.028000000000000025,
+         [
+          0.642,
+          0.668
+         ]
+        ],
+        [
+         0.006000000000000004,
+         [
+          1.4860000000000002,
+          1.4900000000000002
+         ]
+        ],
+        [
+         0.002,
+         [
+          1.4820000000000002,
+          1.4820000000000002
+         ]
+        ],
+        [
+         0.002,
+         [
+          1.476,
+          1.476
+         ]
+        ],
+        [
+         0.002,
+         [
+          1.468,
+          1.468
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         0.5,
+         0.638
+        ],
+        [
+         0.642,
+         0.668
+        ],
+        [
+         0.672,
+         0.672
+        ],
+        [
+         0.678,
+         0.678
+        ],
+        [
+         0.684,
+         0.684
+        ],
+        [
+         1.468,
+         1.468
+        ],
+        [
+         1.476,
+         1.476
+        ]
+       ],
+       "n_undecided_far": 7,
+       "late_basin_sign_profile": {
+        "n_pos": 397,
+        "n_neg": 608,
+        "n_undecided": 0,
+        "all_negative": false
+       }
+      },
+      "0.1": {
+       "h_g": 0.005,
+       "k_steps": 5,
+       "n_max": 2,
+       "n_min": 1,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.9724999999999999,
+         "t_bracket": [
+          0.97,
+          0.975
+         ],
+         "z_before": 3389.2460764262896,
+         "z_after": -1641.0069530145431,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.5500000000000016,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.4875,
+         "t_bracket": [
+          1.48,
+          1.495
+         ],
+         "z_before": -7.0041035534947325,
+         "z_after": 5.999812214650313,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 9.75,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.2875,
+         "t_bracket": [
+          2.285,
+          2.29
+         ],
+         "z_before": 87.48866106057207,
+         "z_after": -450.4803358340464,
+         "zone": "matching",
+         "nearest_passage": 2,
+         "s_scaled": -4.249999999999998,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 601,
+       "n_undecided": 36,
+       "undecided_intervals_longest": [
+        [
+         0.17000000000000004,
+         [
+          0.5,
+          0.665
+         ]
+        ],
+        [
+         0.010000000000000116,
+         [
+          1.485,
+          1.4900000000000002
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         0.5,
+         0.665
+        ]
+       ],
+       "n_undecided_far": 1,
+       "late_basin_sign_profile": {
+        "n_pos": 159,
+        "n_neg": 243,
+        "n_undecided": 0,
+        "all_negative": false
+       }
+      },
+      "0.25": {
+       "h_g": 0.012,
+       "k_steps": 12,
+       "n_max": 2,
+       "n_min": 1,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.978,
+         "t_bracket": [
+          0.972,
+          0.984
+         ],
+         "z_before": 1616.1094872882284,
+         "z_after": -12015.6163080438,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.4400000000000004,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.4880000000000002,
+         "t_bracket": [
+          1.4760000000000002,
+          1.5000000000000002
+         ],
+         "z_before": -7.416453821514826,
+         "z_after": 11.412771138782041,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 9.760000000000003,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.2860000000000005,
+         "t_bracket": [
+          2.2800000000000002,
+          2.2920000000000003
+         ],
+         "z_before": 893.0770613872498,
+         "z_after": -966.507602533492,
+         "zone": "matching",
+         "nearest_passage": 2,
+         "s_scaled": -4.2799999999999905,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 250,
+       "n_undecided": 15,
+       "undecided_intervals_longest": [
+        [
+         0.16800000000000004,
+         [
+          0.504,
+          0.66
+         ]
+        ],
+        [
+         0.012,
+         [
+          1.4880000000000002,
+          1.4880000000000002
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         0.504,
+         0.66
+        ]
+       ],
+       "n_undecided_far": 1,
+       "late_basin_sign_profile": {
+        "n_pos": 66,
+        "n_neg": 101,
+        "n_undecided": 0,
+        "all_negative": false
+       }
+      },
+      "0.5": {
+       "h_g": 0.025,
+       "k_steps": 25,
+       "n_max": 2,
+       "n_min": 1,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.9625,
+         "t_bracket": [
+          0.95,
+          0.9750000000000001
+         ],
+         "z_before": 31170.757298568053,
+         "z_after": -1527.1375216205972,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.7499999999999996,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.4875,
+         "t_bracket": [
+          1.475,
+          1.5
+         ],
+         "z_before": -11.705599971147631,
+         "z_after": 15.552532278335562,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 9.75,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.2875000000000005,
+         "t_bracket": [
+          2.2750000000000004,
+          2.3000000000000003
+         ],
+         "z_before": 2195.775453903942,
+         "z_after": -2676.2216586402365,
+         "zone": "matching",
+         "nearest_passage": 2,
+         "s_scaled": -4.249999999999989,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 120,
+       "n_undecided": 7,
+       "undecided_intervals_longest": [
+        [
+         0.17500000000000002,
+         [
+          0.5,
+          0.65
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         0.5,
+         0.65
+        ]
+       ],
+       "n_undecided_far": 1,
+       "late_basin_sign_profile": {
+        "n_pos": 32,
+        "n_neg": 48,
+        "n_undecided": 0,
+        "all_negative": false
+       }
+      },
+      "1": {
+       "h_g": 0.05,
+       "k_steps": 50,
+       "n_max": 2,
+       "n_min": 1,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.9750000000000001,
+         "t_bracket": [
+          0.9500000000000001,
+          1.0
+         ],
+         "z_before": 36854.31352899314,
+         "z_after": -38499.622611422026,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.4999999999999982,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.475,
+         "t_bracket": [
+          1.4500000000000002,
+          1.5
+         ],
+         "z_before": -45.43065961373298,
+         "z_after": 15.251018760500141,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 9.500000000000002,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.2750000000000004,
+         "t_bracket": [
+          2.25,
+          2.3000000000000003
+         ],
+         "z_before": 8947.815236950542,
+         "z_after": -3171.643229967628,
+         "zone": "matching",
+         "nearest_passage": 2,
+         "s_scaled": -4.499999999999993,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 60,
+       "n_undecided": 3,
+       "undecided_intervals_longest": [
+        [
+         0.14999999999999997,
+         [
+          0.5,
+          0.6
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         0.5,
+         0.6
+        ]
+       ],
+       "n_undecided_far": 1,
+       "late_basin_sign_profile": {
+        "n_pos": 16,
+        "n_neg": 24,
+        "n_undecided": 0,
+        "all_negative": false
+       }
+      },
+      "2": {
+       "h_g": 0.1,
+       "k_steps": 100,
+       "n_max": 2,
+       "n_min": 1,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.95,
+         "t_bracket": [
+          0.9,
+          1.0
+         ],
+         "z_before": 120534.21166141059,
+         "z_after": -37021.466512172745,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -1.0000000000000009,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.4500000000000002,
+         "t_bracket": [
+          1.4000000000000001,
+          1.5000000000000002
+         ],
+         "z_before": -275.13789896011303,
+         "z_after": 24.82067437878988,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 9.000000000000004,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.25,
+         "t_bracket": [
+          2.2,
+          2.3
+         ],
+         "z_before": 26142.62383406652,
+         "z_after": -3613.7247615168517,
+         "zone": "matching",
+         "nearest_passage": 2,
+         "s_scaled": -5.0,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 30,
+       "n_undecided": 1,
+       "undecided_intervals_longest": [
+        [
+         0.1,
+         [
+          0.5,
+          0.5
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         0.5,
+         0.5
+        ]
+       ],
+       "n_undecided_far": 1,
+       "late_basin_sign_profile": {
+        "n_pos": 8,
+        "n_neg": 12,
+        "n_undecided": 0,
+        "all_negative": false
+       }
+      }
+     }
+    },
+    "full_B20": {
+     "B": 20.0,
+     "gated_n9a_cell": false,
+     "counts_by_resolution": {
+      "0.05": [
+       2,
+       1
+      ],
+      "0.1": [
+       2,
+       1
+      ],
+      "0.25": [
+       2,
+       1
+      ],
+      "0.5": [
+       2,
+       1
+      ],
+      "1": [
+       2,
+       1
+      ],
+      "2": [
+       2,
+       1
+      ]
+     },
+     "exactly_m_by_resolution": {
+      "0.05": true,
+      "0.1": true,
+      "0.25": true,
+      "0.5": true,
+      "1": true,
+      "2": true
+     },
+     "any_EXTRA_PAIR": false,
+     "decision_last_mode": {
+      "decision": "resolvable_present",
+      "present_at": [
+       {
+        "res": "0.05",
+        "t": [
+         2.232
+        ],
+        "z": [
+         [
+          7.850272171167766,
+          -15.30552919788594
+         ]
+        ]
+       },
+       {
+        "res": "0.1",
+        "t": [
+         2.2325
+        ],
+        "z": [
+         [
+          15.011323399539831,
+          -40.775686291068205
+         ]
+        ]
+       },
+       {
+        "res": "0.25",
+        "t": [
+         2.226
+        ],
+        "z": [
+         [
+          235.44976058153722,
+          -15.626848587474873
+         ]
+        ]
+       },
+       {
+        "res": "0.5",
+        "t": [
+         2.2375
+        ],
+        "z": [
+         [
+          236.82134256511299,
+          -560.9153224256985
+         ]
+        ]
+       },
+       {
+        "res": "1",
+        "t": [
+         2.225
+        ],
+        "z": [
+         [
+          1782.4430333989692,
+          -875.7966274888828
+         ]
+        ]
+       },
+       {
+        "res": "2",
+        "t": [
+         2.25
+        ],
+        "z": [
+         [
+          2611.304195530201,
+          -3948.8247851224355
+         ]
+        ]
+       }
+      ],
+      "monotone_decrease_resolved_at": []
+     },
+     "mass_after_last_G_valley": 0.0013984124778941035,
+     "mass_after_last_G_valley_se": 1.7652364421110722e-07,
+     "window_mass": 0.999980561982519,
+     "per_step_ess_last_basin": {
+      "median": 1719.7230718996789,
+      "min": 77.75893283979359,
+      "max": 50623394.21582143
+     },
+     "late_prominence": {
+      "smoothed_bw0.04": {
+       "rel_prominence": 0.0006846956414220704,
+       "time": 2.2300000000000004,
+       "n_late_maxima": 1,
+       "jackknife_se": 7.846629865116153e-08,
+       "ci95": [
+        0.0006845418474767141,
+        0.0006848494353674267
+       ],
+       "time_se": 2.306375504985215e-13
+      },
+      "unsmoothed_0.02": {
+       "rel_prominence": 0.00046832539274640643,
+       "time": 2.2300000000000004,
+       "n_late_maxima": 1,
+       "jackknife_se": 6.219947823024534e-08,
+       "ci95": [
+        0.00046820348176907514,
+        0.0004684473037237377
+       ],
+       "time_se": 2.306375504985215e-13
+      },
+      "after_time": 1.491031894934334,
+      "groups_used": 400
+     },
+     "by_resolution": {
+      "0.05": {
+       "h_g": 0.002,
+       "k_steps": 2,
+       "n_max": 2,
+       "n_min": 1,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.9570000000000001,
+         "t_bracket": [
+          0.9560000000000001,
+          0.9580000000000001
+         ],
+         "z_before": 721.2399950277412,
+         "z_after": -796.7256009324364,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.8599999999999985,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.484,
+         "t_bracket": [
+          1.48,
+          1.488
+         ],
+         "z_before": -5.533151261508918,
+         "z_after": 5.618168360453067,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 9.68,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.232,
+         "t_bracket": [
+          2.23,
+          2.234
+         ],
+         "z_before": 7.850272171167766,
+         "z_after": -15.30552919788594,
+         "zone": "matching",
+         "nearest_passage": 2,
+         "s_scaled": -5.359999999999996,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 1501,
+       "n_undecided": 560,
+       "undecided_intervals_longest": [
+        [
+         0.9259999999999999,
+         [
+          2.576,
+          3.5
+         ]
+        ],
+        [
+         0.14,
+         [
+          0.5,
+          0.638
+         ]
+        ],
+        [
+         0.028000000000000025,
+         [
+          0.642,
+          0.668
+         ]
+        ],
+        [
+         0.006000000000000004,
+         [
+          1.4820000000000002,
+          1.4860000000000002
+         ]
+        ],
+        [
+         0.004000000000000224,
+         [
+          1.476,
+          1.4780000000000002
+         ]
+        ],
+        [
+         0.002,
+         [
+          2.568,
+          2.568
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         0.5,
+         0.638
+        ],
+        [
+         0.642,
+         0.668
+        ],
+        [
+         0.672,
+         0.672
+        ],
+        [
+         0.678,
+         0.678
+        ],
+        [
+         0.684,
+         0.684
+        ],
+        [
+         1.468,
+         1.468
+        ],
+        [
+         2.556,
+         2.556
+        ],
+        [
+         2.564,
+         2.564
+        ],
+        [
+         2.568,
+         2.568
+        ],
+        [
+         2.576,
+         3.5
+        ]
+       ],
+       "n_undecided_far": 10,
+       "late_basin_sign_profile": {
+        "n_pos": 370,
+        "n_neg": 168,
+        "n_undecided": 467,
+        "all_negative": false
+       }
+      },
+      "0.1": {
+       "h_g": 0.005,
+       "k_steps": 5,
+       "n_max": 2,
+       "n_min": 1,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.9575,
+         "t_bracket": [
+          0.9550000000000001,
+          0.96
+         ],
+         "z_before": 1761.5290296039657,
+         "z_after": -2742.8032599941243,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.8499999999999996,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.485,
+         "t_bracket": [
+          1.48,
+          1.4900000000000002
+         ],
+         "z_before": -5.398174608813537,
+         "z_after": 8.748045695106939,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 9.700000000000001,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.2325,
+         "t_bracket": [
+          2.23,
+          2.2350000000000003
+         ],
+         "z_before": 15.011323399539831,
+         "z_after": -40.775686291068205,
+         "zone": "matching",
+         "nearest_passage": 2,
+         "s_scaled": -5.350000000000001,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 601,
+       "n_undecided": 215,
+       "undecided_intervals_longest": [
+        [
+         0.9,
+         [
+          2.605,
+          3.5
+         ]
+        ],
+        [
+         0.17000000000000004,
+         [
+          0.5,
+          0.665
+         ]
+        ],
+        [
+         0.005,
+         [
+          1.485,
+          1.485
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         0.5,
+         0.665
+        ],
+        [
+         2.605,
+         3.5
+        ]
+       ],
+       "n_undecided_far": 2,
+       "late_basin_sign_profile": {
+        "n_pos": 148,
+        "n_neg": 74,
+        "n_undecided": 180,
+        "all_negative": false
+       }
+      },
+      "0.25": {
+       "h_g": 0.012,
+       "k_steps": 12,
+       "n_max": 2,
+       "n_min": 1,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.954,
+         "t_bracket": [
+          0.948,
+          0.96
+         ],
+         "z_before": 9426.409465840043,
+         "z_after": -2959.327593585424,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.9200000000000008,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.4820000000000002,
+         "t_bracket": [
+          1.4760000000000002,
+          1.4880000000000002
+         ],
+         "z_before": -7.016867696616061,
+         "z_after": 6.805998222915455,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 9.640000000000004,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.226,
+         "t_bracket": [
+          2.22,
+          2.232
+         ],
+         "z_before": 235.44976058153722,
+         "z_after": -15.626848587474873,
+         "zone": "matching",
+         "nearest_passage": 2,
+         "s_scaled": -5.48,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 250,
+       "n_undecided": 76,
+       "undecided_intervals_longest": [
+        [
+         0.2280000000000002,
+         [
+          3.0,
+          3.216
+         ]
+        ],
+        [
+         0.17999999999999972,
+         [
+          2.664,
+          2.832
+         ]
+        ],
+        [
+         0.16800000000000004,
+         [
+          0.504,
+          0.66
+         ]
+        ],
+        [
+         0.10800000000000008,
+         [
+          3.24,
+          3.3360000000000003
+         ]
+        ],
+        [
+         0.0719999999999996,
+         [
+          3.4320000000000004,
+          3.492
+         ]
+        ],
+        [
+         0.06000000000000004,
+         [
+          2.856,
+          2.904
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         0.504,
+         0.66
+        ],
+        [
+         2.664,
+         2.832
+        ],
+        [
+         2.856,
+         2.904
+        ],
+        [
+         2.9400000000000004,
+         2.976
+        ],
+        [
+         3.0,
+         3.216
+        ],
+        [
+         3.24,
+         3.3360000000000003
+        ],
+        [
+         3.3600000000000003,
+         3.3600000000000003
+        ],
+        [
+         3.3840000000000003,
+         3.4080000000000004
+        ],
+        [
+         3.4320000000000004,
+         3.492
+        ]
+       ],
+       "n_undecided_far": 9,
+       "late_basin_sign_profile": {
+        "n_pos": 61,
+        "n_neg": 44,
+        "n_undecided": 62,
+        "all_negative": false
+       }
+      },
+      "0.5": {
+       "h_g": 0.025,
+       "k_steps": 25,
+       "n_max": 2,
+       "n_min": 1,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.9625,
+         "t_bracket": [
+          0.95,
+          0.9750000000000001
+         ],
+         "z_before": 7919.4400617471065,
+         "z_after": -20955.633112720934,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.7499999999999996,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.4875,
+         "t_bracket": [
+          1.475,
+          1.5
+         ],
+         "z_before": -10.98044103638352,
+         "z_after": 15.397062951993163,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 9.75,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.2375,
+         "t_bracket": [
+          2.225,
+          2.25
+         ],
+         "z_before": 236.82134256511299,
+         "z_after": -560.9153224256985,
+         "zone": "matching",
+         "nearest_passage": 2,
+         "s_scaled": -5.2500000000000036,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 120,
+       "n_undecided": 16,
+       "undecided_intervals_longest": [
+        [
+         0.17500000000000002,
+         [
+          0.5,
+          0.65
+         ]
+        ],
+        [
+         0.15,
+         [
+          2.7,
+          2.825
+         ]
+        ],
+        [
+         0.04999999999999991,
+         [
+          2.95,
+          2.975
+         ]
+        ],
+        [
+         0.025,
+         [
+          3.0500000000000003,
+          3.0500000000000003
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         0.5,
+         0.65
+        ],
+        [
+         2.7,
+         2.825
+        ],
+        [
+         2.95,
+         2.975
+        ],
+        [
+         3.0500000000000003,
+         3.0500000000000003
+        ]
+       ],
+       "n_undecided_far": 4,
+       "late_basin_sign_profile": {
+        "n_pos": 30,
+        "n_neg": 41,
+        "n_undecided": 9,
+        "all_negative": false
+       }
+      },
+      "1": {
+       "h_g": 0.05,
+       "k_steps": 50,
+       "n_max": 2,
+       "n_min": 1,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.9750000000000001,
+         "t_bracket": [
+          0.9500000000000001,
+          1.0
+         ],
+         "z_before": 9251.111528483929,
+         "z_after": -60182.91467282032,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.4999999999999982,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.475,
+         "t_bracket": [
+          1.4500000000000002,
+          1.5
+         ],
+         "z_before": -37.140811337060676,
+         "z_after": 15.36567596526207,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 9.500000000000002,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.225,
+         "t_bracket": [
+          2.2,
+          2.25
+         ],
+         "z_before": 1782.4430333989692,
+         "z_after": -875.7966274888828,
+         "zone": "matching",
+         "nearest_passage": 2,
+         "s_scaled": -5.499999999999998,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 60,
+       "n_undecided": 3,
+       "undecided_intervals_longest": [
+        [
+         0.14999999999999997,
+         [
+          0.5,
+          0.6
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         0.5,
+         0.6
+        ]
+       ],
+       "n_undecided_far": 1,
+       "late_basin_sign_profile": {
+        "n_pos": 15,
+        "n_neg": 25,
+        "n_undecided": 0,
+        "all_negative": false
+       }
+      },
+      "2": {
+       "h_g": 0.1,
+       "k_steps": 100,
+       "n_max": 2,
+       "n_min": 1,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.95,
+         "t_bracket": [
+          0.9,
+          1.0
+         ],
+         "z_before": 160228.84258623002,
+         "z_after": -89460.82567418372,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -1.0000000000000009,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.4500000000000002,
+         "t_bracket": [
+          1.4000000000000001,
+          1.5000000000000002
+         ],
+         "z_before": -138.06282098937348,
+         "z_after": 21.433608589033724,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 9.000000000000004,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.25,
+         "t_bracket": [
+          2.2,
+          2.3
+         ],
+         "z_before": 2611.304195530201,
+         "z_after": -3948.8247851224355,
+         "zone": "matching",
+         "nearest_passage": 2,
+         "s_scaled": -5.0,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 30,
+       "n_undecided": 1,
+       "undecided_intervals_longest": [
+        [
+         0.1,
+         [
+          0.5,
+          0.5
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         0.5,
+         0.5
+        ]
+       ],
+       "n_undecided_far": 1,
+       "late_basin_sign_profile": {
+        "n_pos": 8,
+        "n_neg": 12,
+        "n_undecided": 0,
+        "all_negative": false
+       }
+      }
+     }
+    },
+    "full_B50": {
+     "B": 50.0,
+     "gated_n9a_cell": true,
+     "counts_by_resolution": {
+      "0.05": [
+       1,
+       1
+      ],
+      "0.1": [
+       2,
+       1
+      ],
+      "0.25": [
+       2,
+       1
+      ],
+      "0.5": [
+       2,
+       1
+      ],
+      "1": [
+       2,
+       1
+      ],
+      "2": [
+       2,
+       1
+      ]
+     },
+     "exactly_m_by_resolution": {
+      "0.05": false,
+      "0.1": true,
+      "0.25": true,
+      "0.5": true,
+      "1": true,
+      "2": true
+     },
+     "any_EXTRA_PAIR": false,
+     "decision_last_mode": {
+      "decision": "resolvable_present",
+      "present_at": [
+       {
+        "res": "0.1",
+        "t": [
+         2.2525000000000004
+        ],
+        "z": [
+         [
+          6.7260028647997645,
+          -5.387729613597849
+         ]
+        ]
+       },
+       {
+        "res": "0.25",
+        "t": [
+         2.232
+        ],
+        "z": [
+         [
+          6.873368991786856,
+          -6.381348741510113
+         ]
+        ]
+       },
+       {
+        "res": "0.5",
+        "t": [
+         2.225
+        ],
+        "z": [
+         [
+          6.168815727950527,
+          -7.962663198857221
+         ]
+        ]
+       },
+       {
+        "res": "1",
+        "t": [
+         2.225
+        ],
+        "z": [
+         [
+          12.000222742794929,
+          -14.744535669880543
+         ]
+        ]
+       },
+       {
+        "res": "2",
+        "t": [
+         2.25
+        ],
+        "z": [
+         [
+          24.458175766441578,
+          -53.078065225691624
+         ]
+        ]
+       }
+      ],
+      "monotone_decrease_resolved_at": []
+     },
+     "mass_after_last_G_valley": 2.922166926059886e-05,
+     "mass_after_last_G_valley_se": 1.5716608498738907e-07,
+     "window_mass": 0.9999906955200992,
+     "per_step_ess_last_basin": {
+      "median": 299.4185775616246,
+      "min": 1.5934873730531376,
+      "max": 10307.298842440698
+     },
+     "late_prominence": {
+      "smoothed_bw0.04": {
+       "rel_prominence": 1.0002144525088398e-05,
+       "time": 2.2300000000000004,
+       "n_late_maxima": 1,
+       "jackknife_se": 7.423178650338782e-08,
+       "ci95": [
+        9.856650223541758e-06,
+        1.0147638826635038e-05
+       ],
+       "time_se": 2.306375504985215e-13
+      },
+      "unsmoothed_0.02": {
+       "rel_prominence": 6.437585120672659e-06,
+       "time": 2.21,
+       "n_late_maxima": 2,
+       "jackknife_se": 5.75397734247256e-08,
+       "ci95": [
+        6.324807164760197e-06,
+        6.5503630765851205e-06
+       ],
+       "time_se": 2.0402552544099978e-13
+      },
+      "after_time": 1.491031894934334,
+      "groups_used": 400
+     },
+     "by_resolution": {
+      "0.05": {
+       "h_g": 0.002,
+       "k_steps": 2,
+       "n_max": 1,
+       "n_min": 1,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.9410000000000001,
+         "t_bracket": [
+          0.9400000000000001,
+          0.9420000000000001
+         ],
+         "z_before": 1331.7075419465646,
+         "z_after": -77.73529749127644,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -1.1799999999999988,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.5290000000000001,
+         "t_bracket": [
+          1.274,
+          1.7840000000000003
+         ],
+         "z_before": -5.187048338100354,
+         "z_after": 5.63051629868819,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 10.580000000000002,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        0
+       ],
+       "one_max_per_basin": false,
+       "first_sign": 1,
+       "last_sign": 1,
+       "alternating": true,
+       "exactly_m_pattern": false,
+       "EXTRA_PAIR": false,
+       "n_points": 1501,
+       "n_undecided": 1083,
+       "undecided_intervals_longest": [
+        [
+         1.3419999999999999,
+         [
+          2.16,
+          3.5
+         ]
+        ],
+        [
+         0.5079999999999998,
+         [
+          1.2760000000000002,
+          1.782
+         ]
+        ],
+        [
+         0.14,
+         [
+          0.5,
+          0.638
+         ]
+        ],
+        [
+         0.028000000000000025,
+         [
+          0.642,
+          0.668
+         ]
+        ],
+        [
+         0.012000000000000231,
+         [
+          1.222,
+          1.2320000000000002
+         ]
+        ],
+        [
+         0.012000000000000009,
+         [
+          1.786,
+          1.796
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         0.5,
+         0.638
+        ],
+        [
+         0.642,
+         0.668
+        ],
+        [
+         0.672,
+         0.672
+        ],
+        [
+         0.678,
+         0.678
+        ],
+        [
+         0.684,
+         0.684
+        ],
+        [
+         1.118,
+         1.118
+        ],
+        [
+         1.1260000000000001,
+         1.1300000000000001
+        ],
+        [
+         1.1360000000000001,
+         1.1400000000000001
+        ],
+        [
+         1.1760000000000002,
+         1.1800000000000002
+        ],
+        [
+         1.1840000000000002,
+         1.1840000000000002
+        ]
+       ],
+       "n_undecided_far": 38,
+       "late_basin_sign_profile": {
+        "n_pos": 155,
+        "n_neg": 0,
+        "n_undecided": 850,
+        "all_negative": false
+       }
+      },
+      "0.1": {
+       "h_g": 0.005,
+       "k_steps": 5,
+       "n_max": 2,
+       "n_min": 1,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.9425000000000001,
+         "t_bracket": [
+          0.9400000000000001,
+          0.9450000000000001
+         ],
+         "z_before": 1548.068729847624,
+         "z_after": -2468.6153445645537,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -1.1499999999999977,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.5250000000000001,
+         "t_bracket": [
+          1.27,
+          1.7800000000000002
+         ],
+         "z_before": -6.537256963380739,
+         "z_after": 6.2858869205652494,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 10.500000000000002,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.2525000000000004,
+         "t_bracket": [
+          2.1750000000000003,
+          2.33
+         ],
+         "z_before": 6.7260028647997645,
+         "z_after": -5.387729613597849,
+         "zone": "matching",
+         "nearest_passage": 2,
+         "s_scaled": -4.949999999999992,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 601,
+       "n_undecided": 402,
+       "undecided_intervals_longest": [
+        [
+         1.17,
+         [
+          2.335,
+          3.5
+         ]
+        ],
+        [
+         0.505,
+         [
+          1.2750000000000001,
+          1.7750000000000001
+         ]
+        ],
+        [
+         0.17000000000000004,
+         [
+          0.5,
+          0.665
+         ]
+        ],
+        [
+         0.15000000000000002,
+         [
+          2.18,
+          2.325
+         ]
+        ],
+        [
+         0.005,
+         [
+          1.82,
+          1.82
+         ]
+        ],
+        [
+         0.005,
+         [
+          1.2650000000000001,
+          1.2650000000000001
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         0.5,
+         0.665
+        ],
+        [
+         1.225,
+         1.225
+        ],
+        [
+         1.2650000000000001,
+         1.2650000000000001
+        ],
+        [
+         1.82,
+         1.82
+        ],
+        [
+         2.335,
+         3.5
+        ]
+       ],
+       "n_undecided_far": 5,
+       "late_basin_sign_profile": {
+        "n_pos": 79,
+        "n_neg": 1,
+        "n_undecided": 322,
+        "all_negative": false
+       }
+      },
+      "0.25": {
+       "h_g": 0.012,
+       "k_steps": 12,
+       "n_max": 2,
+       "n_min": 1,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.942,
+         "t_bracket": [
+          0.936,
+          0.948
+         ],
+         "z_before": 5464.415907938599,
+         "z_after": -5424.111129830902,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -1.160000000000001,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.524,
+         "t_bracket": [
+          1.272,
+          1.776
+         ],
+         "z_before": -5.887868935288137,
+         "z_after": 5.58869062447632,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 10.48,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.232,
+         "t_bracket": [
+          2.184,
+          2.2800000000000002
+         ],
+         "z_before": 6.873368991786856,
+         "z_after": -6.381348741510113,
+         "zone": "matching",
+         "nearest_passage": 2,
+         "s_scaled": -5.359999999999996,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 250,
+       "n_undecided": 158,
+       "undecided_intervals_longest": [
+        [
+         1.1519999999999997,
+         [
+          2.3520000000000003,
+          3.492
+         ]
+        ],
+        [
+         0.492,
+         [
+          1.284,
+          1.764
+         ]
+        ],
+        [
+         0.16800000000000004,
+         [
+          0.504,
+          0.66
+         ]
+        ],
+        [
+         0.08400000000000006,
+         [
+          2.196,
+          2.2680000000000002
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         0.504,
+         0.66
+        ],
+        [
+         2.3520000000000003,
+         3.492
+        ]
+       ],
+       "n_undecided_far": 2,
+       "late_basin_sign_profile": {
+        "n_pos": 35,
+        "n_neg": 6,
+        "n_undecided": 126,
+        "all_negative": false
+       }
+      },
+      "0.5": {
+       "h_g": 0.025,
+       "k_steps": 25,
+       "n_max": 2,
+       "n_min": 1,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.9375,
+         "t_bracket": [
+          0.925,
+          0.95
+         ],
+         "z_before": 19139.159600729363,
+         "z_after": -8267.922208416856,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -1.25,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.5250000000000001,
+         "t_bracket": [
+          1.2750000000000001,
+          1.7750000000000001
+         ],
+         "z_before": -6.760854146024292,
+         "z_after": 6.802689391384748,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 10.500000000000002,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.225,
+         "t_bracket": [
+          2.2,
+          2.25
+         ],
+         "z_before": 6.168815727950527,
+         "z_after": -7.962663198857221,
+         "zone": "matching",
+         "nearest_passage": 2,
+         "s_scaled": -5.499999999999998,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 120,
+       "n_undecided": 69,
+       "undecided_intervals_longest": [
+        [
+         1.0499999999999998,
+         [
+          2.45,
+          3.475
+         ]
+        ],
+        [
+         0.475,
+         [
+          1.3,
+          1.75
+         ]
+        ],
+        [
+         0.17500000000000002,
+         [
+          0.5,
+          0.65
+         ]
+        ],
+        [
+         0.025,
+         [
+          2.225,
+          2.225
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         0.5,
+         0.65
+        ],
+        [
+         2.45,
+         3.475
+        ]
+       ],
+       "n_undecided_far": 2,
+       "late_basin_sign_profile": {
+        "n_pos": 18,
+        "n_neg": 8,
+        "n_undecided": 54,
+        "all_negative": false
+       }
+      },
+      "1": {
+       "h_g": 0.05,
+       "k_steps": 50,
+       "n_max": 2,
+       "n_min": 1,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.925,
+         "t_bracket": [
+          0.9,
+          0.9500000000000001
+         ],
+         "z_before": 53846.632650462096,
+         "z_after": -10239.3594611124,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -1.4999999999999991,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.5250000000000001,
+         "t_bracket": [
+          1.3000000000000003,
+          1.75
+         ],
+         "z_before": -6.131397270486344,
+         "z_after": 5.741343739479247,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 10.500000000000002,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.225,
+         "t_bracket": [
+          2.2,
+          2.25
+         ],
+         "z_before": 12.000222742794929,
+         "z_after": -14.744535669880543,
+         "zone": "matching",
+         "nearest_passage": 2,
+         "s_scaled": -5.499999999999998,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 60,
+       "n_undecided": 25,
+       "undecided_intervals_longest": [
+        [
+         0.4000000000000001,
+         [
+          1.35,
+          1.7000000000000002
+         ]
+        ],
+        [
+         0.3499999999999998,
+         [
+          2.5500000000000003,
+          2.85
+         ]
+        ],
+        [
+         0.15000000000000008,
+         [
+          2.95,
+          3.0500000000000003
+         ]
+        ],
+        [
+         0.14999999999999997,
+         [
+          0.5,
+          0.6
+         ]
+        ],
+        [
+         0.09999999999999983,
+         [
+          3.4000000000000004,
+          3.45
+         ]
+        ],
+        [
+         0.09999999999999983,
+         [
+          3.1500000000000004,
+          3.2
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         0.5,
+         0.6
+        ],
+        [
+         2.5500000000000003,
+         2.85
+        ],
+        [
+         2.95,
+         3.0500000000000003
+        ],
+        [
+         3.1500000000000004,
+         3.2
+        ],
+        [
+         3.4000000000000004,
+         3.45
+        ]
+       ],
+       "n_undecided_far": 5,
+       "late_basin_sign_profile": {
+        "n_pos": 10,
+        "n_neg": 11,
+        "n_undecided": 19,
+        "all_negative": false
+       }
+      },
+      "2": {
+       "h_g": 0.1,
+       "k_steps": 100,
+       "n_max": 2,
+       "n_min": 1,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.95,
+         "t_bracket": [
+          0.9,
+          1.0
+         ],
+         "z_before": 101778.91436433712,
+         "z_after": -160851.23560996843,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -1.0000000000000009,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.5,
+         "t_bracket": [
+          1.3,
+          1.7
+         ],
+         "z_before": -11.462622291295954,
+         "z_after": 5.281838092475175,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 10.0,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.25,
+         "t_bracket": [
+          2.2,
+          2.3
+         ],
+         "z_before": 24.458175766441578,
+         "z_after": -53.078065225691624,
+         "zone": "matching",
+         "nearest_passage": 2,
+         "s_scaled": -5.0,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 30,
+       "n_undecided": 4,
+       "undecided_intervals_longest": [
+        [
+         0.29999999999999993,
+         [
+          1.4000000000000001,
+          1.6
+         ]
+        ],
+        [
+         0.1,
+         [
+          0.5,
+          0.5
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         0.5,
+         0.5
+        ]
+       ],
+       "n_undecided_far": 1,
+       "late_basin_sign_profile": {
+        "n_pos": 6,
+        "n_neg": 12,
+        "n_undecided": 2,
+        "all_negative": false
+       }
+      }
+     }
+    }
+   }
+  },
+  "m3_eps0.05": {
+   "cell": "m3_eps0.05",
+   "m": 3,
+   "eps": 0.05,
+   "dt": 0.001,
+   "tmax": 3.52,
+   "N_paths": 2000000000,
+   "chunks_folded": 40000,
+   "groups": 400,
+   "group_paths_min_max": [
+    5000000,
+    5000000
+   ],
+   "core_hours": 453.6219349766166,
+   "seed": {
+    "base_seed": 20260923,
+    "tag": 98,
+    "replicate": 0,
+    "entropy": [
+     20260923,
+     98,
+     0,
+     1,
+     50000000,
+     1000000000000,
+     4000000000,
+     1000000000,
+     100000000,
+     0,
+     300000000,
+     300000000,
+     1000000000,
+     1000000000,
+     0,
+     1000000000,
+     50000
+    ],
+    "chunk": 50000,
+    "stream": "SeedSequence(entropy).spawn(40000)[i], i < n_chunks"
+   },
+   "targets": [
+    0.8,
+    1.6,
+    2.8
+   ],
+   "g_valleys": [
+    1.1226516572858036,
+    2.0286679174484052
+   ],
+   "items": {
+    "full_B8": {
+     "B": 8.0,
+     "gated_n9a_cell": false,
+     "counts_by_resolution": {
+      "0.05": [
+       3,
+       2
+      ],
+      "0.1": [
+       3,
+       2
+      ],
+      "0.25": [
+       3,
+       2
+      ],
+      "0.5": [
+       3,
+       2
+      ],
+      "1": [
+       3,
+       2
+      ],
+      "2": [
+       3,
+       2
+      ]
+     },
+     "exactly_m_by_resolution": {
+      "0.05": true,
+      "0.1": true,
+      "0.25": true,
+      "0.5": true,
+      "1": true,
+      "2": true
+     },
+     "any_EXTRA_PAIR": false,
+     "decision_last_mode": {
+      "decision": "resolvable_present",
+      "present_at": [
+       {
+        "res": "0.05",
+        "t": [
+         2.523
+        ],
+        "z": [
+         [
+          30.810227582052544,
+          -14.59579914498306
+         ]
+        ]
+       },
+       {
+        "res": "0.1",
+        "t": [
+         2.5225
+        ],
+        "z": [
+         [
+          166.69841275529797,
+          -75.09221212009767
+         ]
+        ]
+       },
+       {
+        "res": "0.25",
+        "t": [
+         2.526
+        ],
+        "z": [
+         [
+          299.27573640274466,
+          -684.46861431969
+         ]
+        ]
+       },
+       {
+        "res": "0.5",
+        "t": [
+         2.5125
+        ],
+        "z": [
+         [
+          3217.0802395661544,
+          -195.10747537581202
+         ]
+        ]
+       },
+       {
+        "res": "1",
+        "t": [
+         2.5250000000000004
+        ],
+        "z": [
+         [
+          4546.311641462958,
+          -4460.027537297065
+         ]
+        ]
+       },
+       {
+        "res": "2",
+        "t": [
+         2.55
+        ],
+        "z": [
+         [
+          6146.10426016773,
+          -16173.131045433978
+         ]
+        ]
+       }
+      ],
+      "monotone_decrease_resolved_at": []
+     },
+     "mass_after_last_G_valley": 0.009191299012272796,
+     "mass_after_last_G_valley_se": 1.582549431409945e-07,
+     "window_mass": 0.9998289436480545,
+     "per_step_ess_last_basin": {
+      "median": 37993794.39218814,
+      "min": 218934.12968713013,
+      "max": 1000207118.8456209
+     },
+     "late_prominence": {
+      "smoothed_bw0.04": {
+       "rel_prominence": 0.004223627300213983,
+       "time": 2.5300000000000002,
+       "n_late_maxima": 1,
+       "jackknife_se": 8.369238047643399e-08,
+       "ci95": [
+        0.004223463263148249,
+        0.0042237913372797165
+       ],
+       "time_se": 4.0805105088199957e-13
+      },
+      "unsmoothed_0.02": {
+       "rel_prominence": 0.00279598418562059,
+       "time": 2.5300000000000002,
+       "n_late_maxima": 1,
+       "jackknife_se": 6.251557702729265e-08,
+       "ci95": [
+        0.002795861655089617,
+        0.0027961067161515634
+       ],
+       "time_se": 4.0805105088199957e-13
+      },
+      "after_time": 2.0286679174484052,
+      "groups_used": 400
+     },
+     "by_resolution": {
+      "0.05": {
+       "h_g": 0.002,
+       "k_steps": 2,
+       "n_max": 3,
+       "n_min": 2,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.785,
+         "t_bracket": [
+          0.784,
+          0.786
+         ],
+         "z_before": 3234.8526735942896,
+         "z_after": -182.2613297079099,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.30000000000000027,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.12,
+         "t_bracket": [
+          1.118,
+          1.122
+         ],
+         "z_before": -13.400665461447671,
+         "z_after": 8.535734750674326,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 6.400000000000001,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 1.545,
+         "t_bracket": [
+          1.544,
+          1.546
+         ],
+         "z_before": 717.014081027132,
+         "z_after": -273.84107389043913,
+         "zone": "inner",
+         "nearest_passage": 2,
+         "s_scaled": -1.1000000000000032,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 2.015,
+         "t_bracket": [
+          2.0140000000000002,
+          2.016
+         ],
+         "z_before": -43.20708164223222,
+         "z_after": 102.33129628887902,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 2,
+         "s_scaled": 8.3,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.523,
+         "t_bracket": [
+          2.5220000000000002,
+          2.524
+         ],
+         "z_before": 30.810227582052544,
+         "z_after": -14.59579914498306,
+         "zone": "matching",
+         "nearest_passage": 3,
+         "s_scaled": -5.539999999999994,
+         "basin": 3,
+         "in_tangency_region": true
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 1501,
+       "n_undecided": 1,
+       "undecided_intervals_longest": [
+        [
+         0.002,
+         [
+          1.12,
+          1.12
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [],
+       "n_undecided_far": 0,
+       "late_basin_sign_profile": {
+        "n_pos": 247,
+        "n_neg": 489,
+        "n_undecided": 0,
+        "all_negative": false
+       }
+      },
+      "0.1": {
+       "h_g": 0.005,
+       "k_steps": 5,
+       "n_max": 3,
+       "n_min": 2,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.7875000000000001,
+         "t_bracket": [
+          0.785,
+          0.79
+         ],
+         "z_before": 1751.2177113257014,
+         "z_after": -7782.661195155234,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.2499999999999991,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.12,
+         "t_bracket": [
+          1.1150000000000002,
+          1.125
+         ],
+         "z_before": -32.51865842583516,
+         "z_after": 26.013788071476938,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 6.400000000000001,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 1.5474999999999999,
+         "t_bracket": [
+          1.545,
+          1.55
+         ],
+         "z_before": 316.737185568335,
+         "z_after": -3098.6150790356037,
+         "zone": "inner",
+         "nearest_passage": 2,
+         "s_scaled": -1.0500000000000043,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 2.0125,
+         "t_bracket": [
+          2.0100000000000002,
+          2.015
+         ],
+         "z_before": -532.871502799185,
+         "z_after": 37.808547073030034,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 2,
+         "s_scaled": 8.250000000000002,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.5225,
+         "t_bracket": [
+          2.52,
+          2.5250000000000004
+         ],
+         "z_before": 166.69841275529797,
+         "z_after": -75.09221212009767,
+         "zone": "matching",
+         "nearest_passage": 3,
+         "s_scaled": -5.549999999999997,
+         "basin": 3,
+         "in_tangency_region": true
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 601,
+       "n_undecided": 1,
+       "undecided_intervals_longest": [
+        [
+         0.005,
+         [
+          1.12,
+          1.12
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [],
+       "n_undecided_far": 0,
+       "late_basin_sign_profile": {
+        "n_pos": 99,
+        "n_neg": 196,
+        "n_undecided": 0,
+        "all_negative": false
+       }
+      },
+      "0.25": {
+       "h_g": 0.012,
+       "k_steps": 12,
+       "n_max": 3,
+       "n_min": 2,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.786,
+         "t_bracket": [
+          0.78,
+          0.792
+         ],
+         "z_before": 11648.85577227109,
+         "z_after": -12227.306005445094,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.28000000000000025,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.122,
+         "t_bracket": [
+          1.116,
+          1.1280000000000001
+         ],
+         "z_before": -28.12009613147787,
+         "z_after": 19.99437155683737,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 6.440000000000001,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 1.542,
+         "t_bracket": [
+          1.536,
+          1.548
+         ],
+         "z_before": 7382.275334822434,
+         "z_after": -1972.1170631460257,
+         "zone": "inner",
+         "nearest_passage": 2,
+         "s_scaled": -1.160000000000001,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 2.01,
+         "t_bracket": [
+          2.004,
+          2.016
+         ],
+         "z_before": -1533.3795607563816,
+         "z_after": 191.5060056954008,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 2,
+         "s_scaled": 8.199999999999994,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.526,
+         "t_bracket": [
+          2.52,
+          2.532
+         ],
+         "z_before": 299.27573640274466,
+         "z_after": -684.46861431969,
+         "zone": "matching",
+         "nearest_passage": 3,
+         "s_scaled": -5.48,
+         "basin": 3,
+         "in_tangency_region": true
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 250,
+       "n_undecided": 0,
+       "undecided_intervals_longest": [],
+       "undecided_far_from_critical_points": [],
+       "n_undecided_far": 0,
+       "late_basin_sign_profile": {
+        "n_pos": 41,
+        "n_neg": 81,
+        "n_undecided": 0,
+        "all_negative": false
+       }
+      },
+      "0.5": {
+       "h_g": 0.025,
+       "k_steps": 25,
+       "n_max": 3,
+       "n_min": 2,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.7875000000000001,
+         "t_bracket": [
+          0.775,
+          0.8
+         ],
+         "z_before": 23442.363311380297,
+         "z_after": -31141.653239962943,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.2499999999999991,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.1125,
+         "t_bracket": [
+          1.1,
+          1.125
+         ],
+         "z_before": -97.69807047145724,
+         "z_after": 22.987400026271906,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 6.25,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 1.5375,
+         "t_bracket": [
+          1.5250000000000001,
+          1.55
+         ],
+         "z_before": 17774.437439913727,
+         "z_after": -3702.919650171455,
+         "zone": "inner",
+         "nearest_passage": 2,
+         "s_scaled": -1.25,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 2.0125,
+         "t_bracket": [
+          2.0,
+          2.0250000000000004
+         ],
+         "z_before": -2752.591483249467,
+         "z_after": 1517.85174764007,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 2,
+         "s_scaled": 8.250000000000002,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.5125,
+         "t_bracket": [
+          2.5,
+          2.5250000000000004
+         ],
+         "z_before": 3217.0802395661544,
+         "z_after": -195.10747537581202,
+         "zone": "matching",
+         "nearest_passage": 3,
+         "s_scaled": -5.749999999999993,
+         "basin": 3,
+         "in_tangency_region": true
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 120,
+       "n_undecided": 0,
+       "undecided_intervals_longest": [],
+       "undecided_far_from_critical_points": [],
+       "n_undecided_far": 0,
+       "late_basin_sign_profile": {
+        "n_pos": 19,
+        "n_neg": 39,
+        "n_undecided": 0,
+        "all_negative": false
+       }
+      },
+      "1": {
+       "h_g": 0.05,
+       "k_steps": 50,
+       "n_max": 3,
+       "n_min": 2,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.775,
+         "t_bracket": [
+          0.75,
+          0.8
+         ],
+         "z_before": 114260.71132377915,
+         "z_after": -30464.32100948191,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.5000000000000004,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.125,
+         "t_bracket": [
+          1.1,
+          1.15
+         ],
+         "z_before": -206.56886612501984,
+         "z_after": 179.133301656579,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 6.499999999999999,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 1.5250000000000001,
+         "t_bracket": [
+          1.5,
+          1.5500000000000003
+         ],
+         "z_before": 50426.42387236317,
+         "z_after": -3520.4992929646546,
+         "zone": "inner",
+         "nearest_passage": 2,
+         "s_scaled": -1.4999999999999991,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 2.025,
+         "t_bracket": [
+          2.0,
+          2.05
+         ],
+         "z_before": -3500.155023529442,
+         "z_after": 4224.045752200656,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 2,
+         "s_scaled": 8.499999999999996,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.5250000000000004,
+         "t_bracket": [
+          2.5,
+          2.5500000000000003
+         ],
+         "z_before": 4546.311641462958,
+         "z_after": -4460.027537297065,
+         "zone": "matching",
+         "nearest_passage": 3,
+         "s_scaled": -5.499999999999989,
+         "basin": 3,
+         "in_tangency_region": true
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 60,
+       "n_undecided": 0,
+       "undecided_intervals_longest": [],
+       "undecided_far_from_critical_points": [],
+       "n_undecided_far": 0,
+       "late_basin_sign_profile": {
+        "n_pos": 10,
+        "n_neg": 19,
+        "n_undecided": 0,
+        "all_negative": false
+       }
+      },
+      "2": {
+       "h_g": 0.1,
+       "k_steps": 100,
+       "n_max": 3,
+       "n_min": 2,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.75,
+         "t_bracket": [
+          0.7,
+          0.8
+         ],
+         "z_before": 130115.72514181217,
+         "z_after": -28189.385772363657,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -1.0000000000000009,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.15,
+         "t_bracket": [
+          1.1,
+          1.2
+         ],
+         "z_before": -1123.8945880252097,
+         "z_after": 2403.456320840565,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 6.999999999999997,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 1.5500000000000003,
+         "t_bracket": [
+          1.5000000000000002,
+          1.6
+         ],
+         "z_before": 63198.15131676701,
+         "z_after": -63579.649211803226,
+         "zone": "inner",
+         "nearest_passage": 2,
+         "s_scaled": -0.9999999999999964,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 2.05,
+         "t_bracket": [
+          2.0,
+          2.1
+         ],
+         "z_before": -5363.816695511556,
+         "z_after": 9136.624563556907,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 2,
+         "s_scaled": 8.999999999999995,
+         "basin": 3,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.55,
+         "t_bracket": [
+          2.5,
+          2.6
+         ],
+         "z_before": 6146.10426016773,
+         "z_after": -16173.131045433978,
+         "zone": "matching",
+         "nearest_passage": 3,
+         "s_scaled": -5.0,
+         "basin": 3,
+         "in_tangency_region": true
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 30,
+       "n_undecided": 0,
+       "undecided_intervals_longest": [],
+       "undecided_far_from_critical_points": [],
+       "n_undecided_far": 0,
+       "late_basin_sign_profile": {
+        "n_pos": 5,
+        "n_neg": 9,
+        "n_undecided": 0,
+        "all_negative": false
+       }
+      }
+     }
+    },
+    "full_B20": {
+     "B": 20.0,
+     "gated_n9a_cell": true,
+     "counts_by_resolution": {
+      "0.05": [
+       3,
+       2
+      ],
+      "0.1": [
+       3,
+       2
+      ],
+      "0.25": [
+       3,
+       2
+      ],
+      "0.5": [
+       3,
+       2
+      ],
+      "1": [
+       3,
+       2
+      ],
+      "2": [
+       3,
+       2
+      ]
+     },
+     "exactly_m_by_resolution": {
+      "0.05": true,
+      "0.1": true,
+      "0.25": true,
+      "0.5": true,
+      "1": true,
+      "2": true
+     },
+     "any_EXTRA_PAIR": false,
+     "decision_last_mode": {
+      "decision": "resolvable_present",
+      "present_at": [
+       {
+        "res": "0.05",
+        "t": [
+         2.478
+        ],
+        "z": [
+         [
+          5.599051728210349,
+          -5.141824899211741
+         ]
+        ]
+       },
+       {
+        "res": "0.1",
+        "t": [
+         2.4775
+        ],
+        "z": [
+         [
+          7.252816457113024,
+          -5.365982821680511
+         ]
+        ]
+       },
+       {
+        "res": "0.25",
+        "t": [
+         2.4779999999999998
+        ],
+        "z": [
+         [
+          12.838062905585812,
+          -12.251079547739469
+         ]
+        ]
+       },
+       {
+        "res": "0.5",
+        "t": [
+         2.475
+        ],
+        "z": [
+         [
+          37.93570835827034,
+          -26.186562119314463
+         ]
+        ]
+       },
+       {
+        "res": "1",
+        "t": [
+         2.475
+        ],
+        "z": [
+         [
+          68.04685746748973,
+          -45.64334293760684
+         ]
+        ]
+       },
+       {
+        "res": "2",
+        "t": [
+         2.45
+        ],
+        "z": [
+         [
+          320.7676305226617,
+          -69.20263159477804
+         ]
+        ]
+       }
+      ],
+      "monotone_decrease_resolved_at": []
+     },
+     "mass_after_last_G_valley": 3.1614055574603316e-05,
+     "mass_after_last_G_valley_se": 3.6785739100290635e-08,
+     "window_mass": 0.9999907174259561,
+     "per_step_ess_last_basin": {
+      "median": 16692.742273839976,
+      "min": 2726.9489395213695,
+      "max": 393509.8887032964
+     },
+     "late_prominence": {
+      "smoothed_bw0.04": {
+       "rel_prominence": 8.823999934362379e-06,
+       "time": 2.4699999999999998,
+       "n_late_maxima": 1,
+       "jackknife_se": 1.3728846609687806e-08,
+       "ci95": [
+        8.79709139500739e-06,
+        8.850908473717367e-06
+       ],
+       "time_se": 3.9918037586282565e-13
+      },
+      "unsmoothed_0.02": {
+       "rel_prominence": 5.4645600905414565e-06,
+       "time": 2.4699999999999998,
+       "n_late_maxima": 1,
+       "jackknife_se": 1.0490085909891083e-08,
+       "ci95": [
+        5.44399952215807e-06,
+        5.485120658924843e-06
+       ],
+       "time_se": 3.9918037586282565e-13
+      },
+      "after_time": 2.0286679174484052,
+      "groups_used": 400
+     },
+     "by_resolution": {
+      "0.05": {
+       "h_g": 0.002,
+       "k_steps": 2,
+       "n_max": 3,
+       "n_min": 2,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.773,
+         "t_bracket": [
+          0.772,
+          0.774
+         ],
+         "z_before": 2299.000370941726,
+         "z_after": -642.5922808258649,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.5400000000000005,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.118,
+         "t_bracket": [
+          1.116,
+          1.12
+         ],
+         "z_before": -18.272030194245932,
+         "z_after": 7.77336399526054,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 6.360000000000001,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 1.5150000000000001,
+         "t_bracket": [
+          1.5140000000000002,
+          1.516
+         ],
+         "z_before": 410.05884702862375,
+         "z_after": -366.6581268511974,
+         "zone": "inner",
+         "nearest_passage": 2,
+         "s_scaled": -1.6999999999999993,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 2.007,
+         "t_bracket": [
+          2.0020000000000002,
+          2.012
+         ],
+         "z_before": -7.603135915082372,
+         "z_after": 6.065977783346338,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 2,
+         "s_scaled": 8.14,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.478,
+         "t_bracket": [
+          2.45,
+          2.5060000000000002
+         ],
+         "z_before": 5.599051728210349,
+         "z_after": -5.141824899211741,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 3,
+         "s_scaled": -6.439999999999992,
+         "basin": 3,
+         "in_tangency_region": true
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 1501,
+       "n_undecided": 458,
+       "undecided_intervals_longest": [
+        [
+         0.7579999999999998,
+         [
+          2.744,
+          3.5
+         ]
+        ],
+        [
+         0.05400000000000005,
+         [
+          2.452,
+          2.504
+         ]
+        ],
+        [
+         0.02000000000000024,
+         [
+          2.722,
+          2.74
+         ]
+        ],
+        [
+         0.02000000000000024,
+         [
+          2.69,
+          2.708
+         ]
+        ],
+        [
+         0.008000000000000227,
+         [
+          2.004,
+          2.0100000000000002
+         ]
+        ],
+        [
+         0.007999999999999783,
+         [
+          2.712,
+          2.718
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         1.972,
+         1.976
+        ],
+        [
+         1.9820000000000002,
+         1.984
+        ],
+        [
+         1.988,
+         1.988
+        ],
+        [
+         1.992,
+         1.996
+        ],
+        [
+         2.0,
+         2.0
+        ],
+        [
+         2.0340000000000003,
+         2.0340000000000003
+        ],
+        [
+         2.508,
+         2.5100000000000002
+        ],
+        [
+         2.5140000000000002,
+         2.5140000000000002
+        ],
+        [
+         2.5220000000000002,
+         2.5220000000000002
+        ],
+        [
+         2.5340000000000003,
+         2.5340000000000003
+        ]
+       ],
+       "n_undecided_far": 19,
+       "late_basin_sign_profile": {
+        "n_pos": 210,
+        "n_neg": 83,
+        "n_undecided": 443,
+        "all_negative": false
+       }
+      },
+      "0.1": {
+       "h_g": 0.005,
+       "k_steps": 5,
+       "n_max": 3,
+       "n_min": 2,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.7725,
+         "t_bracket": [
+          0.77,
+          0.775
+         ],
+         "z_before": 6133.671751169784,
+         "z_after": -2430.1702576855873,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.5500000000000016,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.1175000000000002,
+         "t_bracket": [
+          1.1150000000000002,
+          1.12
+         ],
+         "z_before": -23.816065641291246,
+         "z_after": 9.5237829657854,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 6.350000000000002,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 1.5175,
+         "t_bracket": [
+          1.5150000000000001,
+          1.52
+         ],
+         "z_before": 16.199127540788005,
+         "z_after": -2814.505754299202,
+         "zone": "inner",
+         "nearest_passage": 2,
+         "s_scaled": -1.6500000000000004,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 2.005,
+         "t_bracket": [
+          1.995,
+          2.015
+         ],
+         "z_before": -7.64833632036947,
+         "z_after": 19.14650844382951,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 2,
+         "s_scaled": 8.099999999999996,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.4775,
+         "t_bracket": [
+          2.46,
+          2.495
+         ],
+         "z_before": 7.252816457113024,
+         "z_after": -5.365982821680511,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 3,
+         "s_scaled": -6.449999999999996,
+         "basin": 3,
+         "in_tangency_region": true
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 601,
+       "n_undecided": 153,
+       "undecided_intervals_longest": [
+        [
+         0.5050000000000004,
+         [
+          2.815,
+          3.3150000000000004
+         ]
+        ],
+        [
+         0.08999999999999997,
+         [
+          3.325,
+          3.41
+         ]
+        ],
+        [
+         0.08500000000000008,
+         [
+          3.42,
+          3.5
+         ]
+        ],
+        [
+         0.04000000000000014,
+         [
+          2.77,
+          2.805
+         ]
+        ],
+        [
+         0.030000000000000356,
+         [
+          2.465,
+          2.49
+         ]
+        ],
+        [
+         0.015000000000000232,
+         [
+          2.0,
+          2.0100000000000002
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         2.77,
+         2.805
+        ],
+        [
+         2.815,
+         3.3150000000000004
+        ],
+        [
+         3.325,
+         3.41
+        ],
+        [
+         3.42,
+         3.5
+        ]
+       ],
+       "n_undecided_far": 4,
+       "late_basin_sign_profile": {
+        "n_pos": 87,
+        "n_neg": 58,
+        "n_undecided": 150,
+        "all_negative": false
+       }
+      },
+      "0.25": {
+       "h_g": 0.012,
+       "k_steps": 12,
+       "n_max": 3,
+       "n_min": 2,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.774,
+         "t_bracket": [
+          0.768,
+          0.78
+         ],
+         "z_before": 10193.688526732914,
+         "z_after": -12332.271142357253,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.5200000000000005,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.122,
+         "t_bracket": [
+          1.116,
+          1.1280000000000001
+         ],
+         "z_before": -16.460241883557057,
+         "z_after": 19.961134217097058,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 6.440000000000001,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 1.5180000000000002,
+         "t_bracket": [
+          1.5120000000000002,
+          1.5240000000000002
+         ],
+         "z_before": 1937.11293370294,
+         "z_after": -5754.238829437818,
+         "zone": "inner",
+         "nearest_passage": 2,
+         "s_scaled": -1.639999999999997,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 2.004,
+         "t_bracket": [
+          1.9920000000000002,
+          2.016
+         ],
+         "z_before": -26.42913417672296,
+         "z_after": 24.308549192058983,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 2,
+         "s_scaled": 8.079999999999998,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.4779999999999998,
+         "t_bracket": [
+          2.46,
+          2.496
+         ],
+         "z_before": 12.838062905585812,
+         "z_after": -12.251079547739469,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 3,
+         "s_scaled": -6.440000000000001,
+         "basin": 3,
+         "in_tangency_region": true
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 250,
+       "n_undecided": 44,
+       "undecided_intervals_longest": [
+        [
+         0.18000000000000016,
+         [
+          2.928,
+          3.096
+         ]
+        ],
+        [
+         0.07200000000000005,
+         [
+          3.156,
+          3.216
+         ]
+        ],
+        [
+         0.06000000000000004,
+         [
+          3.42,
+          3.468
+         ]
+        ],
+        [
+         0.059999999999999595,
+         [
+          3.3000000000000003,
+          3.348
+         ]
+        ],
+        [
+         0.04800000000000003,
+         [
+          3.24,
+          3.2760000000000002
+         ]
+        ],
+        [
+         0.02400000000000001,
+         [
+          3.12,
+          3.132
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         2.856,
+         2.856
+        ],
+        [
+         2.8920000000000003,
+         2.904
+        ],
+        [
+         2.928,
+         3.096
+        ],
+        [
+         3.12,
+         3.132
+        ],
+        [
+         3.156,
+         3.216
+        ],
+        [
+         3.24,
+         3.2760000000000002
+        ],
+        [
+         3.3000000000000003,
+         3.348
+        ],
+        [
+         3.42,
+         3.468
+        ],
+        [
+         3.492,
+         3.492
+        ]
+       ],
+       "n_undecided_far": 9,
+       "late_basin_sign_profile": {
+        "n_pos": 36,
+        "n_neg": 43,
+        "n_undecided": 43,
+        "all_negative": false
+       }
+      },
+      "0.5": {
+       "h_g": 0.025,
+       "k_steps": 25,
+       "n_max": 3,
+       "n_min": 2,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.7625,
+         "t_bracket": [
+          0.75,
+          0.775
+         ],
+         "z_before": 53058.88320679283,
+         "z_after": -2448.506016947783,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.7500000000000018,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.1125,
+         "t_bracket": [
+          1.1,
+          1.125
+         ],
+         "z_before": -101.96924643433248,
+         "z_after": 24.525941988651333,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 6.25,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 1.5125000000000002,
+         "t_bracket": [
+          1.5,
+          1.5250000000000001
+         ],
+         "z_before": 11386.3434448665,
+         "z_after": -7143.0842532639845,
+         "zone": "inner",
+         "nearest_passage": 2,
+         "s_scaled": -1.7499999999999982,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 2.0125,
+         "t_bracket": [
+          2.0,
+          2.0250000000000004
+         ],
+         "z_before": -12.183799787477584,
+         "z_after": 33.22843452282105,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 2,
+         "s_scaled": 8.250000000000002,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.475,
+         "t_bracket": [
+          2.45,
+          2.5
+         ],
+         "z_before": 37.93570835827034,
+         "z_after": -26.186562119314463,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 3,
+         "s_scaled": -6.499999999999995,
+         "basin": 3,
+         "in_tangency_region": true
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 120,
+       "n_undecided": 2,
+       "undecided_intervals_longest": [
+        [
+         0.025,
+         [
+          3.1750000000000003,
+          3.1750000000000003
+         ]
+        ],
+        [
+         0.025,
+         [
+          2.475,
+          2.475
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         3.1750000000000003,
+         3.1750000000000003
+        ]
+       ],
+       "n_undecided_far": 1,
+       "late_basin_sign_profile": {
+        "n_pos": 17,
+        "n_neg": 39,
+        "n_undecided": 2,
+        "all_negative": false
+       }
+      },
+      "1": {
+       "h_g": 0.05,
+       "k_steps": 50,
+       "n_max": 3,
+       "n_min": 2,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.775,
+         "t_bracket": [
+          0.75,
+          0.8
+         ],
+         "z_before": 64696.98159063145,
+         "z_after": -71705.14657628426,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.5000000000000004,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.125,
+         "t_bracket": [
+          1.1,
+          1.15
+         ],
+         "z_before": -209.83895965043604,
+         "z_after": 155.64149755326267,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 6.499999999999999,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 1.5250000000000001,
+         "t_bracket": [
+          1.5,
+          1.5500000000000003
+         ],
+         "z_before": 13543.548075780036,
+         "z_after": -30326.50756424232,
+         "zone": "inner",
+         "nearest_passage": 2,
+         "s_scaled": -1.4999999999999991,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 2.025,
+         "t_bracket": [
+          2.0,
+          2.05
+         ],
+         "z_before": -20.37088860641833,
+         "z_after": 199.68636161264791,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 2,
+         "s_scaled": 8.499999999999996,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.475,
+         "t_bracket": [
+          2.45,
+          2.5
+         ],
+         "z_before": 68.04685746748973,
+         "z_after": -45.64334293760684,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 3,
+         "s_scaled": -6.499999999999995,
+         "basin": 3,
+         "in_tangency_region": true
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 60,
+       "n_undecided": 0,
+       "undecided_intervals_longest": [],
+       "undecided_far_from_critical_points": [],
+       "n_undecided_far": 0,
+       "late_basin_sign_profile": {
+        "n_pos": 9,
+        "n_neg": 20,
+        "n_undecided": 0,
+        "all_negative": false
+       }
+      },
+      "2": {
+       "h_g": 0.1,
+       "k_steps": 100,
+       "n_max": 3,
+       "n_min": 2,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.75,
+         "t_bracket": [
+          0.7,
+          0.8
+         ],
+         "z_before": 190521.15683955638,
+         "z_after": -70494.2411742966,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -1.0000000000000009,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.15,
+         "t_bracket": [
+          1.1,
+          1.2
+         ],
+         "z_before": -1226.4856934685845,
+         "z_after": 2237.068803752115,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 6.999999999999997,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 1.5500000000000003,
+         "t_bracket": [
+          1.5000000000000002,
+          1.6
+         ],
+         "z_before": 16586.39107761166,
+         "z_after": -81124.44063219451,
+         "zone": "inner",
+         "nearest_passage": 2,
+         "s_scaled": -0.9999999999999964,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 2.05,
+         "t_bracket": [
+          2.0,
+          2.1
+         ],
+         "z_before": -39.59648118497038,
+         "z_after": 357.16145839764823,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 2,
+         "s_scaled": 8.999999999999995,
+         "basin": 3,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.45,
+         "t_bracket": [
+          2.4000000000000004,
+          2.5
+         ],
+         "z_before": 320.7676305226617,
+         "z_after": -69.20263159477804,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 3,
+         "s_scaled": -6.999999999999993,
+         "basin": 3,
+         "in_tangency_region": true
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 30,
+       "n_undecided": 0,
+       "undecided_intervals_longest": [],
+       "undecided_far_from_critical_points": [],
+       "n_undecided_far": 0,
+       "late_basin_sign_profile": {
+        "n_pos": 4,
+        "n_neg": 10,
+        "n_undecided": 0,
+        "all_negative": false
+       }
+      }
+     }
+    },
+    "full_B50": {
+     "B": 50.0,
+     "gated_n9a_cell": true,
+     "counts_by_resolution": {
+      "0.05": [
+       2,
+       2
+      ],
+      "0.1": [
+       2,
+       2
+      ],
+      "0.25": [
+       2,
+       2
+      ],
+      "0.5": [
+       2,
+       2
+      ],
+      "1": [
+       3,
+       2
+      ],
+      "2": [
+       3,
+       2
+      ]
+     },
+     "exactly_m_by_resolution": {
+      "0.05": false,
+      "0.1": false,
+      "0.25": false,
+      "0.5": false,
+      "1": true,
+      "2": true
+     },
+     "any_EXTRA_PAIR": false,
+     "decision_last_mode": {
+      "decision": "resolvable_present",
+      "present_at": [
+       {
+        "res": "1",
+        "t": [
+         2.4750000000000005
+        ],
+        "z": [
+         [
+          10.566168528608042,
+          -5.790533752318564
+         ]
+        ]
+       },
+       {
+        "res": "2",
+        "t": [
+         2.45
+        ],
+        "z": [
+         [
+          18.43813015053874,
+          -6.243743953942101
+         ]
+        ]
+       }
+      ],
+      "monotone_decrease_resolved_at": []
+     },
+     "mass_after_last_G_valley": 2.2539077904031295e-06,
+     "mass_after_last_G_valley_se": 2.908511710875791e-08,
+     "window_mass": 0.9999991289238261,
+     "per_step_ess_last_basin": {
+      "median": 93.32726618360793,
+      "min": 13.888377467866063,
+      "max": 1278.113506853117
+     },
+     "late_prominence": {
+      "smoothed_bw0.04": {
+       "rel_prominence": 4.7585683348392377e-07,
+       "time": 2.4699999999999998,
+       "n_late_maxima": 1,
+       "jackknife_se": 1.0535793172562026e-08,
+       "ci95": [
+        4.552066788657022e-07,
+        4.965069881021454e-07
+       ],
+       "time_se": 3.9918037586282565e-13
+      },
+      "unsmoothed_0.02": {
+       "rel_prominence": 2.895325674116685e-07,
+       "time": 2.4699999999999998,
+       "n_late_maxima": 12,
+       "jackknife_se": 9.035439338326183e-09,
+       "ci95": [
+        2.718231063085492e-07,
+        3.072420285147878e-07
+       ],
+       "time_se": 3.9918037586282565e-13
+      },
+      "after_time": 2.0286679174484052,
+      "groups_used": 400
+     },
+     "by_resolution": {
+      "0.05": {
+       "h_g": 0.002,
+       "k_steps": 2,
+       "n_max": 2,
+       "n_min": 2,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.761,
+         "t_bracket": [
+          0.76,
+          0.762
+         ],
+         "z_before": 102.76771568832407,
+         "z_after": -2670.7370654852034,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.7800000000000007,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.1150000000000002,
+         "t_bracket": [
+          1.112,
+          1.118
+         ],
+         "z_before": -8.460205147977426,
+         "z_after": 10.72955199694639,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 6.300000000000003,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 1.486,
+         "t_bracket": [
+          1.484,
+          1.488
+         ],
+         "z_before": 19.239062965190723,
+         "z_after": -17.870272519221537,
+         "zone": "inner",
+         "nearest_passage": 2,
+         "s_scaled": -2.280000000000002,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.8550000000000002,
+         "t_bracket": [
+          1.6400000000000001,
+          2.0700000000000003
+         ],
+         "z_before": -6.93935043171289,
+         "z_after": 5.297969471521679,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 2,
+         "s_scaled": 5.100000000000002,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1,
+        0
+       ],
+       "one_max_per_basin": false,
+       "first_sign": 1,
+       "last_sign": 1,
+       "alternating": true,
+       "exactly_m_pattern": false,
+       "EXTRA_PAIR": false,
+       "n_points": 1501,
+       "n_undecided": 929,
+       "undecided_intervals_longest": [
+        [
+         1.3019999999999998,
+         [
+          2.2,
+          3.5
+         ]
+        ],
+        [
+         0.42799999999999994,
+         [
+          1.6420000000000001,
+          2.068
+         ]
+        ],
+        [
+         0.05800000000000005,
+         [
+          2.124,
+          2.18
+         ]
+        ],
+        [
+         0.050000000000000044,
+         [
+          2.072,
+          2.12
+         ]
+        ],
+        [
+         0.01400000000000001,
+         [
+          2.184,
+          2.196
+         ]
+        ],
+        [
+         0.004000000000000002,
+         [
+          1.114,
+          1.116
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         2.072,
+         2.12
+        ],
+        [
+         2.124,
+         2.18
+        ],
+        [
+         2.184,
+         2.196
+        ],
+        [
+         2.2,
+         3.5
+        ]
+       ],
+       "n_undecided_far": 4,
+       "late_basin_sign_profile": {
+        "n_pos": 4,
+        "n_neg": 0,
+        "n_undecided": 732,
+        "all_negative": false
+       }
+      },
+      "0.1": {
+       "h_g": 0.005,
+       "k_steps": 5,
+       "n_max": 2,
+       "n_min": 2,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.7625,
+         "t_bracket": [
+          0.76,
+          0.765
+         ],
+         "z_before": 117.87755599152317,
+         "z_after": -7560.99932484832,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.7500000000000018,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.1150000000000002,
+         "t_bracket": [
+          1.11,
+          1.12
+         ],
+         "z_before": -12.62144484853024,
+         "z_after": 15.24680740580701,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 6.300000000000003,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 1.4875000000000003,
+         "t_bracket": [
+          1.485,
+          1.4900000000000002
+         ],
+         "z_before": 20.43808942945348,
+         "z_after": -63.909919116907474,
+         "zone": "inner",
+         "nearest_passage": 2,
+         "s_scaled": -2.2499999999999964,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.8750000000000002,
+         "t_bracket": [
+          1.6550000000000002,
+          2.095
+         ],
+         "z_before": -5.948753810641754,
+         "z_after": 6.291937528319155,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 2,
+         "s_scaled": 5.500000000000003,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1,
+        0
+       ],
+       "one_max_per_basin": false,
+       "first_sign": 1,
+       "last_sign": 1,
+       "alternating": true,
+       "exactly_m_pattern": false,
+       "EXTRA_PAIR": false,
+       "n_points": 601,
+       "n_undecided": 346,
+       "undecided_intervals_longest": [
+        [
+         1.1349999999999998,
+         [
+          2.37,
+          3.5
+         ]
+        ],
+        [
+         0.4349999999999997,
+         [
+          1.6600000000000001,
+          2.09
+         ]
+        ],
+        [
+         0.055000000000000264,
+         [
+          2.27,
+          2.3200000000000003
+         ]
+        ],
+        [
+         0.035000000000000246,
+         [
+          2.33,
+          2.3600000000000003
+         ]
+        ],
+        [
+         0.015000000000000232,
+         [
+          2.23,
+          2.24
+         ]
+        ],
+        [
+         0.009999999999999894,
+         [
+          2.25,
+          2.255
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         2.1,
+         2.1
+        ],
+        [
+         2.1100000000000003,
+         2.1100000000000003
+        ],
+        [
+         2.13,
+         2.13
+        ],
+        [
+         2.14,
+         2.14
+        ],
+        [
+         2.1500000000000004,
+         2.1500000000000004
+        ],
+        [
+         2.16,
+         2.165
+        ],
+        [
+         2.22,
+         2.22
+        ],
+        [
+         2.23,
+         2.24
+        ],
+        [
+         2.25,
+         2.255
+        ],
+        [
+         2.27,
+         2.3200000000000003
+        ]
+       ],
+       "n_undecided_far": 12,
+       "late_basin_sign_profile": {
+        "n_pos": 24,
+        "n_neg": 0,
+        "n_undecided": 271,
+        "all_negative": false
+       }
+      },
+      "0.25": {
+       "h_g": 0.012,
+       "k_steps": 12,
+       "n_max": 2,
+       "n_min": 2,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.762,
+         "t_bracket": [
+          0.756,
+          0.768
+         ],
+         "z_before": 6854.830645994285,
+         "z_after": -13540.949198122524,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.7600000000000007,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.11,
+         "t_bracket": [
+          1.104,
+          1.116
+         ],
+         "z_before": -33.02102799739294,
+         "z_after": 7.0166867186737525,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 6.200000000000001,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 1.4820000000000002,
+         "t_bracket": [
+          1.4760000000000002,
+          1.4880000000000002
+         ],
+         "z_before": 368.6323165107934,
+         "z_after": -58.84693205595075,
+         "zone": "inner",
+         "nearest_passage": 2,
+         "s_scaled": -2.3599999999999977,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.98,
+         "t_bracket": [
+          1.8960000000000001,
+          2.064
+         ],
+         "z_before": -5.519491378039885,
+         "z_after": 5.444762147580031,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 2,
+         "s_scaled": 7.599999999999998,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1,
+        0
+       ],
+       "one_max_per_basin": false,
+       "first_sign": 1,
+       "last_sign": 1,
+       "alternating": true,
+       "exactly_m_pattern": false,
+       "EXTRA_PAIR": false,
+       "n_points": 250,
+       "n_undecided": 124,
+       "undecided_intervals_longest": [
+        [
+         1.1279999999999997,
+         [
+          2.3760000000000003,
+          3.492
+         ]
+        ],
+        [
+         0.15599999999999992,
+         [
+          1.9080000000000001,
+          2.052
+         ]
+        ],
+        [
+         0.10800000000000008,
+         [
+          1.68,
+          1.776
+         ]
+        ],
+        [
+         0.09600000000000007,
+         [
+          1.8,
+          1.8840000000000001
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         1.68,
+         1.776
+        ],
+        [
+         1.8,
+         1.8840000000000001
+        ],
+        [
+         2.3760000000000003,
+         3.492
+        ]
+       ],
+       "n_undecided_far": 3,
+       "late_basin_sign_profile": {
+        "n_pos": 26,
+        "n_neg": 0,
+        "n_undecided": 96,
+        "all_negative": false
+       }
+      },
+      "0.5": {
+       "h_g": 0.025,
+       "k_steps": 25,
+       "n_max": 2,
+       "n_min": 2,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.7625,
+         "t_bracket": [
+          0.75,
+          0.775
+         ],
+         "z_before": 19313.590746114092,
+         "z_after": -30476.370100020857,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.7500000000000018,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.1125,
+         "t_bracket": [
+          1.1,
+          1.125
+         ],
+         "z_before": -42.21391420018995,
+         "z_after": 24.322716421426723,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 6.25,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 1.4875,
+         "t_bracket": [
+          1.475,
+          1.5
+         ],
+         "z_before": 607.6545299148327,
+         "z_after": -581.6215023011661,
+         "zone": "inner",
+         "nearest_passage": 2,
+         "s_scaled": -2.250000000000001,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.9874999999999998,
+         "t_bracket": [
+          1.925,
+          2.05
+         ],
+         "z_before": -5.482148121074787,
+         "z_after": 5.075665607065993,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 2,
+         "s_scaled": 7.749999999999995,
+         "basin": 2,
+         "in_tangency_region": false
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1,
+        0
+       ],
+       "one_max_per_basin": false,
+       "first_sign": 1,
+       "last_sign": 1,
+       "alternating": true,
+       "exactly_m_pattern": false,
+       "EXTRA_PAIR": false,
+       "n_points": 120,
+       "n_undecided": 48,
+       "undecided_intervals_longest": [
+        [
+         1.0749999999999997,
+         [
+          2.4250000000000003,
+          3.475
+         ]
+        ],
+        [
+         0.10000000000000017,
+         [
+          1.9500000000000002,
+          2.0250000000000004
+         ]
+        ],
+        [
+         0.025,
+         [
+          1.9000000000000001,
+          1.9000000000000001
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         1.9000000000000001,
+         1.9000000000000001
+        ],
+        [
+         2.4250000000000003,
+         3.475
+        ]
+       ],
+       "n_undecided_far": 2,
+       "late_basin_sign_profile": {
+        "n_pos": 15,
+        "n_neg": 0,
+        "n_undecided": 43,
+        "all_negative": false
+       }
+      },
+      "1": {
+       "h_g": 0.05,
+       "k_steps": 50,
+       "n_max": 3,
+       "n_min": 2,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.775,
+         "t_bracket": [
+          0.75,
+          0.8
+         ],
+         "z_before": 22651.380471619235,
+         "z_after": -91212.69870301227,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -0.5000000000000004,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.125,
+         "t_bracket": [
+          1.1,
+          1.15
+         ],
+         "z_before": -59.89378372967159,
+         "z_after": 87.59265162325798,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 6.499999999999999,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 1.475,
+         "t_bracket": [
+          1.4500000000000002,
+          1.5
+         ],
+         "z_before": 2498.649396284702,
+         "z_after": -847.7382909629953,
+         "zone": "inner",
+         "nearest_passage": 2,
+         "s_scaled": -2.5,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 2.0,
+         "t_bracket": [
+          1.9500000000000002,
+          2.05
+         ],
+         "z_before": -6.410744740525503,
+         "z_after": 5.662353969808571,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 2,
+         "s_scaled": 7.999999999999998,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.4750000000000005,
+         "t_bracket": [
+          2.4000000000000004,
+          2.5500000000000003
+         ],
+         "z_before": 10.566168528608042,
+         "z_after": -5.790533752318564,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 3,
+         "s_scaled": -6.499999999999986,
+         "basin": 3,
+         "in_tangency_region": true
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 60,
+       "n_undecided": 20,
+       "undecided_intervals_longest": [
+        [
+         0.8,
+         [
+          2.7,
+          3.45
+         ]
+        ],
+        [
+         0.09999999999999983,
+         [
+          2.45,
+          2.5
+         ]
+        ],
+        [
+         0.05,
+         [
+          2.6,
+          2.6
+         ]
+        ],
+        [
+         0.05,
+         [
+          2.0,
+          2.0
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         2.7,
+         3.45
+        ]
+       ],
+       "n_undecided_far": 1,
+       "late_basin_sign_profile": {
+        "n_pos": 8,
+        "n_neg": 2,
+        "n_undecided": 19,
+        "all_negative": false
+       }
+      },
+      "2": {
+       "h_g": 0.1,
+       "k_steps": 100,
+       "n_max": 3,
+       "n_min": 2,
+       "changes": [
+        {
+         "kind": "max",
+         "t": 0.75,
+         "t_bracket": [
+          0.7,
+          0.8
+         ],
+         "z_before": 331551.86664159753,
+         "z_after": -168339.16215103184,
+         "zone": "inner",
+         "nearest_passage": 1,
+         "s_scaled": -1.0000000000000009,
+         "basin": 1,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 1.15,
+         "t_bracket": [
+          1.1,
+          1.2
+         ],
+         "z_before": -90.6241183668277,
+         "z_after": 632.1282729841904,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 1,
+         "s_scaled": 6.999999999999997,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 1.4500000000000002,
+         "t_bracket": [
+          1.4000000000000001,
+          1.5000000000000002
+         ],
+         "z_before": 4082.1352463546323,
+         "z_after": -1056.2390815666865,
+         "zone": "inner",
+         "nearest_passage": 2,
+         "s_scaled": -2.9999999999999982,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "min",
+         "t": 2.0,
+         "t_bracket": [
+          1.9000000000000001,
+          2.1
+         ],
+         "z_before": -16.112066020202413,
+         "z_after": 13.786134492103539,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 2,
+         "s_scaled": 7.999999999999998,
+         "basin": 2,
+         "in_tangency_region": false
+        },
+        {
+         "kind": "max",
+         "t": 2.45,
+         "t_bracket": [
+          2.4000000000000004,
+          2.5
+         ],
+         "z_before": 18.43813015053874,
+         "z_after": -6.243743953942101,
+         "zone": "gap_or_exterior",
+         "nearest_passage": 3,
+         "s_scaled": -6.999999999999993,
+         "basin": 3,
+         "in_tangency_region": true
+        }
+       ],
+       "maxima_per_G_basin": [
+        1,
+        1,
+        1
+       ],
+       "one_max_per_basin": true,
+       "first_sign": 1,
+       "last_sign": -1,
+       "alternating": true,
+       "exactly_m_pattern": true,
+       "EXTRA_PAIR": false,
+       "n_points": 30,
+       "n_undecided": 8,
+       "undecided_intervals_longest": [
+        [
+         0.7000000000000005,
+         [
+          2.8,
+          3.4000000000000004
+         ]
+        ],
+        [
+         0.1,
+         [
+          2.0,
+          2.0
+         ]
+        ]
+       ],
+       "undecided_far_from_critical_points": [
+        [
+         2.8,
+         3.4000000000000004
+        ]
+       ],
+       "n_undecided_far": 1,
+       "late_basin_sign_profile": {
+        "n_pos": 4,
+        "n_neg": 3,
+        "n_undecided": 7,
+        "all_negative": false
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "vs_n9a": {
+  "m2_eps0.05/full_B8": {
+   "n9a_counts_by_resolution": {
+    "0.05": [
+     2,
+     1
+    ],
+    "0.1": [
+     2,
+     1
+    ],
+    "0.25": [
+     2,
+     1
+    ],
+    "0.5": [
+     2,
+     1
+    ],
+    "1": [
+     2,
+     1
+    ]
+   },
+   "n9a_status": "exactly_m_all_resolutions",
+   "n9a_N": 500000,
+   "hpc_counts_by_resolution": {
+    "0.05": [
+     2,
+     1
+    ],
+    "0.1": [
+     2,
+     1
+    ],
+    "0.25": [
+     2,
+     1
+    ],
+    "0.5": [
+     2,
+     1
+    ],
+    "1": [
+     2,
+     1
+    ],
+    "2": [
+     2,
+     1
+    ]
+   },
+   "hpc_decision": "resolvable_present"
+  },
+  "m2_eps0.05/full_B20": {
+   "n9a_counts_by_resolution": {
+    "0.05": [
+     2,
+     1
+    ],
+    "0.1": [
+     2,
+     1
+    ],
+    "0.25": [
+     2,
+     1
+    ],
+    "0.5": [
+     2,
+     1
+    ],
+    "1": [
+     2,
+     1
+    ]
+   },
+   "n9a_status": "exactly_m_all_resolutions",
+   "n9a_N": 500000,
+   "hpc_counts_by_resolution": {
+    "0.05": [
+     2,
+     1
+    ],
+    "0.1": [
+     2,
+     1
+    ],
+    "0.25": [
+     2,
+     1
+    ],
+    "0.5": [
+     2,
+     1
+    ],
+    "1": [
+     2,
+     1
+    ],
+    "2": [
+     2,
+     1
+    ]
+   },
+   "hpc_decision": "resolvable_present"
+  },
+  "m2_eps0.05/full_B50": {
+   "n9a_counts_by_resolution": {
+    "0.05": [
+     1,
+     1
+    ],
+    "0.1": [
+     1,
+     1
+    ],
+    "0.25": [
+     1,
+     1
+    ],
+    "0.5": [
+     1,
+     1
+    ],
+    "1": [
+     1,
+     1
+    ]
+   },
+   "n9a_status": "fewer_than_m_resolved_at_some_resolution",
+   "n9a_N": 500000,
+   "hpc_counts_by_resolution": {
+    "0.05": [
+     1,
+     1
+    ],
+    "0.1": [
+     2,
+     1
+    ],
+    "0.25": [
+     2,
+     1
+    ],
+    "0.5": [
+     2,
+     1
+    ],
+    "1": [
+     2,
+     1
+    ],
+    "2": [
+     2,
+     1
+    ]
+   },
+   "hpc_decision": "resolvable_present"
+  },
+  "m3_eps0.05/full_B8": {
+   "n9a_counts_by_resolution": {
+    "0.05": [
+     3,
+     2
+    ],
+    "0.1": [
+     3,
+     2
+    ],
+    "0.25": [
+     3,
+     2
+    ],
+    "0.5": [
+     3,
+     2
+    ],
+    "1": [
+     3,
+     2
+    ]
+   },
+   "n9a_status": "exactly_m_all_resolutions",
+   "n9a_N": 500000,
+   "hpc_counts_by_resolution": {
+    "0.05": [
+     3,
+     2
+    ],
+    "0.1": [
+     3,
+     2
+    ],
+    "0.25": [
+     3,
+     2
+    ],
+    "0.5": [
+     3,
+     2
+    ],
+    "1": [
+     3,
+     2
+    ],
+    "2": [
+     3,
+     2
+    ]
+   },
+   "hpc_decision": "resolvable_present"
+  },
+  "m3_eps0.05/full_B20": {
+   "n9a_counts_by_resolution": {
+    "0.05": [
+     2,
+     2
+    ],
+    "0.1": [
+     2,
+     2
+    ],
+    "0.25": [
+     3,
+     2
+    ],
+    "0.5": [
+     2,
+     2
+    ],
+    "1": [
+     3,
+     2
+    ]
+   },
+   "n9a_status": "fewer_than_m_resolved_at_some_resolution",
+   "n9a_N": 500000,
+   "hpc_counts_by_resolution": {
+    "0.05": [
+     3,
+     2
+    ],
+    "0.1": [
+     3,
+     2
+    ],
+    "0.25": [
+     3,
+     2
+    ],
+    "0.5": [
+     3,
+     2
+    ],
+    "1": [
+     3,
+     2
+    ],
+    "2": [
+     3,
+     2
+    ]
+   },
+   "hpc_decision": "resolvable_present"
+  },
+  "m3_eps0.05/full_B50": {
+   "n9a_counts_by_resolution": {
+    "0.05": [
+     2,
+     1
+    ],
+    "0.1": [
+     2,
+     1
+    ],
+    "0.25": [
+     2,
+     1
+    ],
+    "0.5": [
+     2,
+     1
+    ],
+    "1": [
+     2,
+     1
+    ]
+   },
+   "n9a_status": "fewer_than_m_resolved_at_some_resolution",
+   "n9a_N": 500000,
+   "hpc_counts_by_resolution": {
+    "0.05": [
+     2,
+     2
+    ],
+    "0.1": [
+     2,
+     2
+    ],
+    "0.25": [
+     2,
+     2
+    ],
+    "0.5": [
+     2,
+     2
+    ],
+    "1": [
+     3,
+     2
+    ],
+    "2": [
+     3,
+     2
+    ]
+   },
+   "hpc_decision": "resolvable_present"
+  }
+ }
+}

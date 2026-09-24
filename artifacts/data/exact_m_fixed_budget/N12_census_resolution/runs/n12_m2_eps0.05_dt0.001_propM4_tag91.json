@@ -1,0 +1,225 @@
+{
+ "cell": {
+  "m": 2,
+  "eps": 0.05,
+  "B": [
+   50.0
+  ]
+ },
+ "m": 2,
+ "eps": 0.05,
+ "dt": 0.001,
+ "proposal_name": "M4",
+ "proposal": {
+  "pi": [
+   0.2,
+   0.06153846153846154,
+   0.06153846153846154,
+   0.06153846153846154,
+   0.06153846153846154,
+   0.06153846153846154,
+   0.06153846153846154,
+   0.06153846153846154,
+   0.06153846153846154,
+   0.06153846153846154,
+   0.06153846153846154,
+   0.06153846153846154,
+   0.06153846153846154,
+   0.06153846153846154
+  ],
+  "comps": [
+   {
+    "escape": [
+     0
+    ],
+    "back": null,
+    "lvl": 0.41,
+    "H_sd": 3.0,
+    "soft_zone": true
+   },
+   {
+    "escape": [
+     0
+    ],
+    "back": null,
+    "lvl": 0.41,
+    "H_sd": 2.0,
+    "soft_zone": true
+   },
+   {
+    "escape": [
+     0
+    ],
+    "back": null,
+    "lvl": 0.41,
+    "H_sd": 1.25,
+    "soft_zone": true
+   },
+   {
+    "escape": [
+     0
+    ],
+    "back": null,
+    "lvl": 0.45,
+    "H_sd": 3.0,
+    "soft_zone": true
+   },
+   {
+    "escape": [
+     0
+    ],
+    "back": null,
+    "lvl": 0.45,
+    "H_sd": 2.0,
+    "soft_zone": true
+   },
+   {
+    "escape": [
+     0
+    ],
+    "back": null,
+    "lvl": 0.45,
+    "H_sd": 1.25,
+    "soft_zone": true
+   },
+   {
+    "escape": [
+     0
+    ],
+    "back": 1,
+    "lvl": 0.43,
+    "H_sd": 3.0,
+    "soft_zone": true
+   },
+   {
+    "escape": [
+     0
+    ],
+    "back": null,
+    "lvl": 0.4,
+    "H_sd": 3.0,
+    "free_zone": true
+   },
+   {
+    "escape": [
+     0
+    ],
+    "back": null,
+    "lvl": 0.4,
+    "H_sd": 2.0,
+    "free_zone": true
+   },
+   {
+    "escape": [
+     0
+    ],
+    "back": null,
+    "lvl": 0.42,
+    "H_sd": 3.0,
+    "free_zone": true
+   },
+   {
+    "escape": [
+     0
+    ],
+    "back": null,
+    "lvl": 0.42,
+    "H_sd": 2.0,
+    "free_zone": true
+   },
+   {
+    "escape": [
+     0
+    ],
+    "back": null,
+    "lvl": 0.44,
+    "H_sd": 3.0,
+    "free_zone": true
+   },
+   {
+    "escape": [
+     0
+    ],
+    "back": null,
+    "lvl": 0.44,
+    "H_sd": 2.0,
+    "free_zone": true
+   }
+  ]
+ },
+ "proposal_params": {
+  "lvl": 0.433,
+  "tau0": 0.06,
+  "H_sd": 3.0,
+  "dmin": 0.005,
+  "lvl_back": 0.28,
+  "tau0_back": 0.05,
+  "Hb_sd": 3.5
+ },
+ "tag": 91,
+ "seed": 20260923,
+ "seed_entropy": [
+  20260923,
+  91,
+  2,
+  50000000,
+  1000000000000,
+  129,
+  1000000,
+  20000
+ ],
+ "n_paths": 1000000,
+ "chunk": 20000,
+ "batch": 20000,
+ "geometric_cuts": [
+  1.491733902577193
+ ],
+ "cut_steps": [
+  0,
+  1491,
+  4000
+ ],
+ "budgets": [
+  50.0
+ ],
+ "w": [
+  0.5,
+  0.5
+ ],
+ "spec": {
+  "m": 2,
+  "eps": 0.05,
+  "dt": 0.001,
+  "tmax": 4.0,
+  "z0": 4.0,
+  "var_z0_scale": 1.0,
+  "r_par0": 0.1,
+  "r_perp0": 0.0,
+  "u0": 0.3,
+  "sigma_perp0": 0.3,
+  "n_perp": 1,
+  "gamma": 1.0,
+  "d0": 1.0,
+  "z_bar": 0.0,
+  "torus_w": 1.0,
+  "contact_a": 0.4,
+  "rho": 1.0,
+  "slab_shape": "gauss",
+  "slab_sd": null,
+  "target_times": null,
+  "centres_z": null,
+  "kernel_cutoff_sd": 12.0,
+  "target_times_resolved": [
+   1.0,
+   2.5
+  ],
+  "centres_z_resolved": [
+   1.4715177646857693,
+   0.3283399944955952
+  ],
+  "slab_sd_resolved": 0.05
+ },
+ "rng": "numpy Philox; chunk i uses SeedSequence(seed_entropy).spawn(n_chunks)[i]",
+ "store": "<local-ensemble-store>/prr_fk_ensembles/n12_is/n12_m2_eps0.05_dt0.001_propM4_tag91",
+ "wall_seconds_last_invocation": 311.6925382614136
+}

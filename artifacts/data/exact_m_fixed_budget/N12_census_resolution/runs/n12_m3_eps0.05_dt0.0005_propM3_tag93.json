@@ -1,0 +1,207 @@
+{
+ "cell": {
+  "m": 3,
+  "eps": 0.05,
+  "B": [
+   20.0,
+   50.0
+  ]
+ },
+ "m": 3,
+ "eps": 0.05,
+ "dt": 0.0005,
+ "proposal_name": "M3",
+ "proposal": {
+  "pi": [
+   0.2,
+   0.08,
+   0.08,
+   0.08,
+   0.08,
+   0.08,
+   0.08,
+   0.08,
+   0.08,
+   0.08,
+   0.08
+  ],
+  "comps": [
+   {
+    "escape": [
+     0,
+     1
+    ],
+    "back": null,
+    "lvl": 0.41,
+    "H_sd": 3.0,
+    "soft_zone": true
+   },
+   {
+    "escape": [
+     0,
+     1
+    ],
+    "back": null,
+    "lvl": 0.41,
+    "H_sd": 2.0,
+    "soft_zone": true
+   },
+   {
+    "escape": [
+     0,
+     1
+    ],
+    "back": null,
+    "lvl": 0.45,
+    "H_sd": 3.0,
+    "soft_zone": true
+   },
+   {
+    "escape": [
+     0,
+     1
+    ],
+    "back": null,
+    "lvl": 0.45,
+    "H_sd": 2.0,
+    "soft_zone": true
+   },
+   {
+    "escape": [
+     1
+    ],
+    "back": null,
+    "lvl": 0.41,
+    "H_sd": 3.0,
+    "soft_zone": true
+   },
+   {
+    "escape": [
+     1
+    ],
+    "back": null,
+    "lvl": 0.41,
+    "H_sd": 2.0,
+    "soft_zone": true
+   },
+   {
+    "escape": [
+     1
+    ],
+    "back": null,
+    "lvl": 0.45,
+    "H_sd": 3.0,
+    "soft_zone": true
+   },
+   {
+    "escape": [
+     1
+    ],
+    "back": null,
+    "lvl": 0.45,
+    "H_sd": 2.0,
+    "soft_zone": true
+   },
+   {
+    "escape": [
+     0,
+     1
+    ],
+    "back": 2,
+    "lvl": 0.43,
+    "H_sd": 3.0,
+    "soft_zone": true
+   },
+   {
+    "escape": [
+     1
+    ],
+    "back": 2,
+    "lvl": 0.43,
+    "H_sd": 3.0,
+    "soft_zone": true
+   }
+  ]
+ },
+ "proposal_params": {
+  "lvl": 0.433,
+  "tau0": 0.06,
+  "H_sd": 3.0,
+  "dmin": 0.005,
+  "lvl_back": 0.28,
+  "tau0_back": 0.05,
+  "Hb_sd": 3.5
+ },
+ "tag": 93,
+ "seed": 20260923,
+ "seed_entropy": [
+  20260923,
+  93,
+  3,
+  50000000,
+  500000000000,
+  128,
+  1000000,
+  20000
+ ],
+ "n_paths": 1000000,
+ "chunk": 20000,
+ "batch": 20000,
+ "geometric_cuts": [
+  1.1220465146121676,
+  2.0298647132219143
+ ],
+ "cut_steps": [
+  0,
+  2244,
+  4059,
+  8000
+ ],
+ "budgets": [
+  20.0,
+  50.0
+ ],
+ "w": [
+  0.3333333333333333,
+  0.3333333333333333,
+  0.3333333333333333
+ ],
+ "spec": {
+  "m": 3,
+  "eps": 0.05,
+  "dt": 0.0005,
+  "tmax": 4.0,
+  "z0": 4.0,
+  "var_z0_scale": 1.0,
+  "r_par0": 0.1,
+  "r_perp0": 0.0,
+  "u0": 0.3,
+  "sigma_perp0": 0.3,
+  "n_perp": 1,
+  "gamma": 1.0,
+  "d0": 1.0,
+  "z_bar": 0.0,
+  "torus_w": 1.0,
+  "contact_a": 0.4,
+  "rho": 1.0,
+  "slab_shape": "gauss",
+  "slab_sd": null,
+  "target_times": null,
+  "centres_z": null,
+  "kernel_cutoff_sd": 12.0,
+  "target_times_resolved": [
+   0.8,
+   1.6,
+   2.8
+  ],
+  "centres_z_resolved": [
+   1.7973158564688863,
+   0.8075860719786215,
+   0.2432402505008719
+  ],
+  "slab_sd_resolved": 0.05
+ },
+ "rng": "numpy Philox; chunk i uses SeedSequence(seed_entropy).spawn(n_chunks)[i]",
+ "store": "<local-ensemble-store>/prr_fk_ensembles/n12_is/n12_m3_eps0.05_dt0.0005_propM3_tag93",
+ "wall_seconds_last_invocation": 526.2869257926941
+}

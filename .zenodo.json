@@ -6,17 +6,20 @@
       "name": "Zhouyi, Xiaoxiao"
     }
   ],
-  "description": "Code, stored Monte Carlo histogram sufficient statistics, robustness checks, and figures accompanying the article. Raw walker trajectories and unbinned reaction times are not retained; full deterministic simulation scripts and seed metadata are included.",
+  "description": "Code, machine-readable numerical records, figure-generation scripts and Lean 4 sources accompanying the article (the article itself is not included and will be linked on publication). Release v1.1.0 adds the fixed-budget campaign (exact-law Feynman-Kac estimates, allocation-law, visibility, fold and robustness records, theory checks), its closing campaign and the large-scale checks run on the Isambard 3 supercomputer to the code and records of release v1.0.0. Path ensembles (about 16 GB), raw walker trajectories and unbinned reaction times are not retained; the scripts and the recorded seeds regenerate them.",
   "keywords": [
     "Doi model",
     "reaction time",
+    "first-passage time",
+    "Feynman-Kac",
     "stochastic simulation",
-    "modality",
+    "multimodality",
+    "Lean 4",
     "reproducibility"
   ],
   "license": "cc-by-4.0",
   "notes": "The Zenodo record license applies to the data, figures, and documentation. Source code is separately licensed under MIT in LICENSE-CODE.",
-  "title": "Reproduction package for Prescribing finite-window reaction-time modes with a static fixed-budget Doi reactivity field",
+  "title": "Reproduction package for Programming the number and weights of reaction-time peaks with a fixed budget of static reactivity",
   "upload_type": "software",
-  "version": "1.0.0"
+  "version": "1.1.0"
 }

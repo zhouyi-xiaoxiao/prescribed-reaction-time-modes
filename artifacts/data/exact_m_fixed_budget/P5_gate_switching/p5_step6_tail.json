@@ -1,0 +1,70 @@
+{
+ "note": "P5 fixer check (2026-09-23): numbers quoted in TH7b Prop p5:switch, Step 6, and the audit counterexample (GPT-6 F5).",
+ "F5_counterexample": [
+  {
+   "v": 1,
+   "rho": 1,
+   "lam": 1,
+   "xi": 0,
+   "L": 2,
+   "a_L": "0.977249868051821",
+   "bracket_limit": "0.00846523330666022"
+  },
+  {
+   "v": 0.3283,
+   "rho": 1,
+   "lam": 1,
+   "xi": 0,
+   "L": 2,
+   "a_L": "0.744280925553923",
+   "bracket_limit": "0.107196350836629"
+  }
+ ],
+ "step6_tail": [
+  {
+   "L": 2,
+   "v": 1,
+   "rho": 1,
+   "s2": 1,
+   "sigma": 1,
+   "tail": "0.202848",
+   "ratio_to_exp_-L2_over_8": "0.3344"
+  },
+  {
+   "L": 3,
+   "v": 1,
+   "rho": 1,
+   "s2": 1,
+   "sigma": 1,
+   "tail": "0.0505567",
+   "ratio_to_exp_-L2_over_8": "0.1557"
+  },
+  {
+   "L": 4,
+   "v": 1,
+   "rho": 1,
+   "s2": 1,
+   "sigma": 1,
+   "tail": "0.00783786",
+   "ratio_to_exp_-L2_over_8": "0.05791"
+  },
+  {
+   "L": 6,
+   "v": 1,
+   "rho": 1,
+   "s2": 1,
+   "sigma": 1,
+   "tail": "4.42418e-5",
+   "ratio_to_exp_-L2_over_8": "0.003983"
+  },
+  {
+   "L": 8,
+   "v": 1,
+   "rho": 1,
+   "s2": 1,
+   "sigma": 1,
+   "tail": "3.52999e-8",
+   "ratio_to_exp_-L2_over_8": "0.0001052"
+  }
+ ]
+}

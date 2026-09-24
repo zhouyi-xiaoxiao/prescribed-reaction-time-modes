@@ -1,6 +1,9 @@
 name = "formal_prr"
-version = "0.1.0"
+version = "0.2.0"
 keywords = ["math"]
+# The paper's build target is FormalPRR only.  The companion library
+# FormalPRRCompanion (kernels of a separate manuscript) is NOT a default
+# target: build it explicitly with `lake build FormalPRRCompanion`.
 defaultTargets = [
   "FormalPRR",
 ]
@@ -17,3 +20,6 @@ rev = "v4.32.0-rc1"
 
 [[lean_lib]]
 name = "FormalPRR"
+
+[[lean_lib]]
+name = "FormalPRRCompanion"

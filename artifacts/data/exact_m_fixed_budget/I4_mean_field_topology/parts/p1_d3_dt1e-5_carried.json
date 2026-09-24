@@ -1,0 +1,21 @@
+{
+ "part": true,
+ "labels": [
+  "w5_d3_m2_eps0.1"
+ ],
+ "dt_checks_run": [],
+ "dt_check_only": 1e-05,
+ "configurations": [],
+ "dt_check_rows": [
+  {
+   "label": "w5_d3_m2_eps0.1",
+   "dt": 1e-05,
+   "status": "bisected",
+   "B_top_mf": 380319.791050965,
+   "level_set_predicted_B_top_mf": 380318.7563905995,
+   "runtime_seconds": 0.0,
+   "carried_over_from": "artifacts/data/exact_m_prr_upgrade/mean_field_topology.json (2026-09-09 run; scan_and_bisect/hazard_ratio_levels code path unchanged by the I4 patch; the dt=4e-5 d=3 check rerun on 2026-09-23 reproduces its 2026-09-09 value and level-set value bit-for-bit, 380319.791050965 / 380318.7565158535; rerun at dt=1e-5 skipped because the d=3 build alone exceeds the 25-min per-invocation limit under current load)"
+  }
+ ],
+ "runtime_seconds": 0.0
+}

@@ -1,22 +1,24 @@
 cff-version: 1.2.0
 message: "If you use this reproduction package, please cite both the article and this archived software/data version."
-title: "Reproduction package for Prescribing finite-window reaction-time modes with a static fixed-budget Doi reactivity field"
+title: "Reproduction package for Programming the number and weights of reaction-time peaks with a fixed budget of static reactivity"
 type: software
 authors:
   - family-names: Zhouyi
     given-names: Xiaoxiao
     affiliation: University of Bristol
-version: 1.0.0
-date-released: 2026-09-08
-commit: 0a5c9acccc8168bf61278aa03a6e873557a066a9
+version: 1.1.0
+date-released: 2026-09-24
+commit: 1d45bb7b97acc686808c6cfe7073a0d759cc678b
 repository-code: "https://github.com/zhouyi-xiaoxiao/prescribed-reaction-time-modes"
-url: "https://github.com/zhouyi-xiaoxiao/prescribed-reaction-time-modes/releases/tag/v1.0.0"
+url: "https://github.com/zhouyi-xiaoxiao/prescribed-reaction-time-modes/releases/tag/v1.1.0"
 license:
   - MIT
   - CC-BY-4.0
 keywords:
   - reaction time
   - Doi model
+  - first-passage time
+  - Feynman-Kac
   - stochastic simulation
-  - modality
+  - multimodality
   - reproducibility

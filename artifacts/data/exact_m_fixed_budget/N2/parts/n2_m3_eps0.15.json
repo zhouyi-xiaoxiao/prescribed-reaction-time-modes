@@ -1,0 +1,1372 @@
+{
+  "after_time_last_G_valley": 2.03364602876798,
+  "analysis_seconds": 21.81769895553589,
+  "cuts_window_edges": [
+    0.5,
+    1.1200000000000006,
+    2.0200000000000014,
+    3.5000000000000027
+  ],
+  "decomposition": {
+    "0.5": {
+      "L1": {
+        "cquad_f1mc_minus_f1full": 1.4393846748173011e-05,
+        "dt_f1full_minus_f1cont": 0.0010594390035724155,
+        "exposure_mc_minus_f1mc": 0.0009687139565702628,
+        "gating_full_minus_mc": 0.009302959992023255
+      },
+      "L1_total": 0.010042023351878916,
+      "basin": {
+        "cquad_f1mc_minus_f1full": [
+          4.180637378725649e-06,
+          5.220355284496492e-06,
+          4.992854084950871e-06
+        ],
+        "dt_f1full_minus_f1cont": [
+          -1.648465562720247e-05,
+          0.0001149509332681875,
+          -1.0043044936347556e-05
+        ],
+        "exposure_mc_minus_f1mc": [
+          -0.00010018018782107939,
+          -6.691433281948698e-05,
+          -0.0004740570412145543
+        ],
+        "gating_full_minus_mc": [
+          -0.0005631671605810427,
+          -0.002580241516914967,
+          -0.006154811557150322
+        ]
+      },
+      "basin_gating_se_batch": [
+        7.234618732147955e-05,
+        0.00014646907118721653,
+        0.00016205202476030124
+      ],
+      "basin_total": [
+        -0.0006756513666505989,
+        -0.00252698456118177,
+        -0.006633918789216273
+      ],
+      "nogate_exposure_L1": 0.0017080282798188262,
+      "nogate_exposure_basin": [
+        -0.0001474895662281343,
+        -0.000143429590234204,
+        -0.0008590082857340138
+      ],
+      "telescoping_max_abs_error": 0.0
+    },
+    "1": {
+      "L1": {
+        "cquad_f1mc_minus_f1full": 1.7780448447024533e-05,
+        "dt_f1full_minus_f1cont": 0.0019016468693224264,
+        "exposure_mc_minus_f1mc": 0.002852637452381166,
+        "gating_full_minus_mc": 0.02233088160258144
+      },
+      "L1_total": 0.024005896916387118,
+      "basin": {
+        "cquad_f1mc_minus_f1full": [
+          7.771128676559158e-06,
+          7.345568239114364e-06,
+          1.810352198483578e-06
+        ],
+        "dt_f1full_minus_f1cont": [
+          -3.0611346810149875e-05,
+          0.00018904576368183879,
+          -5.4252414800115556e-05
+        ],
+        "exposure_mc_minus_f1mc": [
+          -0.00027861982828035264,
+          -0.00025667332571540724,
+          -0.0010651234946643618
+        ],
+        "gating_full_minus_mc": [
+          -0.0019092794844774255,
+          -0.007855345728752483,
+          -0.012562347467349017
+        ]
+      },
+      "basin_gating_se_batch": [
+        0.000137140791702175,
+        0.0002461940057103455,
+        0.0002380689007570373
+      ],
+      "basin_total": [
+        -0.002210739530891369,
+        -0.007915627722546939,
+        -0.01367991302461501
+      ],
+      "nogate_exposure_L1": 0.0044839998139356045,
+      "nogate_exposure_basin": [
+        -0.0004207652035077429,
+        -0.00044332553150974534,
+        -0.0013593218923366158
+      ],
+      "telescoping_max_abs_error": 0.0
+    },
+    "2": {
+      "L1": {
+        "cquad_f1mc_minus_f1full": 2.7404678797721127e-05,
+        "dt_f1full_minus_f1cont": 0.0031666365667067514,
+        "exposure_mc_minus_f1mc": 0.007632636931344727,
+        "gating_full_minus_mc": 0.037439311953781314
+      },
+      "L1_total": 0.03899347430122551,
+      "basin": {
+        "cquad_f1mc_minus_f1full": [
+          1.3425654143306431e-05,
+          6.117035833863582e-06,
+          -7.839482392607566e-06
+        ],
+        "dt_f1full_minus_f1cont": [
+          -5.2765764884998845e-05,
+          0.0002579440023274815,
+          -0.0001325383263523633
+        ],
+        "exposure_mc_minus_f1mc": [
+          -0.0007993492125729269,
+          -0.0005812747015779126,
+          -0.0009296466907478744
+        ],
+        "gating_full_minus_mc": [
+          -0.006392043785532754,
+          -0.019397386240657823,
+          -0.00887402183016556
+        ]
+      },
+      "basin_gating_se_batch": [
+        0.00024694582490353734,
+        0.00035510235867875303,
+        0.0003302933991103984
+      ],
+      "basin_total": [
+        -0.0072307331088473726,
+        -0.019714599904074395,
+        -0.009944046329658406
+      ],
+      "nogate_exposure_L1": 0.011617749332911216,
+      "nogate_exposure_basin": [
+        -0.0011998160884425378,
+        -0.0006861220621459897,
+        -9.804618266528314e-05
+      ],
+      "telescoping_max_abs_error": 0.0
+    },
+    "4": {
+      "L1": {
+        "cquad_f1mc_minus_f1full": 4.013088743462165e-05,
+        "dt_f1full_minus_f1cont": 0.004762119722882759,
+        "exposure_mc_minus_f1mc": 0.020260115767573843,
+        "gating_full_minus_mc": 0.07239564771740305
+      },
+      "L1_total": 0.07546347901296978,
+      "basin": {
+        "cquad_f1mc_minus_f1full": [
+          2.003546181672533e-05,
+          -3.706900599781404e-06,
+          -1.3537192262321612e-05
+        ],
+        "dt_f1full_minus_f1cont": [
+          -7.829924623059537e-05,
+          0.00025086059574830344,
+          -0.00015362291987050178
+        ],
+        "exposure_mc_minus_f1mc": [
+          -0.002135582656376572,
+          -0.00017204356708694834,
+          0.001130045225546846
+        ],
+        "gating_full_minus_mc": [
+          -0.019569155522865894,
+          -0.029125715318395376,
+          0.023040032164159983
+        ]
+      },
+      "basin_gating_se_batch": [
+        0.00040393978913586806,
+        0.0004068738452545071,
+        0.00043236336462469844
+      ],
+      "basin_total": [
+        -0.021763001963656343,
+        -0.029050605190333804,
+        0.024002917277574008
+      ],
+      "nogate_exposure_L1": 0.028965046797221974,
+      "nogate_exposure_basin": [
+        -0.0030188750316816,
+        0.0007740197940144832,
+        0.0018444895738795467
+      ],
+      "telescoping_max_abs_error": 0.0
+    },
+    "8": {
+      "L1": {
+        "cquad_f1mc_minus_f1full": 4.529735567701353e-05,
+        "dt_f1full_minus_f1cont": 0.006432464892716434,
+        "exposure_mc_minus_f1mc": 0.04804119452718905,
+        "gating_full_minus_mc": 0.10864114653408657
+      },
+      "L1_total": 0.1221744112518379,
+      "basin": {
+        "cquad_f1mc_minus_f1full": [
+          2.2307295665435767e-05,
+          -1.661769094871493e-05,
+          -5.625654633906478e-06
+        ],
+        "dt_f1full_minus_f1cont": [
+          -8.562794724048528e-05,
+          0.00014885814236521855,
+          -5.9189345534248016e-05
+        ],
+        "exposure_mc_minus_f1mc": [
+          -0.004458650037778143,
+          0.0028267631688911436,
+          0.0015486990989180317
+        ],
+        "gating_full_minus_mc": [
+          -0.0489463062703051,
+          -0.0029496422607479967,
+          0.04403078157485632
+        ]
+      },
+      "basin_gating_se_batch": [
+        0.0005599912111431454,
+        0.00040273750142180427,
+        0.0004240507249603077
+      ],
+      "basin_total": [
+        -0.05346827695965829,
+        9.361359559650114e-06,
+        0.045514665673606194
+      ],
+      "nogate_exposure_L1": 0.06095839403587187,
+      "nogate_exposure_basin": [
+        -0.005419201935517738,
+        0.0046076977791453,
+        0.0008034175424071228
+      ],
+      "telescoping_max_abs_error": 1.0842021724855044e-19
+    }
+  },
+  "ensemble": "n2_m3_eps0.15",
+  "eps": 0.15,
+  "label": "m3_eps0.15",
+  "m": 3,
+  "n_paths": 200000,
+  "seed": 20260923,
+  "seed_entropy": [
+    20260923,
+    81,
+    0,
+    1,
+    150000000,
+    1000000000000,
+    4000000000,
+    1000000000,
+    100000000,
+    0,
+    300000000,
+    300000000,
+    1000000000,
+    1000000000,
+    0,
+    1000000000,
+    50000
+  ],
+  "tag": 81,
+  "variants": {
+    "full": {
+      "Lambda_at_cuts_em_exact": [
+        3.613878100914368e-05,
+        0.1463499619996089,
+        0.4362613297972635,
+        1.0619478607985657
+      ],
+      "Lambda_at_cuts_sample": [
+        3.6676510959886665e-05,
+        0.14601470818741108,
+        0.4354556390337175,
+        1.0610128655828683
+      ],
+      "Lambda_sample_vs_em_exact_max_abs_z_window": 2.168746938644581,
+      "budgets": {
+        "0.5": {
+          "Delta_at_cuts": [
+            5.30455779301775e-09,
+            0.0005030912499103257,
+            0.002976877505253328,
+            0.009649746577889973
+          ],
+          "basins": {
+            "mass": [
+              0.06988458228799485,
+              0.12277586871779572,
+              0.20936451334478687
+            ],
+            "mean_field_em_exact": [
+              0.07054374899901827,
+              0.1254178042122457,
+              0.2159883890890668
+            ],
+            "mean_field_sampled": [
+              0.0703876682333473,
+              0.12524965497313922,
+              0.21603738241742354
+            ],
+            "se_batch": [
+              7.663689761528375e-05,
+              0.00014395858409394744,
+              0.00014637328737288996
+            ]
+          },
+          "delta_at_cuts": [
+            5.308503564198053e-09,
+            0.0005105169846146482,
+            0.0031528850330066515,
+            0.011325717548648119
+          ],
+          "density_level": {
+            "L1_f_minus_f1": 0.009649741273332572,
+            "L1_minus_B2cov_term": 0.011608545226419749,
+            "L1_remainder": 0.0019588039530871824,
+            "cumulant2_closure_fraction_explained_L1": 0.9833228345832327,
+            "cumulant2_closure_fraction_explained_L2": 0.9996681246781081,
+            "fraction_explained_L1": 0.797009692011079,
+            "fraction_explained_L2": 0.9395187722334388,
+            "n_bins_remainder_above_bound_beyond_1e-3_of_maxabsD": 0,
+            "n_bins_remainder_negative_beyond_1e-3_of_maxabsD": 0,
+            "remainder_bound_min_margin": 3.783730574748942e-14,
+            "remainder_min": 2.2607782710482914e-11
+          },
+          "lower_bound_em_exact_min_margin_over_se": -1.1451740491438147,
+          "lower_bound_em_exact_violations_3se": 0,
+          "n_times": 201,
+          "n_times_compared_em_exact": 178,
+          "sandwich_empirical_holds_all_times": true,
+          "sandwich_tolerance_abs": 1e-12,
+          "tightness_Delta_over_delta_at_cuts": [
+            0.9992567074444644,
+            0.9854544805988626,
+            0.9441757228979963,
+            0.8520207692308028
+          ],
+          "upper_bound_em_exact_min_margin_over_se": -2.1704213900210823,
+          "upper_bound_em_exact_violations_3se": 0
+        },
+        "1": {
+          "Delta_at_cuts": [
+            2.1202220312765974e-08,
+            0.0018899523301176835,
+            0.009763237487585008,
+            0.02358649042105565
+          ],
+          "basins": {
+            "mass": [
+              0.13392839994905467,
+              0.2093018927185162,
+              0.2870414874574704
+            ],
+            "mean_field_em_exact": [
+              0.1361085281331359,
+              0.21740656620474497,
+              0.3006671480672853
+            ],
+            "mean_field_sampled": [
+              0.13581833107695207,
+              0.21717517787598384,
+              0.30086474039094047
+            ],
+            "se_batch": [
+              0.00014490291878210243,
+              0.00024192263798905752,
+              0.0002140488839405978
+            ]
+          },
+          "delta_at_cuts": [
+            2.1233754662455307e-08,
+            0.0019459278795682586,
+            0.010951727680213975,
+            0.032600646965421406
+          ],
+          "density_level": {
+            "L1_f_minus_f1": 0.023586469218835115,
+            "L1_minus_B2cov_term": 0.03432055926827388,
+            "L1_remainder": 0.010734090049438766,
+            "cumulant2_closure_fraction_explained_L1": 0.9690217591947153,
+            "cumulant2_closure_fraction_explained_L2": 0.9988129394887363,
+            "fraction_explained_L1": 0.5449047523879922,
+            "fraction_explained_L2": 0.7112433498370012,
+            "n_bins_remainder_above_bound_beyond_1e-3_of_maxabsD": 0,
+            "n_bins_remainder_negative_beyond_1e-3_of_maxabsD": 0,
+            "remainder_bound_min_margin": 6.043637665508018e-13,
+            "remainder_min": 1.8055838154902667e-10
+          },
+          "lower_bound_em_exact_min_margin_over_se": -1.123397528082179,
+          "lower_bound_em_exact_violations_3se": 0,
+          "n_times": 201,
+          "n_times_compared_em_exact": 179,
+          "sandwich_empirical_holds_all_times": true,
+          "sandwich_tolerance_abs": 1e-12,
+          "tightness_Delta_over_delta_at_cuts": [
+            0.998514895260371,
+            0.9712345200259969,
+            0.8914792051690472,
+            0.723497617886945
+          ],
+          "upper_bound_em_exact_min_margin_over_se": -1.8141730090177652,
+          "upper_bound_em_exact_violations_3se": 0
+        },
+        "2": {
+          "Delta_at_cuts": [
+            8.468117762561178e-08,
+            0.006676445199317538,
+            0.026475587805163348,
+            0.03673723409976089
+          ],
+          "basins": {
+            "mass": [
+              0.24650372007691468,
+              0.30837748467629583,
+              0.2885195726819625
+            ],
+            "mean_field_em_exact": [
+              0.25368168742087704,
+              0.3283500285826977,
+              0.29833108068526853
+            ],
+            "mean_field_sampled": [
+              0.2531800805950549,
+              0.3281766272821398,
+              0.29878121897656
+            ],
+            "se_batch": [
+              0.0002596258047046515,
+              0.0003494307310640224,
+              0.00030505475495728047
+            ]
+          },
+          "delta_at_cuts": [
+            8.493294193797143e-08,
+            0.007074474623173108,
+            0.03331322578941539,
+            0.07119102456684505
+          ],
+          "density_level": {
+            "L1_f_minus_f1": 0.03878089667225493,
+            "L1_minus_B2cov_term": 0.0794606137181765,
+            "L1_remainder": 0.04272346429959474,
+            "cumulant2_closure_fraction_explained_L1": 0.9398674528733707,
+            "cumulant2_closure_fraction_explained_L2": 0.9956530635859933,
+            "fraction_explained_L1": -0.10166262169385187,
+            "fraction_explained_L2": -0.11027862594548798,
+            "n_bins_remainder_above_bound_beyond_1e-3_of_maxabsD": 0,
+            "n_bins_remainder_negative_beyond_1e-3_of_maxabsD": 0,
+            "remainder_bound_min_margin": 9.634692926218525e-12,
+            "remainder_min": 1.4396318333012493e-09
+          },
+          "lower_bound_em_exact_min_margin_over_se": -1.0797890153064391,
+          "lower_bound_em_exact_violations_3se": 0,
+          "n_times": 201,
+          "n_times_compared_em_exact": 179,
+          "sandwich_empirical_holds_all_times": true,
+          "sandwich_tolerance_abs": 1e-12,
+          "tightness_Delta_over_delta_at_cuts": [
+            0.9970357283450334,
+            0.9437372462187105,
+            0.7947470464891285,
+            0.5160374404397894
+          ],
+          "upper_bound_em_exact_min_margin_over_se": -0.5174408361801806,
+          "upper_bound_em_exact_violations_3se": 0
+        },
+        "4": {
+          "Delta_at_cuts": [
+            3.377091487566375e-07,
+            0.02093560007433526,
+            0.05042063381190448,
+            0.02677424938906562
+          ],
+          "basins": {
+            "mass": [
+              0.42128760392904674,
+              0.352944608514116,
+              0.1844978424803312
+            ],
+            "mean_field_em_exact": [
+              0.44297230664647247,
+              0.3822460743001982,
+              0.16034130228288668
+            ],
+            "mean_field_sampled": [
+              0.44222286629423235,
+              0.3824296422516847,
+              0.16085145805749754
+            ],
+            "se_batch": [
+              0.0004207316990200777,
+              0.00040322555215039615,
+              0.0004143183114257121
+            ]
+          },
+          "delta_at_cuts": [
+            3.3971515474261467e-07,
+            0.023462745643888398,
+            0.07981164115582005,
+            0.10516334983595613
+          ],
+          "density_level": {
+            "L1_f_minus_f1": 0.0746172556694159,
+            "L1_minus_B2cov_term": 0.13301944421835454,
+            "L1_remainder": 0.10624553253843394,
+            "cumulant2_closure_fraction_explained_L1": 0.8800620897204433,
+            "cumulant2_closure_fraction_explained_L2": 0.9847881808380583,
+            "fraction_explained_L1": -0.4238734939427935,
+            "fraction_explained_L2": -0.5644945183401722,
+            "n_bins_remainder_above_bound_beyond_1e-3_of_maxabsD": 0,
+            "n_bins_remainder_negative_beyond_1e-3_of_maxabsD": 0,
+            "remainder_bound_min_margin": 1.530598766365622e-10,
+            "remainder_min": 1.1440505375823947e-08
+          },
+          "lower_bound_em_exact_min_margin_over_se": -0.992353411079599,
+          "lower_bound_em_exact_violations_3se": 0,
+          "n_times": 201,
+          "n_times_compared_em_exact": 180,
+          "sandwich_empirical_holds_all_times": true,
+          "sandwich_tolerance_abs": 1e-12,
+          "tightness_Delta_over_delta_at_cuts": [
+            0.9940950353318885,
+            0.8922911406913107,
+            0.6317453579668395,
+            0.2545967718870753
+          ],
+          "upper_bound_em_exact_min_margin_over_se": -0.14961657736428127,
+          "upper_bound_em_exact_violations_3se": 0
+        },
+        "8": {
+          "Delta_at_cuts": [
+            1.3428077453303544e-06,
+            0.052546826658301404,
+            0.0533219767840831,
+            0.007943798592468672
+          ],
+          "basins": {
+            "mass": [
+              0.6362094412473513,
+              0.2794812367507763,
+              0.07586759366629338
+            ],
+            "mean_field_em_exact": [
+              0.6895920902597692,
+              0.27962073353358186,
+              0.030293738647152933
+            ],
+            "mean_field_sampled": [
+              0.6887549250979079,
+              0.2802563868765605,
+              0.03048941547467239
+            ],
+            "se_batch": [
+              0.0005741776665417615,
+              0.0004025620279962432,
+              0.000417619683767903
+            ]
+          },
+          "delta_at_cuts": [
+            1.3587277258647248e-06,
+            0.0655176254530267,
+            0.13245452366742339,
+            0.11349851088742238
+          ],
+          "density_level": {
+            "L1_f_minus_f1": 0.12190585794419272,
+            "L1_minus_B2cov_term": 0.179090431090849,
+            "L1_remainder": 0.17114797530612916,
+            "cumulant2_closure_fraction_explained_L1": 0.7711332367736848,
+            "cumulant2_closure_fraction_explained_L2": 0.9492071830760868,
+            "fraction_explained_L1": -0.4039356122203659,
+            "fraction_explained_L2": -0.3093568435011347,
+            "n_bins_remainder_above_bound_beyond_1e-3_of_maxabsD": 0,
+            "n_bins_remainder_negative_beyond_1e-3_of_maxabsD": 0,
+            "remainder_bound_min_margin": 2.4146399004567706e-09,
+            "remainder_min": 9.0324811550126e-08
+          },
+          "lower_bound_em_exact_min_margin_over_se": -0.8166336885844598,
+          "lower_bound_em_exact_violations_3se": 0,
+          "n_times": 201,
+          "n_times_compared_em_exact": 180,
+          "sandwich_empirical_holds_all_times": true,
+          "sandwich_tolerance_abs": 1e-12,
+          "tightness_Delta_over_delta_at_cuts": [
+            0.988283170916941,
+            0.8020258105351392,
+            0.40256818195177585,
+            0.06999033318021253
+          ],
+          "upper_bound_em_exact_min_margin_over_se": -0.14714270356907405,
+          "upper_bound_em_exact_violations_3se": 0
+        }
+      },
+      "var_X_at_cuts_sample": [
+        4.2468760053199404e-08,
+        0.0042872187124336,
+        0.029124710147250342,
+        0.12802150175949256
+      ],
+      "var_X_at_cuts_se_batch": [
+        2.3974907926759795e-09,
+        1.277412612405895e-05,
+        0.00010992177403524565,
+        0.00036127775630668993
+      ],
+      "var_quadrature_check": {
+        "max_abs_z_window": 1.689745447760825,
+        "max_rel_diff_where_var_gt_1pct_of_max": 0.0043965368026537,
+        "n_abs_z_gt_3": 0,
+        "n_window_points": 150,
+        "t_at_max": 0.6600000000000001,
+        "var_X_at_cuts_em_exact": [
+          4.359782330368306e-08,
+          0.004284229891705116,
+          0.029035377638792544,
+          0.12818612825240855
+        ],
+        "var_floor_rule": "points with Var_q > 1e-6 max_window Var_q",
+        "z_at_cuts": [
+          -0.4709353854174527,
+          0.23397457481298067,
+          0.8126916549686857,
+          -0.4556784635703806
+        ]
+      }
+    },
+    "meancontact": {
+      "Lambda_at_cuts_em_exact": [
+        3.6140791785527866e-05,
+        0.14635896023582853,
+        0.43628471739605645,
+        1.061996820816368
+      ],
+      "Lambda_at_cuts_sample": [
+        3.66815834143832e-05,
+        0.14625120346426712,
+        0.43628271723994233,
+        1.062231661839067
+      ],
+      "Lambda_sample_vs_em_exact_max_abs_z_window": 2.3308884896982818,
+      "budgets": {
+        "0.5": {
+          "Delta_at_cuts": [
+            4.757680360789607e-09,
+            4.983680195058682e-05,
+            0.00016602481329286434,
+            0.0007099272016591884
+          ],
+          "basins": {
+            "mass": [
+              0.07044774944857592,
+              0.1253561102347107,
+              0.2155193249019372
+            ],
+            "mean_field_em_exact": [
+              0.070547929636397,
+              0.12542302456753018,
+              0.21599338194315176
+            ],
+            "mean_field_sampled": [
+              0.07049758149284624,
+              0.12547229824605288,
+              0.21606322729030325
+            ],
+            "se_batch": [
+              2.2354063084228074e-05,
+              4.03557666233456e-05,
+              4.086009575172884e-05
+            ]
+          },
+          "delta_at_cuts": [
+            4.760773620110541e-09,
+            5.115499810508022e-05,
+            0.00017898079776877703,
+            0.0008494447496627112
+          ],
+          "density_level": {
+            "L1_f_minus_f1": 0.001024321058770835,
+            "L1_minus_B2cov_term": 0.0011477063325794048,
+            "L1_remainder": 0.00015750739897178842,
+            "cumulant2_closure_fraction_explained_L1": 0.9919517863644282,
+            "cumulant2_closure_fraction_explained_L2": 0.9999252215689556,
+            "fraction_explained_L1": 0.8462323920580193,
+            "fraction_explained_L2": 0.975619109032904,
+            "n_bins_remainder_above_bound_beyond_1e-3_of_maxabsD": 0,
+            "n_bins_remainder_negative_beyond_1e-3_of_maxabsD": 0,
+            "remainder_bound_min_margin": 2.5534485860158015e-14,
+            "remainder_min": 1.7807269193848802e-11
+          },
+          "lower_bound_em_exact_min_margin_over_se": -1.2298768939259153,
+          "lower_bound_em_exact_violations_3se": 0,
+          "n_times": 201,
+          "n_times_compared_em_exact": 178,
+          "sandwich_empirical_holds_all_times": true,
+          "sandwich_tolerance_abs": 1e-12,
+          "tightness_Delta_over_delta_at_cuts": [
+            0.9993502612037952,
+            0.9742313321606303,
+            0.9276124330798303,
+            0.8357544171543576
+          ],
+          "upper_bound_em_exact_min_margin_over_se": -2.3581780962905126,
+          "upper_bound_em_exact_violations_3se": 0
+        },
+        "1": {
+          "Delta_at_cuts": [
+            1.901813662108509e-08,
+            0.00018500763475470805,
+            0.0005334784306850748,
+            0.001681085094599244
+          ],
+          "basins": {
+            "mass": [
+              0.13583767943353212,
+              0.21715723844726864,
+              0.2996038349248194
+            ],
+            "mean_field_em_exact": [
+              0.13611629926181246,
+              0.21741391177298408,
+              0.30066895841948377
+            ],
+            "mean_field_sampled": [
+              0.13602266805015018,
+              0.2175057092431999,
+              0.3007514415887324
+            ],
+            "se_batch": [
+              4.155050786110116e-05,
+              6.80912883678289e-05,
+              5.46032800351876e-05
+            ]
+          },
+          "delta_at_cuts": [
+            1.9042861638779983e-08,
+            0.00019497144662256437,
+            0.0006215383695192134,
+            0.0024442425854008763
+          ],
+          "density_level": {
+            "L1_f_minus_f1": 0.0029221703964642425,
+            "L1_minus_B2cov_term": 0.0035814372502473253,
+            "L1_remainder": 0.0008982539668262609,
+            "cumulant2_closure_fraction_explained_L1": 0.9832003246580989,
+            "cumulant2_closure_fraction_explained_L2": 0.9997298975736426,
+            "fraction_explained_L1": 0.6926072593462972,
+            "fraction_explained_L2": 0.9229238425399781,
+            "n_bins_remainder_above_bound_beyond_1e-3_of_maxabsD": 0,
+            "n_bins_remainder_negative_beyond_1e-3_of_maxabsD": 0,
+            "remainder_bound_min_margin": 4.0724277532558986e-13,
+            "remainder_min": 1.4225344231574136e-10
+          },
+          "lower_bound_em_exact_min_margin_over_se": -1.1979748874551175,
+          "lower_bound_em_exact_violations_3se": 0,
+          "n_times": 201,
+          "n_times_compared_em_exact": 179,
+          "sandwich_empirical_holds_all_times": true,
+          "sandwich_tolerance_abs": 1e-12,
+          "tightness_Delta_over_delta_at_cuts": [
+            0.9987016122805544,
+            0.9488960458546283,
+            0.8583193843651893,
+            0.6877734250438697
+          ],
+          "upper_bound_em_exact_min_margin_over_se": -2.159412635075394,
+          "upper_bound_em_exact_violations_3se": 0
+        },
+        "2": {
+          "Delta_at_cuts": [
+            7.597212525745078e-08,
+            0.0006375031158291078,
+            0.001377946742113223,
+            0.0023654038892331614
+          ],
+          "basins": {
+            "mass": [
+              0.2528957638624475,
+              0.3277748709169536,
+              0.29739359451212805
+            ],
+            "mean_field_em_exact": [
+              0.25369511307502035,
+              0.32835614561853155,
+              0.29832324120287596
+            ],
+            "mean_field_sampled": [
+              0.2535331910061519,
+              0.32851531454323724,
+              0.29838105165924783
+            ],
+            "se_batch": [
+              7.179171045266464e-05,
+              9.99573560860881e-05,
+              6.115875272509624e-05
+            ]
+          },
+          "delta_at_cuts": [
+            7.616958386025781e-08,
+            0.0007087165118445375,
+            0.0018896885361799763,
+            0.005334518312411186
+          ],
+          "density_level": {
+            "L1_f_minus_f1": 0.007692274686614497,
+            "L1_minus_B2cov_term": 0.009482945359121083,
+            "L1_remainder": 0.0038799449931098623,
+            "cumulant2_closure_fraction_explained_L1": 0.9682995442738574,
+            "cumulant2_closure_fraction_explained_L2": 0.99917604420823,
+            "fraction_explained_L1": 0.4956049866678002,
+            "fraction_explained_L2": 0.8626288259204502,
+            "n_bins_remainder_above_bound_beyond_1e-3_of_maxabsD": 0,
+            "n_bins_remainder_negative_beyond_1e-3_of_maxabsD": 0,
+            "remainder_bound_min_margin": 6.495779745800933e-12,
+            "remainder_min": 1.1347617920129393e-09
+          },
+          "lower_bound_em_exact_min_margin_over_se": -1.1566400439234856,
+          "lower_bound_em_exact_violations_3se": 0,
+          "n_times": 201,
+          "n_times_compared_em_exact": 179,
+          "sandwich_empirical_holds_all_times": true,
+          "sandwich_tolerance_abs": 1e-12,
+          "tightness_Delta_over_delta_at_cuts": [
+            0.997407644983734,
+            0.8995177975604286,
+            0.7291925180954718,
+            0.4434147097648646
+          ],
+          "upper_bound_em_exact_min_margin_over_se": -1.3373257492983897,
+          "upper_bound_em_exact_violations_3se": 0
+        },
+        "4": {
+          "Delta_at_cuts": [
+            3.0308920384580773e-07,
+            0.0018936480767770547,
+            0.002304369380649429,
+            0.0011891412368038902
+          ],
+          "basins": {
+            "mass": [
+              0.44085675945191266,
+              0.3820703238325115,
+              0.16145781031617118
+            ],
+            "mean_field_em_exact": [
+              0.4429923421082892,
+              0.3822423673995984,
+              0.16032776509062435
+            ],
+            "mean_field_sampled": [
+              0.4427501044394865,
+              0.38248104513638265,
+              0.16034258217232714
+            ],
+            "se_batch": [
+              0.00010724788112869201,
+              0.00012174914925638437,
+              5.333290430221373e-05
+            ]
+          },
+          "delta_at_cuts": [
+            3.04663434497099e-07,
+            0.002349798810720084,
+            0.004523517479789437,
+            0.007874883889223262
+          ],
+          "density_level": {
+            "L1_f_minus_f1": 0.020242591125315405,
+            "L1_minus_B2cov_term": 0.02164298391572227,
+            "L1_remainder": 0.011649050465167777,
+            "cumulant2_closure_fraction_explained_L1": 0.9479449118373476,
+            "cumulant2_closure_fraction_explained_L2": 0.9975022531652172,
+            "fraction_explained_L1": 0.42452770037925314,
+            "fraction_explained_L2": 0.8463559057683929,
+            "n_bins_remainder_above_bound_beyond_1e-3_of_maxabsD": 0,
+            "n_bins_remainder_negative_beyond_1e-3_of_maxabsD": 0,
+            "remainder_bound_min_margin": 1.0330927124042266e-10,
+            "remainder_min": 9.026304777740949e-09
+          },
+          "lower_bound_em_exact_min_margin_over_se": -1.073790462253068,
+          "lower_bound_em_exact_violations_3se": 0,
+          "n_times": 201,
+          "n_times_compared_em_exact": 180,
+          "sandwich_empirical_holds_all_times": true,
+          "sandwich_tolerance_abs": 1e-12,
+          "tightness_Delta_over_delta_at_cuts": [
+            0.9948328861522557,
+            0.8058766853306712,
+            0.5094198023872109,
+            0.1510042882576623
+          ],
+          "upper_bound_em_exact_min_margin_over_se": -0.16608301448306093,
+          "upper_bound_em_exact_violations_3se": 0
+        },
+        "8": {
+          "Delta_at_cuts": [
+            1.2060267499114374e-06,
+            0.004188095739120878,
+            0.0016282799022201838,
+            8.045216704358584e-05
+          ],
+          "basins": {
+            "mass": [
+              0.6851557475176564,
+              0.2824308790115243,
+              0.03183681209143705
+            ],
+            "mean_field_em_exact": [
+              0.6896143975554345,
+              0.2796041158426331,
+              0.030288112992519028
+            ],
+            "mean_field_sampled": [
+              0.6893426372300262,
+              0.2798710631746235,
+              0.030288984356261806
+            ],
+            "se_batch": [
+              0.00012004929614674725,
+              0.00012136407527436374,
+              2.0157849373991293e-05
+            ]
+          },
+          "delta_at_cuts": [
+            1.2185345402763737e-06,
+            0.006558118845899575,
+            0.007498765518509094,
+            0.008496462485668434
+          ],
+          "density_level": {
+            "L1_f_minus_f1": 0.04774411309896886,
+            "L1_minus_B2cov_term": 0.047551411076039087,
+            "L1_remainder": 0.028825147634258228,
+            "cumulant2_closure_fraction_explained_L1": 0.9110173610350989,
+            "cumulant2_closure_fraction_explained_L2": 0.9916956031252951,
+            "fraction_explained_L1": 0.3962575537950296,
+            "fraction_explained_L2": 0.7622963324357104,
+            "n_bins_remainder_above_bound_beyond_1e-3_of_maxabsD": 0,
+            "n_bins_remainder_negative_beyond_1e-3_of_maxabsD": 0,
+            "remainder_bound_min_margin": 1.633354632443621e-09,
+            "remainder_min": 7.13964139476921e-08
+          },
+          "lower_bound_em_exact_min_margin_over_se": -0.9073893962929698,
+          "lower_bound_em_exact_violations_3se": 0,
+          "n_times": 201,
+          "n_times_compared_em_exact": 180,
+          "sandwich_empirical_holds_all_times": true,
+          "sandwich_tolerance_abs": 1e-12,
+          "tightness_Delta_over_delta_at_cuts": [
+            0.9897353829936577,
+            0.6386123578317676,
+            0.2171397276259838,
+            0.00946890157866171
+          ],
+          "upper_bound_em_exact_min_margin_over_se": -0.1636084963793585,
+          "upper_bound_em_exact_violations_3se": 0
+        }
+      },
+      "var_X_at_cuts_sample": [
+        3.8086845084839994e-08,
+        0.00042962302022829047,
+        0.0016537788858590743,
+        0.009605515981875309
+      ],
+      "var_X_at_cuts_se_batch": [
+        2.1979491024511293e-09,
+        8.566145713418711e-07,
+        5.6667096714739636e-06,
+        3.986441752633201e-05
+      ],
+      "var_quadrature_check": {
+        "max_abs_z_window": 2.876517615547515,
+        "max_rel_diff_where_var_gt_1pct_of_max": 0.010697700856620654,
+        "n_abs_z_gt_3": 0,
+        "n_window_points": 151,
+        "t_at_max": 1.1000000000000005,
+        "var_X_at_cuts_em_exact": [
+          3.903739925321564e-08,
+          0.0004320565618227723,
+          0.001647830646781629,
+          0.009617127406201718
+        ],
+        "var_floor_rule": "points with Var_q > 1e-6 max_window Var_q",
+        "z_at_cuts": [
+          -0.4324732394010397,
+          -2.8408827912764902,
+          1.049681282841887,
+          -0.2912728956528511
+        ]
+      }
+    },
+    "nogate": {
+      "Lambda_at_cuts_em_exact": [
+        4.127111508951611e-05,
+        0.18725335577144517,
+        0.6087000781946417,
+        1.5511330134251051
+      ],
+      "Lambda_at_cuts_sample": [
+        4.188948175474976e-05,
+        0.18711425008029584,
+        0.608713140605591,
+        1.5514999802121985
+      ],
+      "Lambda_sample_vs_em_exact_max_abs_z_window": 2.415396603027221,
+      "budgets": {
+        "0.5": {
+          "Delta_at_cuts": [
+            6.18662199247666e-09,
+            8.38479764251332e-05,
+            0.00029543358479322546,
+            0.0012341003207765877
+          ],
+          "basins": {
+            "mass": [
+              0.08920922072230572,
+              0.17287659327884672,
+              0.2763007600846456
+            ],
+            "mean_field_em_exact": [
+              0.08935671028853387,
+              0.17302002286908091,
+              0.27715976837037964
+            ],
+            "mean_field_sampled": [
+              0.08929306251210889,
+              0.1730881788872144,
+              0.2772394268206309
+            ],
+            "se_batch": [
+              2.8739744865071394e-05,
+              5.369165042713684e-05,
+              5.0597109818195875e-05
+            ]
+          },
+          "delta_at_cuts": [
+            6.191198862286567e-09,
+            8.67107844432139e-05,
+            0.00032836656891907105,
+            0.0016106485759511825
+          ],
+          "density_level": {
+            "L1_f_minus_f1": 0.0017820791988679917,
+            "L1_minus_B2cov_term": 0.002111353329624037,
+            "L1_remainder": 0.0004152794757737309,
+            "cumulant2_closure_fraction_explained_L1": 0.9876745570864888,
+            "cumulant2_closure_fraction_explained_L2": 0.9998218599678136,
+            "fraction_explained_L1": 0.7669691245835069,
+            "fraction_explained_L2": 0.9438582249856257,
+            "n_bins_remainder_above_bound_beyond_1e-3_of_maxabsD": 0,
+            "n_bins_remainder_negative_beyond_1e-3_of_maxabsD": 0,
+            "remainder_bound_min_margin": 4.422745488936105e-14,
+            "remainder_min": 2.6999497394373477e-11
+          },
+          "lower_bound_em_exact_min_margin_over_se": -1.2249865866091023,
+          "lower_bound_em_exact_violations_3se": 0,
+          "n_times": 201,
+          "n_times_compared_em_exact": 178,
+          "sandwich_empirical_holds_all_times": true,
+          "sandwich_tolerance_abs": 1e-12,
+          "tightness_Delta_over_delta_at_cuts": [
+            0.9992607457922589,
+            0.9669844064211467,
+            0.8997066472562795,
+            0.7662132753246803
+          ],
+          "upper_bound_em_exact_min_margin_over_se": -2.3168970244304434,
+          "upper_bound_em_exact_violations_3se": 0
+        },
+        "1": {
+          "Delta_at_cuts": [
+            2.472787108409591e-08,
+            0.00030481245140856483,
+            0.0008706037800205735,
+            0.0023006044999489828
+          ],
+          "basins": {
+            "mass": [
+              0.17030434588694687,
+              0.2847326511221782,
+              0.3306906898951397
+            ],
+            "mean_field_em_exact": [
+              0.17072511109045463,
+              0.285175976653688,
+              0.3320500117874764
+            ],
+            "mean_field_sampled": [
+              0.17060913361048435,
+              0.28529844245078906,
+              0.33212069061506944
+            ],
+            "se_batch": [
+              5.230527140466101e-05,
+              8.523997942459365e-05,
+              6.124896717184835e-05
+            ]
+          },
+          "delta_at_cuts": [
+            2.476444965765016e-08,
+            0.0003261109317059552,
+            0.0010808169725968013,
+            0.004052781967914282
+          ],
+          "density_level": {
+            "L1_f_minus_f1": 0.004560252746859301,
+            "L1_minus_B2cov_term": 0.005926749655085885,
+            "L1_remainder": 0.002048002902013345,
+            "cumulant2_closure_fraction_explained_L1": 0.9749887979518402,
+            "cumulant2_closure_fraction_explained_L2": 0.9994329909877034,
+            "fraction_explained_L1": 0.5509014487357464,
+            "fraction_explained_L2": 0.8487019273409351,
+            "n_bins_remainder_above_bound_beyond_1e-3_of_maxabsD": 0,
+            "n_bins_remainder_negative_beyond_1e-3_of_maxabsD": 0,
+            "remainder_bound_min_margin": 7.060802275754574e-13,
+            "remainder_min": 2.1564069766854482e-10
+          },
+          "lower_bound_em_exact_min_margin_over_se": -1.1955121957826234,
+          "lower_bound_em_exact_violations_3se": 0,
+          "n_times": 201,
+          "n_times_compared_em_exact": 179,
+          "sandwich_empirical_holds_all_times": true,
+          "sandwich_tolerance_abs": 1e-12,
+          "tightness_Delta_over_delta_at_cuts": [
+            0.9985229401799789,
+            0.9346894623066652,
+            0.8055052817396421,
+            0.5676605645610299
+          ],
+          "upper_bound_em_exact_min_margin_over_se": -1.9791858515156608,
+          "upper_bound_em_exact_violations_3se": 0
+        },
+        "2": {
+          "Delta_at_cuts": [
+            9.876297846211912e-08,
+            0.00100734556062132,
+            0.001892533095854243,
+            0.0020158226481304803
+          ],
+          "basins": {
+            "mass": [
+              0.31108925079499467,
+              0.390943554420414,
+              0.2509534363625633
+            ],
+            "mean_field_em_exact": [
+              0.31228906688343727,
+              0.39162967648256003,
+              0.2510514825452286
+            ],
+            "mean_field_sampled": [
+              0.31209649759263813,
+              0.3918287419556472,
+              0.2510767259148372
+            ],
+            "se_batch": [
+              8.6656223857192e-05,
+              0.00011428624811615164,
+              6.320548020205632e-05
+            ]
+          },
+          "delta_at_cuts": [
+            9.905503236381594e-08,
+            0.0011548917200459748,
+            0.0029767528859019725,
+            0.007198351887099843
+          ],
+          "density_level": {
+            "L1_f_minus_f1": 0.011667646249888424,
+            "L1_minus_B2cov_term": 0.01380472479292496,
+            "L1_remainder": 0.007082851926490812,
+            "cumulant2_closure_fraction_explained_L1": 0.9584624059097401,
+            "cumulant2_closure_fraction_explained_L2": 0.9985017900108047,
+            "fraction_explained_L1": 0.39294937686694564,
+            "fraction_explained_L2": 0.8087831597068398,
+            "n_bins_remainder_above_bound_beyond_1e-3_of_maxabsD": 0,
+            "n_bins_remainder_negative_beyond_1e-3_of_maxabsD": 0,
+            "remainder_bound_min_margin": 1.1258816014288676e-11,
+            "remainder_min": 1.7194670739258762e-09
+          },
+          "lower_bound_em_exact_min_margin_over_se": -1.1483618444462056,
+          "lower_bound_em_exact_violations_3se": 0,
+          "n_times": 201,
+          "n_times_compared_em_exact": 179,
+          "sandwich_empirical_holds_all_times": true,
+          "sandwich_tolerance_abs": 1e-12,
+          "tightness_Delta_over_delta_at_cuts": [
+            0.9970515995530227,
+            0.8722424302957327,
+            0.6357709787793806,
+            0.28003947011023916
+          ],
+          "upper_bound_em_exact_min_margin_over_se": -0.6846927395539741,
+          "upper_bound_em_exact_violations_3se": 0
+        },
+        "4": {
+          "Delta_at_cuts": [
+            3.9387071049112876e-07,
+            0.0027536276989277853,
+            0.0022473537986104353,
+            0.00040124976821692
+          ],
+          "basins": {
+            "mass": [
+              0.5239832454958183,
+              0.38599158748648105,
+              0.08743947656126749
+            ],
+            "mean_field_em_exact": [
+              0.5270021205275,
+              0.38521756769246657,
+              0.08559498698738795
+            ],
+            "mean_field_sampled": [
+              0.5267364793240357,
+              0.38548531358616234,
+              0.08559337253087809
+            ],
+            "se_batch": [
+              0.00011909902142628638,
+              0.0001278755098996845,
+              4.0256536993646546e-05
+            ]
+          },
+          "delta_at_cuts": [
+            3.961980003639326e-07,
+            0.0036433833865437437,
+            0.006055253841064692,
+            0.008696293099679753
+          ],
+          "density_level": {
+            "L1_f_minus_f1": 0.02882763035723402,
+            "L1_minus_B2cov_term": 0.02911842998546526,
+            "L1_remainder": 0.017355134664188924,
+            "cumulant2_closure_fraction_explained_L1": 0.9347381050373502,
+            "cumulant2_closure_fraction_explained_L2": 0.9958094936359012,
+            "fraction_explained_L1": 0.39796873870231875,
+            "fraction_explained_L2": 0.7878637578136205,
+            "n_bins_remainder_above_bound_beyond_1e-3_of_maxabsD": 0,
+            "n_bins_remainder_negative_beyond_1e-3_of_maxabsD": 0,
+            "remainder_bound_min_margin": 1.7890781641792865e-10,
+            "remainder_min": 1.3666126007888119e-08
+          },
+          "lower_bound_em_exact_min_margin_over_se": -1.0538285090977464,
+          "lower_bound_em_exact_violations_3se": 0,
+          "n_times": 201,
+          "n_times_compared_em_exact": 180,
+          "sandwich_empirical_holds_all_times": true,
+          "sandwich_tolerance_abs": 1e-12,
+          "tightness_Delta_over_delta_at_cuts": [
+            0.9941259424059029,
+            0.7557886191988114,
+            0.37114113753079003,
+            0.04614032250496436
+          ],
+          "upper_bound_em_exact_min_margin_over_se": -0.16436366800125254,
+          "upper_bound_em_exact_violations_3se": 0
+        },
+        "8": {
+          "Delta_at_cuts": [
+            1.5661411257861246e-06,
+            0.005166884461855148,
+            0.0008089271490628576,
+            4.719431467144563e-06
+          ],
+          "basins": {
+            "mass": [
+              0.7706798187191854,
+              0.22050213225757131,
+              0.008475766562266802
+            ],
+            "mean_field_em_exact": [
+              0.7760990206547034,
+              0.21589443447842602,
+              0.007672349019859679
+            ],
+            "mean_field_sampled": [
+              0.7758451370399173,
+              0.21614417494477692,
+              0.007671558844670738
+            ],
+            "se_batch": [
+              0.00011313543375217755,
+              0.00011355328907794187,
+              7.69487493913634e-06
+            ]
+          },
+          "delta_at_cuts": [
+            1.584614985412225e-06,
+            0.009300547771717028,
+            0.008271618025434297,
+            0.00882409070449154
+          ],
+          "density_level": {
+            "L1_f_minus_f1": 0.06056545393319579,
+            "L1_minus_B2cov_term": 0.06162332748963789,
+            "L1_remainder": 0.04048850302760265,
+            "cumulant2_closure_fraction_explained_L1": 0.8879252835474435,
+            "cumulant2_closure_fraction_explained_L2": 0.9874107826016506,
+            "fraction_explained_L1": 0.33149179279227703,
+            "fraction_explained_L2": 0.6770254463404576,
+            "n_bins_remainder_above_bound_beyond_1e-3_of_maxabsD": 0,
+            "n_bins_remainder_negative_beyond_1e-3_of_maxabsD": 0,
+            "remainder_bound_min_margin": 2.823844486699615e-09,
+            "remainder_min": 1.0792405455056005e-07
+          },
+          "lower_bound_em_exact_min_margin_over_se": -0.8638572565944578,
+          "lower_bound_em_exact_violations_3se": 0,
+          "n_times": 201,
+          "n_times_compared_em_exact": 180,
+          "sandwich_empirical_holds_all_times": true,
+          "sandwich_tolerance_abs": 1e-12,
+          "tightness_Delta_over_delta_at_cuts": [
+            0.9883417361339073,
+            0.555546252616179,
+            0.09779551552979084,
+            0.0005348348770647077
+          ],
+          "upper_bound_em_exact_min_margin_over_se": -0.1616359711054932,
+          "upper_bound_em_exact_violations_3se": 0
+        }
+      },
+      "var_X_at_cuts_sample": [
+        4.95305301447995e-08,
+        0.0007381537087900726,
+        0.003209512230581397,
+        0.021242194847785
+      ],
+      "var_X_at_cuts_se_batch": [
+        2.8532256428622047e-09,
+        1.4302859970738911e-06,
+        1.1000567584041595e-05,
+        8.695188237807862e-05
+      ],
+      "var_quadrature_check": {
+        "max_abs_z_window": 3.2996390984004615,
+        "max_rel_diff_where_var_gt_1pct_of_max": 0.007721310669850235,
+        "n_abs_z_gt_3": 5,
+        "n_window_points": 151,
+        "t_at_max": 1.0600000000000005,
+        "var_X_at_cuts_em_exact": [
+          5.0730380202495925e-08,
+          0.0007426696100602087,
+          0.0031979776891994244,
+          0.021271750021219563
+        ],
+        "var_floor_rule": "points with Var_q > 1e-6 max_window Var_q",
+        "z_at_cuts": [
+          -0.42052406920498586,
+          -3.157341454348847,
+          1.0485405679163153,
+          -0.33990262920419007
+        ]
+      }
+    }
+  }
+}
