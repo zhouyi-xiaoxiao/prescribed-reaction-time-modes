@@ -1,0 +1,92 @@
+{
+ "label": "nue_m4_eps0.05_B8_falling",
+ "eps": 0.05,
+ "B": 8.0,
+ "c": [
+  1.7877285248232417,
+  0.7944099354539665,
+  0.4221066715310142,
+  0.13617064229692766
+ ],
+ "w": [
+  0.11414928898668528,
+  0.06889081268653631,
+  0.059410541308510194,
+  0.7575493570182682
+ ],
+ "stripe_times": [
+  0.805348527650515,
+  1.6164500205837582,
+  2.2487915818686774,
+  3.3801408181012356
+ ],
+ "tmax": 4.0,
+ "dt": 0.001,
+ "h": [
+  0.0034071497978040315,
+  0.007582751324517709,
+  0.013816673747089751,
+  0.025175620993434206
+ ],
+ "mass_cuts": "valley",
+ "cuts0": [
+  0.0,
+  1.1345026771812239,
+  1.882987345074648,
+  2.5432755206724846,
+  4.0
+ ],
+ "targets": {
+  "peaks": [
+   0.8,
+   1.6,
+   2.2,
+   2.8
+  ],
+  "ratios": [
+   0.4,
+   0.3,
+   0.2,
+   0.1
+  ]
+ },
+ "formulation": "F1 (peak times + m-1 conditional ratios at fixed B)",
+ "source": "artifacts/data/exact_m_fixed_budget/V2_design/demo_eps0.05.json#cells.m4_eps0.05_B8_falling",
+ "note": "h is a per-passage bandwidth vector: analyse with fb_v2_saa_newton.analyse(law, h, cuts0)",
+ "design_label": "m4_eps0.05_B8_falling",
+ "design_source": "artifacts/data/exact_m_fixed_budget/V2_design/designs/m4_eps0.05_B8_falling.json",
+ "validation": {
+  "item": "NU-E",
+  "tag": 212,
+  "replicate": 0,
+  "seeds": "fb_v2_tep.level_entropy(tag=212): disjoint from the design ensembles (NU-B tag 203, NU-C tag 204 replicates 0-2, fk.path_entropy layout)"
+ },
+ "fk_prediction": {
+  "dt": 0.001,
+  "peaks": [
+   0.8000208427953721,
+   1.6001718153922933,
+   2.199957281052392,
+   2.799317293591706
+  ],
+  "ratios": [
+   0.39999906032541593,
+   0.3000675286793214,
+   0.2000287404926258
+  ],
+  "se": {
+   "peaks": [
+    3.960956562442641e-05,
+    0.00010862326624622162,
+    0.0002001205425581421,
+    0.0006555197994330492
+   ],
+   "ratios": [
+    5.290059295757027e-05,
+    5.920808681286535e-05,
+    7.052755154786434e-05
+   ]
+  },
+  "source": "V2_design/demo_eps0.05.json#out_of_sample.cells.m4_eps0.05_B8_falling (FK replicate 1, 2.5e5 paths)"
+ }
+}

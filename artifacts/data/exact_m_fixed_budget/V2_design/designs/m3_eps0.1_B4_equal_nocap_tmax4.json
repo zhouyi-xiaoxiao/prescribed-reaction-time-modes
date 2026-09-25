@@ -1,0 +1,49 @@
+{
+ "label": "m3_eps0.1_B4_equal_nocap_tmax4",
+ "eps": 0.1,
+ "B": 4.0,
+ "c": [
+  1.7808456566194573,
+  0.776878163952665,
+  0.08358740072780149
+ ],
+ "w": [
+  0.18647140519251437,
+  0.15800004212185678,
+  0.6555285526856288
+ ],
+ "stripe_times": [
+  0.809206021646005,
+  1.6387661051790028,
+  3.8681568403667037
+ ],
+ "tmax": 4.0,
+ "dt": 0.001,
+ "h": [
+  0.006814299595608063,
+  0.015165502649035418,
+  0.05
+ ],
+ "mass_cuts": "valley",
+ "cuts0": [
+  0.0,
+  1.1406335534010235,
+  2.1439046246217015,
+  4.0
+ ],
+ "targets": {
+  "peaks": [
+   0.8,
+   1.6,
+   2.8
+  ],
+  "ratios": [
+   0.3333333333333333,
+   0.3333333333333333,
+   0.3333333333333333
+  ]
+ },
+ "formulation": "F1 (peak times + m-1 conditional ratios at fixed B)",
+ "source": "artifacts/data/exact_m_fixed_budget/V2_design/failed_cells_nocap.json#cells.m3_eps0.1_B4_equal_nocap_tmax4",
+ "note": "h is a per-passage bandwidth vector: analyse with fb_v2_saa_newton.analyse(law, h, cuts0)"
+}

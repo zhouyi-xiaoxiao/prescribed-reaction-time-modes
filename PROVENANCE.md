@@ -1,6 +1,6 @@
 # Provenance
 
-The released archive is tag `v1.1.1` of
+The released archive is tag `v1.2.0` of
 https://github.com/zhouyi-xiaoxiao/prescribed-reaction-time-modes.  The
 source commit it was built from is recorded by the builder as
 `release_commit` in `environment/reference_platform.json` (together with
@@ -94,6 +94,22 @@ interpreter when this release was prepared).
   `default_rng(20260924)` in one process; the other parts draw no random
   numbers.  The script merges two development checks of the same day; its
   run reproduced their outputs exactly.
+- **Exact programming, total-error protocol, bifurcation set and programmed
+  channel (new in v1.2.0).**  The records `V2_NU_A/`, `V2_design/`,
+  `V2_TEP/`, `V2_bifurcation/` and `V2_hero/` were written on 2026-09-24/25
+  by the `fb_v2_*.py` drivers named in their `driver` or `script` field, on
+  the same workstation.  Stochastic runs draw NumPy Philox streams from
+  `SeedSequence` entropy built from the base seed `20260923`, a stream tag
+  (201--206, 211--215, 217) and the replicate, chunk and level indices; each
+  record stores its full entropy tuple.  The interval certificates of
+  `V2_bifurcation/` draw no random numbers and record the SHA-256 of the
+  scripts that wrote them (`provenance.source_sha256`).  The archived
+  protocol runs ran on the workstation (field `workers` = 3 of each level
+  record); `fb_v2_tep.py` also has `submit`/`fetch` commands for a cluster,
+  whose ssh alias is archived as `isambard3`.  The Fig. 1(b) panel
+  `artifacts/figures/fb_v2_hero_channel_a.pdf` was written from
+  `fb_v2_hero_channel.pdf` by `crop_hero_panel_a.py` (PyMuPDF redaction of
+  the clipped-away panels; the kept region is unchanged).
 - **Manuscripts.**  The compiled article, Supplementary Material and
   graphical abstract are not archived (no public preprint; the article will be
   linked from `README.md` on publication).  The builder reads the compiled
@@ -154,6 +170,7 @@ copies:
 | any other path under the user's home | `<home>/` |
 | a temporary working directory | `<scratch>/` |
 | the absolute path of a Python interpreter in a usage line | `python` or `python3` |
+| the ssh host alias of the Isambard 3 login in `fb_v2_tep.py` | `isambard3` |
 | cluster locations in the Isambard 3 job scripts | `${PRR_ARCHIVE_ROOT}/code...`, `${PRR_PYTHON:-python3}` |
 
 The default `--cache` directory of `fb_n14_universality.py` was such a
@@ -172,7 +189,12 @@ archived copies of the rewritten records and of the rewritten scripts
 `fb_derived_numbers.py`, `fb_n14_universality.py`, `fb_n14_general_mc.py`,
 `fb_n14_unimodality.py`, `fb_n14_fix_checks.py`, `fb_p5_step6_tail.py`,
 `fb_th8_interval_certificate.py`, `fb_th8b_fold_normal_form.py`,
-`fb_gx_counterexample_checks.py` and
+`fb_gx_counterexample_checks.py`, the `v1.2.0` scripts
+`fb_v2_bifurcation_figure.py`, `fb_v2_cert_validator.py`,
+`fb_v2_codim2_switch.py`, `fb_v2_fold_curve_certificate.py`,
+`fb_v2_fold_curve_figure.py`, `fb_v2_maxmin_m3_scan.py`,
+`fb_v2_nue_summary.py`, `fb_v2_protocol_p_designs.py` (interpreter paths in
+usage lines) and `fb_v2_tep.py` (the ssh host alias), and
 `notes/gap_diagnosis_20260923/theory_checks/contact_escape_check.py`) differ
 from the committed sources by these path prefixes (and the docstring wording
 above) only, while every other archived file is byte-identical to its source

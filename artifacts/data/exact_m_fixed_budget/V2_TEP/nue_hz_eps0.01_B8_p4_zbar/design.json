@@ -1,0 +1,73 @@
+{
+ "label": "nue_hz_eps0.01_B8_p4_zbar",
+ "design_label": "hz_eps0.01_B8_p4_zbar",
+ "eps": 0.01,
+ "B": 8.0,
+ "c": [
+  1.795290018747519,
+  0.8046176157280002,
+  0.0
+ ],
+ "w": [
+  0.09107765417904265,
+  0.06983574973279137,
+  0.8390865960881662
+ ],
+ "tmax": 7.5,
+ "dt": 0.001,
+ "h": [
+  0.003,
+  0.003,
+  0.03794862320049833
+ ],
+ "mass_cuts": "valley",
+ "cuts0": [
+  0.0,
+  1.175,
+  2.722,
+  7.5
+ ],
+ "targets": {
+  "peaks": [
+   0.8000000000000002,
+   1.6,
+   4.912894498642887
+  ],
+  "ratios": [
+   0.3333333333333333,
+   0.3333333333333333,
+   0.3333333333333333
+  ]
+ },
+ "fk_prediction": {
+  "dt": 0.001,
+  "peaks": [
+   0.8000000000000002,
+   1.6,
+   4.912894498642887
+  ],
+  "ratios": [
+   0.33333333333333326,
+   0.33333333333333315
+  ],
+  "se": {
+   "peaks": [
+    9.011473156064897e-06,
+    2.2916200287845407e-05,
+    0.0019332432608075909
+   ],
+   "ratios": [
+    2.8382269726860107e-05,
+    4.348670787539878e-05
+   ]
+  },
+  "source": "V2_design/horizon_exact_eps0.01.json#points.eps0.01_B8_p4 (design ensemble, 1.5e5 paths; T3 is an output, not a fitted target)"
+ },
+ "formulation": "timing horizon point: T1, T2 and equal ratios solved (reduced system), c3 fixed; targets = FK values",
+ "design_source": "artifacts/data/exact_m_fixed_budget/V2_design/horizon_exact_eps0.01.json#points.eps0.01_B8_p4",
+ "validation": {
+  "item": "NU-E (main-text horizon numbers)",
+  "tag": 212,
+  "replicate": 0
+ }
+}

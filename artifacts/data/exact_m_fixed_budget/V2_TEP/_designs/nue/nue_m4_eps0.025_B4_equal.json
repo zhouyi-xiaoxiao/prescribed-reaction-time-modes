@@ -1,0 +1,92 @@
+{
+ "label": "nue_m4_eps0.025_B4_equal",
+ "eps": 0.025,
+ "B": 4.0,
+ "c": [
+  1.7941391289771629,
+  0.8033279080455492,
+  0.4364395894945922,
+  0.20190699704018364
+ ],
+ "w": [
+  0.12910438935298008,
+  0.08150877639132978,
+  0.07571849170542455,
+  0.7136683425502656
+ ],
+ "stripe_times": [
+  0.8017690481061681,
+  1.6052866557785122,
+  2.2153996718925306,
+  2.9862424594145294
+ ],
+ "tmax": 4.0,
+ "dt": 0.001,
+ "h": [
+  0.003,
+  0.0037913756622588546,
+  0.0069083368735448755,
+  0.012587810496717103
+ ],
+ "mass_cuts": "valley",
+ "cuts0": [
+  0.0,
+  1.1737310827134035,
+  1.863980528713007,
+  2.494765409660747,
+  4.0
+ ],
+ "targets": {
+  "peaks": [
+   0.8,
+   1.6,
+   2.2,
+   2.8
+  ],
+  "ratios": [
+   0.25,
+   0.25,
+   0.25,
+   0.25
+  ]
+ },
+ "formulation": "F1 (peak times + m-1 conditional ratios at fixed B)",
+ "source": "artifacts/data/exact_m_fixed_budget/V2_design/demo_eps0.025.json#cells.m4_eps0.025_B4_equal",
+ "note": "h is a per-passage bandwidth vector: analyse with fb_v2_saa_newton.analyse(law, h, cuts0)",
+ "design_label": "m4_eps0.025_B4_equal",
+ "design_source": "artifacts/data/exact_m_fixed_budget/V2_design/designs/m4_eps0.025_B4_equal.json",
+ "validation": {
+  "item": "NU-E",
+  "tag": 212,
+  "replicate": 0,
+  "seeds": "fb_v2_tep.level_entropy(tag=212): disjoint from the design ensembles (NU-B tag 203, NU-C tag 204 replicates 0-2, fk.path_entropy layout)"
+ },
+ "fk_prediction": {
+  "dt": 0.001,
+  "peaks": [
+   0.7999994422184483,
+   1.6000268667118696,
+   2.1999985333150405,
+   2.8000121076586595
+  ],
+  "ratios": [
+   0.24997429686739228,
+   0.25004319404102215,
+   0.24994607413233075
+  ],
+  "se": {
+   "peaks": [
+    2.0072820203040082e-05,
+    5.0109435219240554e-05,
+    8.857883725945951e-05,
+    0.00019749903713533651
+   ],
+   "ratios": [
+    2.9162940991970518e-05,
+    4.006419544734251e-05,
+    4.7907603222735496e-05
+   ]
+  },
+  "source": "V2_design/demo_eps0.025.json#out_of_sample.cells.m4_eps0.025_B4_equal (FK replicate 1, 2.5e5 paths)"
+ }
+}

@@ -1,6 +1,6 @@
 # Results map
 
-This file maps the results of the article (release `v1.1.1`) to the records
+This file maps the results of the article (release `v1.2.0`) to the records
 and scripts of this archive, and then reproduces the reading guide to the
 robustness records of release `v1.0.0`.  It quotes no new numbers: the values
 are in the records and in the article, whose LaTeX sources cite the JSON key
@@ -8,7 +8,7 @@ path of every quoted number.  Paths are relative to
 `artifacts/data/exact_m_fixed_budget/` unless they start with another
 top-level directory.
 
-## Fixed-budget campaign (releases v1.1.0 and v1.1.1)
+## Fixed-budget campaign (releases v1.1.0, v1.1.1 and v1.2.0)
 
 | result in the article | records | script(s) in `code/` |
 |:---|:---|:---|
@@ -33,6 +33,11 @@ top-level directory.
 | Universality of the mass law and of one peak per stripe (Sec. 3.9 and Sec. 4.8; universality figure) | `N14_universality/` (`n14_universality.json`, `n14_general_mc.json`, `mc_*.json`, `n14_unimodality.json`, `n14_fix_checks.json`) | `fb_n14_universality.py`, `fb_n14_general_mc.py`, `fb_n14_unimodality.py`, `fb_n14_fix_checks.py` |
 | Exact count beyond the harmonic trap: spiral and variance-driven counterexamples (interval enclosures of the arrival actions, spiral constants and endpoint check), free-envelope grid counts and a finite-noise illustration (Sec. 3.9; Supplementary Material, section on counterexamples, plug flow and a sufficient criterion; new in `v1.1.1`) | `GX_counterexamples/checks.json` | `fb_gx_counterexample_checks.py` |
 | Frozen gates: exact count under a uniform contact floor (Prop. 5(e); 40-digit bridge, slope and score identities, free-interval margin, boundary-tangent contact probability, minimum-image and orthant checks; Supplementary Material, section on random frozen gates; new in `v1.1.1`) | `GB2_frozen_gate/checks.json` | `fb_gb2_frozen_gate_checks.py` |
+| Exact programming of peak times and weights: sample-average Newton designs of four and five peaks, out-of-sample replicates, sample-size study (Thm. 4, Box 1, Sec. 4.2; design-programming figure; new in `v1.2.0`) | `V2_design/` (`demo_eps*.json`, `showcase_*.json`, `samplesize_*.json`, `failed_cells_nocap.json`, `oos_r2_*.json`), `V2_NU_A/` (estimator validation) | `fb_v2_saa_newton.py`, `fb_v2_oos_replicate.py`, `fb_v2_design_estimator.py` |
+| Timing horizon by continuation and its fit (Sec. 4.2; design-programming figure (c); new in `v1.2.0`) | `V2_design/horizon_*.json` | `fb_v2_timing_horizon.py` |
+| Total-error protocol of all designs, of the ten max--min cells and protocol-P visibility (Sec. 4.2; SM-B total-error figure; new in `v1.2.0`) | `V2_TEP/` (`nue_summary.json`, `n1_tep_summary.json`, `protocol_P_design_law.json`) | `fb_v2_tep.py`, `fb_v2_tep_ladder.py`, `fb_v2_tep_n1.py`, `fb_v2_nue_summary.py`, `fb_v2_protocol_p_designs.py` |
+| Certified bifurcation set: two-stripe fold curve for widths in `[0.15, 0.5715]`, fold curves along allocation families, codimension-two switch (Prop. 4; bifurcation-set figure; SM-A Sections A7.3--A7.4; new in `v1.2.0`) | `V2_bifurcation/` | `fb_v2_fold_curve_certificate.py`, `fb_v2_codim2_switch.py`, `fb_v2_cert_validator.py`, `fb_v2_maxmin_m3_scan.py`, `fb_v2_fold_curve_figure.py`, `fb_v2_bifurcation_figure.py` |
+| Programmed plug-flow channel with the Poiseuille contrast (Sec. 2.4, Fig. 1(b); new in `v1.2.0`) | `V2_hero/` | `fb_v2_hero_channel.py`, `crop_hero_panel_a.py` |
 | Visibility thresholds (visibility figure) | `N6/`, `fk_ensembles/n6_*.json`, `exact_m_prr_upgrade/robustness/w2_seed_repeat_summary.json` | `fb_n6_visibility_thresholds.py`, `exact_m_prr_w2_seed_repeat.py` |
 | Time-step ladder | `N5/` | `fb_n5_dt_ladder.py` |
 | Sufficient budget `B_cert` (Supplementary remark; proof in release `v1.0.0`) | `TH11/bcert_nominal_windows.json` | `fb_bcert_window_check.py`, `b0_dyson_numerics.py`, `b0_dyson_chaincheck.py`; Lean modules `BudgetThreshold`, `BZeroThreshold`, `B0ChainKernel` |

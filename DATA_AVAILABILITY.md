@@ -193,6 +193,45 @@ Slurm job in `env`):
   elapsed time, nodes, cores, node-hours and core-hours per job, totals),
   transcribed from the scheduler's accounting table.
 
+Exact programming, total-error protocol, bifurcation set and programmed
+channel (new in release v1.2.0; stream tags 201--217, base seed `20260923`;
+details and file list in `RELEASE_NOTES_v1.2.0.md`):
+
+- `V2_NU_A/`: validation of the differentiable exact-law design estimator
+  (`selftest.json`: finite-difference gradients and invariances;
+  `crosscheck_fk.json`: bitwise reproduction of a stored exact-law ensemble;
+  `validate_dk.json`, `dkfd_n11_*.json`: comparison with direct kill).
+- `V2_design/`: sample-average Newton designs of four and five peaks
+  (`demo_eps{0.05,0.025}.json`: `cells.*` with residual tables, stripe times,
+  weights, mode checks and `out_of_sample`), the five-peak showcase and
+  sample-size study (`showcase_*.json`, `samplesize_*.json`), the cells
+  without a stripe cap (`failed_cells_nocap.json`,
+  `oos_r2_failed_cells_nocap_tmax6.json`), the timing horizon
+  (`horizon_exact_eps*.json`, `horizon_mean_field.json`, `horizon_fit.json`),
+  the stored designs (`designs/`) and three cited run logs (`logs/*.log`,
+  plain text).
+- `V2_TEP/`: the total-error protocol (direct kill at `dt`, `dt/2`, `dt/4`,
+  coupled ladder and independent levels) of every demonstrated design
+  (`nue_summary.json`: per-design checks and the pooled `aggregate`), of the
+  ten max--min cells (`n1_tep_summary.json`, `n1_*_ladder/`) and of the
+  shift-compensated designs (`n11_*`); protocol-P visibility of the designs
+  (`protocol_P_design_law.json`); per-run records `*/tep_*.json`,
+  `*/level*.json` (the count arrays `level*.npz` are not archived; their
+  SHA-256 is recorded) and the input designs `_designs/`.
+- `V2_bifurcation/`: interval certificates (mpmath `iv`, 100-bit outward
+  rounding; no random numbers) of the two-stripe fold curve in the stripe
+  width (`fold_curve_m2.json`, per-box records `fold_curve_m2_boxes.json`),
+  of fold curves along allocation families with the codimension-two switch
+  (`codim2_switch.json`, `codim2_switch_boxes.json`), the theorem-level
+  validation (`theorem_validation*.json`) and a floating-point companion scan
+  (`maxmin_m3_float_scan.json`, not a certificate).
+- `V2_hero/`: the programmed plug-flow channel: designs at `eps = 0.03` and
+  `0.01` (`design_eps*.json` with the physical units in `phys`, `designs/`),
+  their total-error protocol (`tep_eps*.json`), out-of-sample checks
+  (`oos_*.json`, `oos_study_*.json`), the Poiseuille contrast
+  (`pois_contrast.json`), self-tests and the summary of the quoted numbers
+  (`summary.json`).
+
 Most records name their generating script and their inputs.  Derived quantities quoted in the article carry the JSON key path of their
 source in the LaTeX sources (`% src:` comments, repository layout).
 

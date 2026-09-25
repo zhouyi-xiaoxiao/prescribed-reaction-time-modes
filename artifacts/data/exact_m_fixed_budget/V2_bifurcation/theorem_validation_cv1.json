@@ -1,0 +1,166 @@
+{
+ "script": "code/fb_v2_cert_validator.py",
+ "item": "V2 item 3: theorem-level acceptance test of Props. v2:prop-foldcurve and v2:prop-alloc",
+ "arithmetic": "exact rational comparisons of the stored certified decimal bounds (fractions.Fraction); mpmath.iv (100 bits) for the tube exponential; witnesses printed exactly or directed",
+ "validator_sha256": "df463037e8b6263ca27ccc4d914dfc50f4c39b20d622effedf2b7e1335099c8d",
+ "mpmath_version": "1.4.1",
+ "python_version": "3.14.6",
+ "cv1": {
+  "source": "V2_bifurcation/fold_curve_m2.json (+ _boxes.json), TH8_certificate/certificate.json",
+  "theory": "theory/V2_fold_curve_m2.tex Prop. v2:prop-foldcurve",
+  "input_sha256": {
+   "fold_curve_m2.json": "f468396f86247daf93210a938b40da25cc9dacd12555fe20774381ffc4b5c97c",
+   "fold_curve_m2_boxes.json": "1bec642f9cfc82dddbf02a43fd3e17f27ce4a89d2c5be810b593ad51d849e873",
+   "TH8_certificate/certificate.json": "c6b37b1f546181eef81a718841325e970316b9b9c4deb56e0a0d846aaca74459"
+  },
+  "C0_provenance": {
+   "claim": "the certificate JSON records the sha256 of the generator sources, equal to the files on disk",
+   "pass": true,
+   "recorded_mpmath_version": "1.4.1",
+   "recorded_python_version": "3.14.6",
+   "source_sha256_on_disk": {
+    "fb_v2_fold_curve_certificate.py": "99d969fa405fa6ef5625a8cb3af6da49eb5540e6c45483d98c0e1d279229a0eb",
+    "fb_th8_interval_certificate.py": "c480d777b986688d2973908eeaace239e998fc83839f299832e82310097314e2"
+   },
+   "source_sha256_matches_json": {
+    "fb_v2_fold_curve_certificate.py": true,
+    "fb_th8_interval_certificate.py": true
+   },
+   "ok": true
+  },
+  "C1_set": {
+   "claim": "certified set = [0.15, 0.40] U [0.40, 0.5715], every box certified; 250 base boxes (width 1e-3, depth 0) and 343 base boxes (width 5e-4), exactly the last two bisected, depth <= 3, 347 leaves; stored summaries agree with the box records",
+   "pass": true,
+   "required": {
+    "n_boxes": 250,
+    "boxes_nondegenerate": true,
+    "consecutive_ends_shared_exactly": true,
+    "ends_equal_claim": true,
+    "certified_unions": [
+     [
+      "0.15",
+      "0.4"
+     ]
+    ],
+    "excluded_unions": [],
+    "all_ok": true
+   },
+   "extension": {
+    "n_boxes": 347,
+    "boxes_nondegenerate": true,
+    "consecutive_ends_shared_exactly": true,
+    "ends_equal_claim": true,
+    "certified_unions": [
+     [
+      "0.4",
+      "0.5715"
+     ]
+    ],
+    "excluded_unions": [],
+    "all_ok": true
+   },
+   "subdivision_required": {
+    "base_indices_complete": true,
+    "leaf_widths_consistent": true,
+    "bisected_base_boxes": [],
+    "max_depth": 0,
+    "n_leaves": 250
+   },
+   "subdivision_extension": {
+    "base_indices_complete": true,
+    "leaf_widths_consistent": true,
+    "bisected_base_boxes": [
+     341,
+     342
+    ],
+    "max_depth": 3,
+    "n_leaves": 347
+   },
+   "summaries_consistent": true
+  },
+  "C2_per_box_conditions": {
+   "claim": "(D1)-(D4), Krawczyk zero in the (D3) region, 1-D Newton, a_f > 0, and strict monotonicity (d log b_2/d a > 0, d B/d rho < 0) on every box of [0.15, 0.5715]",
+   "pass": true,
+   "failures": [],
+   "min_D4_log_gap_exact": "5.667171331844187186",
+   "min_a_f_lower": "0.083196098145853002",
+   "min_dlogB_da_lower": "2.96332399746242785",
+   "max_dB_drho_upper": "-0.0611849150779335606"
+  },
+  "C3_D4_gap": {
+   "claim": "log r0(tau) - log b_2 >= 5.66 on every box (proof text)",
+   "pass": true,
+   "min_gap_exact": "5.667171331844187186",
+   "min_gap_lower": "5.66717133184",
+   "min_interval_gap_lower_bound": "5.6671713318441872"
+  },
+  "C4_B_range": {
+   "claim": "B_top^det(rho) in [1.64115, 5581.84] for rho in [0.15, 0.40]",
+   "pass": true,
+   "hull_exact": [
+    "1.64115751999996361",
+    "5581.83859951928005"
+   ],
+   "summary_hull_equal": true
+  },
+  "C5_tube": {
+   "claim": "relative accuracy 3.9e-4 at every rho in [0.15, 0.40]: the endpoint tubes K_m + S (a(rho_end) - a_m) are REBUILT in interval arithmetic from the stored K_m, S, exact dyadic a_m and the Delta enclosure; the pointwise width w(K_m) + w(S)|a - a_m| is convex in a, so the box ends bound it",
+   "pass": true,
+   "max_rebuilt_exact_a_mid_upper": "0.00038773534",
+   "max_stored_upper": "0.00038773534",
+   "approx_max_rebuilt_with_interval_a_mid": "0.00038773534",
+   "n_boxes_with_exact_a_mid": 250,
+   "argument": "|B - M| <= B (e^w - 1)/2 for M the midpoint of [e^lo, e^hi], w the width of the log-enclosure; stored representation: K_m, S (outward decimal intervals), a_m exact"
+  },
+  "C6_anchor_digits": {
+   "claim": "at exactly the six widths 0.15, 0.2, 0.25, 0.3, 0.35, 0.4 the thin boxes are certified and the B_top^det, t_fold and a_f enclosures are string-identical to TH8_certificate/certificate.json (all printed digits); missing = fail",
+   "pass": true,
+   "identity": {
+    "0.15": {
+     "certified_thin": true,
+     "B_top_det": true,
+     "t_fold": true,
+     "a_f": true,
+     "TH8_certified": true
+    },
+    "0.2": {
+     "certified_thin": true,
+     "B_top_det": true,
+     "t_fold": true,
+     "a_f": true,
+     "TH8_certified": true
+    },
+    "0.25": {
+     "certified_thin": true,
+     "B_top_det": true,
+     "t_fold": true,
+     "a_f": true,
+     "TH8_certified": true
+    },
+    "0.3": {
+     "certified_thin": true,
+     "B_top_det": true,
+     "t_fold": true,
+     "a_f": true,
+     "TH8_certified": true
+    },
+    "0.35": {
+     "certified_thin": true,
+     "B_top_det": true,
+     "t_fold": true,
+     "a_f": true,
+     "TH8_certified": true
+    },
+    "0.4": {
+     "certified_thin": true,
+     "B_top_det": true,
+     "t_fold": true,
+     "a_f": true,
+     "TH8_certified": true
+    }
+   }
+  }
+ },
+ "all_claims_pass": true,
+ "n_claims": 7
+}

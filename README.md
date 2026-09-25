@@ -1,6 +1,6 @@
 # Reproduction package: reaction-time peaks programmed with a fixed budget
 
-Release `v1.1.1` of this archive accompanies **“Programming the number and
+Release `v1.2.0` of this archive accompanies **“Programming the number and
 weights of reaction-time peaks with a fixed budget of static reactivity”** by
 Xiaoxiao Zhouyi (University of Bristol; submitted to *Communications in
 Nonlinear Science and Numerical Simulation*).  It contains the simulation,
@@ -17,7 +17,7 @@ abstract are not part of this release.  The article will be linked here once
 it is published; until then, section and proposition numbers quoted in these
 documents refer to the submitted version.
 
-This package is tag `v1.1.1` of
+This package is tag `v1.2.0` of
 https://github.com/zhouyi-xiaoxiao/prescribed-reaction-time-modes.  Verify it
 from the archive root with `shasum -a 256 -c MANIFEST.sha256`.  If a
 persistent identifier is later minted for this release, cite the identifier
@@ -33,7 +33,17 @@ numerical records of `v1.0.0` (they are cited as legacy records) and added the
 of the earlier version are not repeated here and remain available from the
 `v1.0.0` tag.
 
-**Relation to release `v1.1.0`.**  Release `v1.1.1` supersedes `v1.1.0`.
+**Relation to release `v1.1.1`.**  Release `v1.2.0` supersedes `v1.1.1` and
+keeps all of its code and records.  It adds the code and records of the
+results added in the final version of the article: the exact programming of
+peak times and weights (Theorem 4, Box 1), the timing horizon, the
+total-error protocol of every demonstrated design, the certified bifurcation
+set of the fixed-width fold and the programmed plug-flow channel of Fig. 1(b)
+(`code/fb_v2_*.py`, `code/crop_hero_panel_a.py`,
+`artifacts/data/exact_m_fixed_budget/V2_*/`, five new figures).  See
+`RELEASE_NOTES_v1.2.0.md` for the file list, seeds and what is not archived.
+
+**Relation to release `v1.1.0`.**  Release `v1.1.1` superseded `v1.1.0`.
 It adds the checks of the general-transport counterexamples of the
 Supplementary Material (section "Exact count beyond the harmonic trap:
 counterexamples, plug flow and a sufficient criterion"):
@@ -95,6 +105,9 @@ metadata files were updated.
     probability of the boundary-tangent gate by exact quadrature, the
     minimum-image and orthant checks, and a Monte Carlo comparison of two
     transverse directions (consistency checks, not a proof).
+  - Exact programming, total-error protocol, bifurcation set and programmed
+    channel (new in `v1.2.0`; `fb_v2_*.py`, `crop_hero_panel_a.py`): see
+    `RELEASE_NOTES_v1.2.0.md`.
   - Large-scale checks on Isambard 3 (2026-09; Supplementary Material,
     section "Large-scale checks on Isambard 3"): the time-step ladder with
     exact Ornstein--Uhlenbeck transitions and Brownian-bridge refinement
@@ -118,7 +131,9 @@ metadata files were updated.
   `RESULTS_SUMMARY.md`), including the ensemble index records
   `fk_ensembles/*.json`, the certificate outputs `TH8_certificate/` and
   `C1_preparation_count/`, the counterexample checks `GX_counterexamples/`
-  and the frozen-gate checks `GB2_frozen_gate/` (both new in `v1.1.1`), and the records of the Isambard 3 checks
+  and the frozen-gate checks `GB2_frozen_gate/` (both new in `v1.1.1`), the
+  records `V2_NU_A/`, `V2_design/`, `V2_TEP/`, `V2_bifurcation/`, `V2_hero/`
+  (new in `v1.2.0`), and the records of the Isambard 3 checks
   (`HPC_N5full/`, `HPC_N3full/`, `HPC_headline/`, `HPC_census/`, and the job
   accounting `HPC_jobs/hpc_jobs_accounting.json`).
 - `artifacts/data/exact_m_offlattice_production/`,
@@ -150,6 +165,7 @@ metadata files were updated.
 - `RESULTS_SUMMARY.md`: a map from the results of the article to their records
   and scripts, followed by the reading guide to the `v1.0.0` robustness
   records.
+- `RELEASE_NOTES_v1.2.0.md`: what release `v1.2.0` adds.
 - `PROVENANCE.md`, `DATA_AVAILABILITY.md`: seeds, platforms, data dictionary,
   what is not archived, and how workstation paths were neutralised.
 - `MANIFEST.sha256`: SHA-256 checksums, generated only after the release tree
@@ -172,6 +188,11 @@ The large-scale checks ran on Isambard 3 (GW4/Bristol; partition `grace`,
 aarch64 nodes with 144 cores) with CPython 3.11.15 and NumPy 2.0.2, as
 recorded in the `env` field of each `HPC_*` record
 (`environment/reference_platform.json`, key `hpc_campaign`).
+
+The interval certificates of release `v1.2.0` (`V2_bifurcation/`) record
+CPython 3.14.6 and mpmath 1.4.1 in their `provenance` field; the other
+`v1.2.0` drivers need only NumPy (and Matplotlib for the figures) and ran on
+the same workstation.
 
 Create an isolated environment from the archive root, for example
 

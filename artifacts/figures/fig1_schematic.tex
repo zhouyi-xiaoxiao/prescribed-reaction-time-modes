@@ -12,6 +12,10 @@
 %%   sit slightly BEFORE the dashed target times (drawn early shifts 0.02, 0.04,
 %%   0.12, largest for the slow last passage), as Theorem 2(c) predicts; the
 %%   shifts are illustrative, not data.
+%% Numerics integrator (2026-09-25): the schematic density panel (b) is removed; Fig. 1(b)
+%%   is now a data panel (the programmed channel of Sec. 2.4, fb_v2_hero_channel.pdf, cropped in
+%%   sections/02_model.tex). The dashed guides now end on the time axis of panel (a), which
+%%   carries the target-time ticks and the label t that panel (b) used to carry.
 %% Requires: tikz with the arrows.meta library (loaded by main_cnsns.tex).
 %% Natural width about 13 cm; the float scales it to \linewidth if wider.
 %% =====================================================================
@@ -55,10 +59,10 @@
   \foreach \zc in {\cA,\cB,\cC}{
     \fill[slabband] (0,{\zu*(\zc-2*\sdz)}) rectangle ({\xu*\tmax},{\zu*(\zc+2*\sdz)});
   }
-  % dashed guides from the crossings (t_j, z_j) down to the peaks in (b)
-  \draw[guide] ({\xu*\tA},{\zu*\cA}) -- ({\xu*\tA},{\bshift+\fu*(\hA+0.02)+0.30});
-  \draw[guide] ({\xu*\tB},{\zu*\cB}) -- ({\xu*\tB},{\bshift+\fu*(\hB+0.02)+0.30});
-  \draw[guide] ({\xu*\tC},{\zu*\cC}) -- ({\xu*\tC},{\bshift+\fu*(\hC+0.02)+0.30});
+  % dashed guides from the crossings (t_j, z_j) down to the time axis
+  \draw[guide] ({\xu*\tA},{\zu*\cA}) -- ({\xu*\tA},0);
+  \draw[guide] ({\xu*\tB},{\zu*\cB}) -- ({\xu*\tB},0);
+  \draw[guide] ({\xu*\tC},{\zu*\cC}) -- ({\xu*\tC},0);
   % stripe profiles w_j phi_j on the Z axis (amplitude proportional to w_j)
   \foreach \zc/\wj/\lab in {\cA/\wA/{w_1}, \cB/\wB/{w_2}, \cC/\wC/{w_3}}{
     \filldraw[slabprof]
@@ -81,7 +85,10 @@
   }
   % axes
   \draw[axis,->] (0,0) -- (0,{\zu*(\zbar+\zamp)+0.45});
-  \draw[axis] (0,0) -- ({\xu*\tmax+0.15},0);
+  \draw[axis,->] (0,0) -- ({\xu*\tmax+0.15},0) node[Lbl, right] {$t$};
+  \foreach \tj/\lab in {\tA/{t_1}, \tB/{t_2}, \tC/{t_3}}{
+    \draw[axis] ({\xu*\tj},0) -- ({\xu*\tj},-0.09) node[lbl, below] {$\lab$};
+  }
   \node[Lbl, rotate=90] at (-0.95,{\zu*(\zbar+0.5*\zamp)}) {pair-centre position $Z$};
   % labels
   \node[lbl, left] at (0,{\zu*\cA}) {$z_1$};
@@ -112,30 +119,4 @@
     % R3 fix (O36-2): label moved from y=0.36 to y=0.24 (the torus ellipse, centre 1.00, ry 0.30, cut the ascenders of "transverse")
     \node[lbl, align=center] at ({\ix+0.55},0.24) {periodic transverse\\ directions (period $W$)};
   \end{scope}
-  % ================= panel (b): reaction-time density =================
-  \draw[fcurve]
-    plot[domain=0:\tmax, samples=320]
-      ({\xu*\x},{\bshift+\fu*(0.02
-        + \hA*exp(-(\x-\tA+\dA)^2/(2*\sA*\sA))
-        + \hB*exp(-(\x-\tB+\dB)^2/(2*\sB*\sB))
-        + \hC*exp(-(\x-\tC+\dC)^2/(2*\sC*\sC)))});
-  \draw[axis,->] (0,\bshift) -- ({\xu*\tmax+0.15},\bshift) node[Lbl, right] {$t$};
-  \draw[axis,->] (0,\bshift) -- (0,{\bshift+\fu*1.30});
-  \node[Lbl, rotate=90, align=center] at (-0.55,{\bshift+\fu*0.62}) {reaction-time\\ density $f(t)$};
-  % peak weights M_j
-  \node[lbl, fill=white, inner sep=1pt] at ({\xu*\tA+0.30},{\bshift+\fu*(\hA+0.02)+0.12}) {$M_1$};
-  \node[lbl, fill=white, inner sep=1pt] at ({\xu*\tB+0.34},{\bshift+\fu*(\hB+0.02)+0.12}) {$M_2$};
-  \node[lbl, fill=white, inner sep=1pt] at ({\xu*\tC+0.50},{\bshift+\fu*(\hC+0.02)+0.12}) {$M_3$};
-  % window ticks tau, T
-  \draw[axis] ({\xu*\ttau},\bshift) -- ({\xu*\ttau},{\bshift-0.09})
-    node[lbl, below] {$\tau$};
-  \draw[axis] ({\xu*\tT},\bshift) -- ({\xu*\tT},{\bshift-0.09})
-    node[lbl, below] {$T$};
-  % target-time ticks
-  \foreach \tj/\lab in {\tA/{t_1}, \tB/{t_2}, \tC/{t_3}}{
-    \draw[axis] ({\xu*\tj},\bshift) -- ({\xu*\tj},{\bshift-0.09})
-      node[lbl, below] {$\lab$};
-  }
-  % panel tag
-  \node[Lbl] at (-1.45,{\bshift+\fu*1.30}) {(b)};
 \end{tikzpicture}
