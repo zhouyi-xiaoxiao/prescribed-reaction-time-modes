@@ -6,7 +6,7 @@
       "name": "Zhouyi, Xiaoxiao"
     }
   ],
-  "description": "Code, machine-readable numerical records, figure-generation scripts and Lean 4 sources accompanying the article (the article itself is not included and will be linked on publication). Release v1.1.0 added the fixed-budget campaign (exact-law Feynman-Kac estimates, allocation-law, visibility, fold and robustness records, theory checks), its closing campaign and the large-scale checks run on the Isambard 3 supercomputer to the code and records of release v1.0.0; release v1.1.1 added the interval and closed-form checks of the general-transport counterexamples of the Supplementary Material; release v1.2.0 supersedes it and adds the code and records of the exact programming of peak times and weights, the timing horizon, the total-error protocol of every demonstrated design, the certified bifurcation set of the fixed-width fold and the programmed plug-flow channel (see RELEASE_NOTES_v1.2.0.md). Path ensembles (about 16 GB), raw walker trajectories and unbinned reaction times are not retained; the scripts and the recorded seeds regenerate them.",
+  "description": "Code, machine-readable numerical records, figure-generation scripts and Lean 4 sources accompanying the article (the article itself is not included and will be linked on publication). Release v1.1.0 added the fixed-budget campaign (exact-law Feynman-Kac estimates, allocation-law, visibility, fold and robustness records, theory checks), its closing campaign and the large-scale checks run on the Isambard 3 supercomputer to the code and records of release v1.0.0; release v1.1.1 added the interval and closed-form checks of the general-transport counterexamples of the Supplementary Material; release v1.2.0 supersedes it and adds the code and records of the exact programming of peak times and weights, the timing horizon, the total-error protocol of every demonstrated design, the certified bifurcation set of the fixed-width fold and the programmed plug-flow channel (see RELEASE_NOTES_v1.2.0.md); release v1.3.0 supersedes it and adds the approach of the exact law to its weak-noise limits and the independent recheck of the interval certificates with FLINT/Arb (see RELEASE_NOTES_v1.3.0.md). Path ensembles (about 16 GB), raw walker trajectories and unbinned reaction times are not retained; the scripts and the recorded seeds regenerate them.",
   "keywords": [
     "Doi model",
     "reaction time",
@@ -21,5 +21,5 @@
   "notes": "The Zenodo record license applies to the data, figures, and documentation. Source code is separately licensed under MIT in LICENSE-CODE.",
   "title": "Reproduction package for Programming the number and weights of reaction-time peaks with a fixed budget of static reactivity",
   "upload_type": "software",
-  "version": "1.2.0"
+  "version": "1.3.0"
 }

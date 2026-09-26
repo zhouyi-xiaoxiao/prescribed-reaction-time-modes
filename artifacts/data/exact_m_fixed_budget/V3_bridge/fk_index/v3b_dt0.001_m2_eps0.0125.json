@@ -1,0 +1,211 @@
+{
+ "name": "v3b_dt0.001_m2_eps0.0125",
+ "schema": "fk_exact_law_ensemble_v1",
+ "mode": "declared",
+ "spec": {
+  "m": 2,
+  "eps": 0.0125,
+  "dt": 0.001,
+  "tmax": 4.0,
+  "z0": 4.0,
+  "var_z0_scale": 1.0,
+  "r_par0": 0.1,
+  "r_perp0": 0.0,
+  "u0": 0.3,
+  "sigma_perp0": 0.3,
+  "n_perp": 1,
+  "gamma": 1.0,
+  "d0": 1.0,
+  "z_bar": 0.0,
+  "torus_w": 1.0,
+  "contact_a": 0.4,
+  "rho": 1.0,
+  "slab_shape": "gauss",
+  "slab_sd": null,
+  "target_times": null,
+  "centres_z": null,
+  "kernel_cutoff_sd": 12.0,
+  "target_times_resolved": [
+   1.0,
+   2.5
+  ],
+  "centres_z_resolved": [
+   1.4715177646857693,
+   0.3283399944955952
+  ],
+  "slab_sd_resolved": 0.0125
+ },
+ "variants": [
+  {
+   "gate": "contact",
+   "a": 0.4,
+   "field": "mid",
+   "name": "full"
+  }
+ ],
+ "n_paths": 200000,
+ "chunk": 50000,
+ "chunk_sizes": [
+  50000,
+  50000,
+  50000,
+  50000
+ ],
+ "seed": 20260923,
+ "tag": 301,
+ "replicate": 0,
+ "seed_entropy": [
+  20260923,
+  301,
+  0,
+  1,
+  12500000,
+  1000000000000,
+  4000000000,
+  1000000000,
+  100000000,
+  0,
+  300000000,
+  300000000,
+  1000000000,
+  1000000000,
+  0,
+  1000000000,
+  50000
+ ],
+ "rng": "numpy Philox; chunk i uses SeedSequence(seed_entropy).spawn(n_chunks)[i]",
+ "ensemble_dir": "<local-ensemble-store>/prr_fk_ensembles/v3b_dt0.001_m2_eps0.0125",
+ "note": "V3 bridge dt ladder (fb_v3_bridge.py dtcheck)",
+ "driver": "exact_m_prr_fk_exact_law.py",
+ "exactness": "exact discrete-time Feynman-Kac law of the production Euler-Maruyama + end-of-step Doi killing process; sampling error only (iid per-path SE, path-group batch means)",
+ "declared": [
+  {
+   "B": 2.0,
+   "w": [
+    0.5,
+    0.5
+   ],
+   "variant": "full",
+   "cap": null,
+   "pair": 0,
+   "label": "equal_B2"
+  },
+  {
+   "B": 8.0,
+   "w": [
+    0.5,
+    0.5
+   ],
+   "variant": "full",
+   "cap": null,
+   "pair": 0,
+   "label": "equal_B8"
+  },
+  {
+   "B": 2.0,
+   "w": [
+    0.4930242756815644,
+    0.5069757243184357
+   ],
+   "variant": "full",
+   "cap": null,
+   "pair": 1,
+   "label": "maxmin_B2"
+  },
+  {
+   "B": 8.0,
+   "w": [
+    0.12749729866312637,
+    0.8725027013368736
+   ],
+   "variant": "full",
+   "cap": null,
+   "pair": 2,
+   "label": "maxmin_B8"
+  }
+ ],
+ "pairs": [
+  {
+   "variant": "full",
+   "w": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "variant": "full",
+   "w": [
+    0.4930242756815644,
+    0.5069757243184357
+   ]
+  },
+  {
+   "variant": "full",
+   "w": [
+    0.12749729866312637,
+    0.8725027013368736
+   ]
+  }
+ ],
+ "batch": 50000,
+ "storage": "per-step sums of exact kill probability and exposure moments",
+ "chunks": [
+  {
+   "chunk": 0,
+   "size": 50000,
+   "runtime_seconds": 16.49180325,
+   "contact_steps": 200000000,
+   "max_step_unit_exposure": 0.02784625738621871,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/v3b_dt0.001_m2_eps0.0125/chunk0000.npz",
+   "sha256": "42c146295f238ed96ed2b77ec4d5116904348ea5439c9f83baf1980ad2c430c7",
+   "bytes": 734678
+  },
+  {
+   "chunk": 1,
+   "size": 50000,
+   "runtime_seconds": 16.515127125,
+   "contact_steps": 200000000,
+   "max_step_unit_exposure": 0.027846257386210216,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/v3b_dt0.001_m2_eps0.0125/chunk0001.npz",
+   "sha256": "7f39eacb787d8c06ceec39a128a0c90738e53d028c849acfc6293226ed527369",
+   "bytes": 731772
+  },
+  {
+   "chunk": 2,
+   "size": 50000,
+   "runtime_seconds": 16.503270791,
+   "contact_steps": 200000000,
+   "max_step_unit_exposure": 0.027846257386216273,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/v3b_dt0.001_m2_eps0.0125/chunk0002.npz",
+   "sha256": "4cfd6b4a8fb4cb5da9c510e86c769b2fdf6bd460c2becc0b77dad4a3440daa6b",
+   "bytes": 734994
+  },
+  {
+   "chunk": 3,
+   "size": 50000,
+   "runtime_seconds": 16.284124916000003,
+   "contact_steps": 200000000,
+   "max_step_unit_exposure": 0.027846257386217207,
+   "file": "<local-ensemble-store>/prr_fk_ensembles/v3b_dt0.001_m2_eps0.0125/chunk0003.npz",
+   "sha256": "731e9d55cb7b6c58cf8fb9c2ebcce33bedd4701a95a67ab55520e5f5d017c35d",
+   "bytes": 734366
+  }
+ ],
+ "complete": true,
+ "last_invocation": {
+  "wall_seconds": 32.96235799789429,
+  "workers": 3,
+  "chunks_run": [
+   0,
+   2,
+   1,
+   3
+  ],
+  "cpu_wait": {
+   "python_processes": 0,
+   "waited_seconds": 0.024451017379760742
+  },
+  "finished_utc": "2026-09-26T02:58:23Z"
+ },
+ "process_seconds_total": 65.794326082
+}

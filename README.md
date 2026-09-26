@@ -1,9 +1,10 @@
 # Reproduction package: reaction-time peaks programmed with a fixed budget
 
-Release `v1.2.0` of this archive accompanies **“Programming the number and
-weights of reaction-time peaks with a fixed budget of static reactivity”** by
-Xiaoxiao Zhouyi (University of Bristol; submitted to *Communications in
-Nonlinear Science and Numerical Simulation*).  It contains the simulation,
+Release `v1.3.0` of this archive accompanies **“Programmable multimodality
+and saddle-node loss of reaction-time peaks under a fixed catalyst budget”** by
+Xiaoxiao Zhouyi (University of Bristol; submitted to *Chaos, Solitons &
+Fractals*), the retitled version of **“Programming the number and weights of
+reaction-time peaks with a fixed budget of static reactivity”**.  It contains the simulation,
 analysis and plotting code, the machine-readable numerical records behind the
 numbers and figures of the article and its Supplementary Material, the
 figure-generation scripts, the interval-arithmetic certificates and enclosures
@@ -17,7 +18,7 @@ abstract are not part of this release.  The article will be linked here once
 it is published; until then, section and proposition numbers quoted in these
 documents refer to the submitted version.
 
-This package is tag `v1.2.0` of
+This package is tag `v1.3.0` of
 https://github.com/zhouyi-xiaoxiao/prescribed-reaction-time-modes.  Verify it
 from the archive root with `shasum -a 256 -c MANIFEST.sha256`.  If a
 persistent identifier is later minted for this release, cite the identifier
@@ -32,6 +33,15 @@ numerical records of `v1.0.0` (they are cited as legacy records) and added the
 2026-09 fixed-budget campaign and its closing campaign; the manuscript files
 of the earlier version are not repeated here and remain available from the
 `v1.0.0` tag.
+
+**Relation to release `v1.2.0`.**  Release `v1.3.0` supersedes `v1.2.0` and
+keeps all of its code and records.  It adds the code and records of Sections
+B16 and B17 of the numerical record (SM-B): the approach of the exact law to
+its weak-noise limits across the noise level (`code/fb_v3_bridge.py`,
+`artifacts/data/exact_m_fixed_budget/V3_bridge/`, figure `fb_v3_bridge`) and
+the independent recheck of the interval certificates with FLINT/Arb
+(`code/fb_v3_arb_recheck.py`, `artifacts/data/exact_m_fixed_budget/V3_arb_recheck/`).
+See `RELEASE_NOTES_v1.3.0.md`.
 
 **Relation to release `v1.1.1`.**  Release `v1.2.0` supersedes `v1.1.1` and
 keeps all of its code and records.  It adds the code and records of the
@@ -166,6 +176,7 @@ metadata files were updated.
   and scripts, followed by the reading guide to the `v1.0.0` robustness
   records.
 - `RELEASE_NOTES_v1.2.0.md`: what release `v1.2.0` adds.
+- `RELEASE_NOTES_v1.3.0.md`: what release `v1.3.0` adds.
 - `PROVENANCE.md`, `DATA_AVAILABILITY.md`: seeds, platforms, data dictionary,
   what is not archived, and how workstation paths were neutralised.
 - `MANIFEST.sha256`: SHA-256 checksums, generated only after the release tree
@@ -192,7 +203,9 @@ recorded in the `env` field of each `HPC_*` record
 The interval certificates of release `v1.2.0` (`V2_bifurcation/`) record
 CPython 3.14.6 and mpmath 1.4.1 in their `provenance` field; the other
 `v1.2.0` drivers need only NumPy (and Matplotlib for the figures) and ran on
-the same workstation.
+the same workstation.  The Arb recheck of release `v1.3.0`
+(`fb_v3_arb_recheck.py`) needs python-flint (recorded: CPython 3.14.6,
+python-flint 0.9.0, FLINT 3.6.0).
 
 Create an isolated environment from the archive root, for example
 

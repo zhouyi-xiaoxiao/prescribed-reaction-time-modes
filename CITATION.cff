@@ -6,11 +6,11 @@ authors:
   - family-names: Zhouyi
     given-names: Xiaoxiao
     affiliation: University of Bristol
-version: 1.2.0
-date-released: 2026-09-25
-commit: 9db7d8e8cb8902a0c561f7b20890d48cccbb6e87
+version: 1.3.0
+date-released: 2026-09-26
+commit: 6d3af8da4097333825d94f5d7ba06184b60233c3
 repository-code: "https://github.com/zhouyi-xiaoxiao/prescribed-reaction-time-modes"
-url: "https://github.com/zhouyi-xiaoxiao/prescribed-reaction-time-modes/releases/tag/v1.2.0"
+url: "https://github.com/zhouyi-xiaoxiao/prescribed-reaction-time-modes/releases/tag/v1.3.0"
 license:
   - MIT
   - CC-BY-4.0
