@@ -1,141 +1,145 @@
-# Reproduction package: reaction-time peaks programmed with a fixed budget
+# Programmable multimodality and saddle-node loss of reaction-time peaks — reproduction package
 
-Release `v1.3.0` of this archive accompanies **“Programmable multimodality
-and saddle-node loss of reaction-time peaks under a fixed catalyst budget”** by
-Xiaoxiao Zhouyi (University of Bristol; submitted to *Chaos, Solitons &
-Fractals*), the retitled version of **“Programming the number and weights of
-reaction-time peaks with a fixed budget of static reactivity”**.  It contains the simulation,
-analysis and plotting code, the machine-readable numerical records behind the
-numbers and figures of the article and its Supplementary Material, the
-figure-generation scripts, the interval-arithmetic certificates and enclosures
-(scripts and outputs) that are part of three proofs of the Supplementary
-Material, the Lean 4
-sources, and the drivers, job scripts and records of the large-scale checks
-run on the Isambard 3 supercomputer.
+**Question.** Reacting molecules drift through a region and can react only
+where catalyst has been placed. With a fixed total amount of catalyst, can the
+placement be chosen so that the distribution of reaction times has a
+prescribed number of peaks, each at a chosen time and with a chosen weight?
 
-**Manuscript.**  The article, its Supplementary Material and the graphical
-abstract are not part of this release.  The article will be linked here once
-it is published; until then, section and proposition numbers quoted in these
-documents refer to the submitted version.
+**Result.** Yes, within limits that the work maps out (for example, a latest
+reachable peak time). The placement can be designed to set the number, times
+and weights of the peaks; designs with up to five peaks are demonstrated. For a
+given placement, once the catalyst budget passes a threshold a peak is lost
+through a saddle-node (fold) bifurcation.
+
+**Status.** Manuscript in preparation. This repository (release `v1.3.0`,
+September 2026) holds the code, numerical records, interval-arithmetic
+certificates and Lean 4 sources behind it.
+
+**Start here.** [`RESULTS_SUMMARY.md`](RESULTS_SUMMARY.md) maps every result
+to its record and script.
+
+Release `v1.3.0` of this archive accompanies the manuscript **“Programmable
+multimodality and saddle-node loss of reaction-time peaks under a fixed
+catalyst budget”** by Xiaoxiao Zhouyi (University of Bristol), in
+preparation; an earlier version of the manuscript was titled **“Programming
+the number and weights of reaction-time peaks with a fixed budget of static
+reactivity”**.  The archive contains the simulation, analysis and plotting
+code, the machine-readable numerical records behind the numbers and figures of
+the manuscript and its Supplementary Material, the figure-generation scripts,
+the interval-arithmetic certificates and enclosures (scripts and outputs) that
+are part of three proofs of the Supplementary Material, the Lean 4 sources, and
+the drivers, job scripts and records of the large-scale checks run on the
+Isambard 3 supercomputer.
+
+**Manuscript.** The manuscript, its Supplementary Material and the graphical
+abstract are not part of this release; the manuscript will be linked here once
+it is published.  Theorem, proposition and section numbers quoted in these
+documents refer to the current manuscript draft and may change.
 
 This package is tag `v1.3.0` of
-https://github.com/zhouyi-xiaoxiao/prescribed-reaction-time-modes.  Verify it
-from the archive root with `shasum -a 256 -c MANIFEST.sha256`.  If a
-persistent identifier is later minted for this release, cite the identifier
-shown by the repository record together with the tag.
+https://github.com/zhouyi-xiaoxiao/prescribed-reaction-time-modes.  The
+default branch also carries documentation and comment edits made after the
+release (listed in `PROVENANCE.md`); no number in any record changed.  Verify
+the tree from the archive root with:
 
-**Relation to release `v1.0.0`.**  Tag `v1.0.0` (2026-09-08) archives an
-earlier version of this work under a different title, with its own article and
-Supplemental Material PDFs.  The article cites `v1.0.0` for the full proof of
-the sufficient budget `B_cert` (Sec. S3.5 of that Supplemental Material) and
-for the earlier direct-kill campaigns.  Release `v1.1.0` kept all code and
-numerical records of `v1.0.0` (they are cited as legacy records) and added the
-2026-09 fixed-budget campaign and its closing campaign; the manuscript files
-of the earlier version are not repeated here and remain available from the
-`v1.0.0` tag.
+```bash
+shasum -a 256 -c MANIFEST.sha256
+```
 
-**Relation to release `v1.2.0`.**  Release `v1.3.0` supersedes `v1.2.0` and
-keeps all of its code and records.  It adds the code and records of Sections
-B16 and B17 of the numerical record (SM-B): the approach of the exact law to
-its weak-noise limits across the noise level (`code/fb_v3_bridge.py`,
-`artifacts/data/exact_m_fixed_budget/V3_bridge/`, figure `fb_v3_bridge`) and
-the independent recheck of the interval certificates with FLINT/Arb
-(`code/fb_v3_arb_recheck.py`, `artifacts/data/exact_m_fixed_budget/V3_arb_recheck/`).
-See `RELEASE_NOTES_v1.3.0.md`.
-
-**Relation to release `v1.1.1`.**  Release `v1.2.0` supersedes `v1.1.1` and
-keeps all of its code and records.  It adds the code and records of the
-results added in the final version of the article: the exact programming of
-peak times and weights (Theorem 4, Box 1), the timing horizon, the
-total-error protocol of every demonstrated design, the certified bifurcation
-set of the fixed-width fold and the programmed plug-flow channel of Fig. 1(b)
-(`code/fb_v2_*.py`, `code/crop_hero_panel_a.py`,
-`artifacts/data/exact_m_fixed_budget/V2_*/`, five new figures).  See
-`RELEASE_NOTES_v1.2.0.md` for the file list, seeds and what is not archived.
-
-**Relation to release `v1.1.0`.**  Release `v1.1.1` superseded `v1.1.0`.
-It adds the checks of the general-transport counterexamples of the
-Supplementary Material (section "Exact count beyond the harmonic trap:
-counterexamples, plug flow and a sufficient criterion"):
-`code/fb_gx_counterexample_checks.py` and its record
-`artifacts/data/exact_m_fixed_budget/GX_counterexamples/checks.json`, whose
-60-digit interval enclosures of arrival actions are part of the proof of the
-variance-driven counterexample.  It also adds the checks of the frozen-gate
-exact count under a uniform contact floor (Supplementary Material, section
-"Random frozen gates: the exact count under a uniform contact floor"):
-`code/fb_gb2_frozen_gate_checks.py` and its record
-`artifacts/data/exact_m_fixed_budget/GB2_frozen_gate/checks.json`
-(consistency checks of the algebra and constants, not part of a proof).  All
-other code and records are those of `v1.1.0`; only these documents and the
-metadata files were updated.
+If a persistent identifier is later minted for this release, cite the
+identifier shown by the repository record together with the tag.
 
 ## Contents
 
 - `code/`: all scripts.
-  - Fixed-budget campaign (2026-09): the exact-law Feynman--Kac estimator and
-    its validation (`exact_m_prr_fk_exact_law.py`,
-    `exact_m_prr_fk_n0_validation.py`), the allocation law
-    (`fb_allocation_law.py`), the numerical items N1--N9 (`fb_n1_*` to
-    `fb_n9b_*`), the theory checks (`fb_theory_core_checks.py`,
-    `fb_th1_passage_sign.py`, `fb_local_profile_check.py`,
-    `fb_meanfield_levelset_check.py`, `exact_m_fb_th6_tilted_bridge_checks.py`,
-    `fb_th6_contact_constants.py`, `fb_frozen_gate_check.py`,
-    `fb_finite_width_det.py`, `fb_preparation_predictions.py`,
-    `fb_bcert_window_check.py`), the effective-sample-size and referee checks
-    (`fb_referee_checks.py`), the stream-integration drivers I1--I5
-    (`exact_m_prr_upgrade_w6_single_particle.py`,
-    `exact_m_prr_w6_width_diagnostic.py`, `exact_m_prr_w2_seed_repeat.py`,
-    `exact_m_prr_release_time_smearing.py`, `exact_m_prr_mean_field_topology.py`,
-    `exact_m_prr_classifier_null_calibration.py`) and the publication figures
-    (`fb_make_paper_figures.py`).
-  - Closing campaign (2026-09): the interval-arithmetic certificates of the
-    finite-width fold (Prop. 4; `fb_th8_interval_certificate.py`) and of the
-    preparation count (`fb_c1_preparation_count.py`), the saddle-node normal
-    form of the exact law (`fb_th8b_fold_normal_form.py`), the frozen-gate
-    profile and gate-switching correction (Prop. 5; `fb_p5_gate_switching.py`,
-    `fb_p5_step6_tail.py`), the universality demos and checks (Sec. 3.9 of the
-    article; `fb_n14_universality.py`, `fb_n14_general_mc.py`,
-    `fb_n14_unimodality.py`, `fb_n14_fix_checks.py`), the large-budget
-    validation of the exact-law estimator (`fb_n10_largeB_validation.py`), the
-    shift-compensated timing design (`fb_n11_shift_compensation.py`), the
-    census resolution (`fb_n12_census_resolution.py`), the third-order
-    mean-field residual (`fb_n13_third_order.py`), the derived numbers quoted
-    in the text (`fb_derived_numbers.py`) and the graphical abstract
-    (`fb_graphical_abstract.py`).
-  - General-transport counterexamples (new in `v1.1.1`;
-    `fb_gx_counterexample_checks.py`): 60-digit outward-rounded interval
-    enclosures (mpmath `iv`, rational inputs) of the arrival actions and
-    their derivatives in the variance-driven example, the constants,
-    crossing and endpoint checks of the spiral example, closed-form counts
-    of the free envelopes on dense grids, and a seeded finite-noise
-    illustration of the killed density (not a proof).
-  - Frozen-gate exact count under a contact floor (new in `v1.1.1`;
-    `fb_gb2_frozen_gate_checks.py`): 40-digit checks of the bridge, slope and
-    score identities, the free-interval margin at the anchors, the contact
-    probability of the boundary-tangent gate by exact quadrature, the
+  - Fixed-budget campaign (2026-09):
+    - `exact_m_prr_fk_exact_law.py`: exact-law Feynman–Kac estimator.
+    - `exact_m_prr_fk_n0_validation.py`: estimator validation.
+    - `fb_allocation_law.py`: allocation law.
+    - `fb_n1_allocation_design.py`: N1 allocation design.
+    - `fb_n2_meanfield_residual.py`: N2 mean-field residual.
+    - `fb_n3_contact_factorial.py`: N3 contact factorial.
+    - `fb_n4_preparation.py`: N4 preparation sensitivity.
+    - `fb_n5_dt_ladder.py`: N5 time-step ladder.
+    - `fb_n6_visibility_thresholds.py`: N6 visibility thresholds.
+    - `fb_n8_robustness.py`: N8 robustness.
+    - `fb_n9a_matching_census.py`: N9a matching census.
+    - `fb_n9b_fold.py`: N9b finite-width fold of the exact law.
+    - `fb_theory_core_checks.py`: theory checks.
+    - `fb_th1_passage_sign.py`: passage-sign check.
+    - `fb_local_profile_check.py`: local-profile check.
+    - `fb_meanfield_levelset_check.py`: mean-field level-set check.
+    - `exact_m_fb_th6_tilted_bridge_checks.py`: tilted-bridge check.
+    - `fb_th6_contact_constants.py`: contact constants.
+    - `fb_frozen_gate_check.py`: frozen-gate check.
+    - `fb_finite_width_det.py`: finite-width stripes, deterministic fold budget.
+    - `fb_preparation_predictions.py`: preparation predictions.
+    - `fb_bcert_window_check.py`: nominal evaluation of the sufficient budget `B_cert`.
+    - `fb_referee_checks.py`: additional robustness checks.
+    - Stream-integration drivers I1–I5:
+      `exact_m_prr_upgrade_w6_single_particle.py` and
+      `exact_m_prr_w6_width_diagnostic.py` (single-particle control, I1),
+      `exact_m_prr_w2_seed_repeat.py` (seed repeats),
+      `exact_m_prr_release_time_smearing.py` (release-time smearing, I3),
+      `exact_m_prr_mean_field_topology.py` (mean-field topology, I4),
+      `exact_m_prr_classifier_null_calibration.py` (classifier null
+      calibration, I5).
+    - `fb_make_paper_figures.py`: publication figures.
+  - Closing campaign (2026-09):
+    - `fb_th8_interval_certificate.py`: interval certificate of the finite-width fold.
+    - `fb_c1_preparation_count.py`: preparation-count certificate.
+    - `fb_th8b_fold_normal_form.py`: saddle-node normal form of the exact law.
+    - `fb_p5_gate_switching.py`: frozen-gate profile and gate-switching correction.
+    - `fb_p5_step6_tail.py`: tail bound in step 6 of the gate-switching proof.
+    - `fb_n14_universality.py`: universality demos.
+    - `fb_n14_general_mc.py`: general-transport Monte Carlo check.
+    - `fb_n14_unimodality.py`: unimodality check.
+    - `fb_n14_fix_checks.py`: deterministic checks of the universality remarks.
+    - `fb_n10_largeB_validation.py`: large-budget validation.
+    - `fb_n11_shift_compensation.py`: shift-compensated timing design.
+    - `fb_n12_census_resolution.py`: census resolution.
+    - `fb_n13_third_order.py`: third-order mean-field residual.
+    - `fb_derived_numbers.py`: derived numbers.
+    - `fb_graphical_abstract.py`: graphical abstract.
+  - General-transport counterexamples (new in `v1.1.1`):
+    `fb_gx_counterexample_checks.py`. It computes 60-digit outward-rounded
+    interval enclosures (mpmath `iv`, rational inputs) of the arrival actions
+    and their derivatives in the variance-driven example, the constants,
+    crossing and endpoint checks of the spiral example, closed-form counts of
+    the free envelopes on dense grids, and a seeded finite-noise illustration
+    of the killed density (not a proof).
+  - Frozen-gate exact count under a contact floor (new in `v1.1.1`):
+    `fb_gb2_frozen_gate_checks.py`. It runs 40-digit checks of the bridge,
+    slope and score identities, the free-interval margin at the anchors, the
+    contact probability of the boundary-tangent gate by exact quadrature, the
     minimum-image and orthant checks, and a Monte Carlo comparison of two
     transverse directions (consistency checks, not a proof).
   - Exact programming, total-error protocol, bifurcation set and programmed
-    channel (new in `v1.2.0`; `fb_v2_*.py`, `crop_hero_panel_a.py`): see
+    channel (new in `v1.2.0`): `fb_v2_*.py` and `crop_hero_panel_a.py`; see
     `RELEASE_NOTES_v1.2.0.md`.
   - Large-scale checks on Isambard 3 (2026-09; Supplementary Material,
-    section "Large-scale checks on Isambard 3"): the time-step ladder with
-    exact Ornstein--Uhlenbeck transitions and Brownian-bridge refinement
-    (`fb_hpc_n5full.py`), the contact factorial with exact transitions
-    (`fb_hpc_n3full.py`), the direct-kill confirmation of the design cells
-    (`fb_hpc_headline.py`), the census of the three gated cells with up to
-    `2x10^9` exact-law paths (`fb_hpc_census.py`), their shared helpers
-    (`fb_hpc_common.py`), the deterministic assessment and figures of the
-    ladder and factorial (`fb_hpc_n5n3_report.py`), the generator of the
-    LaTeX result snippets (`fb_hpc_snippets.py`), and in `code/hpc_jobs/` the
-    Slurm job scripts, the prologue `_common.sh` they source and the tiny
-    end-to-end validation `hpc_validate_tiny.py`.
-  - Release `v1.0.0` (legacy records): the deterministic off-lattice
-    simulator `validate_exact_m_offlattice.py`, the production and W1--W5
-    drivers, the robustness driver, the covariance-aware reclassification and
-    figure scripts, the mean-field boundary evaluation, the halved-time-step
-    seed repeats, and the independent Dyson-bound checks
-    `b0_dyson_numerics.py`, `b0_dyson_chaincheck.py`.
+    section "Large-scale checks on Isambard 3"):
+    - `fb_hpc_n5full.py`: time-step ladder with exact Ornstein–Uhlenbeck transitions and Brownian-bridge refinement.
+    - `fb_hpc_n3full.py`: contact factorial with exact transitions.
+    - `fb_hpc_headline.py`: direct-kill confirmation of the design cells.
+    - `fb_hpc_census.py`: census of the three gated cells with up to 2×10⁹ exact-law paths.
+    - `fb_hpc_common.py`: shared helpers.
+    - `fb_hpc_n5n3_report.py`: deterministic assessment and figures.
+    - `fb_hpc_snippets.py`: result-snippet generator.
+    - `code/hpc_jobs/`: the Slurm job scripts, the prologue `_common.sh` they
+      source and the tiny end-to-end validation `hpc_validate_tiny.py`.
+  - Release `v1.0.0` (legacy records):
+    - `validate_exact_m_offlattice.py`: deterministic off-lattice simulator.
+    - `exact_m_offlattice_production.py`: production driver.
+    - `exact_m_prr_upgrade_w1.py` through `exact_m_prr_upgrade_w5.py`: W1–W5 drivers.
+    - `exact_m_prr_robustness.py`: robustness driver.
+    - `reclassify_covariance_aware.py`: covariance-aware reclassification.
+    - `remake_b0_figure_covariance.py`: `B_op(eps)` figure under the covariance-aware classifier.
+    - `remake_jitter_figure_covariance.py`: W3 jitter figure under the covariance-aware classifier.
+    - `exact_m_prr_mean_field_boundary.py`: mean-field boundary evaluation.
+    - `exact_m_prr_dt_half_seed_repeat.py`: halved-time-step seed repeats.
+    - `b0_dyson_numerics.py`: Dyson-bound numerics.
+    - `b0_dyson_chaincheck.py`: Dyson-bound chain check.
 - `artifacts/data/exact_m_fixed_budget/`: records of the fixed-budget
   campaign and its closing campaign (see `DATA_AVAILABILITY.md` and
   `RESULTS_SUMMARY.md`), including the ensemble index records
@@ -170,8 +174,8 @@ metadata files were updated.
 - `environment/`: package versions of the two reference environments and the
   platform provenance; `reference_platform.json` records the source commit
   the archive was built from (`release_commit`, written by the builder).
-- `.zenodo.json` and `CITATION.cff`: deposit and citation metadata with no
-  fabricated DOI.
+- `.zenodo.json` and `CITATION.cff`: deposit and citation metadata (no DOI
+  has been minted yet).
 - `RESULTS_SUMMARY.md`: a map from the results of the article to their records
   and scripts, followed by the reading guide to the `v1.0.0` robustness
   records.
@@ -195,10 +199,9 @@ Two reference environments were used (both arm64 macOS, Apple M4 Pro):
 - the 2026-08 campaigns of release `v1.0.0`: CPython 3.12.13 with
   `environment/requirements.txt` (NumPy, Matplotlib, mpmath).
 
-The large-scale checks ran on Isambard 3 (GW4/Bristol; partition `grace`,
-aarch64 nodes with 144 cores) with CPython 3.11.15 and NumPy 2.0.2, as
-recorded in the `env` field of each `HPC_*` record
-(`environment/reference_platform.json`, key `hpc_campaign`).
+The large-scale checks ran on the Isambard 3 supercomputer with CPython
+3.11.15 and NumPy 2.0.2, as recorded in the `env` field of each `HPC_*`
+record (`environment/reference_platform.json`, key `hpc_campaign`).
 
 The interval certificates of release `v1.2.0` (`V2_bifurcation/`) record
 CPython 3.14.6 and mpmath 1.4.1 in their `provenance` field; the other
@@ -256,7 +259,7 @@ python code/fb_p5_step6_tail.py                   # P5_gate_switching/p5_step6_t
 python code/fb_n14_unimodality.py                 # N14_universality/n14_unimodality.json
 python code/fb_n14_fix_checks.py                  # N14_universality/n14_fix_checks.json
 python code/fb_n10_largeB_validation.py compare   # N10_largeB_validation/n10_summary.json (stored DK records + FK arrays)
-python code/fb_graphical_abstract.py              # writes manuscript/cnsns_submission/graphical_abstract.{pdf,png} (not shipped)
+python code/fb_graphical_abstract.py              # writes artifacts/figures/graphical_abstract.{pdf,png} (not shipped)
 python code/fb_hpc_n5n3_report.py derive          # HPC_N5full/hpc_n5full_assessment.json, HPC_N3full/hpc_n3full_assessment.json
 python code/fb_hpc_n5n3_report.py figures         # artifacts/figures/fb_hpc_n5full.pdf, fb_hpc_n3full.pdf
 ```
@@ -272,7 +275,7 @@ python code/fb_gx_counterexample_checks.py        # GX_counterexamples/checks.js
 python code/fb_gx_counterexample_checks.py --skip-mc   # without the seeded illustration: checks_quick.json
 ```
 
-Parts 1--4 and the free-envelope grid counts are deterministic.  The
+Parts 1–4 and the free-envelope grid counts are deterministic.  The
 finite-noise illustration of part 5 draws bridges with the recorded
 `SeedSequence([20260924, 61, tag])` streams (one process) and is labelled an
 illustration, not a proof.  Enclosures are written with outward rounding
@@ -290,7 +293,7 @@ one command:
 python code/fb_gb2_frozen_gate_checks.py         # GB2_frozen_gate/checks.json
 ```
 
-Part 1 uses Python's `random.seed(20260924)`, parts 4a--4b NumPy's
+Part 1 uses Python's `random.seed(20260924)`, parts 4a–4b NumPy's
 `default_rng(20260924)`; the other parts draw no random numbers.
 
 The publication figures are redrawn by
@@ -326,7 +329,7 @@ contain.
 ## Full stochastic reproduction
 
 **Fixed-budget campaign.**  Every exact-law estimate is an average over an
-ensemble of unkilled Euler--Maruyama paths (the discrete Feynman--Kac
+ensemble of unkilled Euler–Maruyama paths (the discrete Feynman–Kac
 identity documented at the top of `code/exact_m_prr_fk_exact_law.py`).  The
 ensembles themselves (about 16 GB of compressed chunk files) are not archived.
 Each ensemble has an index record `artifacts/data/exact_m_fixed_budget/fk_ensembles/<name>.json`
@@ -378,7 +381,7 @@ Arguments are `m eps N seed output.npz`.  The remaining scout runs are
 `FK_FULL_ONLY=1 FK_BUDGETS=3,3.25,3.5,3.75,4,4.25,4.5,4.75,5,5.5,6,7`), and
 `fk_var.py 2 0.025 200000 32` (same environment as the `fk_var.py` line
 above); the output names follow the pattern shown.  The Monte Carlo drivers
-of the I1--I5 streams take their own `--help` options and record their seeds
+of the I1–I5 streams take their own `--help` options and record their seeds
 and stream tags.
 
 **Large-scale checks (Isambard 3).**  The four drivers run as
@@ -411,7 +414,7 @@ checkpoint.  The analyses of the
 ladder and factorial compare with the workstation records `N5/n5_dt_ladder.json`
 and `N3/n3_summary.json`, which are archived.
 
-**Release `v1.0.0` campaigns.**  The production matrix and the W1--W5 and
+**Release `v1.0.0` campaigns.**  The production matrix and the W1–W5 and
 robustness campaigns are rerun exactly as documented for `v1.0.0`:
 
 ```bash
@@ -483,5 +486,53 @@ shasum -a 256 -c MANIFEST.sha256
 ```
 
 Source code is licensed under the MIT License (`LICENSE-CODE`).  Stored data,
-figures and documentation are licensed under
-Creative Commons Attribution 4.0 International (`LICENSE-DATA`).
+figures and documentation are licensed under Creative Commons Attribution 4.0
+International (`LICENSE-DATA`).
+
+## Release history
+
+**Release `v1.3.0`.** Release `v1.3.0` supersedes `v1.2.0` and keeps all of
+its code and records. It adds the code and records of Sections B16 and B17 of
+the numerical record (SM-B): the approach of the exact law to its weak-noise
+limits across the noise level (`code/fb_v3_bridge.py`,
+`artifacts/data/exact_m_fixed_budget/V3_bridge/`, figure `fb_v3_bridge`) and
+the independent recheck of the interval certificates with FLINT/Arb
+(`code/fb_v3_arb_recheck.py`,
+`artifacts/data/exact_m_fixed_budget/V3_arb_recheck/`). See
+`RELEASE_NOTES_v1.3.0.md`.
+
+**Release `v1.2.0`.** Release `v1.2.0` supersedes `v1.1.1` and keeps all of
+its code and records. It adds the code and records of the results added in
+that version of the manuscript: the exact programming of peak times and
+weights (Theorem 4, Box 1), the timing horizon, the total-error protocol of
+every demonstrated design, the certified bifurcation set of the fixed-width
+fold and the programmed plug-flow channel of Fig. 1(b)
+(`code/fb_v2_*.py`, `code/crop_hero_panel_a.py`,
+`artifacts/data/exact_m_fixed_budget/V2_*/`, five new figures). See
+`RELEASE_NOTES_v1.2.0.md` for the file list, seeds and what is not archived.
+
+**Release `v1.1.1`.** Release `v1.1.1` superseded `v1.1.0`. It adds the
+checks of the general-transport counterexamples of the Supplementary Material
+(section "Exact count beyond the harmonic trap: counterexamples, plug flow and
+a sufficient criterion"):
+`code/fb_gx_counterexample_checks.py` and its record
+`artifacts/data/exact_m_fixed_budget/GX_counterexamples/checks.json`, whose
+60-digit interval enclosures of arrival actions are part of the proof of the
+variance-driven counterexample. It also adds the checks of the frozen-gate
+exact count under a uniform contact floor (Supplementary Material, section
+"Random frozen gates: the exact count under a uniform contact floor"):
+`code/fb_gb2_frozen_gate_checks.py` and its record
+`artifacts/data/exact_m_fixed_budget/GB2_frozen_gate/checks.json`
+(consistency checks of the algebra and constants, not part of a proof). All
+other code and records are those of `v1.1.0`; only these documents and the
+metadata files were updated.
+
+**Release `v1.1.0`.** Release `v1.1.0` kept all code and numerical records of
+`v1.0.0` as legacy records and added the fixed-budget campaign and its closing
+campaign.
+
+**Release `v1.0.0`.** Tag `v1.0.0` (2026-09-08) archives the code and
+records of an earlier version of this work, under a different title.  The
+full proof of the sufficient budget `B_cert` and the earlier direct-kill
+campaigns are documented there; release `v1.1.0` kept all code and numerical
+records of `v1.0.0` as legacy records.

@@ -1,13 +1,15 @@
 # Release notes: v1.2.0
 
-Release `v1.2.0` accompanies the final submitted version of **"Programming the
-number and weights of reaction-time peaks with a fixed budget of static
-reactivity"** (CNSNS).  It supersedes `v1.1.1` and keeps all of its code and
-records unchanged.  No manuscript PDF is included.
+Release `v1.2.0` accompanies the version of the manuscript titled
+**"Programming the number and weights of reaction-time peaks with a fixed
+budget of static reactivity"** (since retitled; see `RELEASE_NOTES_v1.3.0.md`).
+It supersedes `v1.1.1` and keeps all of its code and records unchanged.  No
+manuscript PDF is included.
 
 ## What is new
 
-The code and records behind the results added in the final version: the exact
+The code and records behind the results added in that version of the
+manuscript: the exact
 programming of peak times and weights (Theorem 4 and Box 1 of the article), the
 timing horizon, the total-error protocol of every demonstrated design, the
 certified bifurcation set of the fixed-width fold, and the programmed plug-flow
@@ -22,7 +24,7 @@ channel of Fig. 1(b).  Paths below are relative to
 | Total-error protocol: direct kill at `dt`, `dt/2`, `dt/4` (coupled and independent steps) for all 35 designs, the ten max--min cells of the allocation study and the shift-compensated designs; protocol-P visibility (Sec. 4.2; SM-B) | `V2_TEP/` (`nue_summary.json`, `n1_tep_summary.json`, `protocol_P_design_law.json`, per-design `*/tep_*.json` and `level*.json`, input designs `_designs/`) | `fb_v2_tep.py`, `fb_v2_tep_ladder.py`, `fb_v2_tep_n1.py`, `fb_v2_nue_summary.py`, `fb_v2_protocol_p_designs.py` |
 | Certified fold curve of two stripes for widths in `[0.15, 0.5715]`, fold curves along allocation families, the codimension-two switch at three stripes, theorem-level validation (Prop. 4, Fig. bifurcation set; SM-A Sections A7.3--A7.4) | `V2_bifurcation/` (`fold_curve_m2.json`, `fold_curve_m2_boxes.json`, `codim2_switch.json`, `codim2_switch_boxes.json`, `theorem_validation*.json`, `maxmin_m3_float_scan.json`) | `fb_v2_fold_curve_certificate.py`, `fb_v2_codim2_switch.py`, `fb_v2_cert_validator.py`, `fb_v2_maxmin_m3_scan.py`, `fb_v2_fold_curve_figure.py`, `fb_v2_bifurcation_figure.py` |
 | Programmed plug-flow channel with the Poiseuille contrast (Sec. 2.4, Fig. 1(b); SM-B) | `V2_hero/` (`design_eps{0.03,0.01}.json`, `designs/`, `tep_eps*.json`, `oos_*.json`, `oos_study_*.json`, `pois_contrast.json`, `selftest_*.json`, `summary.json`) | `fb_v2_hero_channel.py`; `crop_hero_panel_a.py` (Fig. 1(b) panel, needs PyMuPDF) |
-| Graphical abstract of the submission (deterministic, no simulation) | `V2_hero/design_eps0.03.json`, `V2_hero/designs/` | `fb_v2_graphical_abstract.py` |
+| Graphical abstract of the manuscript (deterministic, no simulation) | `V2_hero/design_eps0.03.json`, `V2_hero/designs/` | `fb_v2_graphical_abstract.py` |
 
 New figures in `artifacts/figures/`: `fb_v2_design_programming`,
 `fb_v2_tep_validation`, `fb_v2_bifurcation_set`, `fb_v2_fold_curve_m2`,

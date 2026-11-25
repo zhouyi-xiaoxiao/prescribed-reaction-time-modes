@@ -1,10 +1,10 @@
 # Release notes: v1.3.0
 
-Release `v1.3.0` accompanies the version of the article submitted to
-*Chaos, Solitons & Fractals*, **"Programmable multimodality and saddle-node
-loss of reaction-time peaks under a fixed catalyst budget"** (the same work as
+Release `v1.3.0` accompanies the manuscript (in preparation),
+**"Programmable multimodality and saddle-node loss of reaction-time peaks under
+a fixed catalyst budget"** (the same work as
 "Programming the number and weights of reaction-time peaks with a fixed budget
-of static reactivity", retitled).  Its Supplementary Material is split into
+of static reactivity", retitled). Its Supplementary Material is split into
 SM-A (proofs of the main results), SM-B (numerical record) and SM-C (extended
 proofs).  The release supersedes `v1.2.0` and keeps all of its code and
 records unchanged.  No manuscript PDF is included.

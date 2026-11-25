@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this reproduction package, please cite both the article and this archived software/data version."
-title: "Reproduction package for Programming the number and weights of reaction-time peaks with a fixed budget of static reactivity"
+title: "Reproduction package for Programmable multimodality and saddle-node loss of reaction-time peaks under a fixed catalyst budget"
 type: software
 authors:
   - family-names: Zhouyi

@@ -19,7 +19,7 @@
   ],
   "license": "cc-by-4.0",
   "notes": "The Zenodo record license applies to the data, figures, and documentation. Source code is separately licensed under MIT in LICENSE-CODE.",
-  "title": "Reproduction package for Programming the number and weights of reaction-time peaks with a fixed budget of static reactivity",
+  "title": "Reproduction package for Programmable multimodality and saddle-node loss of reaction-time peaks under a fixed catalyst budget",
   "upload_type": "software",
   "version": "1.3.0"
 }
