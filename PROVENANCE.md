@@ -273,8 +273,8 @@ changed, and no `.lean` source, build record or audit record of the Lean
 package changed, so the Lean anchors are unchanged.  `MANIFEST.sha256` was
 regenerated.
 
-- Documentation: `README.md`, `RELEASE_NOTES_v1.2.0.md`,
-  `RELEASE_NOTES_v1.3.0.md`, this file, the titles in `CITATION.cff` and
+- Documentation: `README.md`, `RESULTS_SUMMARY.md` (dashes only),
+  `RELEASE_NOTES_v1.2.0.md`, `RELEASE_NOTES_v1.3.0.md`, this file, the titles in `CITATION.cff` and
   `.zenodo.json`, `LICENSE-DATA` (now the full CC BY 4.0 legal code), and the
   Lean package's `README.md` and `FORMALIZATION_TARGETS.md` (their lines in
   the package `MANIFEST.sha256` were updated).

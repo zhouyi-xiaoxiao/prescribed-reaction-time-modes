@@ -14,7 +14,7 @@ top-level directory.
 |:---|:---|:---|
 | Exact-law estimator and its validation against direct-kill histograms (Supplementary Material, numerical methods) | `n0_validation.json`, `n0_selftest.json`, `fk_ensembles/n0_*.json` | `exact_m_prr_fk_exact_law.py`, `exact_m_prr_fk_n0_validation.py` |
 | Large-budget validation of the exact-law estimator against direct kill, up to `B = 10^3` (Sec. 4.1; SM large-budget figure) | `N10_largeB_validation/` (`n10_summary.json`, `directkill/`, `fk/`) | `fb_n10_largeB_validation.py` |
-| Allocation law and max--min design (Prop. 1; allocation-law figure) | `allocation_law.json` | `fb_allocation_law.py`; Lean module `StickBreaking` |
+| Allocation law and max–min design (Prop. 1; allocation-law figure) | `allocation_law.json` | `fb_allocation_law.py`; Lean module `StickBreaking` |
 | Designed allocations at finite noise (design-density and design-mass figures) | `N1/`, `fk_ensembles/n1_*.json` | `fb_n1_allocation_design.py` |
 | Shift-compensated timing design (SM Sec. S6.2.1) | `N11_shift_compensation/` (`n11_shift_compensation.json`, `n11_designs.json`, `fk_index/`, `directkill/`) | `fb_n11_shift_compensation.py` |
 | Mean-field sandwich and residual decomposition (Prop. 2) | `N2/`, `fk_ensembles/n2_*.json`, `TH_core/theory_core_checks.json`, `TH_core/th1_passage_sign.json` | `fb_n2_meanfield_residual.py`, `fb_theory_core_checks.py`, `fb_th1_passage_sign.py`; Lean module `SurvivalSandwich` |
@@ -26,7 +26,7 @@ top-level directory.
 | Contact rule and frozen gate (Prop. 5; contact figure) | `N3/`, `fk_ensembles/n3_*.json`, `TH7/frozen_gate_check.json`, `notes/gap_diagnosis_20260923/theory_scout/analysis_h3.json` | `fb_n3_contact_factorial.py`, `fb_frozen_gate_check.py` |
 | Frozen-gate passage profile and gate-switching correction (Prop. 5; SM gate-switching figure) | `P5_gate_switching/` (`p5_summary.json`, `p5_jfun.json`, `p5_predict.json`, `p5_oracle.json`, `p5_profile.json`, `p5_step6_tail.json`) | `fb_p5_gate_switching.py`, `fb_p5_step6_tail.py` |
 | Finite width and fold (Prop. 4; fold figure) | `TH8/finite_width_det.json`, `N9b/n9b_fold.json`, `fk_ensembles/n9b_*.json` | `fb_finite_width_det.py`, `fb_n9b_fold.py` |
-| Interval-arithmetic certificate of (D1)--(D4) and of `B_top^det`, and the saddle-node of the exact law (Prop. 4) | `TH8_certificate/certificate.json`, `TH8_certificate/fold_normal_form.json` | `fb_th8_interval_certificate.py`, `fb_th8b_fold_normal_form.py` |
+| Interval-arithmetic certificate of (D1)–(D4) and of `B_top^det`, and the saddle-node of the exact law (Prop. 4) | `TH8_certificate/certificate.json`, `TH8_certificate/fold_normal_form.json` | `fb_th8_interval_certificate.py`, `fb_th8b_fold_normal_form.py` |
 | Outside the window (Prop. 6) and robustness | `N8/n8_summary.json`, `fk_ensembles/n8*.json` | `fb_n8_robustness.py` |
 | Preparation (Cor. 1) | `N4/n4_preparation.json`, `fk_ensembles/n4_*.json`, `TH10/preparation_predictions.json` | `fb_n4_preparation.py`, `fb_preparation_predictions.py` |
 | Small-budget count for every preparation (Cor. 1; interval certificates and census) | `C1_preparation_count/` (`c1_interval_certificates.json`, `c1_floatG_census.json`, `c1_fk_small_budget.json`) | `fb_c1_preparation_count.py` |
@@ -35,13 +35,13 @@ top-level directory.
 | Frozen gates: exact count under a uniform contact floor (Prop. 5(e); 40-digit bridge, slope and score identities, free-interval margin, boundary-tangent contact probability, minimum-image and orthant checks; Supplementary Material, section on random frozen gates; new in `v1.1.1`) | `GB2_frozen_gate/checks.json` | `fb_gb2_frozen_gate_checks.py` |
 | Exact programming of peak times and weights: sample-average Newton designs of four and five peaks, out-of-sample replicates, sample-size study (Thm. 4, Box 1, Sec. 4.2; design-programming figure; new in `v1.2.0`) | `V2_design/` (`demo_eps*.json`, `showcase_*.json`, `samplesize_*.json`, `failed_cells_nocap.json`, `oos_r2_*.json`), `V2_NU_A/` (estimator validation) | `fb_v2_saa_newton.py`, `fb_v2_oos_replicate.py`, `fb_v2_design_estimator.py` |
 | Timing horizon by continuation and its fit (Sec. 4.2; design-programming figure (c); new in `v1.2.0`) | `V2_design/horizon_*.json` | `fb_v2_timing_horizon.py` |
-| Total-error protocol of all designs, of the ten max--min cells and protocol-P visibility (Sec. 4.2; SM-B total-error figure; new in `v1.2.0`) | `V2_TEP/` (`nue_summary.json`, `n1_tep_summary.json`, `protocol_P_design_law.json`) | `fb_v2_tep.py`, `fb_v2_tep_ladder.py`, `fb_v2_tep_n1.py`, `fb_v2_nue_summary.py`, `fb_v2_protocol_p_designs.py` |
-| Certified bifurcation set: two-stripe fold curve for widths in `[0.15, 0.5715]`, fold curves along allocation families, codimension-two switch (Prop. 4; bifurcation-set figure; SM-A Sections A7.3--A7.4; new in `v1.2.0`) | `V2_bifurcation/` | `fb_v2_fold_curve_certificate.py`, `fb_v2_codim2_switch.py`, `fb_v2_cert_validator.py`, `fb_v2_maxmin_m3_scan.py`, `fb_v2_fold_curve_figure.py`, `fb_v2_bifurcation_figure.py` |
+| Total-error protocol of all designs, of the ten max–min cells and protocol-P visibility (Sec. 4.2; SM-B total-error figure; new in `v1.2.0`) | `V2_TEP/` (`nue_summary.json`, `n1_tep_summary.json`, `protocol_P_design_law.json`) | `fb_v2_tep.py`, `fb_v2_tep_ladder.py`, `fb_v2_tep_n1.py`, `fb_v2_nue_summary.py`, `fb_v2_protocol_p_designs.py` |
+| Certified bifurcation set: two-stripe fold curve for widths in `[0.15, 0.5715]`, fold curves along allocation families, codimension-two switch (Prop. 4; bifurcation-set figure; SM-A Sections A7.3–A7.4; new in `v1.2.0`) | `V2_bifurcation/` | `fb_v2_fold_curve_certificate.py`, `fb_v2_codim2_switch.py`, `fb_v2_cert_validator.py`, `fb_v2_maxmin_m3_scan.py`, `fb_v2_fold_curve_figure.py`, `fb_v2_bifurcation_figure.py` |
 | Programmed plug-flow channel with the Poiseuille contrast (Sec. 2.4, Fig. 1(b); new in `v1.2.0`) | `V2_hero/` | `fb_v2_hero_channel.py`, `crop_hero_panel_a.py` |
 | Visibility thresholds (visibility figure) | `N6/`, `fk_ensembles/n6_*.json`, `exact_m_prr_upgrade/robustness/w2_seed_repeat_summary.json` | `fb_n6_visibility_thresholds.py`, `exact_m_prr_w2_seed_repeat.py` |
 | Time-step ladder | `N5/` | `fb_n5_dt_ladder.py` |
 | Sufficient budget `B_cert` (Supplementary remark; proof in release `v1.0.0`) | `TH11/bcert_nominal_windows.json` | `fb_bcert_window_check.py`, `b0_dyson_numerics.py`, `b0_dyson_chaincheck.py`; Lean modules `BudgetThreshold`, `BZeroThreshold`, `B0ChainKernel` |
-| Small budget at fixed noise (Thm. 1); legacy direct-kill campaigns of the Supplementary Material | release `v1.0.0` records (`exact_m_offlattice_production/`, `exact_m_prr_upgrade/`; guide below) | production and W1--W5 drivers; Lean modules `ExpPolyZeros`, `ZeroBound`, `MixtureIdentities`, `GaussianMixture`, `CrossoverBounds`, `WindowSignature`, `SignatureStability` |
+| Small budget at fixed noise (Thm. 1); legacy direct-kill campaigns of the Supplementary Material | release `v1.0.0` records (`exact_m_offlattice_production/`, `exact_m_prr_upgrade/`; guide below) | production and W1–W5 drivers; Lean modules `ExpPolyZeros`, `ZeroBound`, `MixtureIdentities`, `GaussianMixture`, `CrossoverBounds`, `WindowSignature`, `SignatureStability` |
 | Single-particle control (I1) | `exact_m_prr_upgrade/w6_single_particle/` | `exact_m_prr_upgrade_w6_single_particle.py`, `exact_m_prr_w6_width_diagnostic.py` |
 | Release-time smearing (I3) | `exact_m_prr_upgrade/robustness/release_time_smearing/` | `exact_m_prr_release_time_smearing.py` |
 | Classifier null calibration and power (I5) | `I5_classifier_null/` | `exact_m_prr_classifier_null_calibration.py` |
@@ -80,8 +80,8 @@ the peak bin and of the selected contour-base bin, `C_j` the raw bin counts,
 statistic defined in the article.  The peak-only convention
 `sigma_peak^2 = sum_j A_peak,j^2 C_j / (N dt)^2` under which the records were
 first written is superseded; it inflates `z` of counted maxima by factors
-1.00--1.55.  Three of the 606 maxima flip, all in the W2 column `m=3`,
-`eps=0.20` (`B = 0.125, 0.210, 0.273`; `z` falls from 5.8--6.1 to 4.2--4.4),
+1.00–1.55.  Three of the 606 maxima flip, all in the W2 column `m=3`,
+`eps=0.20` (`B = 0.125, 0.210, 0.273`; `z` falls from 5.8–6.1 to 4.2–4.4),
 so that column has no certified crossing at 10^6 walkers.  The legacy fields
 `status="bisected"`, `b0=0.2816`, `b0_bracket=[0.2726, 0.2909]` stored for
 that chain in `w2_b0_empirical/B0_empirical.json`, and the mirrored entry
@@ -98,7 +98,7 @@ and `covariance_aware_reclassification_summary.txt`.
 ## Mean-field boundary (parameter-free preflight law of the main text)
 
 `mean_field_boundary.json` (script `exact_m_prr_mean_field_boundary.py`,
-deterministic, about 40 s) evaluates the hazard--survival law
+deterministic, about 40 s) evaluates the hazard–survival law
 `f_1 = B G exp(-B Lambda)`, `Lambda(t) = int_0^t G`, built from the free
 exposure clock `G` of `validate_exact_m_offlattice.py`, on the fixed
 covariance-aware classifier and the W2 last-basin pass rule, using the exact
@@ -113,12 +113,12 @@ less than `1e-5` at `dt_mf = 5e-4` and `1.25e-4`.
 |:---|:---|---:|---:|---:|
 | (2, 0.05) | one pass-to-fail transition | 7.357968 | 6.987 ([6.949, 7.025]) | +5.3% |
 | (2, 0.10) | one pass-to-fail transition | 7.479411 | 7.619 ([7.578, 7.661]) | -1.8% |
-| (2, 0.15) | all 97 points pass | right-censored, > 8 | right-censored, > 8 | -- |
-| (2, 0.20) | all 97 points pass | right-censored, > 8 | right-censored, > 8 | -- |
+| (2, 0.15) | all 97 points pass | right-censored, > 8 | right-censored, > 8 | – |
+| (2, 0.20) | all 97 points pass | right-censored, > 8 | right-censored, > 8 | – |
 | (3, 0.05) | one pass-to-fail transition | 4.286502 | 4.155 ([4.132, 4.177]) | +3.2% |
 | (3, 0.10) | one pass-to-fail transition | 3.632884 | 3.570 ([3.551, 3.589]) | +1.8% |
 | (3, 0.15) | one pass-to-fail transition | 1.524705 | 1.551 ([1.542, 1.559]) | -1.7% |
-| (3, 0.20) | no point passes | no certified crossing in scanned range | no certified crossing at 10^6 walkers | -- |
+| (3, 0.20) | no point passes | no certified crossing in scanned range | no certified crossing at 10^6 walkers | – |
 
 The crossings are quoted at the nominal walker count `N = 10^6`; they are
 identical to the bisection tolerance (`1e-9`) at `N = 10^5` and `10^7`
@@ -161,13 +161,13 @@ settings.  They are not fresh bisections or extrapolations.
 
 | m | eps | bracketed midpoint range | censored settings |
 |---:|---:|---:|:---|
-| 2 | 0.05 | 6.16884--7.17884 | 3/9 right-censored above 8 |
-| 2 | 0.10 | 6.16884--7.82858 | 3/9 right-censored above 8 |
+| 2 | 0.05 | 6.16884–7.17884 | 3/9 right-censored above 8 |
+| 2 | 0.10 | 6.16884–7.82858 | 3/9 right-censored above 8 |
 | 2 | 0.15 | none | 9/9 right-censored above 8 |
 | 2 | 0.20 | none | 9/9 right-censored above 8 |
-| 3 | 0.05 | 4.15454--5.18736 | 4/9 left-censored below 4.08759 |
-| 3 | 0.10 | 3.08442--3.62850 | 3/9 right-censored above 3.66802 |
-| 3 | 0.15 | 1.55058--1.55058 | 3/9 below 1.41421; 3/9 above 1.68179 |
+| 3 | 0.05 | 4.15454–5.18736 | 4/9 left-censored below 4.08759 |
+| 3 | 0.10 | 3.08442–3.62850 | 3/9 right-censored above 3.66802 |
+| 3 | 0.15 | 1.55058–1.55058 | 3/9 below 1.41421; 3/9 above 1.68179 |
 | 3 | 0.20 | none | 9/9 no certified crossing (covariance-aware) |
 
 The declared baseline classifier is `h=0.04`, `r=0.05`.  Its brackets and
@@ -185,12 +185,12 @@ Three independent deterministic streams, each with one million walkers, gave:
 
 | configuration | mode counts | maximum common-index peak span | kill-fraction range |
 |:---|:---|---:|:---|
-| m3 anchor, eps=0.10, B=1 | 3,3,3 | 0.02 | 0.776153--0.776589 |
-| m3 threshold lower side, B=3.50 | 3,3,3 | 0 | 0.980694--0.981178 |
-| m3 threshold upper side, B=3.64 | 2,2,2 | 0 | 0.982581--0.982689 |
-| m3 phase-boundary passing side, eps=0.175, B=0.5 | 3,3,3 | 0.10 | 0.408590--0.408817 |
-| m3 phase-boundary failing side, eps=0.175, B=1 | 2,2,2 | 0 | 0.638291--0.638861 |
-| m5 anchor, eps=0.10, B=1 | 5,5,5 | 0.02 | 0.551580--0.552851 |
+| m3 anchor, eps=0.10, B=1 | 3,3,3 | 0.02 | 0.776153–0.776589 |
+| m3 threshold lower side, B=3.50 | 3,3,3 | 0 | 0.980694–0.981178 |
+| m3 threshold upper side, B=3.64 | 2,2,2 | 0 | 0.982581–0.982689 |
+| m3 phase-boundary passing side, eps=0.175, B=0.5 | 3,3,3 | 0.10 | 0.408590–0.408817 |
+| m3 phase-boundary failing side, eps=0.175, B=1 | 2,2,2 | 0 | 0.638291–0.638861 |
+| m5 anchor, eps=0.10, B=1 | 5,5,5 | 0.02 | 0.551580–0.552851 |
 
 ## Time-step halving
 
@@ -221,7 +221,7 @@ claim is supported or made.
 `robustness/dt_half_seed_repeats/` and `dt_half_seed_repeat_summary.json`
 (script `exact_m_prr_dt_half_seed_repeat.py`) rerun the boundary-adjacent
 cell `m=3`, `eps=0.175`, `B=0.5` at `dt=0.0005` with seeds
-20260814--20260816 and 10^6 walkers each (stream tag 65), matching the walker
+20260814–20260816 and 10^6 walkers each (stream tag 65), matching the walker
 count of the three `dt=0.001` seed repeats `m3_boundary_pass_seed*.json`.
 The streams at the two resolutions are independent, not paired common random
 numbers.  All records are judged through `classify_both`; the late candidate
