@@ -11,25 +11,30 @@ and weights of the peaks; designs with up to five peaks are demonstrated. For a
 given placement, once the catalyst budget passes a threshold a peak is lost
 through a saddle-node (fold) bifurcation.
 
-**Status.** Manuscript in preparation. This repository (release `v1.3.0`,
-September 2026) holds the code, numerical records, interval-arithmetic
-certificates and Lean 4 sources behind it.
+**Status.** Manuscript in preparation.
 
 **Start here.** [`RESULTS_SUMMARY.md`](RESULTS_SUMMARY.md) maps every result
 to its record and script.
 
-Release `v1.3.0` of this archive accompanies the manuscript **“Programmable
-multimodality and saddle-node loss of reaction-time peaks under a fixed
-catalyst budget”** by Xiaoxiao Zhouyi (University of Bristol), in
-preparation; an earlier version of the manuscript was titled **“Programming
-the number and weights of reaction-time peaks with a fixed budget of static
-reactivity”**.  The archive contains the simulation, analysis and plotting
-code, the machine-readable numerical records behind the numbers and figures of
-the manuscript and its Supplementary Material, the figure-generation scripts,
-the interval-arithmetic certificates and enclosures (scripts and outputs) that
-are part of three proofs of the Supplementary Material, the Lean 4 sources, and
-the drivers, job scripts and records of the large-scale checks run on the
-Isambard 3 supercomputer.
+Labels such as `N3`, `I4`, `W2` or `TH8` name numerical campaigns and checks;
+they are listed under [Labels used in this archive](#labels-used-in-this-archive).
+
+**Release.** `v1.3.0` accompanies the manuscript **“Programmable multimodality
+and saddle-node loss of reaction-time peaks under a fixed catalyst budget”** by
+Xiaoxiao Zhouyi (University of Bristol). An earlier version was titled
+**“Programming the number and weights of reaction-time peaks with a fixed budget
+of static reactivity”**.
+
+The archive contains:
+
+- the simulation, analysis and plotting code;
+- the machine-readable numerical records behind the numbers and figures of the
+  manuscript and its Supplementary Material, with the figure-generation scripts;
+- the interval-arithmetic certificates and enclosures (scripts and outputs) that
+  are part of three proofs of the Supplementary Material;
+- the Lean 4 sources;
+- the drivers, job scripts and records of the large-scale checks run on the
+  Isambard 3 supercomputer.
 
 **Manuscript.** The manuscript, its Supplementary Material and the graphical
 abstract are not part of this release; the manuscript will be linked here once
@@ -50,6 +55,9 @@ If a persistent identifier is later minted for this release, cite the
 identifier shown by the repository record together with the tag.
 
 ## Contents
+
+Prefixes such as `prr`, `fb` and `exact_m` in file and folder names are historical
+working names.
 
 - `code/`: all scripts.
   - Fixed-budget campaign (2026-09):
@@ -76,7 +84,7 @@ identifier shown by the repository record together with the tag.
     - `fb_preparation_predictions.py`: preparation predictions.
     - `fb_bcert_window_check.py`: nominal evaluation of the sufficient budget `B_cert`.
     - `fb_referee_checks.py`: additional robustness checks.
-    - Stream-integration drivers I1–I5:
+    - Stream-integration drivers:
       `exact_m_prr_upgrade_w6_single_particle.py` and
       `exact_m_prr_w6_width_diagnostic.py` (single-particle control, I1),
       `exact_m_prr_w2_seed_repeat.py` (seed repeats),
@@ -148,22 +156,22 @@ identifier shown by the repository record together with the tag.
   and the frozen-gate checks `GB2_frozen_gate/` (both new in `v1.1.1`), the
   records `V2_NU_A/`, `V2_design/`, `V2_TEP/`, `V2_bifurcation/`, `V2_hero/`
   (new in `v1.2.0`), and the records of the Isambard 3 checks
-  (`HPC_N5full/`, `HPC_N3full/`, `HPC_headline/`, `HPC_census/`, and the job
-  accounting `HPC_jobs/hpc_jobs_accounting.json`).
+  (`HPC_N5full/`, `HPC_N3full/`, `HPC_headline/`, `HPC_census/`, and
+  `HPC_jobs/`: the job scripts and accounting record of the cluster runs).
 - `artifacts/data/exact_m_offlattice_production/`,
   `artifacts/data/exact_m_prr_upgrade/`: the records of release `v1.0.0`,
   plus the single-particle control `w6_single_particle/`, the seed repeats
   `robustness/w2_seed_repeat_summary.json` and the release-time smearing
   `robustness/release_time_smearing/` used by the Supplementary Material.
 - `artifacts/figures/`: PDF (and, where available, PNG) versions of every
-  numerical figure included by the article and the Supplementary Material,
+  numerical figure included by the manuscript and the Supplementary Material,
   the six figures of release `v1.0.0`, the provenance/check record
   `fb_paper_figures_manifest.json` written by `fb_make_paper_figures.py`, and
   the TikZ source `fig1_schematic.tex` of the schematic Fig. 1.  The builder
-  checks that each figure included by the article or the Supplementary
+  checks that each figure included by the manuscript or the Supplementary
   Material is byte-identical to the file shipped here (some are included under a shorter name; the map is
   `copied_as` in the figure manifest).
-- `notes/gap_diagnosis_20260923/`: the theory-scout records that the article
+- `notes/gap_diagnosis_20260923/`: the theory-scout records that the manuscript
   cites (`theory_scout/analysis_m2.json`, `analysis_m3.json`,
   `analysis_h3.json`), the scout scripts that produce them and the path
   caches they read (`fk_paths.py`, `fk_bop.py`, `fk_var.py`,
@@ -176,7 +184,7 @@ identifier shown by the repository record together with the tag.
   the archive was built from (`release_commit`, written by the builder).
 - `.zenodo.json` and `CITATION.cff`: deposit and citation metadata (no DOI
   has been minted yet).
-- `RESULTS_SUMMARY.md`: a map from the results of the article to their records
+- `RESULTS_SUMMARY.md`: a map from the results of the manuscript to their records
   and scripts, followed by the reading guide to the `v1.0.0` robustness
   records.
 - `RELEASE_NOTES_v1.2.0.md`: what release `v1.2.0` adds.
@@ -189,6 +197,28 @@ identifier shown by the repository record together with the tag.
 All paths inside scripts and records are relative to the archive root, which
 mirrors the layout of the source repository: run every command below from the
 archive root.
+
+## Labels used in this archive
+
+The definitions follow the campaign records and the data dictionary
+(`RESULTS_SUMMARY.md`, `DATA_AVAILABILITY.md`).
+
+- `N1` allocation design; `N2` mean-field residual and sandwich tests; `N3`
+  contact factorial and frozen gate; `N4` preparation study; `N5` time-step
+  ladder; `N6` visibility thresholds.
+- `N8` robustness; `N9a` matching census; `N9b` finite-width fold; `N10`
+  large-budget validation; `N11` shift-compensated timing design; `N12`
+  census resolution; `N13` third-order residual; `N14` universality.
+- `I1` single-particle control; `I3` release-time smearing; `I4` mean-field
+  topology; `I5` classifier null calibration and power.
+- `W1` phase diagram; `W2` operational budget threshold by bisection; `W3`
+  jitter robustness; `W4` five-peak demonstration; `W5` three-dimensional
+  spot check.
+- `TH8` interval certificate and fold checks; `P5` frozen-gate passage profile
+  and gate-switching correction; `C1` small-budget preparation count; `GX`
+  general-transport counterexamples; `GB2` frozen-gate exact count under a
+  contact floor; `SM-B` part B of the Supplementary Material, the numerical
+  record (`SM-A`: proofs of the main results).
 
 ## Environment
 
@@ -381,16 +411,16 @@ Arguments are `m eps N seed output.npz`.  The remaining scout runs are
 `FK_FULL_ONLY=1 FK_BUDGETS=3,3.25,3.5,3.75,4,4.25,4.5,4.75,5,5.5,6,7`), and
 `fk_var.py 2 0.025 200000 32` (same environment as the `fk_var.py` line
 above); the output names follow the pattern shown.  The Monte Carlo drivers
-of the I1–I5 streams take their own `--help` options and record their seeds
-and stream tags.
+listed above take their own `--help` options and record their seeds and stream
+tags.
 
 **Large-scale checks (Isambard 3).**  The four drivers run as
 `simulate` then `analyze` sub-commands (`--help` lists the options).  They
 keep per-chunk accumulators in `$PRR_HPC_WORK` (default `~/prr_hpc_work`,
 outside the archive; not archived) and write only the reduced summaries
 `artifacts/data/exact_m_fixed_budget/HPC_<item>/hpc_<item>.json`.  The job
-scripts in `code/hpc_jobs/` record the exact invocations, node sizes and time
-limits; in the archived copies the cluster locations of the repository clone
+scripts in `code/hpc_jobs/` record the cluster invocations; in the
+archived copies the cluster locations of the repository clone
 and its interpreter are replaced by the variables `PRR_ARCHIVE_ROOT` (the
 archive root, required) and `PRR_PYTHON` (default `python3`):
 
@@ -461,7 +491,7 @@ The reference outputs `lean_build_20260923_output.txt`,
 separate library `FormalPRRCompanion` (kernels of a different manuscript) is
 included because the historical axiom records name its declarations, but it
 is not a default build target, no `FormalPRR` module imports it, and it is not
-counted anywhere in the article (`lake build FormalPRRCompanion` builds it on
+counted anywhere in the manuscript (`lake build FormalPRRCompanion` builds it on
 request; reference output `audit_companion_20260923_output.txt`).  The files
 listed under "Historical files" in the package README are the audit trail of
 the `v1.0.0` package and do not describe the current one.
@@ -473,7 +503,7 @@ the path ensembles (about 16 GB) and the per-chunk accumulators of the
 Isambard 3 runs are not retained.  The direct-kill records store the
 declared histogram counts and bin edges; the fixed-budget records store the
 exact-law estimates, their standard errors and every derived quantity the
-article quotes, together with the specification and seeds needed to
+manuscript quotes, together with the specification and seeds needed to
 regenerate the ensembles.  See `DATA_AVAILABILITY.md` for the data dictionary
 and these limitations in full.
 

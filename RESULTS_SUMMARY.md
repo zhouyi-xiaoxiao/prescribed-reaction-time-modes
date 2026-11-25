@@ -1,16 +1,16 @@
 # Results map
 
-This file maps the results of the article (release `v1.2.0`) to the records
+This file maps the results of the manuscript (release `v1.2.0`) to the records
 and scripts of this archive, and then reproduces the reading guide to the
 robustness records of release `v1.0.0`.  It quotes no new numbers: the values
-are in the records and in the article, whose LaTeX sources cite the JSON key
+are in the records and in the manuscript, whose LaTeX sources cite the JSON key
 path of every quoted number.  Paths are relative to
 `artifacts/data/exact_m_fixed_budget/` unless they start with another
 top-level directory.
 
 ## Fixed-budget campaign (releases v1.1.0, v1.1.1 and v1.2.0)
 
-| result in the article | records | script(s) in `code/` |
+| result in the manuscript | records | script(s) in `code/` |
 |:---|:---|:---|
 | Exact-law estimator and its validation against direct-kill histograms (Supplementary Material, numerical methods) | `n0_validation.json`, `n0_selftest.json`, `fk_ensembles/n0_*.json` | `exact_m_prr_fk_exact_law.py`, `exact_m_prr_fk_n0_validation.py` |
 | Large-budget validation of the exact-law estimator against direct kill, up to `B = 10^3` (Sec. 4.1; SM large-budget figure) | `N10_largeB_validation/` (`n10_summary.json`, `directkill/`, `fk/`) | `fb_n10_largeB_validation.py` |
@@ -50,24 +50,24 @@ top-level directory.
 | Publication figures and their checks | `artifacts/figures/fb_paper_figures_manifest.json` | `fb_make_paper_figures.py` (other Supplementary figures: the item drivers above) |
 | Large-scale checks on Isambard 3: time-step ladder with exact transitions (SM section on the Isambard 3 checks) | `HPC_N5full/hpc_n5full.json`, `HPC_N5full/hpc_n5full_assessment.json` | `fb_hpc_n5full.py`, `fb_hpc_n5n3_report.py`; job `code/hpc_jobs/prr_n5full.sbatch` |
 | Large-scale checks on Isambard 3: contact factorial with exact transitions | `HPC_N3full/hpc_n3full.json`, `HPC_N3full/hpc_n3full_assessment.json` | `fb_hpc_n3full.py`, `fb_hpc_n5n3_report.py`; job `code/hpc_jobs/prr_n3full.sbatch` |
-| Large-scale checks on Isambard 3: direct-kill confirmation of the design cells (Sec. 4 of the article) | `HPC_headline/hpc_headline.json` | `fb_hpc_headline.py`; job `code/hpc_jobs/prr_headline.sbatch` |
+| Large-scale checks on Isambard 3: direct-kill confirmation of the design cells (Sec. 4 of the manuscript) | `HPC_headline/hpc_headline.json` | `fb_hpc_headline.py`; job `code/hpc_jobs/prr_headline.sbatch` |
 | Large-scale checks on Isambard 3: census of the three gated cells | `HPC_census/hpc_census.json` | `fb_hpc_census.py`; jobs `code/hpc_jobs/prr_census_{m2,m3,analyze}.sbatch` |
 | Computing resources of the Isambard 3 checks | `HPC_jobs/hpc_jobs_accounting.json` | (scheduler accounting) |
 | Graphical abstract (not shipped; the script redraws it) | - | `fb_graphical_abstract.py` (closed-form laws; no simulation) |
 
-The proposition and theorem numbers follow the article; the figure is named
-where the article has a figure for the result.  What the Lean modules check,
+The proposition and theorem numbers follow the manuscript; the figure is named
+where the manuscript has a figure for the result.  What the Lean modules check,
 and what they take as hypotheses, is stated in the Supplementary Material
 (Lean chapter) and in `lean/formal_lean_prr/README.md`.
 
 # Release v1.0.0 robustness records
 
-In this part, "the article" means the earlier version archived in release
+In this part, "the manuscript" means the earlier version archived in release
 `v1.0.0`.  This is a compact reading guide to the machine-readable records
 under `artifacts/data/exact_m_prr_upgrade/robustness/`.  Values below are
 descriptive diagnostics, not preregistered hypothesis tests.
 
-## Covariance-aware reclassification (formal definition used in the article)
+## Covariance-aware reclassification (formal definition used in the manuscript)
 
 All 201 stored classifier records (112 W1 cells, 43 W2 probes, 26 robustness
 records, the 18 production rows, W4, and W5; 606 local maxima) were re-judged
@@ -77,7 +77,7 @@ with the covariance-aware prominence statistic
 the peak bin and of the selected contour-base bin, `C_j` the raw bin counts,
 `N` the walker count and `dt` the bin width; the acceptance rule is unchanged
 (`z >= 5` and prominence `>= 5%` of the window maximum).  This is the
-statistic defined in the article.  The peak-only convention
+statistic defined in the manuscript.  The peak-only convention
 `sigma_peak^2 = sum_j A_peak,j^2 C_j / (N dt)^2` under which the records were
 first written is superseded; it inflates `z` of counted maxima by factors
 1.00–1.55.  Three of the 606 maxima flip, all in the W2 column `m=3`,
