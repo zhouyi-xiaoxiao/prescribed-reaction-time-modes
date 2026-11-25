@@ -1,7 +1,7 @@
 # Operator check: does contact gating cap the slab-1 kill at large B (full model) vs contact-one control?
 import sys, math, time, json
 sys.dont_write_bytecode = True
-sys.path.insert(0, '<local-ensemble-store>/codex_theory_prr_20260923/encounter_multimodal_prr/code')
+sys.path.insert(0, '<local-ensemble-store>/theory_scout_20260923/encounter_multimodal_prr/code')
 import numpy as np
 import exact_m_prr_upgrade_core as c
 from dataclasses import replace

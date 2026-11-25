@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Graphical abstract of the CNSNS paper (optional Elsevier item).
+"""Graphical abstract of the paper (optional item).
 
 One schematic in three steps, read left to right:
   (1) catalyst stripes along the relaxing path of the pair centre,
@@ -23,8 +23,8 @@ numbers are used.
     Each peak's area is M_j (checked below), and each peak comes slightly before t_j,
     as Theorem 2(c) states.
 
-Output: manuscript/cnsns_submission/graphical_abstract.{pdf,png}.
-Size: 13 cm x 5 cm (Elsevier: readable at 5 x 13 cm); PNG at 300 dpi = 1535 x 591 px
+Output: artifacts/figures/graphical_abstract.{pdf,png}.
+Size: 13 cm x 5 cm (readable at 5 x 13 cm); PNG at 300 dpi = 1535 x 591 px
 (minimum 1328 x 531 px).  Smallest text 8 pt at the printed size.
 Colours: Okabe-Ito blue / vermillion / green (as in the paper figures), validated for
 colour-vision deficiency; every stripe and peak is also labelled by its index.
@@ -48,8 +48,8 @@ import matplotlib.pyplot as plt  # noqa: E402
 import numpy as np  # noqa: E402
 from matplotlib.patches import FancyArrowPatch  # noqa: E402
 
-ROOT = Path(__file__).resolve().parents[1]  # research/reports/encounter_multimodal_prr
-OUT_DIR = ROOT / "manuscript" / "cnsns_submission"
+ROOT = Path(__file__).resolve().parents[1]
+OUT_DIR = ROOT / "artifacts" / "figures"
 STEM = "graphical_abstract"
 
 # ---------------------------------------------------------------- model data (anchor)

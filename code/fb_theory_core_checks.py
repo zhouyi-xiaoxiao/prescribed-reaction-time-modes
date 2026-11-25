@@ -226,7 +226,7 @@ def analyse_case(path: Path, p) -> dict:
     return out
 
 
-def opus_sign_check() -> dict:
+def basin1_sign_check() -> dict:
     """Basin-1 mass of the direct-kill W1 cells versus the mean-field stick-breaking mass
     e^{-B Lam(tau)} - e^{-B Lam(v_1)} (Lam from the D1 free clock; Lam(tau) from the
     exact free-clock quadrature).  TH-1 predicts exact <= mean field + delta(tau)."""
@@ -507,7 +507,7 @@ def main() -> int:
         "fk_generator": "notes/gap_diagnosis_20260923/theory_scout/fk_paths.py (seed per file, dt=1e-3, 2e5 paths)",
         "model": core.model_payload(p),
         "cases": cases,
-        "basin1_sign_check_w1": opus_sign_check(),
+        "basin1_sign_check_w1": basin1_sign_check(),
         "window_accounting_w1": window_accounting(),
         "allocation_design_check": allocation_design_check(cache, p),
         "free_clock_outside_window": free_clock_outside_window(),

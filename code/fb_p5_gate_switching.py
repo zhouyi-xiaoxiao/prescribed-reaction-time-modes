@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """P5 (theory closer): frozen-gate C^2 profile check and gate-switching correction.
 
-Numerical companion of manuscript/cnsns_submission/theory/TH7b_frozen_gate_c2.tex.
+Numerical companion of <manuscript-sources>/theory/TH7b_frozen_gate_c2.tex.
 
 Sub-commands (run from code/):
   jfun      Monte Carlo of the universal Brownian function

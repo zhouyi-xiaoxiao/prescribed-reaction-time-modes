@@ -13,7 +13,7 @@
   "th3:peaks": "Corollary A3.33",
   "th3:rate": "Remark A3.34",
   "th6:thm-main": "Theorem A4.1",
-  "source": "manuscript/cnsns_submission/supplement_A_cnsns.aux"
+  "source": "<manuscript-sources>/supplement_A.aux"
  },
  "predicted_orders": {
   "masses": "SM-A Theorem th2:main(a) (main Theorem 2(a)): |M_j - M_j^lim| <= C(B^2 eps + B eps^2), i.e. order eps at fixed B (not eps^{1/2}); sharp (SM-A Remark th2:shape(i)); leading coefficient c1_j explicit (SM-A Prop. th2:correction with Lemma th2:mean); constants hide exp(-c/eps^2) contact-gate terms (SM-A Remark th2:scope(i))",

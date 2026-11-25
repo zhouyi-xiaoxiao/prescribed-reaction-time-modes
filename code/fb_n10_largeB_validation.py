@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """N10 -- large-B validation of the FK exact-law estimator against direct kill.
 
-Answers referee finding Opus F4 ("FK reliability at large B is not documented;
+Answers review finding F4 ("FK reliability at large B is not documented;
 direct-kill validation stops at B <= 8").
 
 Main arm.  (m, eps) in {(2, 0.05), (2, 0.1), (3, 0.05), (3, 0.1)}, B in {16, 32, 64},
@@ -540,7 +540,7 @@ def prominence_scan(fkrec: dict, fkarr, alloc: str) -> dict:
 
 
 def cmd_compare(args) -> None:
-    summary = {"item": "N10 large-B validation of the FK exact-law estimator (Opus F4)",
+    summary = {"item": "N10 large-B validation of the FK exact-law estimator (review finding F4)",
                "driver": "code/fb_n10_largeB_validation.py", "seed": SEED, "dk_tag": TAG,
                "cells": [], "prominence_scans": {}, "secondary_fk": []}
     for (m, eps) in MAIN_MEPS:

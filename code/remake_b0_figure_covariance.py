@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Regenerate the B_op(eps) figure under the covariance-aware classifier.
 
-Codex cross-audit finding C1: under the covariance-aware prominence statistic
+Cross-audit finding C1: under the covariance-aware prominence statistic
 the three formerly passing (m=3, eps=0.2) probes fail the five-sigma rule, so
 that chain has no certified crossing anywhere in the scanned budget range
 [0.125, 8] and the previously plotted B_op = 0.28 point is withdrawn.  All
@@ -14,7 +14,7 @@ with the (3, 0.2) chain reclassified to ``no_certified_crossing`` (plotted as
 absent; the caption carries the statement).  No Monte Carlo rerun.
 
 Stream D1 (2026-09-09; default restored 2026-09-23): the default reproduces
-the single-panel figure as submitted (HEAD PDF).  ``--topology`` (opt-in)
+the original single-panel figure (HEAD PDF).  ``--topology`` (opt-in)
 overlays the classifier-free mean-field topology threshold B_top^mf(eps) from
 ``mean_field_topology.json`` (written by ``exact_m_prr_mean_field_topology.py``)
 as a second panel and, where it falls inside the B_op axis range, as open
@@ -48,7 +48,7 @@ def main() -> None:
     parser.add_argument(
         "--no-topology",
         action="store_true",
-        help="default; single-panel figure as submitted (kept for compatibility)",
+        help="default; original single-panel figure (kept for compatibility)",
     )
     args = parser.parse_args()
     out_path = w2.W2_DIR / "B0_empirical.json"

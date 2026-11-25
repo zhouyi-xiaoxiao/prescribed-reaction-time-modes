@@ -22,7 +22,7 @@ Arms
   B in {1, 4, 8, 20} plus the large-B remark arm B in {1e2, 1e3, 1e4};
   equal weights; 1e6 paths per anchor (20 chunks of 5e4, built in 5
   invocations of 4 chunks).
-* rpar arm: Fable's initial separation r_par0 = 0.35 at a = 0.4 (4 variants).
+* rpar arm: the audit's initial separation r_par0 = 0.35 at a = 0.4 (4 variants).
 * tangent arm (frozen gate, TH-7): boundary-tangent relative start
   r_par0 = 0, r_perp0 = a = 0.4, m = 2, eps in {0.05, 0.025} (+ 0.0125 as an
   extension), B in {0.5, 1, 2, 4, 8, 20, 50, 200}; N0 declared mode (per-step
@@ -465,7 +465,7 @@ def run_rpar(m: int, part: int, workers: int = MAX_WORKERS):
     return simulate_reduced(spec, ANCHOR_PATHS, name=rpar_name(m), variants=variants,
                             budgets=ANCHOR_BUDGETS + LARGE_BUDGETS, chunks_subset=subset,
                             workers=workers, chi_radii=(0.4,),
-                            note="N3 Fable arm: r_par0 = 0.35 at a = 0.4")
+                            note="N3 audit arm: r_par0 = 0.35 at a = 0.4")
 
 
 def dtcheck_name(dt: float) -> str:

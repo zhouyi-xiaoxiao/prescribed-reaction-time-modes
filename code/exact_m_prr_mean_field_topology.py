@@ -88,8 +88,7 @@ W2_JSON = core.UPGRADE_DATA / "w2_b0_empirical" / "B0_empirical.json"
 RECLASS_JSON = core.UPGRADE_DATA / "covariance_aware_reclassification.json"
 MFB_JSON = core.UPGRADE_DATA / "mean_field_boundary.json"
 BCERT_ASSET = (
-    REPORT / "manuscript" / "prr_submission" / "prr_assets"
-    / "b0_quantitative_bound.tex"
+    REPORT / "<manuscript-sources>" / "b0_quantitative_bound.tex"
 )
 
 WINDOW = core.WINDOW
@@ -116,7 +115,7 @@ W4_DESIGN = {
 W5_DESIGN = {"m": 2, "eps": 0.10, "n_perp": 2}
 
 # Nominal certificate values quoted from the Supplemental Material asset
-# (prr_assets/b0_quantitative_bound.tex); they are NOT recomputed here.
+# (b0_quantitative_bound.tex); they are NOT recomputed here.
 BCERT_QUOTED = {
     "m2_eps0.1": {
         "value": 8.8974e-15,

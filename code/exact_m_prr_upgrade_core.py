@@ -560,10 +560,10 @@ def g_window_maxima_count(
 
 
 # ----------------------------------------------------------------------------
-# Publication figure style (PRR submission).
+# Publication figure style.
 # ----------------------------------------------------------------------------
 
-# TrueType (Type 42) fonts only -- APS production rejects Type 3 -- and all
+# TrueType (Type 42) fonts only -- journal production pipelines reject Type 3 -- and all
 # text >= 7 pt at the final printed size (figures are designed at final size).
 PRR_RC = {
     "pdf.fonttype": 42,

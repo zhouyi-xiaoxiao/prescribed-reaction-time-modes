@@ -6226,7 +6226,7 @@
  },
  "provenance_copies": {
   "gpt6_profile_root_beta1": {
-   "source": "~/.local-build/codex_theory_prr_20260923/theory_checks/profile_results.json#results[beta=1]",
+   "source": "<local-ensemble-store>/theory_scout_20260923/theory_checks/profile_results.json#results[beta=1]",
    "beta": 1.0,
    "root": -0.33227999813855186,
    "derivative_sign_changes": 1,

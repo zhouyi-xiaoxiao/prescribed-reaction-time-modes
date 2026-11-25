@@ -19,7 +19,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve()
 REPORT = HERE.parents[1]
 DATA = REPORT / "artifacts" / "data" / "exact_m_fixed_budget"
-SNIP = REPORT / "manuscript" / "cnsns_submission" / "results_snippets"
+SNIP = REPORT / "manuscript" / "results_snippets"
 
 
 def rel(p: Path) -> str:

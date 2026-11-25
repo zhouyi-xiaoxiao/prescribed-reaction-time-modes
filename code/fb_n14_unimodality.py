@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """N14a -- universality campaign: single-peak property of the passage profile for
 general stripe profiles psi (tests Lemma th13:unimodal and Remark th13:counterex of
-manuscript/cnsns_submission/theory/TH13_universality.tex).
+<manuscript-sources>/theory/TH13_universality.tex).
 
 For a stripe profile psi (probability density on R, cdf Psi) and a passage exposure
 beta > 0 the frozen-offset reaction profile is

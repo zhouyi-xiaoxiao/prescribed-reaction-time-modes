@@ -3,7 +3,7 @@
 including tightened windows tau in {0.6, 0.7, 0.8, 0.9}.
 
 Independent float64 re-implementation of the published evaluation
-(manuscript/prr_assets/b0_dyson_numerics.py, which uses mpmath at 40-60 digits
+(the earlier version's b0_dyson_numerics.py, which uses mpmath at 40-60 digits
 and is not runnable with the project Python because mpmath is absent):
 
   G(t)   = c(t) * gz(t),  c(t) = P(|R_t|_mi < a) (d = 2, quadrature in

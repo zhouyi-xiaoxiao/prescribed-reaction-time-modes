@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate the main-text data figures (Figs. 2-7) of the CNSNS paper from recorded data.
+"""Regenerate the main-text data figures (Figs. 2-7) of the paper from recorded data.
 
 Figures are drawn at their final printed size (elsarticle preprint 12pt text width,
 390 pt = 5.40 in) with every text element at 8 pt, Okabe-Ito colours, panel letters
@@ -22,7 +22,7 @@ Outputs (PNG + PDF, via core.save_figure) in artifacts/figures/:
   fb_paper_fig5_contact            Fig. 5  contact / frozen-gate factorial (a = 0.4, 0.2)
   fb_paper_fig6_visibility         Fig. 6  visibility thresholds B_p (smoothed only)
   fb_paper_fig7_fold               Fig. 7  finite-width fold; (c) bifurcation diagram of the limit
-                                           law f_det (added 2026-09-23, referee finding A36)
+                                           law f_det (added 2026-09-23, review finding A36)
 SM figures (--sm), drawn for width=0.8\textwidth of the SM (seed repeat: 0.40\textwidth
 minipage), no campaign tags, no internal wording:
   fb_paper_sm_fig5_contact_radii          Fig. 5(a,b) with a = 0.4, 0.2, 0.15
@@ -70,7 +70,7 @@ ROBUST = core.REPORT / "artifacts" / "data" / "exact_m_prr_upgrade" / "robustnes
 MANIFEST = core.FIGURES / "fb_paper_figures_manifest.json"
 
 TEXT_WIDTH_IN = 390.0 / 72.27          # elsarticle preprint 12pt \textwidth
-SM_TEXT_WIDTH_PT = 483.69687           # SM: article 10pt, A4, 2 cm margins (supplement_cnsns.log)
+SM_TEXT_WIDTH_PT = 483.69687           # SM: article 10pt, A4, 2 cm margins (supplement build log)
 SM_WIDTH_IN = 0.8 * SM_TEXT_WIDTH_PT / 72.27   # SM figures are drawn for width=0.8\textwidth
 SM_MINIPAGE_IN = 0.40 * SM_TEXT_WIDTH_PT / 72.27  # seed-repeat figure sits in a 0.40\textwidth minipage
 FS = 8.0                               # every text element >= 8 pt at print size
@@ -170,7 +170,7 @@ def fig2_allocation() -> list[str]:
     v, area = geo["speeds_v"], geo["area_factor_W_pow_d_minus_1"]
     # B in {0.5, 1, 8}: at B = 4 the curve and the max-min square coincide with those of
     # B = 8 on this scale, and at B = 2 the equal-weight point and both squares overlap
-    # (final fix pass, 2026-09-23; referee finding A23)
+    # (final fix pass, 2026-09-23; review finding A23)
     rows = {float(r["budget"]): r for r in P["reachable_hypersurface"]["m2"]}
     for row, col in zip([rows[0.5], rows[1.0], rows[8.0]],
                         (core.OI_BLUE, core.OI_ORANGE, core.OI_VERMILLION)):
@@ -620,7 +620,7 @@ def fig7_fold() -> list[str]:
     hsel = "0.03"
     cols = {"0.06": core.OI_BLUE, "0.03": core.OI_ORANGE, "0.02": core.OI_GREEN}
     # panels (a), (b) as before on the top row; the bifurcation diagram (c) of the limit law
-    # spans the bottom row (final fix pass, 2026-09-23, referee finding A36)
+    # spans the bottom row (final fix pass, 2026-09-23, review finding A36)
     fig, axd = plt.subplot_mosaic([["a", "b"], ["c", "c"]], figsize=(TEXT_WIDTH_IN, 4.15),
                                   layout="constrained", height_ratios=[1.0, 0.72])
     axes = [axd["a"], axd["b"], axd["c"]]
@@ -667,7 +667,7 @@ def fig7_fold() -> list[str]:
     ax.grid(alpha=0.3)
     _check("fig7_Bstar_eps0.03_h0.03", R["eps"]["0.03"]["by_h"]["0.03"]["B_star"], 7.870510019733099, 1e-9)
     # (c) bifurcation diagram of the limit law f_det = B G0 exp(-B Lambda0) (final fix pass,
-    # 2026-09-23; referee finding A36): its stationary points solve r0(t) = G0'/G0^2 = B
+    # 2026-09-23; review finding A36): its stationary points solve r0(t) = G0'/G0^2 = B
     # (Proposition 4); on the rising flank of the second bump of G0 the valley (r0' > 0) and
     # the late peak (r0' < 0) merge at the fold (b_2, t_f2).  Closed-form G0 of
     # code/fb_finite_width_det.py; src: artifacts/data/exact_m_fixed_budget/TH8/finite_width_det.json

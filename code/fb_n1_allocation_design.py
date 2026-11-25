@@ -78,8 +78,8 @@ N_PATHS = 500_000
 
 # direct-kill confirmation cells: (m, eps, B, allocation)
 DK_CELLS = [
-    (2, 0.1, 8.0, "maxmin"),   # Opus demonstration cell (w* = (0.1275, 0.8725))
-    (3, 0.1, 4.0, "maxmin"),   # Opus demonstration cell (w* = (0.1822, 0.1399, 0.6779))
+    (2, 0.1, 8.0, "maxmin"),   # review demonstration cell (w* = (0.1275, 0.8725))
+    (3, 0.1, 4.0, "maxmin"),   # review demonstration cell (w* = (0.1822, 0.1399, 0.6779))
     (2, 0.05, 2.0, "maxmin"), (2, 0.05, 8.0, "maxmin"),
     (2, 0.1, 2.0, "maxmin"),
     (3, 0.05, 2.0, "maxmin"), (3, 0.05, 8.0, "maxmin"),

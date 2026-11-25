@@ -121,8 +121,7 @@ interpreter when this release was prepared).
 ## Large-scale checks on Isambard 3 (2026-09, new in v1.1.0)
 
 The records under `artifacts/data/exact_m_fixed_budget/HPC_*/` were produced
-on the Isambard 3 supercomputer (GW4/Bristol; partition `grace`, aarch64
-nodes with 144 cores; CPython 3.11.15, NumPy 2.0.2, as recorded in the `env`
+on the Isambard 3 supercomputer (CPython 3.11.15, NumPy 2.0.2, as recorded in the `env`
 field of every summary and under `hpc_campaign` in
 `environment/reference_platform.json`) by the drivers `code/fb_hpc_*.py`,
 submitted with the job scripts in `code/hpc_jobs/`.  Eight node-jobs were run
@@ -265,3 +264,43 @@ archived.
 
 If a persistent identifier is minted for this release, it is recorded in
 `CITATION.cff` and `.zenodo.json`.
+
+## Edits on the default branch after release v1.3.0 (2026-11-25)
+
+The sections above describe tag `v1.3.0`.  On the default branch the files
+below were edited afterwards.  No number, key order or structure of any record
+changed, and no `.lean` source, build record or audit record of the Lean
+package changed, so the Lean anchors are unchanged.  `MANIFEST.sha256` was
+regenerated.
+
+- Documentation: `README.md`, `RELEASE_NOTES_v1.2.0.md`,
+  `RELEASE_NOTES_v1.3.0.md`, this file, the titles in `CITATION.cff` and
+  `.zenodo.json`, `LICENSE-DATA` (now the full CC BY 4.0 legal code), and the
+  Lean package's `README.md` and `FORMALIZATION_TARGETS.md` (their lines in
+  the package `MANIFEST.sha256` were updated).
+- Wording of comments, docstrings, printed messages and descriptive strings
+  (internal working labels removed) in scripts under `code/` and
+  `code/hpc_jobs/prr_n3full.sbatch`, in
+  `notes/gap_diagnosis_20260923/theory_checks/contact_escape_check.py` and in
+  `artifacts/figures/fig1_schematic.tex`; two local names (a dictionary in
+  `fb_allocation_law.py`, a function in `fb_theory_core_checks.py`) were
+  renamed.  JSON keys are unchanged.
+- Paths outside the archive: manuscript sources are written as
+  `<manuscript-sources>/...`, and the local theory-check directory as
+  `<local-ensemble-store>/theory_scout_20260923/...`.  The LaTeX snippets of
+  `fb_hpc_snippets.py` and `fb_hpc_n5n3_report.py` are written to
+  `manuscript/results_snippets/`, the graphical abstracts of
+  `fb_graphical_abstract.py` and `fb_v2_graphical_abstract.py` to
+  `artifacts/figures/`, and the default `--cache` of `fb_n14_universality.py`
+  ends in `general_transport/n14_cache`.  The profile file read by
+  `fb_local_profile_check.py` is now named by a placeholder, so a rerun from
+  this archive omits that provenance copy; the archived record keeps it.
+- The matching string values (labels, notes and source paths) in
+  `GB2_frozen_gate/checks.json`, `GX_counterexamples/checks.json`,
+  `HPC_N3full/hpc_n3full.json`, `N10_largeB_validation/n10_summary.json`,
+  `N13_third_order/n13_third_order.json`, `N3/ensembles/n3_rpar0.35_m{2,3}_eps0.1.json`,
+  `N9a/pde_*.json`, `P5_gate_switching/p5_step6_tail.json`,
+  `TH3/local_profile_check.json`, `TH6/th6_tilted_bridge_checks_ca.json`,
+  `V3_bridge/bridge.json`, `fk_ensembles/n3_tangent_m2_eps0.0125_dt0.0005.json`
+  (all under `artifacts/data/exact_m_fixed_budget/`) and
+  `artifacts/data/exact_m_prr_upgrade/covariance_aware_reclassification_summary.txt`.

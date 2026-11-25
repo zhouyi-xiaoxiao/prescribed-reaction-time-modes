@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Graphical abstract of the CNSNS submission, version 2 (optional Elsevier item).
+"""Graphical abstract of the paper, version 2 (optional item).
 
 Built from the programmed plug-flow channel of Fig. 1(b) of the article
 (code/fb_v2_hero_channel.py): one fixed total amount of catalyst, split three ways
@@ -17,8 +17,8 @@ Sources: artifacts/data/exact_m_fixed_budget/V2_hero/design_eps0.03.json#phys
 (U = 100 um/s, D = 9e-11 m^2/s, k_tot = 800 um/s, time unit 10 s) and the design
 files read by fb_v2_hero_channel.load_designs(0.03).
 
-Output: manuscript/cnsns_submission/graphical_abstract.{pdf,png}.
-Size: 13 cm x 5.2 cm; PNG at 300 dpi = 1535 x 614 px (Elsevier minimum
+Output: artifacts/figures/graphical_abstract.{pdf,png}.
+Size: 13 cm x 5.2 cm; PNG at 300 dpi = 1535 x 614 px (minimum
 1328 x 531 px, readable at 13 x 5 cm); smallest text 7 pt at the printed size.
 Colours: Okabe-Ito blue / vermillion / green, as in the article; each curve is
 also labelled by name.
@@ -41,7 +41,7 @@ import fb_v2_hero_channel as hero  # noqa: E402
 
 HERE = Path(__file__).resolve().parent
 REPORT = HERE.parent
-OUT_STEM = REPORT / "manuscript" / "cnsns_submission" / "graphical_abstract"
+OUT_STEM = REPORT / "artifacts" / "figures" / "graphical_abstract"
 EPS = 0.03
 CM = 1.0 / 2.54
 

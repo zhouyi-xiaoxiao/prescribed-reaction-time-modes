@@ -1226,7 +1226,7 @@ def basin_masses(ens: Ensemble, B: float, w=None, *, variant: str = "full", cuts
     """Unconditional basin masses between cut times (snapped to stored edges).
 
     Default cuts: [0.5] + window valleys of G + [3.5] (window basins, as in the
-    referee basin-mass check), each snapped to the nearest stored edge.
+    review basin-mass check), each snapped to the nearest stored edge.
     Also returns the mean-field masses exp(-B Lambda(a)) - exp(-B Lambda(b))
     with Lambda = E X_w from the same ensemble, and the stick-breaking limit.
     """

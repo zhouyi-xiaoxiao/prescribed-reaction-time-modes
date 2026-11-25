@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""HPC item B (HPC_N3full): GPT-6 full specification of the N3 contact/field factorial.
+"""HPC item B (HPC_N3full): full specification of the N3 contact/field factorial.
 
-GAP_CLOSURE_PLAN.md section 3 N3: "GPT-6's full specification adds exact OU
+GAP_CLOSURE_PLAN.md section 3 N3: "the full specification adds exact OU
 steps, 3 nested dt and 3 seeds x 1e6" (not run locally; the local N3 used the
 production Euler--Maruyama chain at dt = 1e-3, 1e6 paths, one seed).
 
@@ -585,7 +585,7 @@ def analyze_anchor(anchor: str) -> dict:
 
 
 def cmd_analyze(args):
-    res = {"item": "HPC_N3full (GAP_CLOSURE_PLAN N3, GPT-6 full specification)",
+    res = {"item": "HPC_N3full (GAP_CLOSURE_PLAN N3, full specification)",
            "driver": HERE.name, "env": hc.env_info(),
            "levels": {k: {"dt": LEVEL_DT[k], "scheme": "exact OU" if k.startswith("ex") else "Euler-Maruyama"}
                       for k in LEVELS},

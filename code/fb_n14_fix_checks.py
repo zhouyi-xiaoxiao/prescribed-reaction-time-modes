@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """N14 fixer checks (deterministic, no random numbers) for
-manuscript/cnsns_submission/theory/TH13_universality.tex, Remarks th13:rem-counterex and
+<manuscript-sources>/theory/TH13_universality.tex, Remarks th13:rem-counterex and
 th13:rem-check-mc.
 
 1. euler: time-discretisation bias of the Monte Carlo driver code/fb_n14_general_mc.py.

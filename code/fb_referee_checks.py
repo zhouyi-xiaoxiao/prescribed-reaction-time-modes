@@ -1,6 +1,6 @@
-"""Referee-response numerical checks for the CNSNS submission (final fix pass, 2026-09-23).
+"""Additional robustness checks (final fix pass, 2026-09-23).
 
-Three checks requested by the referee adjudication (cnsns_final/adjudication.md, A04, A26):
+Three checks requested by the internal review (items A04, A26):
 
 ``ess``
     Kish effective sample size ESS = (sum_i y_i)^2 / sum_i y_i^2 of the Feynman--Kac
@@ -357,7 +357,7 @@ def run_tangent_dt(workers: int):
                                    mode="declared", declared=declared,
                                    variants=("full", "meancontact", "nogate"),
                                    workers=workers, wait=False,
-                                   note="referee check (A26): N3 boundary-tangent arm at "
+                                   note="review check (A26): N3 boundary-tangent arm at "
                                         "eps=0.0125 repeated at dt=5e-4 (production 1e-3)")
     finally:
         fk.mean_contact_curve = orig

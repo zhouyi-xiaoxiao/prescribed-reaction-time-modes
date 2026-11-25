@@ -1,5 +1,5 @@
 {
- "item": "HPC_N3full (GAP_CLOSURE_PLAN N3, GPT-6 full specification)",
+ "item": "HPC_N3full (GAP_CLOSURE_PLAN N3, full specification)",
  "driver": "fb_hpc_n3full.py",
  "env": {
   "host": "x3007c0s15b3n0",

@@ -1,4 +1,4 @@
-"""P5 fixer check (2026-09-23): numbers quoted in TH7b Prop p5:switch, Step 6, and the audit counterexample (GPT-6 F5).
+"""P5 fixer check (2026-09-23): numbers quoted in TH7b Prop p5:switch, Step 6, and the audit counterexample (finding F5).
 
 (a) F5 counterexample: with the old truncated profile Theta_nu = int_{-L}^inf p(u) 1{...} du (mass a_L < 1) the bracket
     psi(lam Theta_nu) - psi(lam 1{...}) tends to psi(lam a_L) - psi(lam) != 0 as nu -> -inf (psi = e^{-y}).

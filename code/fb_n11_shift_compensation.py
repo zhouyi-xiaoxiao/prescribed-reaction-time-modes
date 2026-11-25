@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""N11 -- shift-compensated timing design (answers referee Opus F3).
+"""N11 -- shift-compensated timing design (answers review finding F3).
 
 Question.  Theorem 2(c) puts the j-th reaction-time peak at t_j + eps*rho*y_*(lambda_j)/v_j
 + o(eps): early, and by a lot for a heavily loaded slow passage (the Box 2 max-min designs
@@ -12,7 +12,7 @@ allocation w (sum w_j = 1, budget B fixed).  Targets: peak times T_j = the paper
 times (1.0, 2.5) / (0.8, 1.6, 2.8); masses: all m whole-axis basin masses equal (max-min).
 Basins: s_0 = 0, s_m = tmax = 4 and, between stripes, the valleys of the design's own free
 exposure clock G (TH-2 cuts strictly between passages); the mass design and the evaluation use
-the same cuts (referee F24).  A design-independent convention (cuts at the time midpoints of
+the same cuts (review finding F24).  A design-independent convention (cuts at the time midpoints of
 consecutive targets) is reported as a secondary check.
 
 Design loop (deterministic, no random numbers):
@@ -34,7 +34,7 @@ same with stripes allowed beyond the window (t' <= 6) where the in-window target
 Test: exact discrete-time law by the Feynman--Kac estimator in declared mode (per-step exact
 kill probabilities, exact_m_prr_fk_exact_law, 2.1e5 paths in 3 chunks, tag 90; all designs at one eps share
 paths), and direct-kill confirmations with 1e6 walkers (tag 91) of the final compensated design
-at (2, 0.1, 8) (the referee's anchor) and (3, 0.05, 8).
+at (2, 0.1, 8) (the review's anchor) and (3, 0.05, 8).
 Peak time (measured): per basin, vertex of the least-squares parabola through the raw per-step
 density on the region around the maximum where the density smoothed over 5 steps is >= 90 % of
 its maximum (fit_peak; a smooth functional once the window is fixed, so the delete-one-batch
@@ -86,7 +86,7 @@ N_PATHS = 210_000
 FK_CHUNK = 70_000               # 3 chunks = one round of 3 workers
 DK_WALKERS = 1_000_000
 CELLS = [(2, 0.1, 8.0), (3, 0.1, 8.0), (3, 0.05, 8.0), (2, 0.05, 4.0), (3, 0.1, 4.0)]
-DK_CELLS = [(2, 0.1, 8.0), (3, 0.05, 8.0)]   # referee anchor + an m = 3 cell where the target is attainable
+DK_CELLS = [(2, 0.1, 8.0), (3, 0.05, 8.0)]   # review anchor + an m = 3 cell where the target is attainable
 TARGETS = {m: tuple(float(x) for x in fk.TARGET_TIMES[m]) for m in (2, 3)}
 P = fk.MODEL
 GAM, Z0, ZB, RHO = P.gamma, P.z0, P.z_bar, P.rho
@@ -462,7 +462,7 @@ def designs_for_cell(m, eps, B) -> dict:
                  "target_mass": lw["p_star"]}
     D["mf_nominal"] = {**model_summary(m, eps, B, T, mwn["w"]),
                        "rule": "stripes at T; mean-field max-min w", "target_mass": mwn["target_mass_mf"]}
-    # referee's proposal: one leading-order pre-shift step (Theorem 2(c)), w re-designed
+    # review's proposal: one leading-order pre-shift step (Theorem 2(c)), w re-designed
     pa = np.asarray(predict_A(m, eps, B, T, mwn["w"]))
     tp1 = np.minimum(T + (T - pa), 3.5)
     mw1 = mf_weights(m, eps, B, tp1)

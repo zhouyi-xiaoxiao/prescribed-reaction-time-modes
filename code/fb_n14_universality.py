@@ -97,7 +97,7 @@ OUT_JSON = OUT_DIR / "n14_universality.json"
 FIG_STEM = core.FIGURES / "fb_n14_universality"
 DEFAULT_CACHE = Path(
     "<scratch>/"
-    "cnsns_general/n14_cache")
+    "general_transport/n14_cache")
 
 BASE_SEED = 20260923
 TAG = 97

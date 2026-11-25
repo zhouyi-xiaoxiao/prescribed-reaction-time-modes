@@ -2,7 +2,7 @@
 """Numerical checks of the frozen-gate exact count under a uniform contact floor.
 
 Checked text (labels gb2:fg-*):
-  manuscript/cnsns_submission/sm/th/GB2_frozen_gate_count.tex
+  <manuscript-sources>/sm/th/GB2_frozen_gate_count.tex
   (Supplementary Material, subsection "Random frozen gates: the exact count
   under a uniform contact floor"; Theorem gb2:fg-count, Corollary
   gb2:fg-tangent, Remarks gb2:fg-rem-free, gb2:fg-rem-tangent,
@@ -380,7 +380,7 @@ def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     res = {
         "script": "code/fb_gb2_frozen_gate_checks.py",
-        "checked_text": "manuscript/cnsns_submission/sm/th/GB2_frozen_gate_count.tex (labels gb2:fg-*)",
+        "checked_text": "<manuscript-sources>/sm/th/GB2_frozen_gate_count.tex (labels gb2:fg-*)",
         "python": sys.version.split()[0],
         "mpmath": mp.__version__,
         "numpy": np.__version__,

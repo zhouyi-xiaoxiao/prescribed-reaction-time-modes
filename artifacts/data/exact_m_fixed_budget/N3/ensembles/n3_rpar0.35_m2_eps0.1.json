@@ -687,7 +687,7 @@
   0.4
  ],
  "ensemble_dir": "<local-ensemble-store>/prr_fk_ensembles/n3_reduced/n3_rpar0.35_m2_eps0.1",
- "note": "N3 Fable arm: r_par0 = 0.35 at a = 0.4",
+ "note": "N3 audit arm: r_par0 = 0.35 at a = 0.4",
  "chunks": [
   {
    "chunk": 0,

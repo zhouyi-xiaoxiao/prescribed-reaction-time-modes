@@ -2,7 +2,7 @@
 """TH-6 numerical checks: the exact tilted-bridge factorization (midpoint-only
 killing, contact = 1) and the key estimates of the TH-6 proof.
 
-Theory (manuscript/cnsns_submission/theory/TH6_exact_count*.tex):
+Theory (<manuscript-sources>/theory/TH6_exact_count*.tex):
   f_mid(t) = B sum_k h_k Gamma_k(t) A_k(t),  Gamma_k = phi_{eps S*}(mu(t)-mu_k),
   A_k(t)   = E exp(-B int_0^t V(M_k(t,r) + eps Y_r) dr),
   M_k(t,r) = mu(t-r) + T_k(t) e^{-gamma r},  T_k = (sZ^2/S*^2)(mu_k - mu(t)),
@@ -14,13 +14,13 @@ log f and (log f)' are obtained with RELATIVE accuracy even where
 f ~ e^{-100} (no rare-event sampling needed).
 
 Parts:
-  (a) factorization check against GPT-6's killed-OU PDE (contact = 1) at the
+  (a) factorization check against the independent killed-OU PDE (contact = 1) at the
       PDE grid times, including the Gaussian-small valleys;
   (b) key-estimate diagnostics at eps in {0.05, 0.025, 0.0125}:
       matching zones  eps*b_j vs the Gaussian slope -v_j^2 s / S*^2,
       gap sectors     eps^2 * max|b_k| (retained k) and the sign of D;
   (c) summary of the PDE extrema (counts of maxima/minima, endpoint slopes)
-      read from GPT-6's earlier outputs (provenance hashed);
+      read from the earlier PDE outputs (provenance hashed);
   (d) convexity off the passage windows on the same PDE outputs:
       f''/f = D' + D^2 > 0 wherever min_j |mu(t)-mu_j| >= L eps.
 
@@ -42,7 +42,7 @@ import numpy as np
 HERE = Path(__file__).resolve()
 REPORT = HERE.parents[1]
 OUT_DIR = REPORT / "artifacts" / "data" / "exact_m_fixed_budget" / "TH6"
-PDE_DIR = Path("<local-ensemble-store>/codex_theory_prr_20260923/theory_checks")
+PDE_DIR = Path("<local-ensemble-store>/theory_scout_20260923/theory_checks")
 
 SEED_BASE = 20260923
 STREAM_TAG = 88
@@ -275,7 +275,7 @@ def part_b(results):
 
 
 def part_c(results):
-    """Extrema summary of GPT-6's earlier PDE runs (contact = 1)."""
+    """Extrema summary of the earlier PDE runs (contact = 1)."""
     out = []
     for js in sorted(PDE_DIR.glob("reduced_m*_fine.json")) + sorted(PDE_DIR.glob("reduced_m*_stress*.json")):
         meta = json.loads(js.read_text())

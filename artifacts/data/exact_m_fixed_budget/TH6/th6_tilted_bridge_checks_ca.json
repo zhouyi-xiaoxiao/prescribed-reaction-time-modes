@@ -594,7 +594,7 @@
   {
    "m": 2,
    "eps": 0.05,
-   "pde_file": "<local-ensemble-store>/codex_theory_prr_20260923/theory_checks/reduced_m2_e005_fine.npz",
+   "pde_file": "<local-ensemble-store>/theory_scout_20260923/theory_checks/reduced_m2_e005_fine.npz",
    "pde_sha256": "07033b7bd2a9088bc326df50e0f35c10977792314427930060856c27ff6ffe97",
    "n_paths": 4000,
    "dr": 0.001,
@@ -917,7 +917,7 @@
   {
    "m": 2,
    "eps": 0.025,
-   "pde_file": "<local-ensemble-store>/codex_theory_prr_20260923/theory_checks/reduced_m2_e0025_fine.npz",
+   "pde_file": "<local-ensemble-store>/theory_scout_20260923/theory_checks/reduced_m2_e0025_fine.npz",
    "pde_sha256": "e615bf07b1fd6a2e7baa48e89aac154ee56c3d9deb6d0af66952d42f090f83aa",
    "n_paths": 4000,
    "dr": 0.0005,
@@ -1240,7 +1240,7 @@
   {
    "m": 3,
    "eps": 0.05,
-   "pde_file": "<local-ensemble-store>/codex_theory_prr_20260923/theory_checks/reduced_m3_e.05_fine.npz",
+   "pde_file": "<local-ensemble-store>/theory_scout_20260923/theory_checks/reduced_m3_e.05_fine.npz",
    "pde_sha256": "733bfcf6eb23d9747142aeb5321db1f26bd9495e8f1fa359c95bc55d56c1fa6b",
    "n_paths": 4000,
    "dr": 0.001,
@@ -1770,7 +1770,7 @@
   {
    "m": 3,
    "eps": 0.025,
-   "pde_file": "<local-ensemble-store>/codex_theory_prr_20260923/theory_checks/reduced_m3_e.025_fine.npz",
+   "pde_file": "<local-ensemble-store>/theory_scout_20260923/theory_checks/reduced_m3_e.025_fine.npz",
    "pde_sha256": "734d966ec5a477162bdf888db195a053c48218dc1f9bdc12094ee7739c43016e",
    "n_paths": 4000,
    "dr": 0.0005,

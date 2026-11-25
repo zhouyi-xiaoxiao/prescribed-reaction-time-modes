@@ -1,4 +1,4 @@
-Covariance-aware prominence reclassification (Codex C1 fix)
+Covariance-aware prominence reclassification (cross-audit finding C1)
 records=201 local_maxima=606 files=197 flips=3
 
 FLIPS (old verdict != new verdict):

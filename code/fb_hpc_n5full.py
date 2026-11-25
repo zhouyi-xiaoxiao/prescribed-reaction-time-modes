@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """HPC item A (HPC_N5full): full N5 time-step ladder on Isambard 3.
 
-GAP_CLOSURE_PLAN.md section 3 N5, "Isambard specification" (GPT-6 G7):
+GAP_CLOSURE_PLAN.md section 3 N5, "Isambard specification" (item G7):
 3 seeds x 1e6 paths per cell x nested dt in {2e-3, 1e-3, 5e-4}, exact OU
 transitions for Z and R_par, R_perp Brownian mod W, common Brownian increments
 generated at the finest step and pair/quad-summed, optional Brownian-bridge

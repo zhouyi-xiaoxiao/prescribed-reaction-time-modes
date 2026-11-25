@@ -4,7 +4,7 @@
 TH-6 (exact m-count at fixed B): for fixed B and small eps the exact density
 has exactly m nondegenerate maxima and m-1 minima on the window I, alternating,
 with non-stationary endpoints.  The open estimate (MATCH) concerns the zones
-1 << |t - t_j|/eps << 1/eps; GPT-6 also flagged a subdominant m=3 tilted-bridge
+1 << |t - t_j|/eps << 1/eps; an independent check also flagged a subdominant m=3 tilted-bridge
 tangency (observation time 2.4819).  This driver searches for EXTRA critical
 points numerically.
 
@@ -25,7 +25,7 @@ otherwise) and flagged if it is beyond the expected m maxima / m-1 minima
 ("EXTRA_PAIR: potential counterexample to TH-6").  Undecided stretches (no
 significant sign) are listed: they are the census' blind spots.
 
-Part 2 (PDE, deterministic).  GPT-6's contact = 1 killed-OU PDE (theory_checks/
+Part 2 (PDE, deterministic).  The independent contact = 1 killed-OU PDE (theory_checks/
 reduced_ou_pde.py; finite volumes in x = (Z - mu(t))/eps, Crank--Nicolson,
 Strang-split exact killing, log-domain survival), re-implemented here, at eps in
 {0.025, 0.0125}, m in {2, 3}, same budgets; extrema from sign changes of the
@@ -77,7 +77,7 @@ RES_LIST = (0.05, 0.1, 0.25, 0.5, 1.0)       # h_g / eps
 ZTHR = 5.0
 INNER_L = 3.0                                 # inner zone |t - t_j| <= INNER_L eps
 MATCH_DELTA = 0.3                             # matching zone upper edge |t - t_j| <= 0.3
-TANGENCY_REGION = (2.3, 2.7)                  # m = 3 tilted-bridge tangency (GPT-6: t = 2.4819)
+TANGENCY_REGION = (2.3, 2.7)                  # m = 3 tilted-bridge tangency (independent check: t = 2.4819)
 PDE_EPS = (0.025, 0.0125)
 
 
@@ -110,7 +110,7 @@ def cmd_simulate(args):
 
 
 # ----------------------------------------------------------------------------
-# PDE (contact = 1), port of GPT-6 reduced_ou_pde.py
+# PDE (contact = 1), port of the independent reduced_ou_pde.py
 # ----------------------------------------------------------------------------
 
 
@@ -224,7 +224,7 @@ def cmd_pde(args):
                      "n_min": sum(e["kind"] == "min" for e in ex),
                      "endpoint_log_slopes": [s0, s1]})
     out = {"m": m, "eps": eps, "model": "contact = 1 killed midpoint OU (continuum), port of "
-           "GPT-6 theory_checks/reduced_ou_pde.py", "dx": r["dx"], "dt": r["dt"], "L": r["L"],
+           "independent theory_checks/reduced_ou_pde.py", "dx": r["dx"], "dt": r["dt"], "L": r["L"],
            "tmax": r["tmax"], "record_every": r["record_every"], "min_q": r["min_q"],
            "wall_seconds": r["wall_seconds"], "rows": rows}
     stem = OUT / (f"pde_m{m}_eps{eps:g}" + (f"_{args.suffix}" if args.suffix else ""))

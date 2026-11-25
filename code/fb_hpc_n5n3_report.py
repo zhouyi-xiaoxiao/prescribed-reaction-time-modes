@@ -9,7 +9,7 @@ writes
     HPC_N5full/hpc_n5full_assessment.json   (acceptance re-evaluation, EM vs exact-OU split)
     HPC_N3full/hpc_n3full_assessment.json   (contact / field claims vs local N3)
     artifacts/figures/fb_hpc_n5full.{pdf,png}, fb_hpc_n3full.{pdf,png}   (core.save_figure)
-    manuscript/cnsns_submission/results_snippets/HPC_N5full.tex, HPC_N3full.tex
+    manuscript/results_snippets/HPC_N5full.tex, HPC_N3full.tex
 No simulation, no randomness: every output is a deterministic function of the JSON inputs.
 
 Two derived diagnostics are computed here (not on the cluster); both are exact
@@ -41,7 +41,7 @@ import numpy as np
 HERE = Path(__file__).resolve()
 REPORT = HERE.parents[1]
 DATA = REPORT / "artifacts" / "data" / "exact_m_fixed_budget"
-SNIP = REPORT / "manuscript" / "cnsns_submission" / "results_snippets"
+SNIP = REPORT / "manuscript" / "results_snippets"
 sys.path.insert(0, str(HERE.parent))
 
 P_N5 = DATA / "HPC_N5full" / "hpc_n5full.json"
@@ -755,7 +755,7 @@ def snip_n3(A3: dict) -> str:
 
     L = []
     L.append("% " + "=" * 69)
-    L.append("% HPC_N3full -- Isambard 3 (partition grace): contact / field factorial, GPT-6 full specification")
+    L.append("% HPC_N3full -- Isambard 3 (partition grace): contact / field factorial, full specification")
     L.append("% exact OU at dt = 5e-4, 1e-3, 2e-3 (+ Richardson R1, R2) and production EM at 1e-3; 3 seeds x 1e6 per anchor; B <= 20")
     L.append("% NOT covered here (still local only): B = 1e2..1e4, the boundary-tangent (frozen-gate) arm, the r_par0 = 0.35 arm.")
     L.append(f"% Data:   {Pj} (fetched); {Pa} (derived by code/fb_hpc_n5n3_report.py); local reference {Pl}")

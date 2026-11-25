@@ -87,7 +87,7 @@
  ],
  "rng": "numpy Philox; chunk i uses SeedSequence(seed_entropy).spawn(n_chunks)[i]",
  "ensemble_dir": "<local-ensemble-store>/prr_fk_ensembles/n3_tangent_m2_eps0.0125_dt0.0005",
- "note": "referee check (A26): N3 boundary-tangent arm at eps=0.0125 repeated at dt=5e-4 (production 1e-3)",
+ "note": "review check (A26): N3 boundary-tangent arm at eps=0.0125 repeated at dt=5e-4 (production 1e-3)",
  "driver": "exact_m_prr_fk_exact_law.py",
  "exactness": "exact discrete-time Feynman-Kac law of the production Euler-Maruyama + end-of-step Doi killing process; sampling error only (iid per-path SE, path-group batch means)",
  "declared": [

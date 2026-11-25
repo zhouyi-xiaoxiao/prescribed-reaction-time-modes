@@ -1,5 +1,5 @@
 {
- "item": "N10 large-B validation of the FK exact-law estimator (Opus F4)",
+ "item": "N10 large-B validation of the FK exact-law estimator (review finding F4)",
  "driver": "code/fb_n10_largeB_validation.py",
  "seed": 20260923,
  "dk_tag": 90,

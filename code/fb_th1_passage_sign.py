@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""TH-1 audit fix (GPT-6 finding TH1-F1): sign of the exact-minus-mean-field density inside a passage.
+"""TH-1 audit fix (finding TH1-F1): sign of the exact-minus-mean-field density inside a passage.
 
 Deterministic quadrature, no random numbers.  In the fixed-budget small-noise limit (TH-3) the
 rescaled passage-j densities are, in the local coordinate y0 = v_j s / rho (s = (t - t_j)/eps) and up to
@@ -15,7 +15,7 @@ the limiting form of Proposition th1:density.  This script tabulates, for severa
 vartheta^2 = s_Z^2/rho^2 = 1/2:
   * c(y0) = Cov(phi(Y), Phi(Y)) (odd in y0), e.g. c(-1), c(+1), c(-0.1);
   * F_ex, F_mf and their difference on a y0 grid, the sign changes of F_ex - F_mf on the grid and
-    the values at y0 = -0.1 and 0 (GPT-6 counterexample: at lambda = 1 the exact density exceeds the
+    the values at y0 = -0.1 and 0 (audit counterexample: at lambda = 1 the exact density exceeds the
     mean field at y0 = -0.1 although c(-0.1) > 0; at y0 = 0, c = 0 but F_ex > F_mf by strict Jensen);
   * the local CDF order 1 - E exp(-lambda Phi(Y)) <= 1 - exp(-lambda E Phi(Y)) (Jensen), i.e. the mean
     field front-loads every passage in the sense of stochastic order, and the masses of both profiles.

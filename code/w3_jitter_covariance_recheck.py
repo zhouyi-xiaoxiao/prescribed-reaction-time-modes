@@ -2,7 +2,7 @@
 """Deterministic W3 jitter recheck under the covariance-aware prominence rule.
 
 The W3 stream stores per-replica mode counts but not the binned counts, so the
-covariance-aware statistic (Codex cross-audit finding C1) cannot be applied to
+covariance-aware statistic (cross-audit finding C1) cannot be applied to
 the stored JSONs directly.  Every W3 replica is, however, fully deterministic:
 the perturbation draw and the simulation stream are both keyed by
 (SEED, tag, m, eta_index, replica).  This driver re-simulates every replica

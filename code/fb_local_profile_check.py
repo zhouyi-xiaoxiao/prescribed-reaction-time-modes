@@ -21,7 +21,7 @@ This script checks, by deterministic quadrature only (no random numbers, no seed
      exact-law (FK) peak shifts and heights;
  (4) significant-mode counts (z > 5) read from the same stored analyses.
 
-Post-audit additions (theory fixer, 2026-09-23; audits GPT-6 TH3-F1/F9, Fable F-1/F-4):
+Post-audit additions (theory fixer, 2026-09-23; audit findings TH3-F1/F9, F-1/F-4):
  (5) smoothing-matched height/shift comparison: the scout's FK peak heights and
      times are those of the FK density smoothed with a Gaussian of sd
      h_steps*dt, h_steps = max(1, 0.15 eps S_*/(v_max dt)) (analyze_fk.py);
@@ -35,7 +35,7 @@ Post-audit additions (theory fixer, 2026-09-23; audits GPT-6 TH3-F1/F9, Fable F-
      eta_*^2/(2 sup_[0,T]||Cov Y_t||), and the constant c0 = c_Y eta_*^2 of
      Lemma th3:coupling actually used in Lemma th3:gate;
  (7) provenance copies of two externally stored numbers quoted in the TeX
-     (GPT-6 profile root at beta=1; the (m,eps,B)=(2,0.05,50) mode list).
+     (independent profile root at beta=1; the (m,eps,B)=(2,0.05,50) mode list).
 
 Output: artifacts/data/exact_m_fixed_budget/TH3/local_profile_check.json
 Runtime: a few seconds, one process.
@@ -60,7 +60,7 @@ REPORT = HERE.parents[1]
 OUT_DIR = REPORT / "artifacts" / "data" / "exact_m_fixed_budget" / "TH3"
 SCOUT = REPORT / "notes" / "gap_diagnosis_20260923" / "theory_scout"
 FK_CACHE = Path.home() / ".local-build" / "prr_gap_fk_cache"          # stored scout FK ensembles (read-only)
-GPT6_PROFILE = Path.home() / ".local-build" / "codex_theory_prr_20260923" / "theory_checks" / "profile_results.json"
+SCOUT_PROFILE = Path("<local-ensemble-store>/theory_scout_20260923/theory_checks/profile_results.json")
 
 MODEL = base.MODEL
 TARGET_TIMES = base.TARGET_TIMES
@@ -372,7 +372,7 @@ def main() -> None:
                     ))
     out["fk_peaks"] = fk_rows
     out["fk_npz_used"] = npz_used
-    # (5) height comparison with and without the scout's smoothing (Fable audit F-1)
+    # (5) height comparison with and without the scout's smoothing (audit finding F-1)
     first = [r for r in fk_rows if r["j"] == 0]
     late = [r for r in fk_rows if r["j"] == r["m"] - 1]
 
@@ -554,11 +554,11 @@ def main() -> None:
     )
     # (7) provenance copies of numbers quoted in the TeX from files outside this JSON
     prov = {}
-    if GPT6_PROFILE.exists():
-        g6 = json.loads(GPT6_PROFILE.read_text())
+    if SCOUT_PROFILE.exists():
+        g6 = json.loads(SCOUT_PROFILE.read_text())
         rowb = [r for r in g6["results"] if abs(r["beta"] - 1.0) < 1e-12][0]
         prov["gpt6_profile_root_beta1"] = dict(
-            source=str(GPT6_PROFILE).replace(str(Path.home()), "~") + "#results[beta=1]",
+            source=str(SCOUT_PROFILE).replace(str(Path.home()), "~") + "#results[beta=1]",
             beta=rowb["beta"], root=rowb["root"], derivative_sign_changes=rowb["derivative_sign_changes"],
             curvature_over_peak=rowb["curvature_over_peak"], lambda_noise=g6["lambda_noise"],
             beta_range=[g6["results"][0]["beta"], g6["results"][-1]["beta"]], beta_count=g6["beta_count"],

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Covariance-aware prominence reclassification of every stored classifier record.
 
-Motivation (Codex cross-audit finding C1, 2026-08-24): the published classifier
+Motivation (cross-audit finding C1, 2026-08-24): the published classifier
 ``validate_exact_m_offlattice.classify_histogram`` divides the topographic
 prominence (peak minus contour base) by the PEAK-ONLY smoothed-Poisson sigma
 
@@ -808,7 +808,7 @@ def main() -> None:
     # Human summary.
     # ------------------------------------------------------------------
     lines = []
-    lines.append("Covariance-aware prominence reclassification (Codex C1 fix)")
+    lines.append("Covariance-aware prominence reclassification (cross-audit finding C1)")
     lines.append(
         f"records={len(records)} local_maxima={len(all_rows)} "
         f"files={checked_files} flips={len(flips)}"

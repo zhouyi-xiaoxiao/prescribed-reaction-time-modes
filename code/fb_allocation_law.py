@@ -22,10 +22,10 @@ Outputs (no randomness; nothing is simulated):
   artifacts/figures/fb_allocation_law.{png,pdf}   (with --figure)
 
 Reference numbers reproduced (asserted):
-  GPT-6 (referee_gpt6.md, "illustrative new calculation"): m=3, B=1:
+  Independent review calculation ("illustrative new calculation"): m=3, B=1:
       p* = 0.247968, w_opt = (0.512193, 0.323096, 0.164711);
       equal weights -> masses (0.169279, 0.280928, 0.410140).
-  Opus (opus_referee_scripts/equal_mass_design.py): m=3 p*(B=0.5,1,2) =
+  Independent review script (equal_mass_design.py): m=3 p*(B=0.5,1,2) =
       0.148 / 0.248 / 0.328 and ~1/3 at B>=4; designed weights
       m=2,B=8: (0.127, 0.873); m=3,B=4: (0.182, 0.14, 0.678);
       m=5 (z0=8), B=1: (0.296, 0.26, 0.215, 0.155, 0.073), p* = 0.1004.
@@ -281,12 +281,12 @@ def run_checks(g2, g3, g5) -> dict:
         "masses": ew2, "expected": [0.288077, 0.556654],
         "pass": all(abs(x - y) < 5e-7 for x, y in zip(ew2, [0.288077, 0.556654])),
     }
-    opus = {0.5: 0.148, 1.0: 0.248, 2.0: 0.328}
-    got = {b: p_star(b, v3, a)["p_star"] for b in opus}
+    ref = {0.5: 0.148, 1.0: 0.248, 2.0: 0.328}
+    got = {b: p_star(b, v3, a)["p_star"] for b in ref}
     checks["opus_m3_p_star"] = {
-        "p_star": {str(b): got[b] for b in opus}, "expected_3dp": {str(b): opus[b] for b in opus},
+        "p_star": {str(b): got[b] for b in ref}, "expected_3dp": {str(b): ref[b] for b in ref},
         "p_star_B4": p_star(4.0, v3, a)["p_star"], "p_star_B8": p_star(8.0, v3, a)["p_star"],
-        "pass": all(round(got[b], 3) == opus[b] for b in opus) and round(p_star(4.0, v3, a)["p_star"], 2) == 0.33,
+        "pass": all(round(got[b], 3) == ref[b] for b in ref) and round(p_star(4.0, v3, a)["p_star"], 2) == 0.33,
     }
     w_m2_b8 = p_star(8.0, v2, a)["weights"]
     w_m3_b4 = p_star(4.0, v3, a)["weights"]
@@ -375,7 +375,7 @@ def build_payload() -> dict:
             ],
         },
         "reachable_hypersurface": {
-            # B = 0.5 appended (final fix pass, 2026-09-23) for Fig. 2(c) of the CNSNS paper,
+            # B = 0.5 appended (final fix pass, 2026-09-23) for Fig. 2(c) of the paper,
             # which plots B in {0.5, 1, 8}: at B = 4 the curve and the max-min square coincide
             # with those of B = 8, and at B = 2 the equal-weight point, the max-min square
             # and the B = 8 square overlap; appended last so that the campaign figure
@@ -459,12 +459,12 @@ def main() -> int:
         payload["figure"] = make_figure(payload)
     core.write_json(OUT_JSON, payload)
     chk = payload["checks"]
-    print("GPT-6 m3 B1: p* = %.6f  w_opt = %s  equal-weight masses = %s" % (
+    print("Review m3 B1: p* = %.6f  w_opt = %s  equal-weight masses = %s" % (
         chk["gpt6_m3_B1"]["p_star"], [round(x, 6) for x in chk["gpt6_m3_B1"]["w_opt"]],
         [round(x, 6) for x in chk["gpt6_m3_B1"]["equal_weight_masses"]]))
-    print("Opus m3 p*(0.5,1,2) =", {k: round(v, 4) for k, v in chk["opus_m3_p_star"]["p_star"].items()},
+    print("Review m3 p*(0.5,1,2) =", {k: round(v, 4) for k, v in chk["opus_m3_p_star"]["p_star"].items()},
           " p*(4) = %.4f" % chk["opus_m3_p_star"]["p_star_B4"])
-    print("Opus designed weights:", {k: [round(x, 4) for x in v] if isinstance(v, list) else v
+    print("Review designed weights:", {k: [round(x, 4) for x in v] if isinstance(v, list) else v
                                      for k, v in chk["opus_designed_weights"].items() if not k.startswith("expected")})
     print("all_checks_pass =", payload["all_checks_pass"])
     print("wrote", OUT_JSON)

@@ -3,11 +3,11 @@
 
 Sources that are checked (read-only):
   W  = notes/gap_diagnosis_20260923/webpro_A_general_exact_count.md
-       (GPT-6 Pro web session, 2026-09-24): counterexample CE1 (one stripe,
+       (development note, 2026-09-24): counterexample CE1 (one stripe,
        variance-driven action well), CE2 (two stripes, extra maximum inside a
        genuine gap), and the stated interval enclosures.
-  CX = manuscript/cnsns_submission/theory/GX_A_general_exact_count.tex
-       (Codex GPT-6 Astra): Proposition gx:spiral-counterexample and
+  CX = <manuscript-sources>/theory/GX_A_general_exact_count.tex
+       (development draft): Proposition gx:spiral-counterexample and
        Lemma gx:spiral-endpoint (elliptic affine spiral drift).
 
 Model of W, CE1 (all covariances below are in units of eps^2):
@@ -61,7 +61,7 @@ HERE = Path(__file__).resolve()
 REPORT = HERE.parents[1]
 OUT_DIR = REPORT / "artifacts" / "data" / "exact_m_fixed_budget" / "GX_counterexamples"
 SRC_W = REPORT / "notes" / "gap_diagnosis_20260923" / "webpro_A_general_exact_count.md"
-SRC_CX = REPORT / "manuscript" / "cnsns_submission" / "theory" / "GX_A_general_exact_count.tex"
+SRC_CX = REPORT / "<manuscript-sources>" / "theory" / "GX_A_general_exact_count.tex"
 
 SEED_BASE = 20260924
 STREAM_TAG = 61

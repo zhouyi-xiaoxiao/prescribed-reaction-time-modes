@@ -1,6 +1,6 @@
 {
  "script": "code/fb_gb2_frozen_gate_checks.py",
- "checked_text": "manuscript/cnsns_submission/sm/th/GB2_frozen_gate_count.tex (labels gb2:fg-*)",
+ "checked_text": "<manuscript-sources>/sm/th/GB2_frozen_gate_count.tex (labels gb2:fg-*)",
  "python": "3.14.6",
  "mpmath": "1.4.1",
  "numpy": "2.5.3",

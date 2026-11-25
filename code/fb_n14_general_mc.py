@@ -2,7 +2,7 @@
 """N14b -- universality campaign: Feynman--Kac Monte Carlo for GENERAL small-noise
 transport crossing m thin stripes (tests Theorem th13:mass, Proposition th13:rate,
 Theorem th13:profile, Corollary th13:peaks, Proposition th13:examples of
-manuscript/cnsns_submission/theory/TH13_universality.tex).
+<manuscript-sources>/theory/TH13_universality.tex).
 
 Models (all gate-free; budget B, allocation w; eps = noise amplitude = stripe width scale):
   A  plug flow in a channel: dX = U dt + eps sqrt(2D) dW, X0 = eps xi0, bands at x_j,

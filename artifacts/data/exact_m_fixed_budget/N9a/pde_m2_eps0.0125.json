@@ -5,7 +5,7 @@
   "eps": 0.0125,
   "m": 2,
   "min_q": 7.484310346157674e-290,
-  "model": "contact = 1 killed midpoint OU (continuum), port of GPT-6 theory_checks/reduced_ou_pde.py",
+  "model": "contact = 1 killed midpoint OU (continuum), port of the independent theory_checks/reduced_ou_pde.py",
   "record_every": 0.0005,
   "rows": [
     {

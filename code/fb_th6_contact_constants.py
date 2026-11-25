@@ -13,7 +13,7 @@ u0^2 = (Sigma_perp0)_ii = 0.09, window I = [0.5, 3.5]):
   J_*    = max_{l, t in I} delta_l(t)^2/(2 S_*^2)                (Step 5)
   n      = max{3, ceil(16 (J_* + C_X + c_R)/c_R)}                (Step 5)
 
-These reproduce the Fable audit's independent evaluation (finding F-4) and
+These reproduce the audit's independent evaluation (finding F-4) and
 pin the numbers quoted in Remark th6:rem-contact-existence to a repo artifact.
 
 Output: artifacts/data/exact_m_fixed_budget/TH6/th6_contact_constants_anchor.json

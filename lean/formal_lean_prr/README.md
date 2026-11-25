@@ -2,8 +2,8 @@
 
 This package holds the machine-checked kernels of the paper "Prescribing
 finite-window reaction-time modes with a static fixed-budget Doi reactivity
-field" (X. Zhouyi; CNSNS package `manuscript/cnsns_submission/`). It was rebuilt
-on 2026-09-23 from the 2026-08 PRR package, following gap-closure items L1–L3 of
+field" (X. Zhouyi; an earlier title of this work). It was rebuilt
+on 2026-09-23 from the 2026-08 package of release v1.0.0, following gap-closure items L1–L3 of
 `notes/gap_diagnosis_20260923/GAP_CLOSURE_PLAN.md`.
 
 Toolchain: `leanprover/lean4:v4.32.0-rc1`. Install it with elan; `lean-toolchain`
@@ -27,7 +27,7 @@ What you should see (reference outputs are included):
   `audit_paper_20260923_output.txt`.
   - It prints 181 lines of the form
     `'<declaration>' depends on axioms: [propext, Classical.choice, Quot.sound]`.
-    101 cover the declarations carried over from the PRR package. These lines
+    101 cover the declarations carried over from the 2026-08 package. These lines
     are identical to the matching lines of the historical record
     `audit_all_138_20260903_output.txt`. The other 80 cover every
     theorem/lemma in the five modules added on 2026-09-23.
@@ -44,7 +44,7 @@ The paper library `FormalPRR` is the default target. It has 18 modules plus
 the root file `FormalPRR.lean`; the 18 include three audit printers and a smoke
 test. The library has 215 `theorem`/`lemma` declarations.
 
-Modules carried over from the PRR package, with their source files unchanged
+Modules carried over from the 2026-08 package, with their source files unchanged
 (the SHA-256 anchors are identical to the 2026-09-03 receipt):
 
 | module | content |
@@ -86,7 +86,7 @@ They are not counted anywhere in this paper. Reference output:
 The package checks the finite-dimensional and one-variable-calculus core of the
 arguments. It does not check the stochastic analysis.
 
-*New results.* The step decomposition below is the Lean agent's own; re-map it
+*New results.* The step decomposition below is that of the formalisation; re-map it
 if the final theorem numbering differs.
 - **Allocation law (TH-4): checked in full, given the limiting mass formula.**
   This covers the inverse design, the budget identity, the max–min theorem (the
@@ -160,9 +160,9 @@ Suggested SM sentence:
 > and C² convergence estimates and all Feynman–Kac and semigroup statements are
 > proved by hand.
 
-## Historical files (PRR v1.0.0, 2026-08/09)
+## Historical files (release v1.0.0, 2026-08/09)
 
-These files are kept unchanged as the audit trail of the PRR-era package. That
+These files are kept unchanged as the audit trail of the 2026-08 package. That
 package counted 138 audited declarations (174 theorem/lemma declarations),
 including the 37 (39) companion ones.
 - Axiom records: `audit_all_138_20260903.lean`,
@@ -176,7 +176,7 @@ These do not describe the current package. The current records are
 `BUILD_RECEIPT.txt`, `MANIFEST.sha256`, `lean_build_20260923_output.txt`,
 `audit_paper_20260923_output.txt` and `audit_companion_20260923_output.txt`.
 
-The docstrings of the carried-over modules cite labels of the PRR-era proof
+The docstrings of the carried-over modules cite labels of the earlier proof
 sources (`exact_m_theorem_spine.tex`, `exact_m_theorem_full_proof.tex`,
-`prr_assets/b0_quantitative_bound.tex`). The new modules cite the items of
+`b0_quantitative_bound.tex`). The new modules cite the items of
 `GAP_CLOSURE_PLAN.md` (TH-1…TH-5, L2, L3).

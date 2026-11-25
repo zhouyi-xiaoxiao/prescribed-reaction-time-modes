@@ -404,7 +404,7 @@ def analyze_cell(label: str) -> dict:
 
 
 def cmd_analyze(args) -> None:
-    res = {"item": "N13", "driver": HERE.name, "theory": "manuscript/cnsns_submission/theory/TH1b_third_order.tex",
+    res = {"item": "N13", "driver": HERE.name, "theory": "<manuscript-sources>/theory/TH1b_third_order.tex",
            "definition": "fraction explained over window steps t in (0.5, 3.5]: L1: 1-||D-A||_1/||D||_1; "
                          "L2sq: 1-||D-A||_2^2/||D||_2^2 "
                          "(step resolution dt = 1e-3, and after averaging over 0.02 bins), "

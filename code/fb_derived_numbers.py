@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Derived numbers quoted in the CNSNS manuscript that are not a single JSON value.
+"""Derived numbers quoted in the manuscript that are not a single JSON value.
 
-R1 fix editor (2026-09-23, referee finding O16).  Before this script, the src comments of
-these numbers pointed at OUTLINE.md, at an old table of the PRR manuscript, at a notes
+Fix pass (2026-09-23, review finding O16).  Before this script, the src comments of
+these numbers pointed at OUTLINE.md, at an old table of the earlier manuscript, at a notes
 JSON and at temporary working notes.  This script recomputes each of them from the stored
 script outputs (no new random numbers) and writes
 
